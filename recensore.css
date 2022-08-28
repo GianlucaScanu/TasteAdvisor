@@ -11,9 +11,14 @@
     margin-top: 5%;
     border-style: solid;
     border-color: #1e5a1a;
+    justify-content: space-between;
 }
 
-
+#bottom{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
 
 /*ELEMENTI AREA TOP*/
 #row1 {
@@ -50,4 +55,19 @@
 #foto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 2%;
+    }
+
+#user_desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#mod_btn{
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-right: 5%;
 }
