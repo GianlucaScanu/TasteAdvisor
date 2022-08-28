@@ -18,13 +18,20 @@
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+    height: 33vh;
+    overflow-y: scroll;
+
+    /*DISPOSIZIONE TEMPORANEA, DA RIVEDERE DOPO BACKEND*/
+    display: flex;
+    flex-direction: column;
 }
 
 /*ELEMENTI AREA TOP*/
 #row1 {
     display: flex;
     flex-direction: row;
-    /* SOLUZIONE PROVVISIORIA : utilizzando space-between, gli elementi vanno a disporsi agli "estremi"*/
     justify-content: space-between;
     margin-left: 1%;
     margin-right: 1%;
@@ -66,8 +73,52 @@
     
 }
 
-#mod_btn{
+#description{
+    border-style: solid;
+    border-color: #1e5a1a;
+    border-width: thin;
+}
+
+#profilo_btn{
     margin-top: 50%;
     margin-bottom: 50%;
     margin-right: 5%;
+}
+
+
+/*ELEMENTI AREA BOTTOM*/
+#recensione_tipo{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: #1e5a1a;
+    border-width: thin;
+
+
+    /*DISPOSIZIONE TEMPORANEA, DA RIVEDERE DOPO BACKEND*/
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    max-width: 25vw;
+    max-height: 25vh;
+
+    overflow: hidden;
+}
+
+#recensione_text{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#recensione_btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%
+}
+
+#del_div{
+    margin-left: 5%;
 }
