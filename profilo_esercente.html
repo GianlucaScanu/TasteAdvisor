@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recensore</title>
+    <title>Esercente</title>
 
     <!--Bootstrap-->
     <script src = "./bootstrap-5.1.3-dist/js/bootstrap.js"></script>
@@ -13,7 +13,7 @@
     <script src = "./jquery/jquery.js"></script>
     <!--css-->
     <link rel="stylesheet" href="./navbar/navbar.css" type="text/css">
-    <link rel="stylesheet" href="./esercente.css" type="text/css">
+    <link rel="stylesheet" href="./profilo_esercente.css" type="text/css">
 
 </head>
 <body>
@@ -60,19 +60,35 @@
         </div>
     </div>
     <div id = "bottom">
-        <div id = "header_and_insert">
-            <div id = "heaer">I miei piatti: </div>
-            <div id = "insert_plate" class = "btn btn-success">Inserisci nuovo piatto</div>
-        </div>
-        <div id = "inserted_plates">
-            <!-- Parte da implementare con Ruby -->
-            <!-- Abbozzo scheda piatto -->
-            <div id = "plate">
-                <div id = "plate_name"> @nome_piatto </div>
-                <div id = "plate_price"> @prezzo_piatto </div>
-                <img src="none" id = "plate_image" alt = "immagine piatto">
+        <div id = "col1">
+            <div id = "header_and_insertions">
+                <div id = "heaer">I piatti : </div>
+            </div>
+            <div id = "inserted_dishes">
+                <!-- Parte da implementare con Ruby -->
+                <!-- Per avere div scrollable necessario andare a utilizzare più righe con max_num elementi-->
+                <img class="foto" src="./images/tortellini.jpg" alt="immagine piatto">
             </div>
         </div>
+        <div id = "col2">
+            <div id = "header_and_insertions">
+                <div id = "heaer">I miei piatti: </div>
+            </div>
+            <div id = "infos">
+                <div id = "google_map">
+                    <img class = "foto" src = "./images/maps.jpg">
+                    Div per inserimento mappa da gmaps
+                </div>
+                <div id = "location">@indirizzo_ristorante</div>
+                <div id = "website">@sito_ristorante</div>
+                <div id = "phone">@numero_telefono</div>
+            </div>        
+        </div>
+    </div>
+    <div id = "contacts">
+        <div id = "contatto1">CONTATTO1</div>
+        <div id = "contatto2">CONTATTO2</div>
+        <div id = "contatto3">CONTATTO3</div>
     </div>
 </body>
 <script src = "./navbar/navbar_script.js"></script>

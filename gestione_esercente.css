@@ -88,7 +88,7 @@
 }
 
 /* ELEMENTI AREA BOTTOM */
-#header_and_insert{
+#header_and_insertions{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -98,20 +98,35 @@
     margin-bottom: 1%;
 }
 
-#inserted_plates{
+#inserted_dishes{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    overflow:auto;
 }
 
-#plate{
+.card{
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    width:25%;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
     border-style: solid;
+    border-width: medium;
     border-color: #1e5a1a;
+}
+
+/* ELEMENTI AREA */
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-style: solid;
+    border-width: medium;
+    border-color: #1e5a1a;margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
