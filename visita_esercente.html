@@ -13,7 +13,7 @@
     <script src = "./jquery/jquery.js"></script>
     <!--css-->
     <link rel="stylesheet" href="./navbar/navbar.css" type="text/css">
-    <link rel="stylesheet" href="./profilo_esercente.css" type="text/css">
+    <link rel="stylesheet" href="./visita_esercente.css" type="text/css">
 
 </head>
 <body>
@@ -62,23 +62,24 @@
     <div id = "bottom">
         <div id = "col1">
             <div id = "header_and_insertions">
-                <div id = "heaer">I miei piatti: </div>
-                <div id = "insert_dishes" class = "btn btn-success">Inserisci nuovo piatto</div>
+                <div id = "heaer">I piatti : </div>
             </div>
             <div id = "inserted_dishes">
                 <!-- Parte da implementare con Ruby -->
-                <!-- Abbozzo scheda piatto -->
                 <!-- Per avere div scrollable necessario andare a utilizzare più righe con max_num elementi-->
-                <div class="card">
-                    <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
-                    <div class="card-body">
-                    <h5 class="card-title">@nome_piatto</h5>
-                    <div class="card-text">@prezzo_piatto</div>
-                    <div class="card-text">@info_piatto</div>
-                    <a href="#" class="btn btn-success">Modifica piatto</a>
-                    </div>
+                <img class="foto" src="./images/tortellini.jpg" alt="immagine piatto">
+            </div>
+        </div>
+        <div id = "col2">
+            <div id = "infos">
+                <div id = "google_map">
+                    <img class = "foto" src = "./images/maps.jpg">
+                    Div per inserimento mappa da gmaps
                 </div>
-            </div>    
+                <div id = "location">@indirizzo_ristorante</div>
+                <div id = "website">@sito_ristorante</div>
+                <div id = "phone">@numero_telefono</div>
+            </div>        
         </div>
     </div>
     <div id = "contacts">

@@ -40,51 +40,54 @@
         </div>
     </div>
     <div id = "middle">
-        <div id = "foto">
-        <div id = "image">
-            <img alt="immagine profilo">
+        <div id = "editable">
+            <div id = "foto">
+                <div id = "image">
+                    <img alt="immagine profilo">
+                </div>
+                </br>
+                <div id = "photo_picker">
+                    <label id = "lbl_file_loader">Seleziona una foto</label>
+                    </br>
+                    <!-- ATTENZIONE: provvedere a caricare foto scelta come immagine del profilo -->
+                    <input type="file" class = "form-control-file">
+                </div>
+            </div>
+            <div id = "user_desc_1">
+                <div id = "username">@username_esercente <!-- da implementare con Ruby!--> </div>
+                <div id = "description">
+                    <textarea id = "text_descr" class = "form-control" placeholder="Descrizione profilo esercente"></textarea>
+                </div>
+            </div>
+            <div id = "user_desc_2">
+                <div id = "position">@posizione_ristorante
+                    <input type="text" id = "text_pos" class = "" placeholder="Posizione"></input>
+                </div>
+                </br>
+                <div id = "website">@sito_internet
+                    <input type="text" id = "text_site" class = "" placeholder="Sito"></input>
+                </div>
+                </br>
+                <div id = "phone_number">@numero_telefono
+                    <input type="text" id = "text_phone" class = "" placeholder="Telefono"></input>
+                </div>
+            </div>
         </div>
-            <div id = "image_lbl"> foto profilo</div>
-        </div>
-        <div id = "user_desc_1">
-            <div id = "username">@username_esercente <!-- da implementare con Ruby!--> </div>
-            <div id = "description">Descrizione del profilo esercente</div>
-        </div>
-        <div id = "user_desc_2">
-            <div id = "position">@posizione_ristorante</div>
-            <div id = "website">@sito_internet</div>
-            <div id = "phone_number">@numero_telefono</div>
-        </div>
-        <div id = "modify">
-            <div class = "btn btn-success">Modifica profilo</div>
+        <div id = "user_btns">
+            <div id = "confirm_btn" class = "btn btn-success btn-responsive">
+                Annulla le modifiche
+            </div>
+            <div id = "cancel_btn" class = "btn btn-success btn-responsive">
+                Salva le modifiche
+            </div>
         </div>
     </div>
     <div id = "bottom">
-        <div id = "col1">
-            <div id = "header_and_insertions">
-                <div id = "heaer">I miei piatti: </div>
-                <div id = "insert_dishes" class = "btn btn-success">Inserisci nuovo piatto</div>
-            </div>
-            <div id = "inserted_dishes">
-                <!-- Parte da implementare con Ruby -->
-                <!-- Abbozzo scheda piatto -->
-                <!-- Per avere div scrollable necessario andare a utilizzare più righe con max_num elementi-->
-                <div class="card">
-                    <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
-                    <div class="card-body">
-                    <h5 class="card-title">@nome_piatto</h5>
-                    <div class="card-text">@prezzo_piatto</div>
-                    <div class="card-text">@info_piatto</div>
-                    <a href="#" class="btn btn-success">Modifica piatto</a>
-                    </div>
-                </div>
-            </div>    
+        <div id = "contacts">
+            <div id = "contatto1">CONTATTO1</div>
+            <div id = "contatto2">CONTATTO2</div>
+            <div id = "contatto3">CONTATTO3</div>
         </div>
-    </div>
-    <div id = "contacts">
-        <div id = "contatto1">CONTATTO1</div>
-        <div id = "contatto2">CONTATTO2</div>
-        <div id = "contatto3">CONTATTO3</div>
     </div>
 </body>
 <script src = "./navbar/navbar_script.js"></script>
