@@ -18,6 +18,15 @@
     overflow: scroll;
 }
 
+#bottom{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+
 /*ELEMENTI AREA TOP*/
 #row1 {
     display: flex;
@@ -95,4 +104,12 @@
 
 #save_btn{
     margin-right: 10%;
+}
+
+
+/*ELEMENTI AREA BOTTOM*/
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
