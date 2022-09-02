@@ -72,6 +72,12 @@
     margin-left: 5%;
 }
 
+#image_lbl{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
 #labels{
     display: flex;
     flex-direction: column;
