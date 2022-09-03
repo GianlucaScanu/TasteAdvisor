@@ -58,6 +58,7 @@
 
 
 /*ELEMENTI AREA MIDDLE*/
+/* ATTENZIONE: aggiunta col2 con stesse caratteristiche di col1 per allienare carosello !*/
 #col1{
     margin-right: 30%;
     align-self: center;
@@ -67,6 +68,15 @@
 
 #col1 > *{
     margin-top: 10%;
+}
+
+#col2{
+    margin-right: 10%;
+    margin-left: 10%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .progress{
@@ -95,7 +105,14 @@
     align-self: center;
 }
 
-
+#carousel_review{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 100%;
+    justify-content: center;
+}
 
 #description{
     border-style: solid;
