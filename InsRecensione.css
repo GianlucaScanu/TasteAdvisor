@@ -5,14 +5,17 @@
 
 #middle{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 5%;
     border-style: solid;
     border-color: #1e5a1a;
     justify-content: center;
+    height: 50vh;
 }
+
+
 
 #bottom{
     margin-right: 5%;
@@ -57,8 +60,33 @@
 
 
 /*ELEMENTI AREA MIDDLE*/
+#midtop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#midbottom{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #col1{
-    margin-right: 30%;
+    margin-left: 10%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#col2{
+    display: flex;
+    flex-direction: column;
+}
+
+#col2 > *{
+    margin-top: 2%
 }
 
 .progress{
@@ -87,14 +115,14 @@
     align-self: center;
 }
 
-
-
 #description{
-    border-style: solid;
-    border-color: #1e5a1a;
-    border-width: thin;
+    display: flex;
+    flex-direction: column;
 }
 
+#confirm{
+    margin-right: 10%;
+}
 
 
 /*ELEMENTI AREA BOTTOM*/
