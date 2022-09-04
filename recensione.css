@@ -60,7 +60,7 @@
 /*ELEMENTI AREA MIDDLE*/
 /* ATTENZIONE: aggiunta col2 con stesse caratteristiche di col1 per allienare carosello !*/
 #col1{
-    margin-right: 30%;
+    margin-left: 10%;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -120,6 +120,12 @@
     border-width: thin;
 }
 
+
+#report{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
 
 
 /*ELEMENTI AREA BOTTOM*/
