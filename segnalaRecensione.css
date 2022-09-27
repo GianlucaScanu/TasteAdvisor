@@ -11,15 +11,7 @@
     margin-top: 5%;
     border-style: solid;
     border-color: #1e5a1a;
-    justify-content: center;
-    height: 50vh;
-
-
-    /*Temporaneo*/
-    overflow: auto;
 }
-
-
 
 #bottom{
     margin-right: 5%;
@@ -64,70 +56,37 @@
 
 
 /*ELEMENTI AREA MIDDLE*/
-#midtop{
+#nome{
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    
+    font-size: x-large;
 }
 
-#midbottom{
-    margin-top: 5%;
+#motivazioni{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15%;
+}
+
+#motivazioni_lbl{
+    font-size: large;
+}
+
+#descrizione{
+    display: flex;
     justify-content: center;
+    margin-top: 3%;
 }
 
-#col1{
-    margin-right: 20%;
-    align-self: center;
+#segnala_div{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
-#col2{
-    display: flex;
-    flex-direction: column;
-}
 
-#col2 > *{
-    margin-top: 2%
-}
-
-.progress{
-    width: 10vw;
-    align-self: center; 
-}
-
-#ratings{
-    display: flex;
-    flex-direction: column;
-}
-
-.rating{
-    display: flex;
-    flex-direction: row;
-}
-
-.rtg{
-    display: flex;
-    flex-direction: row;
-    margin-left: 5%;
-}
-
-.pb{
-    display: flex;
-    align-self: center;
-}
-
-#description{
-    display: flex;
-    flex-direction: column;
-}
-
-#confirm{
-    margin-right: 10%;
-}
 
 
 /*ELEMENTI AREA BOTTOM*/
