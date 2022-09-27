@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segnala Piatto</title>
+    
+        <!--Bootstrap-->
+        <script src = "./bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+        <link rel = "stylesheet" href = "./bootstrap-5.1.3-dist/css/bootstrap.css">
+        <!--JQuery-->
+        <script src = "./jquery/jquery.js"></script>
+        <!--css-->
+        <link rel="stylesheet" href="./navbar/navbar.css" type="text/css">
+        <link rel="stylesheet" href="./segnala_piatto.css" type="text/css">
+    </head>
+<body>
+    <div id = "top">
+        <div id = "row1">
+            <div id = "logo">
+                <img src = "TODO" alt="logo TA">
+            </div>
+            <div id = "label">
+                TASTEADVISOR
+            </div>
+            <div id = "log_buttons">
+                <div id = "signin_btn" class = "btn btn-success btn-responsive">
+                    Sign in
+                </div>
+                <div id = "signup_btn" class = "btn btn-success btn-responsive">
+                    Sign up
+                </div>
+            </div>
+        </div>
+        <div id = "row2">
+            <div id = "navbar">
+            </div>
+        </div>
+    </div>
+    <div id="middle">
+        <div id="middle_title">
+            Segnala il piatto di @esercente
+        </div>
+        <div id="reasons_title">
+            Motivazione/i :
+        </div>
+        <div id="reasons">
+            <div id = "reason1">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Il prezzo non corrisponde
+                    </label>
+                </div>
+            </div>
+            <div id = "reason2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Ingredienti diversi
+                    </label>
+                </div>
+            </div>
+            <div id = "reason3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Non è più presente
+                    </label>
+                </div>
+            </div>
+            <div id = "reason4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Altro : 
+                    </label>
+                </div>
+            </div>
+            <div id="descr">
+                <textarea id="desc_text" rows="4" cols="50" placeholder="Inserire la descrizione"></textarea>
+            </div>
+            <div id="report_plate" class="btn btn-danger">Segnala il piatto</div>
+        </div>
+    </div>
+    <div id = "bottom">
+        <div id = "contatto1">CONTATTO1</div>
+        <div id = "contatto2">CONTATTO2</div>
+        <div id = "contatto3">CONTATTO3</div>
+    </div>
+</body>
+<script src = "./navbar/navbar_script.js"></script>
+</html>
