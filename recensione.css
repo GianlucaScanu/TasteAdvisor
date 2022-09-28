@@ -4,8 +4,11 @@
 }
 
 #middle{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-areas: 
+        "col1 col2";
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 1fr;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 1%;
@@ -57,6 +60,7 @@
 #col1{
     margin-left: 5%;
     margin-right: 1%;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,12 +72,11 @@
 }
 
 #col2{
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1%;
-    margin-bottom: 1%;
     display: flex;
     flex-direction: column;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
     max-width: 50%;
 }
 
@@ -107,6 +110,15 @@
     border-style: solid;
     border-color: #1e5a1a;
     border-width: thin;
+}
+
+.carousel-item{
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item img{
+    width: 100%;
 }
 
 #report{
