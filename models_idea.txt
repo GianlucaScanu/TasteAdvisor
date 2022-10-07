@@ -1,0 +1,85 @@
+IMPLEMENTARE LOGIN (GEM DEVISE)
+
+CamelCase
+snake_case
+
+
+modelli utilizzati:
+
+users:
+	reviewer:
+			(id)
+			name
+			surname
+			username
+			profile_picture
+			telephone_number
+			mail
+			password #hash
+			has_many review
+		
+	restaurant:
+			(id)
+			name
+			username
+			website
+			description
+			profile_picture
+			mail
+			password #hash
+			telephone_number
+			address
+			has_many plates
+			
+		
+review:
+	(id)
+	
+	rating1 (1..5) #1 = gusto
+	rating2 (1..5) #2 = impiattamento
+	rating3 (1..5) #3 = originalita'
+	
+	description
+	
+	imgs (link multipli in 1 solo testo, separato da virgole CSV)
+	
+	belongs_to reviewer
+	belongs_to restaurant
+	belongs_to dish
+		
+dish:
+	(id)
+	name
+	number_of_reviews
+	price
+	category {antipasti, primi, secondi, dolci}
+	avg_rating (1..5) #media delle medie
+	imgs (link multipli in 1 solo testo, separato da virgole CSV)
+	
+	belongs_to restaurant
+	has_many review
+
+report:
+	(id)
+	check_box (1..4)  #!(1001%2) => descrp
+	description 
+	belong_to review, foreign_key: true
+
+CMD:
+
+/*rails g model Reviewer name:string surname:string username:string mail:string password:string profile_picture:string telephone_number:string
+rails g model Restaurant name:string username:string website:string description:string profile_picture:string mail:string password:string telephone_number:string address:string
+rails g model Review rating1:integer rating2:integer rating3:integer description:string imgs:string 
+rails g model Dish name:string number_of_reviews:integer price:float category:integer avg_rating:float imgs:string
+rails g model Report check_box:integer description:string*/
+
+rails g scaffold Reviewer name:string surname:string username:string mail:string password:string profile_picture:string telephone_number:string
+rails g scaffold Restaurant name:string username:string website:string description:string profile_picture:string mail:string password:string telephone_number:string address:string
+rails g scaffold Review rating1:integer rating2:integer rating3:integer description:string imgs:string 
+rails g scaffold Dish name:string number_of_reviews:integer price:float category:integer avg_rating:float imgs:string
+rails g scaffold Report check_box:integer description:string
+
+#æggiungi altre cose, es has_many o attribute validation
+rails db:migrate
+
+

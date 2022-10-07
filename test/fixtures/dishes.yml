@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  number_of_reviews: 1
+  price: 1.5
+  category: 1
+  avg_rating: 1.5
+  imgs: MyString
+
+two:
+  name: MyString
+  number_of_reviews: 1
+  price: 1.5
+  category: 1
+  avg_rating: 1.5
+  imgs: MyString
