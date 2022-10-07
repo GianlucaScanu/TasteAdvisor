@@ -1,7 +1,7 @@
 <h1>Home#index</h1>
 <% if reviewer_signed_in? %>
 <%= current_reviewer.id %>
-
+<%= Reviewer.find(current_reviewer.id).name %>
 <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
 <%else%>
 <%= button_to "Sign in", new_reviewer_session_path %>
