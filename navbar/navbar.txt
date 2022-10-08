@@ -1,0 +1,25 @@
+<nav class = "navbar navbar-dark">
+    <div class = "nav nav-pills options-ul">
+        <div class = "nav-item">
+            <a id = "Antipasti" class = "nav-link" aria-current="page" href = "./TODO">
+                Antipasti
+            </a>
+        </div>
+        <div class = "nav-item">
+            <a id = "Primi" class = "nav-link" aria-current="page" href = "./TODO">
+                Primi
+            </a>
+        </div>
+        <div class = "nav-item">
+            <a id = "Secondi" class = "nav-link" aria-current="page" href = "./TODO">
+                Secondi
+            </a>
+        </div>
+        <div class = "nav-item">
+            <a id = "Dolci" class = "nav-link" aria-current="page" href = "./TODO">
+                Dolci
+            </a>
+        </div>
+    </div>
+</nav>
+            
