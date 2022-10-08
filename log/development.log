@@ -5513,3 +5513,62 @@ Did you mean?  username):
   
 app/views/devise/registrations/new.html.erb:20
 app/views/devise/registrations/new.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-10-07 15:31:40 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 25.1ms | Allocations: 1326)
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 3721.1ms | Allocations: 46496)
+Completed 200 OK in 3741ms (Views: 3730.6ms | ActiveRecord: 0.0ms | Allocations: 50002)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-07 15:42:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 23.5ms | Allocations: 5242)
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 10904)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms | Allocations: 15590)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap/scss/bootstrap.
+        on line 7:2 of app/assets/stylesheets/application.scss
+>>  @import 'bootstrap/scss/bootstrap';  
+
+   -^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:7
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-10-07 15:42:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 4229)
+  Rendered home/_header.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 8919.7ms | Allocations: 133663)
+Completed 200 OK in 8921ms (Views: 8920.3ms | ActiveRecord: 0.0ms | Allocations: 134010)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-07 15:43:36 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 456)
+  Rendered home/_header.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 6741.3ms | Allocations: 34729)
+Completed 200 OK in 6742ms (Views: 6741.9ms | ActiveRecord: 0.0ms | Allocations: 34988)
+
+
