@@ -7501,3 +7501,1777 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 7107)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:23:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1599)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 37039)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 41677)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:24:14 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 18.8ms | Allocations: 6729)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 6827)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 7724)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_restaurants_registration_path' for #<ActionView::Base:0x0000000000fd48>
+
+    '.freeze;@output_buffer.append=( button_to "Sign up restaurant", new_restaurants_registration_path , method: :get);@output_buffer.safe_append=' 
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Did you mean?  new_restaurant_registration_path
+               new_restaurant_registration_url
+               new_restaurant_session_path
+               edit_restaurant_registration_path
+               new_reviewer_registration_path):
+    14:     <%= button_to "Sign in", new_reviewer_session_path %>
+    15: 
+    16:     <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+    17:     <%= button_to "Sign up restaurant", new_restaurants_registration_path , method: :get%> 
+    18: 
+    19:     <p>Find me in app/views/home/index.html.erb</p>
+    20: <%end%>
+  
+app/views/home/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:24:42 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1046)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3685)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4560)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:24:43 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 252)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 18.1ms | Allocations: 10631)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 10728)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.6ms | Allocations: 21305)
+
+
+  
+ActionView::Template::Error (undefined method `surname' for #<Restaurant id: nil, name: nil, username: nil, website: nil, description: nil, profile_picture: nil, telephone_number: nil, address: nil, created_at: nil, updated_at: nil, email: "">
+Did you mean?  username):
+    17: 
+    18:   <div class="field">
+    19:     <%= f.label :surname %><br />
+    20:     <%= f.text_field :surname, autofocus: true, autocomplete: "surname" %>
+    21:   </div>
+    22: 
+    23: 
+  
+app/views/devise/registrations/new.html.erb:20
+app/views/devise/registrations/new.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:25:10 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1024)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3662)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4525)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:25:10 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 8184)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 8270)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 9415)
+
+
+  
+ActionView::Template::Error (undefined method `surname' for #<Restaurant id: nil, name: nil, username: nil, website: nil, description: nil, profile_picture: nil, telephone_number: nil, address: nil, created_at: nil, updated_at: nil, email: "">
+Did you mean?  username):
+    17: 
+    18:   <div class="field">
+    19:     <%= f.label :surname %><br />
+    20:     <%= f.text_field :surname, autofocus: true, autocomplete: "surname" %>
+    21:   </div>
+    22: 
+    23: 
+  
+app/views/devise/registrations/new.html.erb:20
+app/views/devise/registrations/new.html.erb:3
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:28:14 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 8206)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 8292)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 9684)
+
+
+  
+ActionView::Template::Error (undefined method `surname' for #<Restaurant id: nil, name: nil, username: nil, website: nil, description: nil, profile_picture: nil, telephone_number: nil, address: nil, created_at: nil, updated_at: nil, email: "">
+Did you mean?  username):
+    19: 
+    20:   <div class="field">
+    21:     <%= f.label :surname %><br />
+    22:     <%= f.text_field :surname, autofocus: true, autocomplete: "surname" %>
+    23:   </div>
+    24: 
+    25: 
+  
+app/views/devise/registrations/new.html.erb:22
+app/views/devise/registrations/new.html.erb:3
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:28:18 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 624)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 10960)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 13580)
+Completed 200 OK in 16ms (Views: 10.6ms | ActiveRecord: 0.3ms | Allocations: 18675)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:29:15 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3665)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 4537)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:29:16 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 6453)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6538)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 7663)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `reviewer' for #<ActionView::Base:0x00000000010cc0>
+
+'.freeze;  if resource_name == reviewer
+                               ^^^^^^^^
+Did you mean?  @reviewer):
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5:   <%if resource_name == reviewer%>
+    6:     ciao
+    7:   <%end%>
+    8:   <%=  resource_name %>
+  
+app/views/devise/registrations/new.html.erb:5
+app/views/devise/registrations/new.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:29:30 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1028)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3666)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4527)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:29:31 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3609)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 6002)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 7153)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:29:34 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2137)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4356)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5038)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:29:37 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2137)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4341)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 4926)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:29:53 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1050)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 3673)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4521)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:29:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3609)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 6002)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 7173)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:30:27 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3650)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 4517)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:30:28 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3607)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 6000)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 7163)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:32:12 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1027)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3650)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 4518)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:32:13 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 8259)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 8344)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 9481)
+
+
+  
+ActionView::Template::Error (undefined method `surname' for #<Restaurant id: nil, name: nil, username: nil, website: nil, description: nil, profile_picture: nil, telephone_number: nil, address: nil, created_at: nil, updated_at: nil, email: "">
+Did you mean?  username):
+    20: 
+    21:     <div class="field">
+    22:       <%= f.label :surname %><br />
+    23:       <%= f.text_field :surname, autofocus: true, autocomplete: "surname" %>
+    24:     </div>
+    25: 
+    26: 
+  
+app/views/devise/registrations/new.html.erb:23
+app/views/devise/registrations/new.html.erb:3
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:32:22 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2649)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5048)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 5747)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:32:23 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 11.5ms | Allocations: 7245)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 7324)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 7891)
+
+
+  
+ActionView::Template::Error (undefined method `surname' for #<Restaurant id: nil, name: nil, username: nil, website: nil, description: nil, profile_picture: nil, telephone_number: nil, address: nil, created_at: nil, updated_at: nil, email: "">
+Did you mean?  username):
+    20: 
+    21:     <div class="field">
+    22:       <%= f.label :surname %><br />
+    23:       <%= f.text_field :surname, autofocus: true, autocomplete: "surname" %>
+    24:     </div>
+    25: 
+    26: 
+  
+app/views/devise/registrations/new.html.erb:23
+app/views/devise/registrations/new.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:32:54 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 769)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 14564)
+Completed 200 OK in 9ms (Views: 8.0ms | Allocations: 16252)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:32:56 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 7533)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 7618)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.5ms | Allocations: 12924)
+
+
+  
+ActionView::Template::Error (undefined method `surname' for #<Restaurant id: nil, name: nil, username: nil, website: nil, description: nil, profile_picture: nil, telephone_number: nil, address: nil, created_at: nil, updated_at: nil, email: "">
+Did you mean?  username):
+    20: 
+    21:     <div class="field">
+    22:       <%= f.label :surname %><br />
+    23:       <%= f.text_field :surname, autofocus: true, autocomplete: "surname" %>
+    24:     </div>
+    25: 
+    26: 
+  
+app/views/devise/registrations/new.html.erb:23
+app/views/devise/registrations/new.html.erb:3
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:34:26 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 550)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3575)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 17567)
+Completed 200 OK in 21ms (Views: 14.8ms | ActiveRecord: 0.5ms | Allocations: 23349)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:34:35 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4106)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4781)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:34:40 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 4106)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 4692)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:34:43 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4121)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4693)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:34:43 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4106)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 4690)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:35:03 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3405)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6012)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 7308)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:35:04 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4106)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 4791)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:35:05 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4106)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4680)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:35:06 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1902)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4106)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4707)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:35:10 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 82)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1948)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 4152)
+Completed 200 OK in 8ms (Views: 4.0ms | ActiveRecord: 0.4ms | Allocations: 8159)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:36:19 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3425)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6032)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 7341)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:37:31 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3411)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 6018)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 7417)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:37:32 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1905)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4109)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 4774)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:37:36 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1905)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4109)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 4689)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:38:00 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1889)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 4498)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5800)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:38:01 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 452)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2656)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3330)
+
+
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2022-10-10 19:38:04 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 290)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2279)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4675)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 6090)
+
+
+Started GET "/r" for 127.0.0.1 at 2022-10-10 19:38:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/r"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:38:15 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1258)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3685)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 4534)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:38:32 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1221)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 3854)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 4737)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-10 19:38:51 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 647)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2389)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 4777)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 5834)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:39:40 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1197)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3820)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4687)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:39:41 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 725)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2937)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 3216)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:39:42 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1893)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4288)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 5421)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:40:31 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1895)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4504)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 5914)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:40:32 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 455)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2659)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3338)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:40:34 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 455)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2659)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3245)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:40:45 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 3843)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 4685)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:40:46 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1894)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4289)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 5444)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:40:48 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 455)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2659)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 3321)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:40:50 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 455)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2659)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 3245)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:40:52 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 455)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 2659)
+Completed 200 OK in 3ms (Views: 2.5ms | Allocations: 3237)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:41:18 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3412)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 6019)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 7316)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:41:21 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1905)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4109)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 4797)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:42:53 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3843)
+Completed 200 OK in 7ms (Views: 5.9ms | Allocations: 4677)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:42:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1891)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4286)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 5435)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:42:57 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 453)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2657)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 3350)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:43:05 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1214)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3837)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 4677)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:43:06 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1888)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 4283)
+Completed 200 OK in 9ms (Views: 7.8ms | Allocations: 5441)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:43:10 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 451)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 2655)
+Completed 200 OK in 6ms (Views: 5.4ms | Allocations: 3319)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:43:17 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 451)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 2655)
+Completed 200 OK in 6ms (Views: 4.8ms | Allocations: 3235)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:44:12 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1208)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3831)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 4670)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:44:13 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1890)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4285)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 5425)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:44:15 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 453)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2664)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 3330)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:44:16 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 453)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2665)
+Completed 200 OK in 12ms (Views: 11.3ms | Allocations: 3232)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:44:17 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 453)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2668)
+Completed 200 OK in 5ms (Views: 4.2ms | Allocations: 3262)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:45:13 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1223)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3849)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 4689)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:45:14 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1897)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4297)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 5444)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:45:49 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1226)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3849)
+Completed 200 OK in 8ms (Views: 6.9ms | Allocations: 4706)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:45:49 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3411)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5804)
+Completed 200 OK in 12ms (Views: 10.7ms | Allocations: 6954)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:45:57 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 456)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2660)
+Completed 200 OK in 5ms (Views: 4.4ms | Allocations: 3338)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:46:14 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1217)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3840)
+Completed 200 OK in 4ms (Views: 4.1ms | Allocations: 4679)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:46:15 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1890)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4285)
+Completed 200 OK in 9ms (Views: 7.9ms | Allocations: 5431)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:46:38 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1226)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3849)
+Completed 200 OK in 8ms (Views: 6.8ms | Allocations: 4706)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:46:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3411)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5804)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 6939)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:46:42 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 457)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2661)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 3348)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:46:43 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 457)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2661)
+Completed 200 OK in 5ms (Views: 4.1ms | Allocations: 3232)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:46:44 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1908)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 4112)
+Completed 200 OK in 7ms (Views: 6.2ms | Allocations: 4690)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:47:08 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1221)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3844)
+Completed 200 OK in 5ms (Views: 4.7ms | Allocations: 4684)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:47:09 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 3232)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3317)
+Completed 500 Internal Server Error in 4ms (Allocations: 4447)
+
+
+  
+ActionView::Template::Error (undefined method `to_string' for :reviewer:Symbol
+
+'.freeze;  if resource_name.to_string == "reviewer"
+                           ^^^^^^^^^^):
+     5:   <%=  resource_name.to_s %>
+     6:   <br>
+     7: 
+     8:   <%if resource_name.to_string == "reviewer"%>
+     9:     
+    10:     <div class="field">
+    11:       <%= f.label :email %><br />
+  
+app/views/devise/registrations/new.html.erb:8
+app/views/devise/registrations/new.html.erb:3
+Started GET "/r" for 127.0.0.1 at 2022-10-10 19:49:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/r"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:49:33 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1220)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3858)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 4667)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:49:34 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3668)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6061)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 7210)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:49:40 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2149)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4353)
+Completed 200 OK in 10ms (Views: 8.8ms | Allocations: 5017)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:49:44 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1912)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4116)
+Completed 200 OK in 7ms (Views: 5.7ms | Allocations: 4705)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:49:46 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4342)
+Completed 200 OK in 5ms (Views: 3.9ms | Allocations: 4923)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:49:47 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4342)
+Completed 200 OK in 5ms (Views: 4.3ms | Allocations: 4929)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:49:49 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 3.3ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1912)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 4131)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 4721)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2022-10-10 19:50:28 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"test6", "username"=>"test6", "telephone_number"=>"0744898989", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8df8a25fc0>, params: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"test6", "username"=>"test6", "telephone_number"=>"0744898989", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = ? LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = ? LIMIT ?[0m  [["username", "test6"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 620)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2645)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 4960)
+Completed 200 OK in 195ms (Views: 4.3ms | ActiveRecord: 0.4ms | Allocations: 20301)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:51:59 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 3951)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 6558)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 7939)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2022-10-10 19:52:26 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"test", "username"=>"test", "telephone_number"=>"0744898989", "address"=>"via garibaldi 1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameters: :address, :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8df8029d78>, params: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"test", "username"=>"test", "telephone_number"=>"0744898989", "address"=>"via garibaldi 1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = ? LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = ? LIMIT ?[0m  [["username", "test"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 467)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3196)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5400)
+Completed 200 OK in 187ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 12048)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2022-10-10 19:53:05 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"test", "username"=>"test", "telephone_number"=>"0744898989", "address"=>"via garibaldi 1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8de89e77f8>, params: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"test", "username"=>"test", "telephone_number"=>"0744898989", "address"=>"via garibaldi 1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = ? LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = ? LIMIT ?[0m  [["username", "test"], ["LIMIT", 1]]
+  [1m[36mRestaurant Create (0.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "username", "website", "description", "profile_picture", "telephone_number", "address", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "test"], ["username", "test"], ["website", nil], ["description", nil], ["profile_picture", nil], ["telephone_number", "0744898989"], ["address", "via garibaldi 1"], ["created_at", "2022-10-10 17:53:06.017258"], ["updated_at", "2022-10-10 17:53:06.017258"], ["email", "test6@test.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (8.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 207ms (ActiveRecord: 9.6ms | Allocations: 13754)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:53:06 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1280)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 15079)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 15929)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:53:17 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1972)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:53:17 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 763)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2977)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3254)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:53:20 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1486)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:53:20 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 759)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 2988)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 3248)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:53:23 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 752)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2964)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3223)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:53:25 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1499)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:53:25 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 756)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2970)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3229)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:54:07 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1441)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1530)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2375)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Home#index</h1>
+<% if reviewer_signed_in? %>
+
+    ID:<%= current_reviewer.id %><br />
+    USERNAME:<%= current_reviewer.username %><br />
+    NAME:<%= current_reviewer.name %><br />
+    SURNAME:<%= current_reviewer.surname %><br />
+    TEL:<%= current_reviewer.telephone_number%><br />
+    EMAIL:<%= current_reviewer.email %><br />
+
+
+    <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+<% if restaurant_signed_in? %>
+
+    ID:<%= current_reviewer.id %><br />
+    USERNAME:<%= current_reviewer.username %><br />
+    NAME:<%= current_reviewer.name %><br />
+    TEL:<%= current_reviewer.telephone_number%><br />
+    EMAIL:<%= current_reviewer.email %><br />
+
+
+    <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+<%else%>
+    <%= button_to "Sign in", new_reviewer_session_path %>
+    <%= button_to "Sign in", new_restaurant_session_path %>
+
+    <br>
+
+    <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+    <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+
+    <p>Find me in app/views/home/index.html.erb</p>
+<%end%>
+):
+1:    <h1>Home#index</h1>
+2:    <% if reviewer_signed_in? %>
+3:    
+4:        ID:<%= current_reviewer.id %><br />
+5:        USERNAME:<%= current_reviewer.username %><br />
+6:        NAME:<%= current_reviewer.name %><br />
+7:        SURNAME:<%= current_reviewer.surname %><br />
+8:        TEL:<%= current_reviewer.telephone_number%><br />
+9:        EMAIL:<%= current_reviewer.email %><br />
+10:    
+11:    
+12:        <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+13:    <% if restaurant_signed_in? %>
+14:    
+15:        ID:<%= current_reviewer.id %><br />
+16:        USERNAME:<%= current_reviewer.username %><br />
+17:        NAME:<%= current_reviewer.name %><br />
+18:        TEL:<%= current_reviewer.telephone_number%><br />
+19:        EMAIL:<%= current_reviewer.email %><br />
+20:    
+21:    
+22:        <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+23:    <%else%>
+24:        <%= button_to "Sign in", new_reviewer_session_path %>
+25:        <%= button_to "Sign in", new_restaurant_session_path %>
+26:    
+27:        <br>
+28:    
+29:        <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+30:        <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+31:    
+32:        <p>Find me in app/views/home/index.html.erb</p>
+33:    <%end%>
+  
+app/views/home/index.html.erb:35: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:35: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:35: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:35: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:35: syntax error, unexpected end-of-input, expecting `end'
+app/views/home/index.html.erb:35: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:54:55 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:13
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3730)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 3815)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 4637)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass
+
+    ID:'.freeze;@output_buffer.append=( current_reviewer.id );@output_buffer.safe_append='<br />
+                                                        ^^^):
+    12:     <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+    13: <% elsif restaurant_signed_in? %>
+    14: 
+    15:     ID:<%= current_reviewer.id %><br />
+    16:     USERNAME:<%= current_reviewer.username %><br />
+    17:     NAME:<%= current_reviewer.name %><br />
+    18:     TEL:<%= current_reviewer.telephone_number%><br />
+  
+app/views/home/index.html.erb:15
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:55:27 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:13
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1984)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 4619)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 5471)
+
+
+Started DELETE "/restaurants/sign_out" for 127.0.0.1 at 2022-10-10 19:55:37 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 3004)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:55:37 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 917)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3236)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 3540)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 19:55:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 500)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3974)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 6369)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 7526)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2022-10-10 19:55:48 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"", "username"=>"", "telephone_number"=>"", "address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8de8bd68c0>, params: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "name"=>"", "username"=>"", "telephone_number"=>"", "address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = ? LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.3ms | Allocations: 2508)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 8153)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 10357)
+Completed 200 OK in 17ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 17032)
+
+
+Started POST "/restaurants" for 127.0.0.1 at 2022-10-10 19:56:33 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test7@test.com", "name"=>"test7", "username"=>"test7", "telephone_number"=>"07441230909", "address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8de8ab0248>, params: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test7@test.com", "name"=>"test7", "username"=>"test7", "telephone_number"=>"07441230909", "address"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mRestaurant Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = ? LIMIT ?[0m  [["email", "test7@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = ? LIMIT ?[0m  [["username", "test7"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 457)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3190)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5394)
+Completed 200 OK in 214ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 11524)
+
+
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2022-10-10 19:56:38 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 161)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1789)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 4189)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5263)
+
+
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2022-10-10 19:56:54 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test7@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["email", "test7@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.2ms | Allocations: 7798)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test7@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1301)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3595)
+Completed 200 OK in 190ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 4260)
+
+
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2022-10-10 19:57:01 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 182ms (ActiveRecord: 0.1ms | Allocations: 2537)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:57:01 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:13
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1261)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3475)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3735)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:57:29 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:13
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2010)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4630)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 5484)
+
+
+Started DELETE "/restaurants/sign_out" for 127.0.0.1 at 2022-10-10 19:57:37 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 1925)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:57:37 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 786)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3001)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3274)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:58:27 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 211)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 490)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3981)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 6603)
+Completed 200 OK in 12ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 11340)
+
+
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-10 19:58:47 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test8@test.com", "name"=>"test8", "surname"=>"test8", "username"=>"test8", "telephone_number"=>"00009090900", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8df83b9f88>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test8@test.com", "name"=>"test8", "surname"=>"test8", "username"=>"test8", "telephone_number"=>"00009090900", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReviewer Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = ? LIMIT ?[0m  [["email", "test8@test.com"], ["LIMIT", 1]]
+  [1m[36mReviewer Create (0.2ms)[0m  [1m[32mINSERT INTO "reviewers" ("name", "surname", "username", "profile_picture", "telephone_number", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "test8"], ["surname", "test8"], ["username", "test8"], ["profile_picture", nil], ["telephone_number", "00009090900"], ["created_at", "2022-10-10 17:58:47.816336"], ["updated_at", "2022-10-10 17:58:47.816336"], ["email", "test8@test.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (9.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 223ms (ActiveRecord: 9.9ms | Allocations: 6866)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:58:47 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2153)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4575)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 5214)
+
+
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-10 19:58:51 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 2050)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:58:51 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 810)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3024)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3297)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 19:59:33 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 987)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 14766)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 16452)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-10 19:59:35 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (Allocations: 704)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 160)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1799)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 4181)
+Completed 200 OK in 9ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 8725)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 19:59:58 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 102)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2390)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4801)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5971)
+
+
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-10 20:00:54 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test9@test.com", "name"=>"test9", "surname"=>"test9", "username"=>"test3", "telephone_number"=>"144141213", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8df88b6f90>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test9@test.com", "name"=>"test9", "surname"=>"test9", "username"=>"test3", "telephone_number"=>"144141213", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReviewer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = ? LIMIT ?[0m  [["email", "test9@test.com"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = ? LIMIT ?[0m  [["username", "test3"], ["LIMIT", 1]]
+  [1m[36mReviewer Create (0.2ms)[0m  [1m[32mINSERT INTO "reviewers" ("name", "surname", "username", "profile_picture", "telephone_number", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "test9"], ["surname", "test9"], ["username", "test3"], ["profile_picture", nil], ["telephone_number", "144141213"], ["created_at", "2022-10-10 18:00:54.798073"], ["updated_at", "2022-10-10 18:00:54.798073"], ["email", "test9@test.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 195ms (ActiveRecord: 8.5ms | Allocations: 7811)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:00:54 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1412)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3642)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 3905)
+
+
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-10 20:01:00 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 1974)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:01:00 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 787)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 3014)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3273)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 20:01:02 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4342)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4921)
+
+
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-10 20:01:24 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test10@test.com", "name"=>"test10", "surname"=>"test10", "username"=>"test3", "telephone_number"=>"131414141", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8de8b9e858>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test10@test.com", "name"=>"test10", "surname"=>"test10", "username"=>"test3", "telephone_number"=>"131414141", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReviewer Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = ? LIMIT ?[0m  [["email", "test10@test.com"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = ? LIMIT ?[0m  [["username", "test3"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 510)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 3253)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5457)
+Completed 200 OK in 215ms (Views: 4.7ms | ActiveRecord: 0.2ms | Allocations: 11585)
+
+
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-10 20:01:34 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test10@test.com", "name"=>"test10", "surname"=>"test10", "username"=>"test3", "telephone_number"=>"131414141", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007f8de8ae6528>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test10@test.com", "name"=>"test10", "surname"=>"test10", "username"=>"test3", "telephone_number"=>"131414141", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReviewer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = ? LIMIT ?[0m  [["email", "test10@test.com"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = ? LIMIT ?[0m  [["username", "test3"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 862)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 4169)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 6373)
+Completed 200 OK in 13ms (Views: 5.4ms | ActiveRecord: 0.4ms | Allocations: 12469)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:02:00 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 764)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2976)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3235)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 20:02:04 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 81)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2198)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 4402)
+Completed 200 OK in 10ms (Views: 5.6ms | ActiveRecord: 0.3ms | Allocations: 8858)
+
+
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2022-10-10 20:03:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 139)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1240)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3444)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4095)
+
+
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2022-10-10 20:03:14 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 208ms (ActiveRecord: 0.2ms | Allocations: 2739)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:03:14 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:13
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1318)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 3531)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 3790)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:04:55 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1998)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4618)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 5470)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:05:07 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2022)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4657)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.1ms | Allocations: 5516)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:05:08 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1259)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3471)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3750)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:05:08 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3468)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 3728)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:05:26 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1999)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 4626)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 5464)
+
+
+Started DELETE "/restaurants/sign_out" for 127.0.0.1 at 2022-10-10 20:05:28 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 2092)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-10 20:05:28 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 796)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3017)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3290)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-10 20:05:30 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 210)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 487)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3932)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 6325)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 7449)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-10 20:05:31 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2145)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4349)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5023)
+
+
