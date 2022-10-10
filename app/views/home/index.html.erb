@@ -1,13 +1,20 @@
 <h1>Home#index</h1>
 <% if reviewer_signed_in? %>
-<%= current_reviewer.id %>
-<%= Reviewer.find(current_reviewer.id).username %>
-<%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+
+    ID:<%= current_reviewer.id %><br />
+    USERNAME:<%= current_reviewer.username %><br />
+    NAME:<%= current_reviewer.name %><br />
+    SURNAME:<%= current_reviewer.surname %><br />
+    TEL:<%= current_reviewer.telephone_number%><br />
+    EMAIL:<%= current_reviewer.email %><br />
+
+
+    <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
 <%else%>
-<%= button_to "Sign in", new_reviewer_session_path %>
+    <%= button_to "Sign in", new_reviewer_session_path %>
 
-<%= link_to "Sign up reviewer", new_reviewer_registration_path %>
-<%#= link_to "Sign up restaurant", new_restaurants_registration_path %> 
+    <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+    <%#= button_to "Sign up restaurant", new_restaurants_registration_path , method: :get%> 
 
-<p>Find me in app/views/home/index.html.erb</p>
+    <p>Find me in app/views/home/index.html.erb</p>
 <%end%>
