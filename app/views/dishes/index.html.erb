@@ -5,14 +5,14 @@
 
   <div id="dishes">
     <% @dishes.each do |dish| %>
-      <%if dish.restaurant_id != current_restaurant.id %>
+      <%if dish.restaurant_id == current_restaurant.id %>
         <%#= render dish %>
 
         ID: <%= dish.id %><br>
         NAME: <%= dish.name %><br>
         CATEGORY: <%= dish.category %><br>
         AVG_RATING: <%= dish.avg_rating%><br>
-        RESTAURANT: <%#= Restaurant.find(dish.restaurant_id).name %><br>
+        RESTAURANT: <%= Restaurant.find(dish.restaurant_id).name %><br>
         RESTAURANT ID: <%= dish.restaurant_id %><br>
         PRICE: <%= dish.price %><br>
         

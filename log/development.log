@@ -18839,3 +18839,502 @@ Processing by DishesController#show as HTML
 Completed 200 OK in 29ms (Views: 24.1ms | ActiveRecord: 0.1ms | Allocations: 4109)
 
 
+Started GET "/dishes/48" for 127.0.0.1 at 2022-10-11 19:14:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  Rendered dishes/_dish.html.erb (Duration: 0.3ms | Allocations: 361)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2210)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 37371)
+Completed 200 OK in 63ms (Views: 51.2ms | ActiveRecord: 0.4ms | Allocations: 51939)
+
+
+Started DELETE "/dishes/48" for 127.0.0.1 at 2022-10-11 19:14:10 +0200
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"48"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mDish Destroy (0.2ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 48]]
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/dishes
+Completed 302 Found in 13ms (ActiveRecord: 8.3ms | Allocations: 2974)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:14:10 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 15.4ms | Allocations: 9891)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 12199)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.7ms | Allocations: 12617)
+
+
+Started GET "/dishes/new" for 127.0.0.1 at 2022-10-11 19:14:11 +0200
+Processing by DishesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/new.html.erb:2
+  Rendered dishes/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4890)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 7231)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms | Allocations: 7630)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2022-10-11 19:14:14 +0200
+Processing by DishesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dish"=>{"name"=>"3ddd", "price"=>"1", "category"=>"1", "avg_rating"=>"0", "number_of_reviews"=>"0", "restaurant_id"=>"1"}, "commit"=>"conferma"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+  [1m[36mDish Create (0.3ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "number_of_reviews", "price", "category", "avg_rating", "imgs", "created_at", "updated_at", "restaurant_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "3ddd"], ["number_of_reviews", 0], ["price", 1.0], ["category", 1], ["avg_rating", 0.0], ["imgs", nil], ["created_at", "2022-10-11 17:14:14.075066"], ["updated_at", "2022-10-11 17:14:14.075066"], ["restaurant_id", 1]]
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/dishes/49
+Completed 302 Found in 14ms (ActiveRecord: 8.3ms | Allocations: 4186)
+
+
+Started GET "/dishes/49" for 127.0.0.1 at 2022-10-11 19:14:14 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  Rendered dishes/_dish.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 589)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2786)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 3570)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:14:15 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1624)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3827)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 4108)
+
+
+Started GET "/dishes/new" for 127.0.0.1 at 2022-10-11 19:14:16 +0200
+Processing by DishesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/new.html.erb:2
+  Rendered dishes/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2298)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4510)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.1ms | Allocations: 4789)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2022-10-11 19:14:20 +0200
+Processing by DishesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dish"=>{"name"=>"1314", "price"=>"dad", "category"=>"1", "avg_rating"=>"0", "number_of_reviews"=>"0", "restaurant_id"=>"1"}, "commit"=>"conferma"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+  [1m[36mDish Create (0.2ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "number_of_reviews", "price", "category", "avg_rating", "imgs", "created_at", "updated_at", "restaurant_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "1314"], ["number_of_reviews", 0], ["price", 0.0], ["category", 1], ["avg_rating", 0.0], ["imgs", nil], ["created_at", "2022-10-11 17:14:20.224056"], ["updated_at", "2022-10-11 17:14:20.224056"], ["restaurant_id", 1]]
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/dishes/50
+Completed 302 Found in 12ms (ActiveRecord: 9.8ms | Allocations: 2409)
+
+
+Started GET "/dishes/50" for 127.0.0.1 at 2022-10-11 19:14:20 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  Rendered dishes/_dish.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 612)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2814)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 3548)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:14:22 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1566)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3768)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 4039)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-11 19:14:27 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2209)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 4618)
+Completed 200 OK in 32ms (Views: 31.4ms | ActiveRecord: 0.1ms | Allocations: 5461)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:14:30 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 32.5ms | Allocations: 1542)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 3759)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.2ms | Allocations: 4052)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-11 19:14:47 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1279)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 3492)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 3751)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:14:50 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1557)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3759)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 4030)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:15:02 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2343)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4965)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 5856)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:15:58 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 8959)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 22783)
+Completed 200 OK in 24ms (Views: 20.5ms | ActiveRecord: 0.8ms | Allocations: 26010)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:15:58 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1644)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3852)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 4146)
+
+
+Started GET "/dishes/new" for 127.0.0.1 at 2022-10-11 19:16:00 +0200
+Processing by DishesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/new.html.erb:2
+  Rendered dishes/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2838)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 5050)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms | Allocations: 5416)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:16:02 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1638)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3846)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 4118)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:16:27 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:15
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:15
+  Rendered dishes/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 4161)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6777)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.3ms | Allocations: 7651)
+
+
+Started GET "/dishes/50" for 127.0.0.1 at 2022-10-11 19:16:30 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  Rendered dishes/_dish.html.erb (Duration: 0.5ms | Allocations: 265)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1164)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3358)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms | Allocations: 4830)
+
+
+Started DELETE "/dishes/50" for 127.0.0.1 at 2022-10-11 19:16:31 +0200
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"50"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mDish Destroy (0.2ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 50]]
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/dishes
+Completed 302 Found in 11ms (ActiveRecord: 6.7ms | Allocations: 2495)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:16:31 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:15
+  Rendered dishes/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2126)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4329)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.3ms | Allocations: 4601)
+
+
+Started GET "/dishes/49" for 127.0.0.1 at 2022-10-11 19:16:32 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  Rendered dishes/_dish.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 582)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2776)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3511)
+
+
+Started DELETE "/dishes/49" for 127.0.0.1 at 2022-10-11 19:16:32 +0200
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"49"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mDish Destroy (0.1ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 49]]
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/dishes
+Completed 302 Found in 9ms (ActiveRecord: 6.3ms | Allocations: 2384)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:16:32 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1538)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3741)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 4012)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:17:15 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 6261)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 20060)
+Completed 200 OK in 16ms (Views: 13.1ms | ActiveRecord: 0.6ms | Allocations: 23027)
+
+
+Started GET "/dishes/new" for 127.0.0.1 at 2022-10-11 19:17:16 +0200
+Processing by DishesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/new.html.erb:2
+  Rendered dishes/new.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2873)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5085)
+Completed 200 OK in 14ms (Views: 8.7ms | ActiveRecord: 0.5ms | Allocations: 7963)
+
+
+Started POST "/dishes" for 127.0.0.1 at 2022-10-11 19:17:19 +0200
+Processing by DishesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dish"=>{"name"=>"ffff", "price"=>"asa", "category"=>"1", "avg_rating"=>"0", "number_of_reviews"=>"0", "restaurant_id"=>"1"}, "commit"=>"conferma"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+  [1m[36mDish Create (0.2ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "number_of_reviews", "price", "category", "avg_rating", "imgs", "created_at", "updated_at", "restaurant_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "ffff"], ["number_of_reviews", 0], ["price", 0.0], ["category", 1], ["avg_rating", 0.0], ["imgs", nil], ["created_at", "2022-10-11 17:17:19.266354"], ["updated_at", "2022-10-11 17:17:19.266354"], ["restaurant_id", 1]]
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/dishes/51
+Completed 302 Found in 22ms (ActiveRecord: 9.7ms | Allocations: 9162)
+
+
+Started GET "/dishes/51" for 127.0.0.1 at 2022-10-11 19:17:19 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  Rendered dishes/_dish.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 757)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3067)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 4570)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:17:20 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:15
+  Rendered dishes/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2858)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5060)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 5332)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-11 19:17:25 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:15
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2133)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4542)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms | Allocations: 5382)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:17:27 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:15
+  Rendered dishes/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2106)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4308)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 4600)
+
+
+Started GET "/dishes/51" for 127.0.0.1 at 2022-10-11 19:17:28 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"51"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  Rendered dishes/_dish.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 2781)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 3517)
+
+
+Started DELETE "/dishes/51" for 127.0.0.1 at 2022-10-11 19:17:29 +0200
+Processing by DishesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"51"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 51], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mDish Destroy (0.2ms)[0m  [1m[31mDELETE FROM "dishes" WHERE "dishes"."id" = ?[0m  [["id", 51]]
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/dishes_controller.rb:52:in `destroy'
+Redirected to http://127.0.0.1:3000/dishes
+Completed 302 Found in 11ms (ActiveRecord: 8.2ms | Allocations: 2459)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-11 19:17:29 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  Rendered dishes/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1554)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3766)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 4037)
+
+
+Started GET "/dishes/new" for 127.0.0.1 at 2022-10-11 19:17:30 +0200
+Processing by DishesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/new.html.erb:2
+  Rendered dishes/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2317)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4535)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 4818)
+
+
