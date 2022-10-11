@@ -23,6 +23,8 @@
     ADDRESS:<%= current_restaurant.address%><br />
     EMAIL:<%= current_restaurant.email %><br />
 
+    <%= link_to "vai ai piatti", dishes_path, method: :get%>
+
 
     <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
 <%else%>

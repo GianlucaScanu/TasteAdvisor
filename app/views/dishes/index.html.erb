@@ -1,14 +1,33 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Dishes</h1>
+<%if restaurant_signed_in?%>
 
-<div id="dishes">
-  <% @dishes.each do |dish| %>
-    <%= render dish %>
-    <p>
-      <%= link_to "Show this dish", dish %>
-    </p>
-  <% end %>
-</div>
+  <div id="dishes">
+    <% @dishes.each do |dish| %>
+      <%if dish.restaurant_id != current_restaurant.id %>
+        <%#= render dish %>
 
-<%= link_to "New dish", new_dish_path %>
+        ID: <%= dish.id %><br>
+        NAME: <%= dish.name %><br>
+        CATEGORY: <%= dish.category %><br>
+        AVG_RATING: <%= dish.avg_rating%><br>
+        RESTAURANT: <%#= Restaurant.find(dish.restaurant_id).name %><br>
+        RESTAURANT ID: <%= dish.restaurant_id %><br>
+        PRICE: <%= dish.price %><br>
+        
+        <p> <%= link_to "Show this dish", dish %> </p> 
+      <%end%>
+      
+    <% end %>
+  </div>
+
+  <%= link_to "New dish", new_dish_path %>
+
+
+<%else%>
+  DEVI LOGGARE 
+  <br>
+  <%= link_to "Log in", new_session_path("restaurant") %><br />
+
+<%end%>

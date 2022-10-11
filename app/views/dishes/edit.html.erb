@@ -1,6 +1,9 @@
 <h1>Editing dish</h1>
-
-<%= render "form", dish: @dish %>
+<%if @dish.id.to_s == "5" %> 
+  <%= render "form", dish: @dish %>
+<% else%>
+  NON PERMESSO!
+<%end%>
 
 <br>
 
