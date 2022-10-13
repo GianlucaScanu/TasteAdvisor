@@ -8378,3 +8378,953 @@ Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-08 17:45:05 +0200
   
 ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
   
+Started GET "/" for 127.0.0.1 at 2022-10-13 12:08:26 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 32.0ms | Allocations: 1429)
+  Rendered layout layouts/application.html.erb (Duration: 267.6ms | Allocations: 53700)
+Completed 200 OK in 274ms (Views: 269.7ms | ActiveRecord: 0.0ms | Allocations: 57211)
+
+
+Started GET "/homepage.css" for 127.0.0.1 at 2022-10-13 12:08:27 +0200
+Started GET "/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 12:08:27 +0200
+Started GET "/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 12:08:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/homepage.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+Started GET "/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 12:08:27 +0200
+Started GET "/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 12:08:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/navbar/navbar.css"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 12:08:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/navbar/navbar_script.js"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:28 +0200
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:28 +0200
+Started GET "/TODO" for 127.0.0.1 at 2022-10-13 12:08:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/TODO"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-13 12:08:28 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 12:08:33 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 269)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2352)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 8242)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 0.5ms | Allocations: 16786)
+
+
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 12:08:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 12:08:33 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 12:08:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 12:08:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-13 12:08:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-13 12:56:02 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 42.6ms | Allocations: 1582)
+  Rendered layout layouts/application.html.erb (Duration: 147.4ms | Allocations: 45983)
+Completed 200 OK in 156ms (Views: 150.5ms | ActiveRecord: 0.0ms | Allocations: 49495)
+
+
+Started GET "/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 12:56:02 +0200
+Started GET "/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 12:56:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/navbar/navbar.css"):
+  
+Started GET "/homepage.css" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/homepage.css"):
+  
+Started GET "/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/navbar/navbar_script.js"):
+  
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+Started GET "/TODO" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/TODO"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:04 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-13 12:56:04 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 269)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2814)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 8704)
+Completed 200 OK in 19ms (Views: 11.4ms | ActiveRecord: 0.4ms | Allocations: 17244)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 12:56:05 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-13 12:56:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 12:56:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 12:56:32 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 12:56:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 12:56:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1788)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 7883)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 9226)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 12:56:54 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 12:56:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 12:56:54 +0200
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 12:56:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 12:56:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 12:56:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 12:56:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:01:59 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1856)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 7951)
+Completed 200 OK in 13ms (Views: 10.2ms | Allocations: 9289)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:01:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:01:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:01:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:01:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:01:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:02:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:02:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:02:49 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1855)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 7950)
+Completed 200 OK in 12ms (Views: 10.5ms | Allocations: 9283)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:02:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:02:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:02:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:02:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:02:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:02:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:02:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1856)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 7951)
+Completed 200 OK in 11ms (Views: 10.7ms | Allocations: 9290)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:03:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2013)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 8104)
+Completed 200 OK in 11ms (Views: 10.3ms | Allocations: 9433)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2041)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 8135)
+Completed 200 OK in 12ms (Views: 11.8ms | Allocations: 9488)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:09:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"ciao", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma"}
+[31mUnpermitted parameter: :username. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007ff17c568630>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"ciao", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 72.7ms | Allocations: 2063)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 75.5ms | Allocations: 4979)
+  Rendered layout layouts/application.html.erb (Duration: 81.6ms | Allocations: 10758)
+Completed 422 Unprocessable Entity in 97ms (Views: 82.0ms | ActiveRecord: 0.2ms | Allocations: 14814)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:09:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:09:54 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1131)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 6811)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 7405)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:09:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:09:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:09:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:09:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:09:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:09:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:09:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1857)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 7952)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 9251)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:10:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-13 13:10:51 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"ciao", "email"=>"ciao@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma"}
+[31mUnpermitted parameter: :username. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007ff17c9e7418>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"ciao", "email"=>"ciao@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = ? LIMIT ?[0m  [["email", "ciao@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 573)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2215)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 7997)
+Completed 422 Unprocessable Entity in 350ms (Views: 7.6ms | ActiveRecord: 0.4ms | Allocations: 23268)
+
+
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:10:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:10:52 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:10:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:10:52 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:10:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:10:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:10:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-13 13:11:16 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"ciao", "email"=>"ciao@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma"}
+[31mUnpermitted parameter: :username. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007ff180dce3c0>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"ciao", "email"=>"ciao@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReviewer Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = ? LIMIT ?[0m  [["email", "ciao@gmail.com"], ["LIMIT", 1]]
+  [1m[36mReviewer Create (0.3ms)[0m  [1m[32mINSERT INTO "reviewers" ("name", "surname", "username", "profile_picture", "telephone_number", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["surname", nil], ["username", nil], ["profile_picture", nil], ["telephone_number", nil], ["created_at", "2022-10-13 11:11:16.452105"], ["updated_at", "2022-10-13 11:11:16.452105"], ["email", "ciao@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (79.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 287ms (ActiveRecord: 79.7ms | Allocations: 7289)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-13 13:11:16 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  [1m[36mReviewer Load (0.3ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:4
+  Rendered home/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3469)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 9347)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 10047)
+
+
+Started GET "/TODO" for 127.0.0.1 at 2022-10-13 13:11:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/TODO"):
+  
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms | Allocations: 3111)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 573)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6265)
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 6585)
+
+
+Started GET "/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/homepage.css" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+Started GET "/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+Started GET "/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/homepage.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/navbar/navbar.css"):
+  
+Started GET "/TODO" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+Started GET "/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/TODO"):
+  
+Started GET "/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:11:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/navbar/navbar_script.js"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-13 13:11:34 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1017)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 6696)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 7277)
+
+
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+Started GET "/reviewers/signup.css" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signup.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-13 13:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-13 13:11:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
