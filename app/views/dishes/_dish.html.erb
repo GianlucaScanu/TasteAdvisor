@@ -1,32 +1,12 @@
 <div id="<%= dom_id dish %>">
-  <p>
-    <strong>Name:</strong>
-    <%= dish.name %>
-  </p>
+  ID: <%= dish.id %><br>
+  NAME: <%= dish.name %><br>
+  CATEGORY: <%= dish.category %><br>
+  AVG_RATING: <%= dish.avg_rating%><br>
+  RESTAURANT: <%= Restaurant.find(dish.restaurant_id).name %><br>
+  RESTAURANT ID: <%= dish.restaurant_id %><br>
+  PRICE: <%= dish.price %><br>
 
-  <p>
-    <strong>Number of reviews:</strong>
-    <%= dish.number_of_reviews %>
-  </p>
-
-  <p>
-    <strong>Price:</strong>
-    <%= dish.price %>
-  </p>
-
-  <p>
-    <strong>Category:</strong>
-    <%= dish.category %>
-  </p>
-
-  <p>
-    <strong>Avg rating:</strong>
-    <%= dish.avg_rating %>
-  </p>
-
-  <p>
-    <strong>Imgs:</strong>
-    <%= dish.imgs %>
-  </p>
-
+  
+  
 </div>
