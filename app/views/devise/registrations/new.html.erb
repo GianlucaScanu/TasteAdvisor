@@ -13,57 +13,12 @@
 
     <!--Inclusione erb CSS -->
     <%= stylesheet_link_tag "signup.css" %>
-    <%= stylesheet_link_tag "navbar.css" %>
+
     
 
 </head>
 <body>
-    <div id = "top">
-        <div id = "row1">
-            <div id = "logo">
-                <img src = "TODO" alt="logo TA">
-            </div>
-            <div id = "label">
-                TASTEADVISOR
-            </div>
-            <div id = "log_buttons">
-                <div id = "signin_btn" class = "btn btn-success btn-responsive">
-                    Sign in
-                </div>
-                <div id = "signup_btn" class = "btn btn-success btn-responsive">
-                    Sign up
-                </div>
-            </div>
-        </div>
-        <div id = "row2">
-            <div id = "navbar">
-                <nav class = "navbar navbar-dark">
-                    <div class = "nav nav-pills options-ul">
-                        <div class = "nav-item">
-                            <a id = "Antipasti" class = "nav-link" aria-current="page" href = "./TODO">
-                                Antipasti
-                            </a>
-                        </div>
-                        <div class = "nav-item">
-                            <a id = "Primi" class = "nav-link" aria-current="page" href = "./TODO">
-                                Primi
-                            </a>
-                        </div>
-                        <div class = "nav-item">
-                            <a id = "Secondi" class = "nav-link" aria-current="page" href = "./TODO">
-                                Secondi
-                            </a>
-                        </div>
-                        <div class = "nav-item">
-                            <a id = "Dolci" class = "nav-link" aria-current="page" href = "./TODO">
-                                Dolci
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
+    
     <div id = "middle">
         <div id = "google_div">
             <button id = "google_btn" type="button" class="btn btn-outline-success">Registrati con Google</button>
@@ -73,33 +28,33 @@
         </div>
         <div id = "oppure_lbl">Oppure</div>
         <div id = "form_div">
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-            <%= render "devise/shared/error_messages", resource: resource %>
-            <form>
-                <div class="form-group">
-                    <%= f.label :username, "Inserisci Username" %>
-                    <%= f.text_field :username , :class => "form-control", autofocus: true, :placeholder => "Inserisci un username" %>
-                </div>
+            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= render "devise/shared/error_messages", resource: resource %>
+                <form>
+                    <div class="form-group">
+                        <%= f.label :username, "Inserisci Username" %>
+                        <%= f.text_field :username , :class => "form-control", autofocus: true, :placeholder => "Inserisci un username" %>
+                    </div>
 
-                <div class="form-group">
-                  <%= f.label :email, "Inserisci e-mail" %>
-                  <%= f.email_field :email , :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua email" %>
-                </div>
-                
-                <div class="form-group">
-                    <%= f.label :password, "Inserisci password" %>
-                    <%= f.password_field :password, :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua password" %>
-                </div>
+                    <div class="form-group">
+                    <%= f.label :email, "Inserisci e-mail" %>
+                    <%= f.email_field :email , :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua email" %>
+                    </div>
+                    
+                    <div class="form-group">
+                        <%= f.label :password, "Inserisci password" %>
+                        <%= f.password_field :password, :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua password" %>
+                    </div>
 
-                <div class="form-group">
-                    <%= f.label :password_confirmation, "Conferma password" %>
-                    <%= f.password_field :password_confirmation, autofocus: true,  :placeholder => "Conferma la tua password", :class => "form-control" %>
-                 </div>
-                <div class="confirm">
-                    <%= f.submit "Conferma", :class => "btn btn-success", :id => "submit_btn"%>
-                </div>
-            </form>
-        <% end %>
+                    <div class="form-group">
+                        <%= f.label :password_confirmation, "Conferma password" %>
+                        <%= f.password_field :password_confirmation, autofocus: true,  :placeholder => "Conferma la tua password", :class => "form-control" %>
+                    </div>
+                    <div class="confirm">
+                        <%= f.submit "Conferma", :class => "btn btn-success", :id => "submit_btn"%>
+                    </div>
+                </form>
+            <% end %>
         </div>
     </div>
     <div id = "bottom">

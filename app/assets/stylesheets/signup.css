@@ -103,6 +103,11 @@
     margin-top: 2%;
 }
 
+.confirm{
+    display: flex;
+    justify-content: center;
+}
+
 #submit_btn{
     align-self: center;
     width: 70%;
@@ -120,3 +125,4 @@
     margin-left: 1%;
     margin-right: 1%;
 }
+
