@@ -15,7 +15,13 @@
   <%= link_to "New dish", new_dish_path %>
 
 <%#elsif reviewer_signed_in?%>
-
+<%elsif reviewer_signed_in?%>
+  <div id="dishes">
+    <% @dishes.each do |dish| %>
+      <%= render dish %>
+      <p> <%= link_to "Show this dish", dish %> </p> 
+    <% end %>
+  </div>
 <%else%>
   DEVI LOGGARE 
   <br>

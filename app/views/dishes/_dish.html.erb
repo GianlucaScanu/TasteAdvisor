@@ -9,16 +9,5 @@
 
   <%session[:save_dish] = dish.id%>
 
-  <%= link_to "CREA NUOVA RECENSIONE", new_review_path %><br />
-
-  <%#TESTA%>
-  <div id="dishes">
-    <% Review.all do |review| %>
-      <%if dish.id == review.dish_id %>
-        <%= render review %>
-        <p> <%#= link_to "Show this dish", dish %> </p> 
-      <%end%>
-    <% end %>
-  </div>
   
 </div>

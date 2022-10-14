@@ -44,6 +44,8 @@
     <%= link_to "Back to dishes", dishes_path %>
   </div>
 
+<%elsif reviewer_signed_in? %>
+  DEVI LOGGARE COME RISTORANTE PER POTER AGGIUNGERE PIATTI!
 <%else%>
   DEVI LOGGARE!
 <%end%>

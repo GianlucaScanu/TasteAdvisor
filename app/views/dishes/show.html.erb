@@ -2,9 +2,27 @@
 
 <%= render @dish %>
 
-<div>
-  <%= link_to "Edit this dish", edit_dish_path(@dish) %> |
-  <%= link_to "Back to dishes", dishes_path %>
+<%= link_to "Back to dishes", dishes_path %>
 
-  <%= button_to "Destroy this dish", @dish, method: :delete %>
-</div>
+<%if restaurant_signed_in? %>
+  <%if current_restaurant.id == @dish.restaurant_id%>
+    <div>
+      <%= link_to "Edit this dish", edit_dish_path(@dish) %> 
+      <%= button_to "Destroy this dish", @dish, method: :delete %>
+    </div>
+  <%end%>
+<%end%>
+
+
+<%if reviewer_signed_in? %>
+  <div id="dishes">
+    <%@reviews = Review.all %>
+    <% @reviews.each do |review| %>
+      <%if @dish.id == review.dish_id %>
+        <%= render review %>
+        <p> <%#= link_to "Show this dish", @dish %> </p> 
+      <%end%>
+    <% end %>
+  </div>
+  <%= link_to "CREA NUOVA RECENSIONE", new_review_path %><br />
+<%end%>

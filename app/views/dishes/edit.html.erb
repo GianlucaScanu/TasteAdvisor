@@ -1,5 +1,5 @@
 <h1>Editing dish</h1>
-<%if @dish.id.to_s == "5" %> 
+<%if @dish.restaurant_id == current_restaurant.id %> 
   <%= render "form", dish: @dish %>
 <% else%>
   NON PERMESSO!

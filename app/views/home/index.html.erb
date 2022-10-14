@@ -9,6 +9,7 @@
     SURNAME:<%= current_reviewer.surname %><br />
     TEL:<%= current_reviewer.telephone_number%><br />
     EMAIL:<%= current_reviewer.email %><br />
+    <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
 
 
     <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
