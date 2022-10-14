@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_02_155733) do
+ActiveRecord::Schema[7.0].define(version: 2022_10_14_120724) do
   create_table "dishes", force: :cascade do |t|
     t.string "name"
     t.integer "number_of_reviews"
@@ -80,6 +80,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_02_155733) do
     t.string "imgs"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "dish_id", null: false
+    t.integer "reviewer_id", null: false
+    t.index ["dish_id"], name: "index_reviews_on_dish_id"
+    t.index ["reviewer_id"], name: "index_reviews_on_reviewer_id"
   end
 
+  add_foreign_key "reviews", "dishes"
+  add_foreign_key "reviews", "reviewers"
 end
