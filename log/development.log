@@ -29693,3 +29693,1284 @@ Processing by ReviewsController#show as HTML
 Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 3501)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:10:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 13.1ms | Allocations: 12528)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 47918)
+Completed 200 OK in 73ms (Views: 66.5ms | ActiveRecord: 0.4ms | Allocations: 52555)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2022-10-15 11:10:32 +0200
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:6
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.7ms | Allocations: 358)
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 12.4ms | Allocations: 7513)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 9931)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.6ms | Allocations: 11018)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2022-10-15 11:10:34 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:63:in `set_restaurant'
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 23)
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/restaurants/show.html.erb:8
+  [1m[36mRestaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.1ms | Allocations: 876)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.4ms | Allocations: 524)
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 11.8ms | Allocations: 10060)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 12371)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.5ms | Allocations: 14093)
+
+
+Started GET "/dishes/52" for 127.0.0.1 at 2022-10-15 11:10:57 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 655)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:17
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/dishes/show.html.erb:20
+  Rendered reviews/_review.html.erb (Duration: 0.7ms | Allocations: 280)
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 15.7ms | Allocations: 9703)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 12107)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.9ms | Allocations: 14182)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2022-10-15 11:11:09 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:63:in `set_restaurant'
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 23)
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/restaurants/show.html.erb:8
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 567)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 515)
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2333)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4530)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 5348)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2022-10-15 11:14:47 +0200
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:6
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1052)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3261)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 3533)
+
+
+Started GET "/restaurants/1" for 127.0.0.1 at 2022-10-15 11:14:49 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:63:in `set_restaurant'
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 23)
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/restaurants/show.html.erb:8
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.0ms | Allocations: 565)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 4.0ms | Allocations: 514)
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2254)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 4448)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms | Allocations: 5188)
+
+
+Started GET "/dishes/52" for 127.0.0.1 at 2022-10-15 11:14:50 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.0ms | Allocations: 559)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:17
+  [1m[36mReview Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/dishes/show.html.erb:20
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered reviews/_review.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 13.6ms | Allocations: 2488)
+  Rendered layout layouts/application.html.erb (Duration: 37.0ms | Allocations: 4691)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.3ms | Allocations: 5427)
+
+
+Started GET "/dishes/52" for 127.0.0.1 at 2022-10-15 11:15:06 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 559)
+  [1m[36mReviewer Load (0.0ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:17
+  [1m[36mReview Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/dishes/show.html.erb:20
+  Rendered reviews/_review.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered reviews/_review.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2447)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4642)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.5ms | Allocations: 5391)
+
+
+Started GET "/dishes/52" for 127.0.0.1 at 2022-10-15 11:15:26 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.5ms | Allocations: 870)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:17
+  Rendered dishes/show.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2714)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 5319)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.3ms | Allocations: 6659)
+
+
+Started GET "/dishes/52" for 127.0.0.1 at 2022-10-15 11:15:58 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.7ms | Allocations: 870)
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:17
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/dishes/show.html.erb:20
+  Rendered reviews/_review.html.erb (Duration: 0.6ms | Allocations: 231)
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3743)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 6353)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.9ms | Allocations: 7718)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:16:31 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:18
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:20
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 562)
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 564)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.2ms | Allocations: 515)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.8ms | Allocations: 514)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 4560)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 6763)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms | Allocations: 7134)
+
+
+Started GET "/dishes/52" for 127.0.0.1 at 2022-10-15 11:22:47 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"52"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 52], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 624)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:17
+  [1m[36mReview Load (0.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/dishes/show.html.erb:20
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered reviews/_review.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered dishes/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2638)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 4832)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.8ms | Allocations: 5773)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:22:51 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2000)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4406)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 5045)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2022-10-15 11:22:54 +0200
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:6
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.5ms | Allocations: 282)
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1931)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4332)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 5042)
+
+
+Started GET "/restaurants/2" for 127.0.0.1 at 2022-10-15 11:23:02 +0200
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/restaurants_controller.rb:63:in `set_restaurant'
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 23)
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/restaurants/show.html.erb:8
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 568)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.7ms | Allocations: 515)
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2849)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 5043)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.5ms | Allocations: 5905)
+
+
+Started GET "/restaurants" for 127.0.0.1 at 2022-10-15 11:23:04 +0200
+Processing by RestaurantsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  ↳ app/views/restaurants/index.html.erb:6
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered restaurants/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1064)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3266)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 3538)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:23:06 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:2
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1278)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3490)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 3751)
+
+
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-15 11:23:08 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.1ms | Allocations: 4509)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:23:08 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 896)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 3226)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 3531)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 11:23:11 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 729)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3928)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 6310)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 7489)
+
+
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2022-10-15 11:23:14 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 455)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 237)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1459)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3656)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 4202)
+
+
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2022-10-15 11:23:24 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test9@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["email", "test9@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms | Allocations: 1948)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test9@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1351)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3661)
+Completed 200 OK in 207ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 4970)
+
+
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2022-10-15 11:23:32 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test10@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["email", "test10@test.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 208ms (ActiveRecord: 0.1ms | Allocations: 3286)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:23:33 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:16
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1593)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3915)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 4226)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:23:58 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.1ms | Allocations: 574)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.2ms | Allocations: 516)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2901)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5103)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 5376)
+
+
+Started GET "/dishes/53" for 127.0.0.1 at 2022-10-15 11:26:09 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.6ms | Allocations: 559)
+  [1m[36mRestaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:7
+  Rendered dishes/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1941)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4135)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.3ms | Allocations: 4872)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:26:11 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.0ms | Allocations: 562)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.7ms | Allocations: 514)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2856)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5058)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 5329)
+
+
+Started GET "/dishes/55" for 127.0.0.1 at 2022-10-15 11:26:12 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 55], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.0ms | Allocations: 559)
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:7
+  Rendered dishes/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1899)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4093)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 4827)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:26:13 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.8ms | Allocations: 562)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 514)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 2868)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 5070)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.2ms | Allocations: 5341)
+
+
+Started GET "/dishes/53" for 127.0.0.1 at 2022-10-15 11:26:16 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.5ms | Allocations: 559)
+  [1m[36mRestaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:7
+  Rendered dishes/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1947)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 4141)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 4876)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:26:18 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 562)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.7ms | Allocations: 514)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2853)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 5065)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms | Allocations: 5337)
+
+
+Started GET "/dishes/53" for 127.0.0.1 at 2022-10-15 11:26:22 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 559)
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:7
+  Rendered dishes/show.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1926)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4120)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 4855)
+
+
+Started GET "/dishes/53" for 127.0.0.1 at 2022-10-15 11:29:31 +0200
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"53"}
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = ? LIMIT ?[0m  [["id", 53], ["LIMIT", 1]]
+  ↳ app/controllers/dishes_controller.rb:63:in `set_dish'
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 559)
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/show.html.erb:7
+  Rendered dishes/show.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1926)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 4120)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 4855)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:29:33 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 562)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.8ms | Allocations: 514)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2838)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 5041)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.3ms | Allocations: 5312)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:29:36 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:16
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1279)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3497)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 3757)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:35:19 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 5874)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 5962)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 6818)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `dish' for #<ActionView::Base:0x00000000010cc0>
+
+'.freeze;@output_buffer.append=  form_with(model: dish) do |form| @output_buffer.safe_append='
+                                                  ^^^^):
+    1: <h1>Home#index</h1>
+    2: 
+    3: <%= form_with(model: dish) do |form| %>
+    4:   <% if dish.errors.any? %>
+    5:     <div style="color: red">
+    6:       <h2><%= pluralize(dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
+  
+app/views/home/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:37:58 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:27
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2874)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 5486)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.5ms | Allocations: 6338)
+
+
+Started GET "/kittens?search_by_breed=asas%C3%B9&search_by_color=&search_by_age=&commit=Search" for 127.0.0.1 at 2022-10-15 11:38:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/kittens?search_by_breed=asas%C3%B9&search_by_color=&search_by_age=&commit=Search" for 127.0.0.1 at 2022-10-15 11:38:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/kittens?search_by_breed=asas%C3%B9&search_by_color=&search_by_age=&commit=Search" for 127.0.0.1 at 2022-10-15 11:38:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/kittens?search_by_breed=asas%C3%B9&search_by_color=&search_by_age=&commit=Search" for 127.0.0.1 at 2022-10-15 11:38:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/kittens?search_by_breed=asas%C3%B9&search_by_color=&search_by_age=&commit=Search" for 127.0.0.1 at 2022-10-15 11:38:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:38:41 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1630)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1719)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2516)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Home#index</h1>
+
+<%= form_tag "/kittens", do %>
+  <%= label_tag :search_by_breed %>
+  <%= text_field_tag :search_by_breed, params[:search_by_breed] %>
+  <%= label_tag :search_by_color %>
+  <%= text_field_tag :search_by_color, params[:search_by_color] %>
+  <%= label_tag :search_by_age %>
+  <%= text_field_tag :search_by_age, params[:search_by_age] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+
+<% if reviewer_signed_in? %>
+
+    UTENTE RECENSORE<br>
+
+    ID:<%= current_reviewer.id %><br />
+    USERNAME:<%= current_reviewer.username %><br />
+    NAME:<%= current_reviewer.name %><br />
+    SURNAME:<%= current_reviewer.surname %><br />
+    TEL:<%= current_reviewer.telephone_number%><br />
+    EMAIL:<%= current_reviewer.email %><br />
+    <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
+
+
+    <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+<% elsif restaurant_signed_in? %>
+
+    UTENTE RISTORANTE<br>
+
+    ID:<%= current_restaurant.id %><br />
+    USERNAME:<%= current_restaurant.username %><br />
+    NAME:<%= current_restaurant.name %><br />
+    TEL:<%= current_restaurant.telephone_number%><br />
+    ADDRESS:<%= current_restaurant.address%><br />
+    EMAIL:<%= current_restaurant.email %><br />
+
+    <%= link_to "vai ai piatti", dishes_path, method: :get%>
+
+
+    <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
+<%else%>
+    <%= button_to "Sign in reviewer", new_reviewer_session_path %>
+    <%= button_to "Sign in restaurant", new_restaurant_session_path %>
+
+    <br>
+
+    <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+    <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+
+    <p>Find me in app/views/home/index.html.erb</p>
+<%end%>
+):
+1:    <h1>Home#index</h1>
+2:    
+3:    <%= form_tag "/kittens", do %>
+4:      <%= label_tag :search_by_breed %>
+5:      <%= text_field_tag :search_by_breed, params[:search_by_breed] %>
+6:      <%= label_tag :search_by_color %>
+7:      <%= text_field_tag :search_by_color, params[:search_by_color] %>
+8:      <%= label_tag :search_by_age %>
+9:      <%= text_field_tag :search_by_age, params[:search_by_age] %>
+10:      <%= submit_tag "Search" %>
+11:    <% end %>
+12:    
+13:    
+14:    <% if reviewer_signed_in? %>
+15:    
+16:        UTENTE RECENSORE<br>
+17:    
+18:        ID:<%= current_reviewer.id %><br />
+19:        USERNAME:<%= current_reviewer.username %><br />
+20:        NAME:<%= current_reviewer.name %><br />
+21:        SURNAME:<%= current_reviewer.surname %><br />
+22:        TEL:<%= current_reviewer.telephone_number%><br />
+23:        EMAIL:<%= current_reviewer.email %><br />
+24:        <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
+25:    
+26:    
+27:        <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+28:    <% elsif restaurant_signed_in? %>
+29:    
+30:        UTENTE RISTORANTE<br>
+31:    
+32:        ID:<%= current_restaurant.id %><br />
+33:        USERNAME:<%= current_restaurant.username %><br />
+34:        NAME:<%= current_restaurant.name %><br />
+35:        TEL:<%= current_restaurant.telephone_number%><br />
+36:        ADDRESS:<%= current_restaurant.address%><br />
+37:        EMAIL:<%= current_restaurant.email %><br />
+38:    
+39:        <%= link_to "vai ai piatti", dishes_path, method: :get%>
+40:    
+41:    
+42:        <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
+43:    <%else%>
+44:        <%= button_to "Sign in reviewer", new_reviewer_session_path %>
+45:        <%= button_to "Sign in restaurant", new_restaurant_session_path %>
+46:    
+47:        <br>
+48:    
+49:        <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+50:        <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+51:    
+52:        <p>Find me in app/views/home/index.html.erb</p>
+53:    <%end%>
+  
+app/views/home/index.html.erb:3: syntax error, unexpected `do' for block
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:3: syntax error, unexpected `do' for block
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:3: syntax error, unexpected `do' for block
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:3: syntax error, unexpected `do' for block
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:3: syntax error, unexpected `do' for block
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:3: syntax error, unexpected `do' for block
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:38:47 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1618)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1707)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2540)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Home#index</h1>
+
+<%= form_tag "/kittens"%>
+  <%= label_tag :search_by_breed %>
+  <%= text_field_tag :search_by_breed, params[:search_by_breed] %>
+  <%= label_tag :search_by_color %>
+  <%= text_field_tag :search_by_color, params[:search_by_color] %>
+  <%= label_tag :search_by_age %>
+  <%= text_field_tag :search_by_age, params[:search_by_age] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+
+<% if reviewer_signed_in? %>
+
+    UTENTE RECENSORE<br>
+
+    ID:<%= current_reviewer.id %><br />
+    USERNAME:<%= current_reviewer.username %><br />
+    NAME:<%= current_reviewer.name %><br />
+    SURNAME:<%= current_reviewer.surname %><br />
+    TEL:<%= current_reviewer.telephone_number%><br />
+    EMAIL:<%= current_reviewer.email %><br />
+    <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
+
+
+    <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+<% elsif restaurant_signed_in? %>
+
+    UTENTE RISTORANTE<br>
+
+    ID:<%= current_restaurant.id %><br />
+    USERNAME:<%= current_restaurant.username %><br />
+    NAME:<%= current_restaurant.name %><br />
+    TEL:<%= current_restaurant.telephone_number%><br />
+    ADDRESS:<%= current_restaurant.address%><br />
+    EMAIL:<%= current_restaurant.email %><br />
+
+    <%= link_to "vai ai piatti", dishes_path, method: :get%>
+
+
+    <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
+<%else%>
+    <%= button_to "Sign in reviewer", new_reviewer_session_path %>
+    <%= button_to "Sign in restaurant", new_restaurant_session_path %>
+
+    <br>
+
+    <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+    <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+
+    <p>Find me in app/views/home/index.html.erb</p>
+<%end%>
+):
+1:    <h1>Home#index</h1>
+2:    
+3:    <%= form_tag "/kittens"%>
+4:      <%= label_tag :search_by_breed %>
+5:      <%= text_field_tag :search_by_breed, params[:search_by_breed] %>
+6:      <%= label_tag :search_by_color %>
+7:      <%= text_field_tag :search_by_color, params[:search_by_color] %>
+8:      <%= label_tag :search_by_age %>
+9:      <%= text_field_tag :search_by_age, params[:search_by_age] %>
+10:      <%= submit_tag "Search" %>
+11:    <% end %>
+12:    
+13:    
+14:    <% if reviewer_signed_in? %>
+15:    
+16:        UTENTE RECENSORE<br>
+17:    
+18:        ID:<%= current_reviewer.id %><br />
+19:        USERNAME:<%= current_reviewer.username %><br />
+20:        NAME:<%= current_reviewer.name %><br />
+21:        SURNAME:<%= current_reviewer.surname %><br />
+22:        TEL:<%= current_reviewer.telephone_number%><br />
+23:        EMAIL:<%= current_reviewer.email %><br />
+24:        <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
+25:    
+26:    
+27:        <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+28:    <% elsif restaurant_signed_in? %>
+29:    
+30:        UTENTE RISTORANTE<br>
+31:    
+32:        ID:<%= current_restaurant.id %><br />
+33:        USERNAME:<%= current_restaurant.username %><br />
+34:        NAME:<%= current_restaurant.name %><br />
+35:        TEL:<%= current_restaurant.telephone_number%><br />
+36:        ADDRESS:<%= current_restaurant.address%><br />
+37:        EMAIL:<%= current_restaurant.email %><br />
+38:    
+39:        <%= link_to "vai ai piatti", dishes_path, method: :get%>
+40:    
+41:    
+42:        <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
+43:    <%else%>
+44:        <%= button_to "Sign in reviewer", new_reviewer_session_path %>
+45:        <%= button_to "Sign in restaurant", new_restaurant_session_path %>
+46:    
+47:        <br>
+48:    
+49:        <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+50:        <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+51:    
+52:        <p>Find me in app/views/home/index.html.erb</p>
+53:    <%end%>
+  
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:55: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:38:53 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:27
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2663)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5281)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 6133)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:39:12 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2487)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 5090)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 5948)
+
+
+Started GET "/kittens?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:39:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/rails/info/routes?path=sea" for 127.0.0.1 at 2022-10-15 11:39:27 +0200
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"sea"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 3440)
+
+
+Started GET "/rails/info/routes?path=search" for 127.0.0.1 at 2022-10-15 11:39:28 +0200
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"search"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1135)
+
+
+Started GET "/rails/info/routes?path=search" for 127.0.0.1 at 2022-10-15 11:39:29 +0200
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"search"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1133)
+
+
+Started GET "/kittens?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:39:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/kittens?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:39:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:39:57 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2482)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 5100)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 5894)
+
+
+Started GET "/home?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:39:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/home?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:40:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:40:20 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2458)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 5061)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.3ms | Allocations: 5871)
+
+
+Started GET "/home_index_path?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:40:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home_index_path"):
+  
+Started GET "/home_index_path?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:40:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home_index_path"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:40:34 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 2473)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 5091)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 5901)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:40:35 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1529)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3733)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 4012)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:40:35 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1556)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3760)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 4019)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:40:35 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1517)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3721)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 3980)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:40:49 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1572)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1661)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2479)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Home#index</h1>
+
+<%= form_tag "/home/index"%>
+  <%= label_tag :search_by_breed %>
+  <%= text_field_tag :search_by_breed, params[:search_by_breed] %>
+  <%= label_tag :search_by_color %>
+  <%= submit_tag "Search" %>
+<% end %>
+
+<% if reviewer_signed_in? %>
+
+    UTENTE RECENSORE<br>
+
+    ID:<%= current_reviewer.id %><br />
+    USERNAME:<%= current_reviewer.username %><br />
+    NAME:<%= current_reviewer.name %><br />
+    SURNAME:<%= current_reviewer.surname %><br />
+    TEL:<%= current_reviewer.telephone_number%><br />
+    EMAIL:<%= current_reviewer.email %><br />
+    <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
+
+
+    <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+<% elsif restaurant_signed_in? %>
+
+    UTENTE RISTORANTE<br>
+
+    ID:<%= current_restaurant.id %><br />
+    USERNAME:<%= current_restaurant.username %><br />
+    NAME:<%= current_restaurant.name %><br />
+    TEL:<%= current_restaurant.telephone_number%><br />
+    ADDRESS:<%= current_restaurant.address%><br />
+    EMAIL:<%= current_restaurant.email %><br />
+
+    <%= link_to "vai ai piatti", dishes_path, method: :get%>
+
+
+    <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
+<%else%>
+    <%= button_to "Sign in reviewer", new_reviewer_session_path %>
+    <%= button_to "Sign in restaurant", new_restaurant_session_path %>
+
+    <br>
+
+    <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+    <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+
+    <p>Find me in app/views/home/index.html.erb</p>
+<%end%>
+):
+1:    <h1>Home#index</h1>
+2:    
+3:    <%= form_tag "/home/index"%>
+4:      <%= label_tag :search_by_breed %>
+5:      <%= text_field_tag :search_by_breed, params[:search_by_breed] %>
+6:      <%= label_tag :search_by_color %>
+7:      <%= submit_tag "Search" %>
+8:    <% end %>
+9:    
+10:    <% if reviewer_signed_in? %>
+11:    
+12:        UTENTE RECENSORE<br>
+13:    
+14:        ID:<%= current_reviewer.id %><br />
+15:        USERNAME:<%= current_reviewer.username %><br />
+16:        NAME:<%= current_reviewer.name %><br />
+17:        SURNAME:<%= current_reviewer.surname %><br />
+18:        TEL:<%= current_reviewer.telephone_number%><br />
+19:        EMAIL:<%= current_reviewer.email %><br />
+20:        <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
+21:    
+22:    
+23:        <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+24:    <% elsif restaurant_signed_in? %>
+25:    
+26:        UTENTE RISTORANTE<br>
+27:    
+28:        ID:<%= current_restaurant.id %><br />
+29:        USERNAME:<%= current_restaurant.username %><br />
+30:        NAME:<%= current_restaurant.name %><br />
+31:        TEL:<%= current_restaurant.telephone_number%><br />
+32:        ADDRESS:<%= current_restaurant.address%><br />
+33:        EMAIL:<%= current_restaurant.email %><br />
+34:    
+35:        <%= link_to "vai ai piatti", dishes_path, method: :get%>
+36:    
+37:    
+38:        <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
+39:    <%else%>
+40:        <%= button_to "Sign in reviewer", new_reviewer_session_path %>
+41:        <%= button_to "Sign in restaurant", new_restaurant_session_path %>
+42:    
+43:        <br>
+44:    
+45:        <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
+46:        <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
+47:    
+48:        <p>Find me in app/views/home/index.html.erb</p>
+49:    <%end%>
+  
+app/views/home/index.html.erb:51: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:51: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:51: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:51: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:51: syntax error, unexpected `end', expecting end-of-input
+app/views/home/index.html.erb:51: syntax error, unexpected `end', expecting end-of-input
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:40:57 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 1.5ms | Allocations: 867)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.8ms | Allocations: 515)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3985)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 6615)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.4ms | Allocations: 7506)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:40:57 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.6ms | Allocations: 562)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.4ms | Allocations: 514)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2841)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5043)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 5335)
+
+
+Started GET "/dishes" for 127.0.0.1 at 2022-10-15 11:40:57 +0200
+Processing by DishesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/index.html.erb:4
+  [1m[36mDish Load (0.1ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  ↳ app/views/dishes/index.html.erb:7
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.9ms | Allocations: 562)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/dishes/_dish.html.erb:6
+  Rendered dishes/_dish.html.erb (Duration: 0.8ms | Allocations: 515)
+  Rendered dishes/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2860)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 5062)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 5333)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:41:00 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2468)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 4857)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5497)
+
+
+Started GET "/kittens?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:41:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/kittens?search_by_breed=&commit=Search" for 127.0.0.1 at 2022-10-15 11:43:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/kittens"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:43:31 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1538)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 3757)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 4037)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:43:37 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1538)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3742)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.1ms | Allocations: 4001)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:43:43 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:24
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1535)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3754)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.1ms | Allocations: 4013)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:43:51 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:17
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2097)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4717)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 5549)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:43:51 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:17
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1264)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 3480)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3759)
+
+

@@ -16,8 +16,8 @@
 
 <%if reviewer_signed_in? %>
   <div id="dishes">
-    <%@reviews = Review.all %>
-    <% @reviews.each do |review| %>
+    <%#@reviews = Review.all %>
+    <% (Review.all).each do |review| %>
       <%if @dish.id == review.dish_id %>
         <%= render review %>
         <p> <%#= link_to "Show this dish", @dish %> </p> 
