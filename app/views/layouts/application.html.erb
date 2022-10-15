@@ -8,7 +8,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <%= stylesheet_link_tag "navbar.css" %>
+    <%= stylesheet_link_tag "navbar.css" %>  
   </head>
 
   <body>
@@ -22,14 +22,18 @@
               <div id = "label">
                   TASTEADVISOR
               </div>
+
               <div id = "log_buttons">
-                  <div id = "TODO:" class = "btn btn-success btn-responsive">
-                      Profilo
-                  </div>
-                  <div id = "TODO:" class = "btn btn-success btn-responsive">
+                <div id = "TODO:" class = "btn btn-success btn-responsive">
                       Logout
-                  </div>
+                </div>
+                <% if (restaurant_signed_in?) %>
+                    <%= button_to "Logout", destroy_restaurant_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                <% elsif (reviewer_signed_in?) %>
+                    <%= button_to "Logout", destroy_reviewer_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                <%end %>
               </div>
+
           </div>
           <div id = "row2">
               <div id = "navbar">
@@ -69,11 +73,27 @@
               <div id = "label">
                   TASTEADVISOR
               </div>
+
               <div id = "log_buttons">
+                <div class="dropdown" id = "signin_btn">
+                    <button class="btn btn-success dropdown-toggle btn-responsive" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sign in
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><%= link_to "Esercente", new_reviewer_session_path, :class => "dropdown-item" %></li>
+                        <li><%= link_to "Ristoratore", new_restaurant_session_path, :class => "dropdown-item" %></li>
+                    </ul>
+                </div>
 
-                  <%= link_to "Sign in", new_reviewer_session_path, :class => "btn btn-success btn-responsive", :id => "signin_btn" %>
-
-                  <%= link_to "Sign up", new_reviewer_registration_path, :class => "btn btn-success btn-responsive", :id => "signup_btn" %>
+                <div class="dropdown" id = "signup_btn">
+                    <button class="btn btn-success dropdown-toggle btn-responsive" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sign up
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><%= link_to "Esercente", new_reviewer_registration_path, :class => "dropdown-item" %></li>
+                        <li><%= link_to "Ristoratore", new_restaurant_registration_path, :class => "dropdown-item" %></li>
+                    </ul>
+                </div>
               </div>
           </div>
           <div id = "row2">
@@ -106,9 +126,6 @@
           </div>
     </div>
         <% end %>
-
-        <%= notice %>
-        <%= alert %>
 
         <%= yield %>
 

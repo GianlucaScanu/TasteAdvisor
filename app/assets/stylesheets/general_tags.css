@@ -1,0 +1,19 @@
+#log_buttons{
+    display: flex;
+    flex-direction: row;
+    margin-right: 3%;
+}
+
+.notice_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: green;
+}
+
+.alert_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}

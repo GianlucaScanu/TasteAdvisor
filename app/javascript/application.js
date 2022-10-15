@@ -1,6 +1,7 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
 import "controllers"
+import "bootstrap"
 
 // This is a manifest file that'll be compiled into application.js, which will include all the files
 // listed below.
