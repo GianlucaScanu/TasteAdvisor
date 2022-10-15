@@ -30974,3 +30974,130 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3759)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:48:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 13077)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 16635)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.5ms | Allocations: 22883)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:48:39 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1456)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 3854)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 4133)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:48:40 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1231)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3581)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms | Allocations: 3819)
+
+
+  
+ActionView::Template::Error (The asset "application.css" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10:     <%= javascript_importmap_tags %>
+    11:   </head>
+    12: 
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:49:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 12536)
+  Rendered layout layouts/application.html.erb (Duration: 4175.4ms | Allocations: 147255)
+Completed 200 OK in 4183ms (Views: 4177.1ms | ActiveRecord: 0.4ms | Allocations: 151891)
+
+
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-15 18:49:09 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 13ms (ActiveRecord: 0.1ms | Allocations: 7035)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:49:09 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 980)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 6512)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6819)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:49:11 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 6193)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 6458)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:49:13 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 776)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 6199)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 6462)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:50:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2082)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 45633)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.0ms | Allocations: 50271)
+
+
