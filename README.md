@@ -8,3 +8,4 @@
 
 //NOTE
 -nei file html.erb alcuni attributi degli elementi html (id,class,..etc) vengono inseriti da rails -> ispezionare per identificarli
+-in recupera password del signin viene generato un link a "reviewers/password/new" 

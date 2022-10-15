@@ -13743,3 +13743,1651 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 15ms (Views: 13.4ms | Allocations: 9004)
 
 
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:02:30 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1250)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 7963)
+Completed 200 OK in 22ms (Views: 19.8ms | Allocations: 8616)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:05:36 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 228)
+  Rendered layout layouts/application.html.erb (Duration: 6853.8ms | Allocations: 43436)
+Completed 200 OK in 6859ms (Views: 6856.6ms | Allocations: 44806)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:05:42 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 6824)
+Completed 200 OK in 13ms (Views: 11.7ms | Allocations: 7540)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/navbar/navbar_script.js" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar_script.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/TODO" for 127.0.0.1 at 2022-10-14 15:05:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/TODO"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:06:48 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1406.6ms | Allocations: 34003)
+  Rendered layout layouts/application.html.erb (Duration: 1418.3ms | Allocations: 41155)
+Completed 200 OK in 1421ms (Views: 1420.6ms | Allocations: 42523)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:06:50 +0200
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:06:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:06:50 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:06:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:06:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:07:54 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 871)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 7537)
+Completed 200 OK in 14ms (Views: 12.9ms | Allocations: 8228)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:07:54 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:07:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:07:54 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:07:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:07:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:07:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:07:55 +0200
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:07:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:08:35 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3321)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 10506)
+Completed 200 OK in 29ms (Views: 28.1ms | Allocations: 11876)
+
+
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:08:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:08:35 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:08:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:08:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:08:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:08:36 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:08:36 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:08:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:09:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3330)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 10514)
+Completed 200 OK in 23ms (Views: 21.7ms | Allocations: 11932)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:09:27 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:09:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:09:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:09:27 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:09:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:09:43 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3342)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 10526)
+Completed 200 OK in 21ms (Views: 19.8ms | Allocations: 11932)
+
+
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:09:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 560)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 3347)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 10533)
+Completed 200 OK in 31ms (Views: 29.6ms | Allocations: 11950)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:10:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:10:58 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3344)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 10528)
+Completed 200 OK in 21ms (Views: 19.6ms | Allocations: 11937)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:10:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:10:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:10:59 +0200
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:10:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:10:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:10:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:10:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:13:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3362)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 10546)
+Completed 200 OK in 25ms (Views: 22.9ms | Allocations: 11959)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:13:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:13:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:13:21 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:13:21 +0200
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:13:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:13:22 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:13:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:13:38 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 3352)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 10536)
+Completed 200 OK in 24ms (Views: 22.5ms | Allocations: 11930)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:13:38 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:13:38 +0200
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:13:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:13:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:13:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:13:39 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:13:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:13:39 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:13:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:13:57 +0200
+Processing by Devise::SessionsController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 8795)
+Completed 200 OK in 25ms (Views: 23.7ms | Allocations: 9381)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:14:45 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1510)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1605)
+Completed 500 Internal Server Error in 9ms (Allocations: 2957)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensione</title>
+
+    <!--Bootstrap-->
+    <script src = "./bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <link rel = "stylesheet" href = "./bootstrap-5.1.3-dist/css/bootstrap.css">
+    <!--JQuery-->
+    <script src = "./jquery/jquery.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="./signin.css" type="text/css">
+    <link rel="stylesheet" href="./navbar/navbar.css" type="text/css">
+
+    <%= stylesheet_link_tag "signin.css" %>
+
+    <!-- Carosello ha qualche problema, necessario questo script per renderlo dinamico -->
+
+</head>
+<body>
+    <div id = "middle">
+        <div id = "google_div">
+            <button id = "google_btn" type="button" class="btn btn-outline-success">Entra con Google</button>
+        </div>
+        <div id = "facebook_div">
+            <button  id = "facebook_btn" type="button" class="btn btn-outline-primary">Entra con Facebook</button>
+        </div>
+        <div id = "oppure_lbl">Oppure</div>
+        <div id = "form_div">
+            <form>
+                <!-- <div class="form-group">
+                  <label for="email_id">Indirizzo e-mail</label>
+                  <input type="email" class="form-control" id="email_id" placeholder="Inserisci la tua email">
+                </div>
+                <div class="form-group">
+                  <label for="password_id">Password</label>
+                  <input type="password" class="form-control" id="password_id" placeholder="Inserisci la tua password">
+                </div>
+                <button id = "submit_btn" type="submit" class="btn btn-success">Conferma</button>
+              </form>
+              -->
+            <div class = "form-group">
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                    <div class="field">
+                        <%= f.label :email %><br />
+                        <%= f.email_field :email, :class => "form-control", autofocus: true, autocomplete: "email" %>
+                    </div>
+
+                    <div class="field">
+                        <%= f.label :password %><br />
+                        <%= f.password_field :password, :class => "form-control", autocomplete: "current-password" %>
+                    </div>
+
+                    <% if devise_mapping.rememberable? %>
+                        <div class="field">
+                            <%= f.check_box :remember_me %>
+                            <%= f.label :remember_me %>
+                        </div>
+                    <% end %>
+
+                <div class="actions">
+                    <%= f.submit "Log in", id = "submit_btn", class = "btn btn-success" %>
+                </div>
+                <% end %>
+
+                <%= render "devise/shared/links" %>
+                </div>
+        </div>
+        <div id = "link_div">
+            <a href="TODO" id = "link_lbl">Password dimenticata</a>
+        </div>
+    </div>
+</body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html lang="en">
+3:    <head>
+4:        <meta charset="UTF-8">
+5:        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+6:        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+7:        <title>Recensione</title>
+8:    
+9:        <!--Bootstrap-->
+10:        <script src = "./bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+11:        <link rel = "stylesheet" href = "./bootstrap-5.1.3-dist/css/bootstrap.css">
+12:        <!--JQuery-->
+13:        <script src = "./jquery/jquery.js"></script>
+14:        <!--css-->
+15:        <link rel="stylesheet" href="./signin.css" type="text/css">
+16:        <link rel="stylesheet" href="./navbar/navbar.css" type="text/css">
+17:    
+18:        <%= stylesheet_link_tag "signin.css" %>
+19:    
+20:        <!-- Carosello ha qualche problema, necessario questo script per renderlo dinamico -->
+21:    
+22:    </head>
+23:    <body>
+24:        <div id = "middle">
+25:            <div id = "google_div">
+26:                <button id = "google_btn" type="button" class="btn btn-outline-success">Entra con Google</button>
+27:            </div>
+28:            <div id = "facebook_div">
+29:                <button  id = "facebook_btn" type="button" class="btn btn-outline-primary">Entra con Facebook</button>
+30:            </div>
+31:            <div id = "oppure_lbl">Oppure</div>
+32:            <div id = "form_div">
+33:                <form>
+34:                    <!-- <div class="form-group">
+35:                      <label for="email_id">Indirizzo e-mail</label>
+36:                      <input type="email" class="form-control" id="email_id" placeholder="Inserisci la tua email">
+37:                    </div>
+38:                    <div class="form-group">
+39:                      <label for="password_id">Password</label>
+40:                      <input type="password" class="form-control" id="password_id" placeholder="Inserisci la tua password">
+41:                    </div>
+42:                    <button id = "submit_btn" type="submit" class="btn btn-success">Conferma</button>
+43:                  </form>
+44:                  -->
+45:                <div class = "form-group">
+46:                    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+47:                        <div class="field">
+48:                            <%= f.label :email %><br />
+49:                            <%= f.email_field :email, :class => "form-control", autofocus: true, autocomplete: "email" %>
+50:                        </div>
+51:    
+52:                        <div class="field">
+53:                            <%= f.label :password %><br />
+54:                            <%= f.password_field :password, :class => "form-control", autocomplete: "current-password" %>
+55:                        </div>
+56:    
+57:                        <% if devise_mapping.rememberable? %>
+58:                            <div class="field">
+59:                                <%= f.check_box :remember_me %>
+60:                                <%= f.label :remember_me %>
+61:                            </div>
+62:                        <% end %>
+63:    
+64:                    <div class="actions">
+65:                        <%= f.submit "Log in", id = "submit_btn", class = "btn btn-success" %>
+66:                    </div>
+67:                    <% end %>
+68:    
+69:                    <%= render "devise/shared/links" %>
+70:                    </div>
+71:            </div>
+72:            <div id = "link_div">
+73:                <a href="TODO" id = "link_lbl">Password dimenticata</a>
+74:            </div>
+75:        </div>
+76:    </body>
+77:    </html>
+  
+app/views/devise/sessions/new.html.erb:65: syntax error, unexpected '='
+app/views/devise/sessions/new.html.erb:65: syntax error, unexpected '='
+app/views/devise/sessions/new.html.erb:65: syntax error, unexpected '='
+app/views/devise/sessions/new.html.erb:65: syntax error, unexpected '='
+app/views/devise/sessions/new.html.erb:65: syntax error, unexpected '='
+app/views/devise/sessions/new.html.erb:65: syntax error, unexpected '='
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:15:06 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.9ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3380)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 10564)
+Completed 200 OK in 31ms (Views: 29.0ms | Allocations: 12034)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:15:07 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:15:07 +0200
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:15:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:15:07 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:15:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:15:07 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:15:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:15:08 +0200
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:15:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:16:36 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1364.6ms | Allocations: 4860)
+  Rendered layout layouts/application.html.erb (Duration: 8447.9ms | Allocations: 46542)
+Completed 200 OK in 8450ms (Views: 8448.7ms | Allocations: 47207)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:16:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:16:45 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:16:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:16:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:16:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:17:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2152)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 8806)
+Completed 200 OK in 23ms (Views: 21.1ms | Allocations: 9499)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:17:10 +0200
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:17:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:17:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:17:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:17:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:17:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2368)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 9060)
+Completed 200 OK in 368ms (Views: 15.2ms | Allocations: 17946)
+
+
+Started GET "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js" for 127.0.0.1 at 2022-10-14 15:17:21 +0200
+Started GET "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css" for 127.0.0.1 at 2022-10-14 15:17:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/js/bootstrap.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/bootstrap-5.1.3-dist/css/bootstrap.css"):
+  
+Started GET "/reviewers/navbar/navbar.css" for 127.0.0.1 at 2022-10-14 15:17:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/navbar/navbar.css"):
+  
+Started GET "/reviewers/jquery/jquery.js" for 127.0.0.1 at 2022-10-14 15:17:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/jquery/jquery.js"):
+  
+Started GET "/reviewers/signin.css" for 127.0.0.1 at 2022-10-14 15:17:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/signin.css"):
+  
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:18:02 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3369)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 10550)
+Completed 200 OK in 352ms (Views: 20.8ms | Allocations: 12008)
+
+
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:18:18 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 8691)
+Completed 200 OK in 338ms (Views: 12.7ms | Allocations: 9466)
+
+
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:19:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 3370)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 10491)
+Completed 200 OK in 343ms (Views: 19.9ms | Allocations: 11908)
+
+
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=&reviewer%5Bpassword%5D=&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:19:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2137)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 8753)
+Completed 200 OK in 19ms (Views: 17.8ms | Allocations: 9490)
+
+
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:19:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 8691)
+Completed 200 OK in 340ms (Views: 14.7ms | Allocations: 9373)
+
+
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:19:43 +0200
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2263)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 9694)
+Completed 200 OK in 348ms (Views: 19.0ms | Allocations: 11098)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:19:48 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "pinco@pallino.ciao"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.9ms | Allocations: 5020)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 15:19:48 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1331)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 8211)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 9013)
+
+
+Started GET "/reviewers/sign_in?authenticity_token=[FILTERED]&reviewer%5Bemail%5D=pinco%40pallino.ciao&reviewer%5Bpassword%5D=[FILTERED]&reviewer%5Bremember_me%5D=0&commit=Log+in" for 127.0.0.1 at 2022-10-14 15:19:59 +0200
+Processing by Devise::SessionsController#new as */*
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1266)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 8036)
+Completed 200 OK in 378ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 8647)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-14 21:30:17 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 175.7ms | Allocations: 45492)
+  Rendered layout layouts/application.html.erb (Duration: 260.3ms | Allocations: 66640)
+Completed 200 OK in 277ms (Views: 265.3ms | ActiveRecord: 0.0ms | Allocations: 70178)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:18 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:18 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:18 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-14 21:30:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:30:24 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.8ms | Allocations: 749)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 38.1ms | Allocations: 4940)
+  Rendered layout layouts/application.html.erb (Duration: 57.6ms | Allocations: 12051)
+Completed 200 OK in 94ms (Views: 68.2ms | ActiveRecord: 1.1ms | Allocations: 20948)
+
+
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:24 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-14 21:30:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-14 21:30:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:30:49 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 562)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 3392)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 10576)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 11984)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:30:58 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (32.7ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "pinco@pallino.ciao"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 93ms (ActiveRecord: 32.7ms | Allocations: 3535)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:30:58 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2313)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 8993)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 9780)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-14 21:31:25 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 231)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2981)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 9639)
+Completed 200 OK in 23ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 10938)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:31:30 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 8730)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 9473)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-14 21:31:31 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1844)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 8501)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 9065)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:31:32 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 30.4ms | Allocations: 2142)
+  Rendered layout layouts/application.html.erb (Duration: 110.5ms | Allocations: 8725)
+Completed 200 OK in 112ms (Views: 111.3ms | ActiveRecord: 0.0ms | Allocations: 9355)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-14 21:35:58 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8142)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 8828)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-14 21:35:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-14 21:35:58 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-14 21:35:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-14 21:35:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-14 21:35:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:36:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 2216)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8873)
+Completed 200 OK in 17ms (Views: 15.7ms | Allocations: 9535)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-14 21:36:03 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-14 21:36:03 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-14 21:36:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-14 21:36:03 +0200
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-14 21:36:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:36:14 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "pinco@pallino.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.5ms | Allocations: 2662)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:36:14 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2147)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 8807)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 9486)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:36:22 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2138)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 8691)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 9329)
+
+
+Started GET "/reviewers/password/new" for 127.0.0.1 at 2022-10-14 21:36:27 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 25)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 209)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1432)
+  Rendered layout layouts/application.html.erb (Duration: 35.1ms | Allocations: 8445)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 9700)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-14 21:42:33 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 879)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 7591)
+Completed 200 OK in 21ms (Views: 20.1ms | Allocations: 7876)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:34 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-14 21:42:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:42:38 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2150)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8807)
+Completed 200 OK in 16ms (Views: 14.5ms | Allocations: 9461)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:38 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-14 21:42:38 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-14 21:42:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-14 21:42:43 +0200
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 877)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 7635)
+Completed 200 OK in 28ms (Views: 27.1ms | Allocations: 7914)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:44:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2638.8ms | Allocations: 5081)
+  Rendered layout layouts/application.html.erb (Duration: 8993.8ms | Allocations: 47384)
+Completed 200 OK in 8997ms (Views: 8994.9ms | Allocations: 48036)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:51:01 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3367)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 10447)
+Completed 200 OK in 24ms (Views: 22.8ms | Allocations: 11820)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:52:35 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 3364)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 10444)
+Completed 200 OK in 20ms (Views: 18.8ms | Allocations: 11899)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:53:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.8ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 39.8ms | Allocations: 3367)
+  Rendered layout layouts/application.html.erb (Duration: 108.0ms | Allocations: 10456)
+Completed 200 OK in 111ms (Views: 110.2ms | Allocations: 11909)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:53:58 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 562)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3374)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 10458)
+Completed 200 OK in 21ms (Views: 20.1ms | Allocations: 11912)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:55:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3363)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 10443)
+Completed 200 OK in 20ms (Views: 19.5ms | Allocations: 11907)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:55:48 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1143.2ms | Allocations: 4855)
+  Rendered layout layouts/application.html.erb (Duration: 7530.4ms | Allocations: 46615)
+Completed 200 OK in 7532ms (Views: 7531.0ms | Allocations: 47347)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:56:19 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1209.3ms | Allocations: 4742)
+  Rendered layout layouts/application.html.erb (Duration: 7571.3ms | Allocations: 46328)
+Completed 200 OK in 7573ms (Views: 7571.9ms | Allocations: 46956)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:56:44 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1123.7ms | Allocations: 4736)
+  Rendered layout layouts/application.html.erb (Duration: 7241.2ms | Allocations: 46243)
+Completed 200 OK in 7243ms (Views: 7241.9ms | Allocations: 46885)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:57:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1119.2ms | Allocations: 4731)
+  Rendered layout layouts/application.html.erb (Duration: 7333.6ms | Allocations: 46422)
+Completed 200 OK in 7335ms (Views: 7334.2ms | Allocations: 47041)
+
+
+Started GET "/reviewers/password/new" for 127.0.0.1 at 2022-10-14 21:57:55 +0200
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 226)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 147)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1577)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 8583)
+Completed 200 OK in 18ms (Views: 16.7ms | Allocations: 9520)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-14 21:58:52 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2204)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 8757)
+Completed 200 OK in 16ms (Views: 14.7ms | Allocations: 9464)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 11:12:03 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12862.8ms | Allocations: 82973)
+  Rendered layout layouts/application.html.erb (Duration: 12896.6ms | Allocations: 104027)
+Completed 200 OK in 12913ms (Views: 12902.9ms | ActiveRecord: 0.0ms | Allocations: 107564)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:17 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:17 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 11:12:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 11:12:24 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 741)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.7ms | Allocations: 6064)
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 12820)
+Completed 200 OK in 63ms (Views: 44.2ms | ActiveRecord: 0.7ms | Allocations: 21706)
+
+
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:24 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 11:12:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 11:12:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 11:17:36 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"pinco@pallino.ciao", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.7ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "pinco@pallino.ciao"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.7ms | Allocations: 3525)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 11:17:36 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 2312)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 8907)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 9710)
+
+

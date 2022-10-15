@@ -1,0 +1,136 @@
+#top {
+    display: flex;
+    flex-direction: column;
+}
+
+#middle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+#bottom{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+/*ELEMENTI AREA TOP*/
+#row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#logo {
+    margin-left: 1%;
+    /* TODO */
+}
+
+#label{
+    font-size: x-large;
+}
+
+#signin_btn{
+    margin-right: 3%;
+}
+
+#log_buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+/*ELEMENTI AREA MIDDLE*/
+#google_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#google_btn{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+#facebook_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+#facebook_btn{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+#oppure_lbl{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#form_div{
+    display: flex;
+    justify-content: center;
+}
+
+#form_div > *{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-group > *{
+    margin-top: 2%;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+}
+
+#submit_btn{
+    align-self: center;
+    width: 70%;
+    margin-top: 10%;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: royalblue;
+    text-decoration: underline;
+}
+
+#link_lbl{
+    color: royalblue;
+    text-decoration: underline;
+}
+
+
+/*ELEMENTI AREA BOTTOM*/
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
