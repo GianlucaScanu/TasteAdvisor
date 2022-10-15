@@ -16215,3 +16215,1602 @@ ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.
   
 ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
   
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:13:03 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 761)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 200.1ms | Allocations: 56704)
+  Rendered layout layouts/application.html.erb (Duration: 233.8ms | Allocations: 77526)
+Completed 200 OK in 271ms (Views: 239.8ms | ActiveRecord: 1.4ms | Allocations: 89274)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:13:14 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 2574)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 22947)
+Completed 200 OK in 108ms (Views: 48.4ms | ActiveRecord: 1.6ms | Allocations: 28528)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:17:09 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2573)
+Importmap skipped missing path: bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 24748)
+Completed 200 OK in 72ms (Views: 60.7ms | ActiveRecord: 1.7ms | Allocations: 30227)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:17:25 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2572)
+Importmap skipped missing path: ./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 23526)
+Completed 200 OK in 97ms (Views: 76.9ms | ActiveRecord: 2.4ms | Allocations: 29087)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:17:38 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2572)
+Importmap skipped missing path: ../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 23478)
+Completed 200 OK in 67ms (Views: 53.8ms | ActiveRecord: 1.3ms | Allocations: 29015)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:17:52 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.3ms | Allocations: 2574)
+Importmap skipped missing path: ./../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 23520)
+Completed 200 OK in 92ms (Views: 67.4ms | ActiveRecord: 2.7ms | Allocations: 29093)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:19:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2574)
+Importmap skipped missing path: ../bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 40.8ms | Allocations: 23565)
+Completed 200 OK in 65ms (Views: 42.8ms | ActiveRecord: 2.2ms | Allocations: 29074)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:23:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2574)
+Importmap skipped missing path: ../bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 54.7ms | Allocations: 23534)
+Completed 200 OK in 81ms (Views: 57.8ms | ActiveRecord: 2.3ms | Allocations: 29076)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:24:59 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2574)
+Importmap skipped missing path: ../bootstrap-5.2.2-dist/js/bootstrap
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 23517)
+Completed 200 OK in 49ms (Views: 36.2ms | ActiveRecord: 1.5ms | Allocations: 29047)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:25:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 171)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2574)
+Importmap skipped missing path: ../bootstrap-5.2.2-dist
+  Rendered layout layouts/application.html.erb (Duration: 53.7ms | Allocations: 23518)
+Completed 200 OK in 78ms (Views: 56.1ms | ActiveRecord: 2.5ms | Allocations: 29066)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:28:59 +0200
+Unable to parse import map from /home/lorenzo/Scrivania/univ/lassi/test/progetto/config/importmap.rb: undefined method `import' for #<Importmap::Map:0x00007fcbc8a02eb8 @directories={"app/javascript/controllers"=>#<struct Importmap::Map::MappedDir dir="app/javascript/controllers", path=nil, under="controllers", preload=false>}, @packages={"application"=>#<struct Importmap::Map::MappedFile name="application", path="application.js", preload=true>, "@hotwired/turbo-rails"=>#<struct Importmap::Map::MappedFile name="@hotwired/turbo-rails", path="turbo.min.js", preload=true>, "@hotwired/stimulus"=>#<struct Importmap::Map::MappedFile name="@hotwired/stimulus", path="stimulus.min.js", preload=true>, "@hotwired/stimulus-loading"=>#<struct Importmap::Map::MappedFile name="@hotwired/stimulus-loading", path="stimulus-loading.js", preload=true>, "bootstrap"=>#<struct Importmap::Map::MappedFile name="bootstrap", path="../bootstrap-5.2.2-dist", preload=false>}, @cache={}, @cache_sweeper=#<ActiveSupport::FileUpdateChecker:0x00007fcbc89feb38 @files=[], @glob="{/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/**/*.{js},/home/lorenzo/Scrivania/univ/lassi/test/progetto/vendor/javascript/**/*.{js}}", @block=#<Proc:0x00007fcbc89feae8 /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/importmap-rails-1.1.5/lib/importmap/map.rb:78>, @watched=nil, @updated_at=nil, @last_watched=["/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/application.js", "/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/controllers/application.js", "/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/controllers/hello_controller.js", "/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/controllers/index.js"], @last_update_at=2022-10-15 17:08:46.749301403 +0200>>
+
+import "../bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"
+^^^^^^
+  
+Importmap::Map::InvalidFile (Unable to parse import map from /home/lorenzo/Scrivania/univ/lassi/test/progetto/config/importmap.rb: undefined method `import' for #<Importmap::Map:0x00007fcbc8a02eb8 @directories={"app/javascript/controllers"=>#<struct Importmap::Map::MappedDir dir="app/javascript/controllers", path=nil, under="controllers", preload=false>}, @packages={"application"=>#<struct Importmap::Map::MappedFile name="application", path="application.js", preload=true>, "@hotwired/turbo-rails"=>#<struct Importmap::Map::MappedFile name="@hotwired/turbo-rails", path="turbo.min.js", preload=true>, "@hotwired/stimulus"=>#<struct Importmap::Map::MappedFile name="@hotwired/stimulus", path="stimulus.min.js", preload=true>, "@hotwired/stimulus-loading"=>#<struct Importmap::Map::MappedFile name="@hotwired/stimulus-loading", path="stimulus-loading.js", preload=true>, "bootstrap"=>#<struct Importmap::Map::MappedFile name="bootstrap", path="../bootstrap-5.2.2-dist", preload=false>}, @cache={}, @cache_sweeper=#<ActiveSupport::FileUpdateChecker:0x00007fcbc89feb38 @files=[], @glob="{/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/**/*.{js},/home/lorenzo/Scrivania/univ/lassi/test/progetto/vendor/javascript/**/*.{js}}", @block=#<Proc:0x00007fcbc89feae8 /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/importmap-rails-1.1.5/lib/importmap/map.rb:78>, @watched=nil, @updated_at=nil, @last_watched=["/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/application.js", "/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/controllers/application.js", "/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/controllers/hello_controller.js", "/home/lorenzo/Scrivania/univ/lassi/test/progetto/app/javascript/controllers/index.js"], @last_update_at=2022-10-15 17:08:46.749301403 +0200>>
+
+import "../bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"
+^^^^^^):
+  
+importmap-rails (1.1.5) lib/importmap/map.rb:19:in `rescue in draw'
+importmap-rails (1.1.5) lib/importmap/map.rb:15:in `draw'
+importmap-rails (1.1.5) lib/importmap/reloader.rb:5:in `block in reload!'
+importmap-rails (1.1.5) lib/importmap/reloader.rb:5:in `each'
+importmap-rails (1.1.5) lib/importmap/reloader.rb:5:in `reload!'
+importmap-rails (1.1.5) lib/importmap/reloader.rb:10:in `block in updater'
+activesupport (7.0.3.1) lib/active_support/file_update_checker.rb:83:in `execute'
+importmap-rails (1.1.5) lib/importmap/reloader.rb:2:in `execute'
+importmap-rails (1.1.5) lib/importmap/engine.rb:26:in `block (3 levels) in <class:Engine>'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:445:in `instance_exec'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:445:in `block in make_lambda'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:687:in `block (2 levels) in default_terminator'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:686:in `catch'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:686:in `block in default_terminator'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.3.1) lib/active_support/callbacks.rb:106:in `run_callbacks'
+activesupport (7.0.3.1) lib/active_support/execution_wrapper.rb:129:in `run'
+activesupport (7.0.3.1) lib/active_support/execution_wrapper.rb:125:in `run!'
+activesupport (7.0.3.1) lib/active_support/reloader.rb:114:in `run!'
+activesupport (7.0.3.1) lib/active_support/execution_wrapper.rb:78:in `block in run!'
+<internal:kernel>:90:in `tap'
+activesupport (7.0.3.1) lib/active_support/execution_wrapper.rb:75:in `run!'
+activesupport (7.0.3.1) lib/active_support/reloader.rb:63:in `run!'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3.1) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3.1) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3.1) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3.1) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:31:36 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1253)
+Importmap skipped missing path: bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 23698)
+Completed 200 OK in 64ms (Views: 62.7ms | Allocations: 24573)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:31:37 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:37 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:31:52 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1048)
+Importmap skipped missing path: bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 23513)
+Completed 200 OK in 36ms (Views: 35.2ms | Allocations: 24163)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:52 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:52 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:31:52 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:31:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:32:32 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1050)
+Importmap skipped missing path: ../bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 22293)
+Completed 200 OK in 43ms (Views: 42.6ms | Allocations: 22944)
+
+
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:32:33 +0200
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:32:33 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:32:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:32:33 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:32:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:34:23 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 881)
+Importmap skipped missing path: ../bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js
+  Rendered layout layouts/application.html.erb (Duration: 56.2ms | Allocations: 23235)
+Completed 200 OK in 59ms (Views: 58.0ms | Allocations: 23521)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:34:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:34:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:34:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:34:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:34:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-10-15 17:34:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:37:16 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1050)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 21809)
+Completed 200 OK in 54ms (Views: 53.6ms | Allocations: 22460)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:37:17 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:37:17 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:37:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:37:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:37:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/home/lorenzo/Scrivania/univ/lassi/test/progetto/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-10-15 17:37:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home/lorenzo/Scrivania/univ/lassi/test/progetto/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:38:10 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 879)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 7982)
+Completed 200 OK in 34ms (Views: 32.9ms | Allocations: 8267)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:38:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:38:10 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:38:10 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:38:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:38:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/home/lorenzo/Scrivania/univ/lassi/test/progetto/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js" for 127.0.0.1 at 2022-10-15 17:38:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/home/lorenzo/Scrivania/univ/lassi/test/progetto/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:44:59 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1048)
+  Rendered layout layouts/application.html.erb (Duration: 48.4ms | Allocations: 21730)
+Completed 200 OK in 53ms (Views: 52.0ms | Allocations: 22380)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:45:00 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:45:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:45:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:45:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:45:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:46:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 8959)
+Completed 200 OK in 26ms (Views: 25.2ms | Allocations: 9845)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:46:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:46:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:46:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:46:50 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:46:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:47:19 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 8973)
+Completed 200 OK in 21ms (Views: 19.1ms | Allocations: 9858)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:47:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:47:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:47:20 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:47:20 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:47:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:48:39 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 9046)
+Completed 200 OK in 32ms (Views: 30.7ms | Allocations: 9931)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:48:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:48:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:48:40 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:48:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:48:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:49:00 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 9009)
+Completed 200 OK in 45ms (Views: 43.3ms | Allocations: 9894)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:49:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:49:19 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 9046)
+Completed 200 OK in 24ms (Views: 22.7ms | Allocations: 9932)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:19 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:19 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:19 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:49:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:49:23 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 576)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 3486)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 10549)
+Completed 200 OK in 54ms (Views: 35.3ms | ActiveRecord: 2.1ms | Allocations: 16375)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:23 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 17:49:23 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:24 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:49:24 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:49:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:50:11 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 9105)
+Completed 200 OK in 29ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 10005)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:11 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:12 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:50:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2022-10-15 17:50:14 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.7ms | Allocations: 666)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 15.2ms | Allocations: 3674)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 10782)
+Completed 200 OK in 53ms (Views: 37.5ms | ActiveRecord: 1.1ms | Allocations: 16492)
+
+
+Started GET "/restaurants/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants/images/pizza_sample.jpg"):
+  
+Started GET "/restaurants/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:14 +0200
+Started GET "/restaurants/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:14 +0200
+Started GET "/restaurants/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants/images/tiramisu_sample.jpg"):
+  
+Started GET "/restaurants/images/lente.png" for 127.0.0.1 at 2022-10-15 17:50:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/restaurants/images/carbonara_sample.jpg"):
+  
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:50:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:19 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:50:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:51:34 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 120.4ms | Allocations: 9022)
+Completed 200 OK in 128ms (Views: 126.6ms | ActiveRecord: 0.0ms | Allocations: 9919)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:51:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:51:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:51:34 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:51:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:51:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:52:52 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 9146)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 10042)
+
+
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:52:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:52:52 +0200
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:52:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:52:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:52:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:53:01 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1249)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 9085)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 9980)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:01 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:53:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:53:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 881)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 8052)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 8341)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:51 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:53:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-15 17:53:56 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 231)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.2ms | Allocations: 2982)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 10065)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 11477)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:56 +0200
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:56 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:53:56 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 17:53:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-15 17:54:48 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1852)
+  Rendered layout layouts/application.html.erb (Duration: 11824.7ms | Allocations: 48690)
+Completed 200 OK in 11827ms (Views: 11825.6ms | ActiveRecord: 0.0ms | Allocations: 49304)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-15 17:55:28 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1850)
+  Rendered layout layouts/application.html.erb (Duration: 10678.7ms | Allocations: 47578)
+Completed 200 OK in 10681ms (Views: 10679.7ms | ActiveRecord: 0.0ms | Allocations: 48148)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-15 17:56:22 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1846)
+  Rendered layout layouts/application.html.erb (Duration: 11183.9ms | Allocations: 45165)
+Completed 200 OK in 11188ms (Views: 11186.6ms | Allocations: 45727)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-15 17:56:56 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1850)
+  Rendered layout layouts/application.html.erb (Duration: 10122.5ms | Allocations: 45161)
+Completed 200 OK in 10127ms (Views: 10125.8ms | Allocations: 45743)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:57:24 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1635.3ms | Allocations: 2918)
+  Rendered layout layouts/application.html.erb (Duration: 1651.8ms | Allocations: 9832)
+Completed 200 OK in 1653ms (Views: 1652.5ms | Allocations: 10099)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:57:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:57:26 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:57:26 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:57:26 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:57:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:05:56 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1247)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 8969)
+Completed 200 OK in 37ms (Views: 35.5ms | Allocations: 9837)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:05:56 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:05:56 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:05:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:05:56 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:05:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:06:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 559)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.8ms | Allocations: 3425)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 10331)
+Completed 200 OK in 39ms (Views: 37.2ms | Allocations: 11552)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:06:00 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:06:00 +0200
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:06:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:06:00 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 18:06:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:06:21 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test10@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "test10@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 18ms (ActiveRecord: 1.3ms | Allocations: 4632)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:06:22 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2336)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 9173)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 9973)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:06:48 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test11@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "test11@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.2ms | Allocations: 1500)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:06:48 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 15.5ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 19.3ms | Allocations: 2161)
+  Rendered layout layouts/application.html.erb (Duration: 159.2ms | Allocations: 8873)
+Completed 200 OK in 161ms (Views: 160.0ms | ActiveRecord: 0.0ms | Allocations: 9545)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:06:59 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test9@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "test9@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 29ms (ActiveRecord: 0.1ms | Allocations: 1403)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:06:59 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2166)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 8893)
+Completed 200 OK in 24ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 9573)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:07:08 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test6@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.2ms | Allocations: 1407)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:07:08 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.6ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.9ms | Allocations: 2161)
+  Rendered layout layouts/application.html.erb (Duration: 39.1ms | Allocations: 8873)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 9545)
+
+
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2022-10-15 18:07:14 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 139)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2157)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 8869)
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 9521)
+
+
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2022-10-15 18:07:25 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "restaurant"=>{"email"=>"test6@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = ? ORDER BY "restaurants"."id" ASC LIMIT ?[0m  [["email", "test6@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.4ms | Allocations: 1704)
+
+
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2022-10-15 18:07:25 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 139)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2162)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 8874)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 9545)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:07:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 2156)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 8868)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 9506)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-15 18:08:05 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.8ms | Allocations: 225)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 16.1ms | Allocations: 2845)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 9652)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms | Allocations: 10644)
+
+
+Started POST "/reviewers" for 127.0.0.1 at 2022-10-15 18:08:41 +0200
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"tester_recensore", "email"=>"test_recensore@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma"}
+[31mUnpermitted parameter: :username. Context: { controller: Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007fcbb9b68938>, params: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"username"=>"tester_recensore", "email"=>"test_recensore@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma", "controller"=>"devise/registrations", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mReviewer Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = ? LIMIT ?[0m  [["email", "test_recensore@test.com"], ["LIMIT", 1]]
+  [1m[36mReviewer Create (0.3ms)[0m  [1m[32mINSERT INTO "reviewers" ("name", "surname", "username", "profile_picture", "telephone_number", "created_at", "updated_at", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", nil], ["surname", nil], ["username", nil], ["profile_picture", nil], ["telephone_number", nil], ["created_at", "2022-10-15 16:08:42.382281"], ["updated_at", "2022-10-15 16:08:42.382281"], ["email", "test_recensore@test.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 422ms (ActiveRecord: 12.9ms | Allocations: 16036)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:08:42 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 983)
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 8761)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.4ms | Allocations: 9102)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:42 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:42 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:42 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:08:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/sign_out" for 127.0.0.1 at 2022-10-15 18:08:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/sign_out"):
+  
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:51 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 18:08:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:08:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:09:12 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 879)
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 8547)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.2ms | Allocations: 8817)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:13 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:13 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:09:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/sign_out" for 127.0.0.1 at 2022-10-15 18:09:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/sign_out"):
+  
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:16 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:16 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 18:09:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:09:48 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1247)
+  [1m[36mReviewer Load (0.3ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 9958)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.3ms | Allocations: 10826)
+
+
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:48 +0200
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:48 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:09:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:09:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 873)
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 8620)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.4ms | Allocations: 8908)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:50 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:50 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:09:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-15 18:09:52 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 27ms (ActiveRecord: 0.1ms | Allocations: 9704)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:09:52 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 987)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 8101)
+Completed 200 OK in 25ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 8464)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:52 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:09:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:09:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:10:02 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.5ms | Allocations: 559)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.1ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 32.6ms | Allocations: 10873)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms | Allocations: 12275)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:02 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:02 +0200
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 18:10:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:10:09 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test_recensore@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "test_recensore@test.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 359ms (ActiveRecord: 0.1ms | Allocations: 2839)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:10:09 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1246)
+  [1m[36mReviewer Load (0.3ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 9409)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.3ms | Allocations: 10131)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:10 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:10:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-15 18:10:13 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.1ms | Allocations: 1956)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:10:13 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 879)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 7918)
+Completed 200 OK in 23ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 8208)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:10:13 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:10:18 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 2205)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 9024)
+Completed 200 OK in 28ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 9700)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:19 +0200
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 18:10:19 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:10:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:11:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1522.3ms | Allocations: 4909)
+  Rendered layout layouts/application.html.erb (Duration: 13136.0ms | Allocations: 47651)
+Completed 200 OK in 13139ms (Views: 13137.0ms | ActiveRecord: 0.0ms | Allocations: 48290)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:13:30 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2199.2ms | Allocations: 4760)
+  Rendered layout layouts/application.html.erb (Duration: 13713.5ms | Allocations: 49218)
+Completed 200 OK in 13717ms (Views: 13715.0ms | ActiveRecord: 0.0ms | Allocations: 49835)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:13:52 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test_recensore@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "test_recensore@test.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 356ms (ActiveRecord: 0.4ms | Allocations: 1490)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:13:52 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2162)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 8930)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 9597)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:14:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2157)
+  Rendered layout layouts/application.html.erb (Duration: 12579.7ms | Allocations: 45922)
+Completed 200 OK in 12582ms (Views: 12580.7ms | ActiveRecord: 0.0ms | Allocations: 46548)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:14:25 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test_recensore@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 359)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:14:25 +0200
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2162)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 8930)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.0ms | Allocations: 9596)
+
+
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:14:38 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"test_recensore@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "test_recensore@test.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 365ms (ActiveRecord: 0.2ms | Allocations: 2321)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:14:38 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1771.9ms | Allocations: 2916)
+  [1m[36mReviewer Load (0.3ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:15
+  Rendered layout layouts/application.html.erb (Duration: 1806.3ms | Allocations: 10781)
+Completed 200 OK in 1809ms (Views: 1807.9ms | ActiveRecord: 0.3ms | Allocations: 11056)
+
+
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:14:40 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:40 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started DELETE "/reviewers/sign_out" for 127.0.0.1 at 2022-10-15 18:14:44 +0200
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms | Allocations: 1811)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-15 18:14:44 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 881)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 7955)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 8230)
+
+
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:44 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 18:14:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:44 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 18:14:47 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 138)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2164)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 9039)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.0ms | Allocations: 9699)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:47 +0200
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 18:14:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:47 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 18:14:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  

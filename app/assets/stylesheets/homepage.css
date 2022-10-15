@@ -38,15 +38,6 @@
     font-size: x-large;
 }
 
-#signin_btn{
-    margin-right: 5%;
-}
-
-#log_buttons{
-    display: flex;
-    flex-direction: row;
-}
-
 
 /*ELEMENTI AREA MIDDLE*/
 #col1 {
