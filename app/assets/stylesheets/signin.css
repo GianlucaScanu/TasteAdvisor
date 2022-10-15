@@ -82,6 +82,13 @@
     margin-top: 3%;
 }
 
+.notice_div, .alert_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+
 #form_div{
     display: flex;
     justify-content: center;
@@ -106,6 +113,7 @@
     align-self: center;
     width: 70%;
     margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 a{
