@@ -8,7 +8,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <%= stylesheet_link_tag "navbar.css" %>
+    <%= stylesheet_link_tag "navbar.css" %>  
   </head>
 
   <body>
@@ -69,6 +69,17 @@
               <div id = "label">
                   TASTEADVISOR
               </div>
+                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+
               <div id = "log_buttons">
 
                   <%= link_to "Sign in", new_reviewer_session_path, :class => "btn btn-success btn-responsive", :id => "signin_btn" %>

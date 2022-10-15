@@ -15639,3 +15639,579 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 8612ms (Views: 8610.7ms | ActiveRecord: 0.0ms | Allocations: 47001)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-15 15:50:02 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 100.7ms | Allocations: 38246)
+  Rendered layout layouts/application.html.erb (Duration: 152.0ms | Allocations: 59494)
+Completed 200 OK in 163ms (Views: 157.0ms | ActiveRecord: 0.0ms | Allocations: 63032)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:02 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:02 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:02 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 15:50:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 15:50:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 29.3ms | Allocations: 21435)
+Completed 200 OK in 32ms (Views: 31.4ms | Allocations: 22087)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:51 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:51 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 15:50:51 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 15:50:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 15:52:16 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 21453)
+Completed 200 OK in 28ms (Views: 27.8ms | Allocations: 22104)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 15:52:16 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 15:52:16 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 15:52:16 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 15:52:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 15:52:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 15:53:18 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1246)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 8688)
+Completed 200 OK in 20ms (Views: 19.3ms | Allocations: 9578)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 15:53:18 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 15:53:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 15:53:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 15:53:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 15:53:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 16:51:07 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 92.5ms | Allocations: 30615)
+  Rendered layout layouts/application.html.erb (Duration: 154.3ms | Allocations: 51747)
+Completed 200 OK in 172ms (Views: 161.9ms | ActiveRecord: 0.0ms | Allocations: 55285)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 16:51:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 16:51:08 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 16:51:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 16:51:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 16:51:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-10-15 16:55:27 +0200
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 18286.8ms | Allocations: 153483)
+  Rendered layout layouts/application.html.erb (Duration: 18324.7ms | Allocations: 174867)
+Completed 200 OK in 18340ms (Views: 18328.0ms | ActiveRecord: 0.0ms | Allocations: 178404)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 16:55:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 16:55:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 16:55:46 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 16:55:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 16:55:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-10-15 16:59:46 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 93.5ms | Allocations: 30854)
+  Rendered layout layouts/application.html.erb (Duration: 167.5ms | Allocations: 52361)
+Completed 200 OK in 184ms (Views: 173.7ms | ActiveRecord: 0.0ms | Allocations: 55899)
+
+
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 16:59:47 +0200
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 16:59:47 +0200
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 16:59:47 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 16:59:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 16:59:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:00:07 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1253)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 8999)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 9901)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:00:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:00:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:00:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:00:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:00:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:04:21 +0200
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 106.3ms | Allocations: 31030)
+  Rendered layout layouts/application.html.erb (Duration: 186.6ms | Allocations: 52517)
+Completed 200 OK in 200ms (Views: 191.5ms | ActiveRecord: 0.0ms | Allocations: 56055)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:04:22 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:04:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:04:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:04:22 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:04:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `block in tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:38:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/tagged_logging.rb:114:in `tagged'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/rack/logger.rb:25:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/activesupport-7.0.3.1/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionpack-7.0.3.1/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.0.3.1/lib/rails/engine.rb:530:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/lorenzo/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2022-10-15 17:08:29 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 898)
+  Rendered layout layouts/application.html.erb (Duration: 100.5ms | Allocations: 31704)
+Completed 200 OK in 102ms (Views: 101.4ms | ActiveRecord: 0.0ms | Allocations: 32015)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:29 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-15 17:08:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-15 17:08:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.1ms | Allocations: 745)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 35.2ms | Allocations: 6153)
+  Rendered layout layouts/application.html.erb (Duration: 49.8ms | Allocations: 13259)
+Completed 200 OK in 82ms (Views: 53.4ms | ActiveRecord: 1.6ms | Allocations: 22155)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:42 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:42 +0200
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-15 17:08:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-15 17:08:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
