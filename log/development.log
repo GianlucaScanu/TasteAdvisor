@@ -31101,3 +31101,112 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.0ms | Allocations: 50271)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-16 11:18:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 5991)
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 52694)
+Completed 200 OK in 74ms (Views: 69.7ms | ActiveRecord: 0.5ms | Allocations: 57390)
+
+
+Started GET "/reviewers" for 127.0.0.1 at 2022-10-16 11:18:37 +0200
+Processing by ReviewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers"[0m
+  ↳ app/views/reviewers/index.html.erb:6
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.3ms | Allocations: 192)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 10084)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 15714)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 16638)
+
+
+Started GET "/reviewers/1" for 127.0.0.1 at 2022-10-16 11:18:38 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 815)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 6221)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 7889)
+
+
+Started GET "/reviewers/2" for 127.0.0.1 at 2022-10-16 11:18:40 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 541)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5946)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 6696)
+
+
+Started GET "/reviewers" for 127.0.0.1 at 2022-10-16 11:20:17 +0200
+Processing by ReviewersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/index.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers"[0m
+  ↳ app/views/reviewers/index.html.erb:6
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.4ms | Allocations: 134)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered reviewers/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 2706)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 8533)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.1ms | Allocations: 9408)
+
+
+Started GET "/reviewers/1" for 127.0.0.1 at 2022-10-16 11:20:18 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 734)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 6138)
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.1ms | Allocations: 6996)
+
+
+Started GET "/reviewers/1" for 127.0.0.1 at 2022-10-16 11:20:24 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 550)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 5952)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.1ms | Allocations: 6687)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

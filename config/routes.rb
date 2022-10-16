@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   get 'home/index'
+
   devise_for :reviewers
   devise_for :restaurants
+  
   resources :reports
   resources :dishes
   resources :restaurants
   resources :reviews
+  resources :reviewers
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
