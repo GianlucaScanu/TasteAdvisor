@@ -1,42 +1,27 @@
 <h1>Home#index</h1>
 
 <% if reviewer_signed_in? %>
+    
+    <%=render current_reviewer%><br>
 
-    UTENTE RECENSORE<br>
-
-    ID:<%= current_reviewer.id %><br />
-    USERNAME:<%= current_reviewer.username %><br />
-    NAME:<%= current_reviewer.name %><br />
-    SURNAME:<%= current_reviewer.surname %><br />
-    TEL:<%= current_reviewer.telephone_number%><br />
-    EMAIL:<%= current_reviewer.email %><br />
     <%= link_to "vai ai ristoranti", restaurants_path, method: :get%>
-
-
     <%= button_to "logout", destroy_reviewer_session_path, method: :delete  %>
+    
 <% elsif restaurant_signed_in? %>
 
-    UTENTE RISTORANTE<br>
-
-    ID:<%= current_restaurant.id %><br />
-    USERNAME:<%= current_restaurant.username %><br />
-    NAME:<%= current_restaurant.name %><br />
-    TEL:<%= current_restaurant.telephone_number%><br />
-    ADDRESS:<%= current_restaurant.address%><br />
-    EMAIL:<%= current_restaurant.email %><br />
+    <%=render current_restaurant%><br>
 
     <%= link_to "vai ai piatti", dishes_path, method: :get%>
-
-
     <%= button_to "logout", destroy_restaurant_session_path, method: :delete  %>
+
 <%else%>
     <%= button_to "Sign in reviewer", new_reviewer_session_path %>
     <%= button_to "Sign in restaurant", new_restaurant_session_path %>
 
     <br>
-
+    
     <%= button_to "Sign up reviewer", new_reviewer_registration_path , method: :get %>
     <%= button_to "Sign up restaurant", new_restaurant_registration_path , method: :get%> 
 
-    <p>Find me in app/views/home/index.html.erb</p>
+    <%#= <p>Find me in app/views/home/index.html.erb</p> %>
 <%end%>

@@ -1,4 +1,5 @@
 <div id="<%= dom_id dish %>">
+
   ID: <%= dish.id %><br>
   NAME: <%= dish.name %><br>
   CATEGORY: <%= dish.category %><br>
@@ -6,8 +7,6 @@
   RESTAURANT: <%= Restaurant.find(dish.restaurant_id).name %><br>
   RESTAURANT ID: <%= dish.restaurant_id %><br>
   PRICE: <%= dish.price %><br>
-
   <%session[:save_dish] = dish.id%>
-
-  
+    
 </div>
