@@ -1,6 +1,5 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import "@hotwired/turbo-rails"
-<<<<<<< HEAD
 import "controllers"
 import "bootstrap"
 
@@ -20,7 +19,5 @@ import "bootstrap"
 //= require jquery_ujs
 //= require bootstrap-sprockets
 
-=======
 import "./controllers"  
-import * as bootstrap from "bootstrap"  
->>>>>>> struttura_rails
+
