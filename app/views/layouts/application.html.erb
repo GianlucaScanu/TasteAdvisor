@@ -26,9 +26,9 @@
               <div id = "log_buttons">
 
                 <% if (restaurant_signed_in?) %>
-                    <%= button_to "Profilo", destroy_restaurant_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                    <%= button_to "Profilo", current_restaurant, method: :get, :class => "btn btn-success btn-responsive" %>
                 <% elsif (reviewer_signed_in?) %>
-                    <%= button_to "Profilo", destroy_reviewer_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                    <%= button_to "Profilo", current_reviewer, method: :get, :class => "btn btn-success btn-responsive" %>
                 <%end %>   
 
                 <% if (restaurant_signed_in?) %>
