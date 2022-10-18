@@ -26,36 +26,43 @@
         <div id = "facebook_div">
             <button  id = "facebook_btn" type="button" class="btn btn-outline-primary">Registrati con Facebook</button>
         </div>
-        <div id = "oppure_lbl">Oppure</div>
-        <div id = "form_div">
-            <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-                <%= render "devise/shared/error_messages", resource: resource %>
-                <form>
-                    <div class="form-group">
-                        <%= f.label :username, "Inserisci Username" %>
-                        <%= f.text_field :username , :class => "form-control", autofocus: true, :placeholder => "Inserisci un username" %>
-                    </div>
+        <div id = "oppure_lbl">Oppure</div>   
+                <div id = "form_div">
+                    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                        <%= render "devise/shared/error_messages", resource: resource %>
+                        <form>
+                            <% if (resource_name.to_s == "restaurant") %>
+                                <div class="form-group">
+                                    <%= f.label :name, "Nome del ristorante" %>
+                                    <%= f.text_field :name , :class => "form-control", autofocus: true, :placeholder => "Inserisci un nome" %>
+                                </div>
+                            <% end %>
 
-                    <div class="form-group">
-                    <%= f.label :email, "Inserisci e-mail" %>
-                    <%= f.email_field :email , :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua email" %>
-                    </div>
-                    
-                    <div class="form-group">
-                        <%= f.label :password, "Inserisci password" %>
-                        <%= f.password_field :password, :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua password" %>
-                    </div>
+                            <div class="form-group">
+                                <%= f.label :username, "Inserisci Username" %>
+                                <%= f.text_field :username , :class => "form-control", autofocus: true, :placeholder => "Inserisci un username" %>
+                            </div>
 
-                    <div class="form-group">
-                        <%= f.label :password_confirmation, "Conferma password" %>
-                        <%= f.password_field :password_confirmation, autofocus: true,  :placeholder => "Conferma la tua password", :class => "form-control" %>
-                    </div>
-                    <div class="confirm">
-                        <%= f.submit "Conferma", :class => "btn btn-success", :id => "submit_btn"%>
-                    </div>
-                </form>
-            <% end %>
-        </div>
+                            <div class="form-group">
+                            <%= f.label :email, "Inserisci e-mail" %>
+                            <%= f.email_field :email , :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua email" %>
+                            </div>
+                            
+                            <div class="form-group">
+                                <%= f.label :password, "Inserisci password" %>
+                                <%= f.password_field :password, :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua password" %>
+                            </div>
+
+                            <div class="form-group">
+                                <%= f.label :password_confirmation, "Conferma password" %>
+                                <%= f.password_field :password_confirmation, autofocus: true,  :placeholder => "Conferma la tua password", :class => "form-control" %>
+                            </div>
+                            <div class="confirm">
+                                <%= f.submit "Conferma", :class => "btn btn-success", :id => "submit_btn"%>
+                            </div>
+                        </form>
+                    <% end %>
+                </div>
     </div>
 </body>
 </html>
