@@ -1,4 +1,9 @@
+<%#=session[:save_dish]%>
+
+
 <%= form_with(model: review) do |form| %>
+
+
   <% if review.errors.any? %>
     <div style="color: red">
       <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
@@ -11,19 +16,23 @@
     </div>
   <% end %>
 
+ 
+
   <div>
     <%= form.label :rating1, style: "display: block" %>
-    <%= form.number_field :rating1 %>
+    <%= form.select :rating1, ["1", "2", "3", "4", "5"], autofocus: true, autocomplete: "category" %>
   </div>
 
   <div>
     <%= form.label :rating2, style: "display: block" %>
-    <%= form.number_field :rating2 %>
+    <%= form.select :rating2, ["1", "2", "3", "4", "5"], autofocus: true, autocomplete: "category" %>
+    <%#= form.number_field :rating2 %>
   </div>
 
   <div>
     <%= form.label :rating3, style: "display: block" %>
-    <%= form.number_field :rating3 %>
+    <%= form.select :rating3, ["1", "2", "3", "4", "5"], autofocus: true, autocomplete: "category" %>
+    <%#= form.number_field :rating3 %>
   </div>
 
   <div>
@@ -35,6 +44,9 @@
     <%= form.label :imgs, style: "display: block" %>
     <%= form.text_field :imgs %>
   </div>
+
+  <%= form.hidden_field :dish_id, value: session[:save_dish] %>
+  <%= form.hidden_field :reviewer_id, value: current_reviewer.id %>
 
   <div>
     <%= form.submit %>

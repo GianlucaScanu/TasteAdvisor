@@ -2,9 +2,19 @@
 
 <%= render @restaurant %>
 
-<div>
-  <%= link_to "Edit this restaurant", edit_restaurant_path(@restaurant) %> |
-  <%= link_to "Back to restaurants", restaurants_path %>
+  <p>
+  <% Dish.all.each do |dish| %>
+    <%if dish.restaurant_id == @restaurant.id %>
+       <%= render dish%>
+       <p> <%= link_to "Show this dish", dish %> </p> 
+    <%end%>
 
-  <%= button_to "Destroy this restaurant", @restaurant, method: :delete %>
+  <% end %>
+
+  </p>
+
+
+
+<div>
+  <%= link_to "Back to restaurants", restaurants_path %>
 </div>

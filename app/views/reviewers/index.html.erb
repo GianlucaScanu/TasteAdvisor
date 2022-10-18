@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Reviewers</h1>
+
+<div id="reviewers">
+  <% @reviewers.each do |reviewer| %>
+    <%= render reviewer %>
+    <p>
+      <%= link_to "Show this reviewer", reviewer %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New reviewer", new_reviewer_path %>

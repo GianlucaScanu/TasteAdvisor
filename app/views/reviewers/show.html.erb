@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @reviewer %>
+
+<div>
+  <%= link_to "Edit this reviewer", edit_reviewer_path(@reviewer) %> |
+  <%= link_to "Back to reviewers", reviewers_path %>
+
+  <%= button_to "Destroy this reviewer", @reviewer, method: :delete %>
+</div>
