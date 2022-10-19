@@ -4,6 +4,10 @@
     margin-right: 3%;
 }
 
+#profile_btn{
+    margin-right: 5%;
+}
+
 .notice_div{
     display: flex;
     flex-direction: column;

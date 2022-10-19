@@ -1,7 +1,9 @@
-<p style="color: green"><%= notice %></p>
+<% render @restaurant %> 
 
-<%= render @restaurant %>
-
+  <!-- tolto = da render in modo da poter pescare informazioni senza stamparle tutte,
+       segue esempio username-->
+  USERNAME:<%= @restaurant.username %><br>
+  ADDRESS:<%= @restaurant.address %><br>
   <p>
   <% Dish.all.each do |dish| %>
     <%if dish.restaurant_id == @restaurant.id %>
@@ -13,8 +15,12 @@
 
   </p>
 
+<div>
+  <%= link_to "Edit restaurant", edit_restaurant_path(@restaurant) %>
+</div>
 
-
+<!--
 <div>
   <%= link_to "Back to restaurants", restaurants_path %>
 </div>
+-->

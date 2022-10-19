@@ -24,19 +24,21 @@
               </div>
 
               <div id = "log_buttons">
-
+                <div id = "profile_btn">
                 <% if (restaurant_signed_in?) %>
-                    <%= button_to "Profilo", destroy_restaurant_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                    <%= button_to "Profilo", current_restaurant, method: :get, :class => "btn btn-success btn-responsive" %>
                 <% elsif (reviewer_signed_in?) %>
-                    <%= button_to "Profilo", destroy_reviewer_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                    <%= button_to "Profilo", current_reviewer, method: :get, :class => "btn btn-success btn-responsive", :id => "profile_btn" %>
                 <%end %>   
+                </div>
 
+                <div id = "logout_btn">
                 <% if (restaurant_signed_in?) %>
-                TODO:
-                    <%= button_to "Logout", destroy_restaurant_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                    <%= button_to "Logout", destroy_restaurant_session_path, method: :delete, :class => "btn btn-success btn-responsive", :id => "logout_btn" %>
                 <% elsif (reviewer_signed_in?) %>
-                    <%= button_to "Logout", destroy_reviewer_session_path, method: :delete, :class => "btn btn-success btn-responsive" %>
+                    <%= button_to "Logout", destroy_reviewer_session_path, method: :delete, :class => "btn btn-success btn-responsive", :id => "logout_btn" %>
                 <%end %>
+                </div>
               </div>
 
           </div>
