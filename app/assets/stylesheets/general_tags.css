@@ -21,3 +21,16 @@
     align-items: center;
     color: red;
 }
+
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #1e5a1a;
+}
