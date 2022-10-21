@@ -1,0 +1,110 @@
+#top {
+    display: flex;
+    flex-direction: column;
+}
+
+#middle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+    
+
+
+    /*TEMPORANEA*/
+    overflow: scroll;
+}
+
+#bottom{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+
+/*ELEMENTI AREA TOP*/
+#row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#logo {
+    margin-left: 1%;
+    /* TODO */
+}
+
+#label{
+    font-size: x-large;
+}
+
+#signin_btn{
+    margin-right: 3%;
+}
+
+#log_buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+/*ELEMENTI AREA MIDDLE*/
+#midrow1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#foto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+#image_lbl{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#labels{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+#desc_lbl{
+    display: flex;
+    justify-content: center;
+}
+
+#midrow2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+#save_btn{
+    margin-right: 10%;
+    align-self: center;
+}
+

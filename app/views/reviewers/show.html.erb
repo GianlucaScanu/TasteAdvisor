@@ -1,10 +1,41 @@
-<p style="color: green"><%= notice %></p>
+<% render @reviewer %>
+<%= stylesheet_link_tag "recensore.css" %>
 
-<%= render @reviewer %>
+<div id = "middle">
+        <div id = "foto">
+            <div id = "image">
+                <img alt="immagine profilo BACK-END">
+            </div>
+            <div id = "image_lbl"> foto profilo</div>
+        </div>
+        <div id = "user_desc">
+            <div id = "username"> Username: <%= @reviewer.username %> </div>
+            <div id = "description">TODO: Descrizione utente BACK-END</div>
+        </div>
+        <div id = "modify">
+            <div id = "profilo_btn">
+              <%= link_to "Modifica profilo", edit_reviewer_path(@reviewer), :class => "btn btn-success" %>
+            </div>
+        </div>
+    </div>
+    <div id = "midbottom">
+        <div id = "bottom_row1">
+            <div id = "bottom_lbl"> Le tue recensioni </div>
+        </div>
+        <div id = "bottom_row2">
+            <div id = "recensione_tipo">
+                <div id = "recensione_text">TODO: @testoRecensione BACKEND</div>
+                <div id = "recensione_btn">
+                    <div id = "mod_div">
+                        <div id = "mod_btn" class = "btn btn-success btn-responsive">Modifica</div>
+                    </div>
+                    <div id = "del_div">
+                        <div id = "del_btn" class = "btn btn-success btn-responsive">Cancella</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
 
-<div>
-  <%= link_to "Edit this reviewer", edit_reviewer_path(@reviewer) %> |
-  <%= link_to "Back to reviewers", reviewers_path %>
 
-  <%= button_to "Destroy this reviewer", @reviewer, method: :delete %>
-</div>
