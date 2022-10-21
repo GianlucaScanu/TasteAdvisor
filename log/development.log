@@ -64871,3 +64871,184 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 5483ms (Views: 5482.5ms | ActiveRecord: 0.0ms | Allocations: 64145)
 
 
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:33:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 745)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6384.9ms | Allocations: 115309)
+  Rendered layout layouts/application.html.erb (Duration: 6397.4ms | Allocations: 138478)
+Completed 200 OK in 6418ms (Views: 6401.6ms | ActiveRecord: 0.4ms | Allocations: 150212)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:36:15 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 385.7ms | Allocations: 4794)
+  Rendered layout layouts/application.html.erb (Duration: 4411.6ms | Allocations: 51001)
+Completed 200 OK in 4413ms (Views: 4411.9ms | ActiveRecord: 0.0ms | Allocations: 51789)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:36:27 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2288)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 10322)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 10953)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:36:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 10296)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 10931)
+
+
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2022-10-21 11:36:30 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 237)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2493)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 10530)
+Completed 200 OK in 16ms (Views: 9.6ms | ActiveRecord: 0.3ms | Allocations: 16776)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:36:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 10278)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 10905)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:36:37 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2286)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 10343)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 10970)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:45:10 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3490)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 12262)
+Completed 200 OK in 13ms (Views: 12.6ms | Allocations: 13617)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:45:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 10294)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 11002)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:46:07 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3488)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 12251)
+Completed 200 OK in 14ms (Views: 13.0ms | Allocations: 13611)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:46:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 10302)
+Completed 200 OK in 13ms (Views: 11.9ms | Allocations: 11013)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:46:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2245)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 10294)
+Completed 200 OK in 10ms (Views: 9.1ms | Allocations: 10927)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-21 11:46:11 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.9ms | Allocations: 217)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3137)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 11286)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 12603)
+
+
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-21 11:46:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 544)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3487)
+  Rendered layout layouts/application.html.erb (Duration: 14.7ms | Allocations: 12267)
+Completed 200 OK in 17ms (Views: 16.3ms | Allocations: 13732)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-21 11:46:34 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 210)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2988)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 11120)
+Completed 200 OK in 12ms (Views: 11.6ms | Allocations: 12187)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-21 11:46:36 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2133)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 10188)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 10858)
+
+
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2022-10-21 11:46:38 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1931)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 9980)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 10564)
+
+
+Started GET "/restaurants/sign_up" for 127.0.0.1 at 2022-10-21 11:46:39 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 14)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2072)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 10109)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 10685)
+
+
