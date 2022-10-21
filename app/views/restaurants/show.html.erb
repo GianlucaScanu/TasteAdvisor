@@ -1,8 +1,9 @@
+<!-- tolto = da render in modo da poter pescare informazioni senza stamparle tutte,
+       segue esempio username-->
+  
+<!--
 <% render @restaurant %> 
 
-  <!-- tolto = da render in modo da poter pescare informazioni senza stamparle tutte,
-       segue esempio username-->
-  USERNAME:<%= @restaurant.username %><br>
   ADDRESS:<%= @restaurant.address %><br>
   <p>
   <% Dish.all.each do |dish| %>
@@ -18,9 +19,63 @@
 <div>
   <%= link_to "Edit restaurant", edit_restaurant_path(@restaurant) %>
 </div>
+-->
 
 <!--
 <div>
   <%= link_to "Back to restaurants", restaurants_path %>
 </div>
 -->
+
+
+<% render @restaurant %> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo</title>
+
+    <%= stylesheet_link_tag "restaurant.css" %>
+</head>
+<body>
+    <div id = "middle">      
+      <div id = "foto">
+        <%= image_tag @restaurant.profile_picture, :class => "foto", :alt => "image of pizza"%>
+      </div>
+        <div id = "user_desc_1">
+            <div id = "username"><%= @restaurant.username %></div>
+            <div id = "description"><%= @restaurant.description %></div>
+        </div>
+        <div id = "user_desc_2">
+            <div id = "position"><%= @restaurant.address %></div>
+            <div id = "website"><%= @restaurant.website %></div>
+            <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+        </div>
+        <div id = "modify">
+            <%= button_to "Modifica profilo", edit_restaurant_path(@restaurant), method: :get, :class => "btn btn-success btn-responsive"%>
+        </div>
+    </div>
+    <div id = "dishes_div">
+            <div id = "header_and_insertions">
+                <div id = "heaer">I miei piatti: </div>
+                <div id = "insert_dishes" class = "btn btn-success">Inserisci nuovo piatto</div>
+            </div>
+            <div id = "inserted_dishes">
+                <!-- Parte da implementare con Ruby -->
+                <!-- Abbozzo scheda piatto -->
+                <!-- Per avere div scrollable necessario andare a utilizzare più righe con max_num elementi-->
+                <div class="card">
+                    <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
+                    <div class="card-body">
+                    <h5 class="card-title">@nome_piatto</h5>
+                    <div class="card-text">@prezzo_piatto</div>
+                    <div class="card-text">@info_piatto</div>
+                    <a href="#" class="btn btn-success">Modifica piatto</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+</html>

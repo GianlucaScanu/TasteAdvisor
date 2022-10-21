@@ -113,16 +113,3 @@
     width: 70%;
     margin-top: 10%;
 }
-
-
-/*ELEMENTI AREA BOTTOM*/
-#contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-

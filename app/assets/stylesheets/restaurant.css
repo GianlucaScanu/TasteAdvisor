@@ -1,0 +1,107 @@
+#middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+#dishes_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+/*ELEMENTI AREA MIDDLE*/
+#foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+
+#description{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-width: thin;
+    border-color: #1e5a1a;
+}
+
+#user_desc_1{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#user_desc_1, #user_desc_2{
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#modify{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* ELEMENTI AREA DISHES_DIV */
+#header_and_insertions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#inserted_dishes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow:auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-width: medium;
+    border-color: #1e5a1a;
+}
+

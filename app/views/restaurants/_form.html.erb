@@ -1,62 +1,70 @@
-<%= form_with(model: restaurant) do |form| %>
-  <% if restaurant.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifica</title>
 
-      <ul>
+    <%= stylesheet_link_tag "modify_restaurant.css" %>
+</head>
+<body>
+
+    <%= form_with(model: restaurant) do |form| %>
+        <% if restaurant.errors.any? %>
+        <div style="color: red">
+            <h2><%= pluralize(restaurant.errors.count, "error") %> prohibited this restaurant from being saved:</h2>
+        <ul>
         <% restaurant.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
-      </ul>
+        </ul>
+        </div>
+    <% end %>
+
+    <div id = "middle">
+        <div id = "editable">
+            <div id = "foto">
+                <div id = "image">
+                    <img alt="immagine profilo">
+                </div>
+            </div>
+            <div id = "photo_picker">
+                    <!--
+                    <label id = "lbl_file_loader">Seleziona una foto</label>
+                    </br>
+                    <input type="file" class = "form-control-file">
+                    -->
+                    <%= form.label :profile_picture, style: "display: block" %>
+                    <%= form.text_field :profile_picture %>
+            </div>
+        </div>
+        <div id = "user_desc_1">
+                <div id = "username"><%= current_restaurant.username%></div>
+                <%= form.text_field :description, :id => "description" %>
+        </div>
+        <div id = "user_desc_2">
+            <div class = "form_labels">
+                <div id = "position">Indirizzo</div>
+                <div id = "website">Sito</div>
+                <div id = "phone_number">Telefono</div>
+            </div>
+            <div class = "form_fields">
+                <%= form.text_field :address %>
+                <%= form.text_field :website %>
+                <%= form.text_field :telephone_number %>
+            </div>
+        </div>
     </div>
-  <% end %>
-
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :username, style: "display: block" %>
-    <%= form.text_field :username %>
-  </div>
-
-  <div>
-    <%= form.label :website, style: "display: block" %>
-    <%= form.text_field :website %>
-  </div>
-
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-
-  <div>
-    <%= form.label :profile_picture, style: "display: block" %>
-    <%= form.text_field :profile_picture %>
-  </div>
-
-  <div>
-    <%= form.label :mail, style: "display: block" %>
-    <%= form.text_field :mail %>
-  </div>
-
-  <div>
-    <%= form.label :password, style: "display: block" %>
-    <%= form.text_field :password %>
-  </div>
-
-  <div>
-    <%= form.label :telephone_number, style: "display: block" %>
-    <%= form.text_field :telephone_number %>
-  </div>
-
-  <div>
-    <%= form.label :address, style: "display: block" %>
-    <%= form.text_field :address %>
-  </div>
-
-  <div>
-    <%= form.submit "Salva", :class => "btn btn-success"%>
-  </div>
-<% end %>
+    <div id = "user_btns">
+        <div id = "deny_btn">
+            <%= link_to "Annulla modifiche", current_restaurant, :class => "btn btn-danger btn-responsive" %>
+        </div>
+        <div id = "save_btn">
+            <%= form.submit "Salva", :class => "btn btn-success btn-responsive"%>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+<%end%>

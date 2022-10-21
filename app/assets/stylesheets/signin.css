@@ -61,7 +61,7 @@
 #google_btn{
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 #facebook_div{
@@ -73,7 +73,7 @@
 #facebook_btn{
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 100%;
 }
 
 #oppure_lbl{
@@ -122,16 +122,4 @@ a{
 #link_lbl{
     color: royalblue;
     text-decoration: underline;
-}
-
-
-/*ELEMENTI AREA BOTTOM*/
-#contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    margin-left: 1%;
-    margin-right: 1%;
 }

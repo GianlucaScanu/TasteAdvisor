@@ -9,11 +9,12 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= stylesheet_link_tag "navbar.css" %>  
+    <%= stylesheet_link_tag "homepage.css" %>
+
   </head>
 
   <body>
     <% if (reviewer_signed_in? || restaurant_signed_in?) %>
-         <!-- TODO: -->
          <div id = "top">
           <div id = "row1">
               <div id = "logo">
