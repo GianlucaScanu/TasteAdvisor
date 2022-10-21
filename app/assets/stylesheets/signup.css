@@ -60,6 +60,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    width: 100%;
 }
 
 #google_btn{
@@ -72,6 +73,7 @@
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    width: 100%;
 }
 
 #facebook_btn{
