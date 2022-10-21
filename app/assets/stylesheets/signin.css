@@ -56,24 +56,26 @@
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    width: 100%;
 }
 
 #google_btn{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
 }
 
 #facebook_div{
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    width: 100%;
 }
 
 #facebook_btn{
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
 }
 
 #oppure_lbl{
