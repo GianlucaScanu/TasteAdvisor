@@ -7,6 +7,7 @@
 -inserito alert e notice in singola pagina e rimosso da application.html.erb
 -inserito pin bootstrap per inclusione bootstrap.bundle.js in config/importmap.rb
 -import bootstrap in app/javascript/application.js
+-modificato application.scss:  *= require_tree . a  * require_tree .    (annullo caricamento pagine css)
 
 //NOTE
 -nei file html.erb alcuni attributi degli elementi html (id,class,..etc) vengono inseriti da rails -> ispezionare per identificarli
