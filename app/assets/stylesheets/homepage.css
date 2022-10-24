@@ -6,8 +6,10 @@
 #middle {
     display: flex;
     flex-direction: row;
-    margin-top: 3%;
-}
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;}
 
 #bottom{
     margin-right: 5%;
