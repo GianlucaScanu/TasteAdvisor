@@ -1,0 +1,48 @@
+<%= form_with(model: dish) do |form| %>
+  <% if dish.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
+
+      <ul>
+        <% dish.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <% form.label :number_of_reviews, style: "display: block" %>
+    <%= form.number_field :number_of_reviews, value: 0, type: :hidden %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.number_field :category ,in: 0..3 %>
+
+  </div>
+
+  <div>
+    <% form.label :avg_rating, style: "display: block" %>
+    <%= form.text_field :avg_rating, value: 0, type: :hidden %>
+  </div>
+
+  <div>
+    <%= form.label :imgs, style: "display: block" %>
+    <%= form.text_field :imgs %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

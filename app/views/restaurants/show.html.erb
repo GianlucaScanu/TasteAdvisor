@@ -60,22 +60,27 @@
     </div>
     <div id = "dishes_div">
             <div id = "header_and_insertions">
-                <div id = "heaer">I miei piatti: </div>
-                <div id = "insert_dishes" class = "btn btn-success">Inserisci nuovo piatto</div>
+                <div id = "header">I miei piatti: </div>
+                <%= link_to "Nuovo piatto", new_dish_path, :id => "insert_dishes", :class => "btn btn-success" %>
             </div>
             <div id = "inserted_dishes">
-                <!-- Parte da implementare con Ruby -->
-                <!-- Abbozzo scheda piatto -->
-                <!-- Per avere div scrollable necessario andare a utilizzare più righe con max_num elementi-->
+                <% (Dish.all).each do |dish|%>
+                <% if dish.restaurant_id == current_restaurant.id %>
                 <div class="card">
                     <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
+                    <!-- tag img da modificare con tag ruby per ottenere immagine del piatto -->
                     <div class="card-body">
-                    <h5 class="card-title">@nome_piatto</h5>
-                    <div class="card-text">@prezzo_piatto</div>
-                    <div class="card-text">@info_piatto</div>
-                    <a href="#" class="btn btn-success">Modifica piatto</a>
+                    <h5 class="card-title">Nome: <%= dish.name %></h5>
+                    <div class="card-text">Prezzo: <%= dish.price %></div>
+                    <div class="card-text">Informazioni: TODO <!-- Vedere descrizione, forse da implementare nel db --></div>
+                    <div id = "mod_dishes_btns">
+                      <%= link_to "Modifica", edit_dish_path(dish), :class => "btn btn-success" %>
+                      <%= button_to "Rimuovi", dish, method: :delete, :class => "btn btn-danger" %>
+                    </div>
                     </div>
                 </div>
+                <%end%>
+                <%end%>
         </div>
     </div>
 </html>

@@ -1,3 +1,4 @@
+<!--
 <p style="color: green"><%= notice %></p>
 
 <%= render @dish %>
@@ -37,3 +38,86 @@
     <% end %>
     
 <%end%>
+-->
+
+<%= stylesheet_link_tag "piatto.css" %>
+
+ <div id = "middle">
+        <div id = "col1">
+            <div id = "foto_piatto">
+                TODO
+                <!-- necessaria immagine -->
+            </div>
+            <div id = "actions">
+                <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %><br></div>
+                <div id = "report" class = "btn btn-danger">Segnala</div>
+            </div>
+        </div>
+        <div id = "col2">
+            <% render @dish %>
+            <% @reviews = 0 %>
+            <% (Review.all).each do |review| %>
+                <%if @dish.id == review.dish_id %>
+                    <% @reviews = @reviews + 1 %> 
+                <%end%>
+            <% end %>
+
+            <div id = "plate_desc">
+                <div id = "det_col1">
+                    <div id = "plate_name"><%= @dish.name %></div>
+                    <div id = "rating">
+                        <label id = "rating_label">Rating: </label>
+                        <div id = "rating_score" class = "rating_score">
+                            <div class = "value" id = "rating_value"> <%= @dish.avg_rating %></div>
+                            <div class = "pb" id = "rating_pb">
+                                <div class = "progress">
+                                    <!-- DA VEDERE CON RECENSIONI <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div> -->
+                                    <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: <% @dish.avg_rating * 100 %>%" aria-valuenow="<% @dish.avg_rating * 100 %>" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Da implementare con ruby per ottenere numero recensioni e categoria-->
+                    <div id = "num_reviews">
+                        <label id = "reviews_label">Recensioni: </label>
+                        <div id = "reviews_number"> <%= @reviews%></div>
+                    </div>
+                    <div id = "category">
+                        <label id = "category_label">Categoria: </label>
+                        <div id = "result"> <%= @dish.category%></div>
+                    </div>
+                </div>
+                <div id = "det_col2">
+                    <div id = "restaurant">Ristorante : <%= Restaurant.find(@dish.restaurant_id).name %></div>
+                    <div id = "price"> Prezzo : <%= @dish.price %> €</div>
+                </div>
+            </div>
+            <div id = "reviews">
+                <div id = "review_label"> Recensioni :</div>
+                <div id = "review_no1" class ="review">
+                    <div id = "img_no1" class="img_review">
+                        <img src="..." alt="Immagine del recensore">
+                    </div>
+                    <div id ="review_info_no1" class="review_info">
+                        <div id = "username_and_rating_no1" class="username_and_rating">
+                            <div id = "username_no1">
+                                @nome_recensore
+                            </div>
+                            <div id = "rating_no1" class = "rating_score">
+                                <div class = "value" id = "rating_value">3/5</div>
+                                <div class = "pb" id = "rating_pb">
+                                    <div class = "progress">
+                                        <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "rev_text_no1" class = "rev_text">
+                            Corpo testuale della recensione
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
