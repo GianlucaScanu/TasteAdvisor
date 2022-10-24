@@ -65548,3 +65548,257 @@ Processing by ReviewersController#edit as HTML
 Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.1ms | Allocations: 13129)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-24 16:14:08 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 100.2ms | Allocations: 53654)
+  Rendered layout layouts/application.html.erb (Duration: 124.4ms | Allocations: 77107)
+Completed 200 OK in 132ms (Views: 126.5ms | ActiveRecord: 0.0ms | Allocations: 81789)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-24 16:14:09 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:09 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2022-10-24 16:14:11 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 728)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 6212)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 14529)
+Completed 200 OK in 27ms (Views: 18.8ms | ActiveRecord: 0.6ms | Allocations: 23372)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:11 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-24 16:14:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2022-10-24 16:14:16 +0200
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "reviewer"=>{"email"=>"testgl@testgl", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["email", "testgl@testgl"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 201ms (ActiveRecord: 0.2ms | Allocations: 5690)
+
+
+Started GET "/" for 127.0.0.1 at 2022-10-24 16:14:16 +0200
+Processing by HomeController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1092)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layout layouts/application.html.erb (Duration: 47.0ms | Allocations: 10522)
+Completed 200 OK in 51ms (Views: 51.1ms | ActiveRecord: 0.1ms | Allocations: 10855)
+
+
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:17 +0200
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:17 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-24 16:14:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/5" for 127.0.0.1 at 2022-10-24 16:14:20 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.4ms | Allocations: 251)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2087)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 11686)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 13853)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:20 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-24 16:14:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:20 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-24 16:14:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 16:14:21 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 3.6ms | Allocations: 2742)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3976)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 12305)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 13146)
+
+
+Started GET "/reviewers/5" for 127.0.0.1 at 2022-10-24 16:14:28 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1116)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 10256)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 10994)
+
+
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 16:14:29 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 3.0ms | Allocations: 1952)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2978)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 11199)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.2ms | Allocations: 11948)
+
+
+Started GET "/reviewers/5" for 127.0.0.1 at 2022-10-24 16:14:33 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1112)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 10264)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.2ms | Allocations: 11002)
+
+
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 16:14:35 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 4.0ms | Allocations: 1985)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3011)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 11230)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 11969)
+
+
+Started GET "/reviewers/5" for 127.0.0.1 at 2022-10-24 16:14:45 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1112)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 10267)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.1ms | Allocations: 11005)
+
+
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 16:14:58 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 3.4ms | Allocations: 1973)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 11218)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 11956)
+
+
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 16:15:34 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 2.4ms | Allocations: 1985)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3011)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 11230)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 11966)
+
+
