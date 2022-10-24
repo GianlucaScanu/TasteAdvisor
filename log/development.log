@@ -65802,3 +65802,287 @@ Processing by ReviewersController#edit as HTML
 Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 11966)
 
 
+Started GET "/" for 127.0.0.1 at 2022-10-24 17:10:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 119.9ms | Allocations: 53695)
+  [1m[36mReviewer Load (4.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layout layouts/application.html.erb (Duration: 159.5ms | Allocations: 87433)
+Completed 200 OK in 169ms (Views: 156.9ms | ActiveRecord: 4.9ms | Allocations: 92128)
+
+
+Started GET "/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/carbonara_sample.jpg"):
+  
+Started GET "/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:46 +0200
+Started GET "/images/lente.png" for 127.0.0.1 at 2022-10-24 17:10:46 +0200
+Started GET "/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/pizza_sample.jpg"):
+  
+Started GET "/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/grigliata_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/images/lente.png"):
+  
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+
+NameError: constant WebConsole::SourceLocation not defined
+
+          source_location = SourceLocation.new(binding)
+                            ^^^^^^^^^^^^^^
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:51:in `block in guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `each'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `find'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:50:in `guess_the_first_application_binding'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/exception_mapper.rb:30:in `first'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:48:in `initialize'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `new'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/session.rb:34:in `from'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:30:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `catch'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/web-console-4.2.0/lib/web_console/middleware.rb:17:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:40:in `call_app'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `block in tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:37:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/tagged_logging.rb:99:in `tagged'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/rack/logger.rb:25:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/sprockets-rails-3.4.2/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/request_id.rb:26:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/method_override.rb:24:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/runtime.rb:22:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/activesupport-7.0.4/lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/executor.rb:14:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/static.rb:23:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/rack-2.2.4/lib/rack/sendfile.rb:110:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/actionpack-7.0.4/lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/railties-7.0.4/lib/rails/engine.rb:530:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/configuration.rb:252:in `call'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:77:in `block in handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/request.rb:76:in `handle_request'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/server.rb:443:in `process_client'
+	from /home/gianluca/.rvm/gems/ruby-3.1.2/gems/puma-5.6.5/lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/reviewers/5" for 127.0.0.1 at 2022-10-24 17:10:58 +0200
+Processing by ReviewersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/show.html.erb within layouts/application
+  Rendered reviewers/_reviewer.html.erb (Duration: 0.6ms | Allocations: 255)
+  Rendered reviewers/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2104)
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:17
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 11700)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms | Allocations: 13892)
+
+
+Started GET "/reviewers/images/pizza_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:58 +0200
+Started GET "/reviewers/images/carbonara_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/carbonara_sample.jpg"):
+  
+Started GET "/reviewers/images/grigliata_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:58 +0200
+Started GET "/reviewers/images/tiramisu_sample.jpg" for 127.0.0.1 at 2022-10-24 17:10:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/tiramisu_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/grigliata_sample.jpg"):
+  
+Started GET "/reviewers/images/lente.png" for 127.0.0.1 at 2022-10-24 17:10:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/pizza_sample.jpg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/reviewers/images/lente.png"):
+  
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 17:10:59 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 4.9ms | Allocations: 4410)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 6.4ms | Allocations: 5647)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 14094)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.1ms | Allocations: 14953)
+
+
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 17:11:58 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 2.3ms | Allocations: 1998)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3035)
+  Rendered layout layouts/application.html.erb (Duration: 4707.0ms | Allocations: 41957)
+Completed 200 OK in 4709ms (Views: 4707.4ms | ActiveRecord: 0.2ms | Allocations: 42756)
+
+
+Started GET "/reviewers/5/edit" for 127.0.0.1 at 2022-10-24 17:12:55 +0200
+Processing by ReviewersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/reviewers_controller.rb:63:in `set_reviewer'
+  Rendering layout layouts/application.html.erb
+  Rendering reviewers/edit.html.erb within layouts/application
+  [1m[36mReviewer Load (0.1ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = ? ORDER BY "reviewers"."id" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/views/reviewers/_form.html.erb:64
+  Rendered reviewers/_form.html.erb (Duration: 3.8ms | Allocations: 2811)
+  Rendered reviewers/edit.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4221)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 13607)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.2ms | Allocations: 14940)
+
+
