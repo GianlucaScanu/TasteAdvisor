@@ -1,35 +1,43 @@
-<div id = "middle_dish">
+<%= stylesheet_link_tag "modPiatto.css"%>
+<div id = "middle">
   <%if restaurant_signed_in?%>
     <%= form_for(@dish) do |f| %>
-      <div id = "row1">
-      <div class = "mid_col">
-        <div class="field">
-          <% f.label :name %>Nome<br>
+      <div id = "row_m1">
+      
+      <div id = "col_m1">
+        <div class = "field_div">
+           IMMAGINI - TODO:
+            <%= f.label :imgs, style: "display: block" %>
+            <%= f.text_field :imgs %>
+          <!-- implementare nel lato backend -->
+        </div>
+        <div class = "field_div">
+          <% f.label :name %>Nome
           <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
         </div>
-        <div id = "upload_photos">
-          <input type="file" class = "form-control-file">
-        </div>
-        <div id = "dish_description">Descrizione:<br>
-          <textarea id = "dish_txtarea" placeholder = "Inserire descrizione"></textarea>
+        <div class = "field_div">
+          DESCRIZIONE - TODO:
+          <!-- implementare nel lato backend -->
         </div>  
+      
       </div>
 
-      <div class = "mid_col">
-        <div class="field">
+      <div id = "col_m2">
+        <div class = "field_div">
           <% f.label :category %>Categoria<br>
           <%= f.select :category, ["1", "2", "3"], autofocus: true, autocomplete: "category" %>
           <%#= f.text_field :category, autofocus: true, autocomplete: "category" %>
         </div>
-        <div class="field">
+        <div class = "field_div">
           <% f.label :price %>Prezzo<br>
           <%= f.text_field :price, autofocus: true, autocomplete: "price" %>
         </div>  
-        <div id = "ingredients">Ingredienti:<br>
-          <textarea id = "ingredients_txtarea", placeholder = "Inserire ingredienti"></textarea>
+        <div class = "field_div">Ingredienti:<br>
+          INGREDIENTI - TODO:
         </div>  
       </div>
-      </div>
+    
+    </div>
 
       <!-- <%= current_restaurant.id%> -->
       <!-- 
@@ -39,12 +47,10 @@
         <%= f.hidden_field :restaurant_id, value: current_restaurant.id%>
       </div>
       -->
-    <div class = "row2">
+    <div id = "row_m2">
       <div>
-          <%= link_to "Back to dishes", dishes_path, :class => "btn btn-danger" %>
-      </div>
-      <div class="actions">
-        <%= f.submit "conferma" %>
+          <%= link_to "Annulla", current_restaurant, :class => "btn btn-danger" %>
+          <%= f.submit "Conferma", :class => "btn btn-success"%>
       </div>
     </div>
     
