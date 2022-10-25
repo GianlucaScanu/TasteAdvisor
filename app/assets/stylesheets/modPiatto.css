@@ -1,17 +1,21 @@
-#middle_dish{
+#top {
+    display: flex;
+    flex-direction: column;
+}
+
+#middle {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 2%;
     border-style: solid;
     border-color: #1e5a1a;
     overflow: scroll;
 }
 
-.mid_col{
+#col_m1, #col_m2{
     display: flex;
     flex-direction: column;
     margin-top: 2%;
@@ -23,20 +27,68 @@
     border-width: thin;
 }
 
-.mid_col > *{
+.field_div{
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 2%;
     margin-right: 2%;
-    width: auto;
 }
 
-.row1, .row2{
+#row1 {
+    display: flex;
+    flex-direction: row;
+    /* SOLUZIONE PROVVISIORIA : utilizzando space-between, gli elementi vanno a disporsi agli "estremi"*/
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#logo {
+    margin-left: 1%;
+    /* TODO */
+}
+
+#label{
+    font-size: x-large;
+}
+
+#row_m1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#row_m2{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#bottom{
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+#contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }

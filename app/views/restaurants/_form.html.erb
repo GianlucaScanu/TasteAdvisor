@@ -23,47 +23,46 @@
     <% end %>
 
     <div id = "middle">
-        <div id = "editable">
-            <div id = "foto">
-                <div id = "image">
-                    <img alt="immagine profilo">
+        <div id = "row_m1">
+            <div id = "editable">
+                <div id = "foto">
+                    <div id = "image">
+                        <img alt="immagine profilo">
+                    </div>
+                </div>
+                <div id = "photo_picker">
+                        <!--
+                        <label id = "lbl_file_loader">Seleziona una foto</label>
+                        </br>
+                        <input type="file" class = "form-control-file">
+                        -->
+                        <%= form.label :profile_picture, style: "display: block" %>
+                        <%= form.text_field :profile_picture %>
                 </div>
             </div>
-            <div id = "photo_picker">
-                    <!--
-                    <label id = "lbl_file_loader">Seleziona una foto</label>
-                    </br>
-                    <input type="file" class = "form-control-file">
-                    -->
-                    <%= form.label :profile_picture, style: "display: block" %>
-                    <%= form.text_field :profile_picture %>
-            </div>
-        </div>
-        <div id = "user_desc_1">
+            <div id = "user_desc_1">
                 <div id = "username"><%= current_restaurant.username%></div>
                 <%= form.text_field :description, :id => "description" %>
-        </div>
-        <div id = "user_desc_2">
-            <div class = "form_labels">
-                <div id = "position">Indirizzo</div>
-                <div id = "website">Sito</div>
-                <div id = "phone_number">Telefono</div>
             </div>
-            <div class = "form_fields">
-                <%= form.text_field :address %>
-                <%= form.text_field :website %>
-                <%= form.text_field :telephone_number %>
+            <div id = "user_desc_2">
+                <div class = "form_labels">
+                    <div id = "position">Indirizzo</div>
+                    <div id = "website">Sito</div>
+                    <div id = "phone_number">Telefono</div>
+                </div>
+                <div class = "form_fields">
+                    <%= form.text_field :address %>
+                    <%= form.text_field :website %>
+                    <%= form.text_field :telephone_number %>
+                </div>
             </div>
         </div>
-    </div>
-    <div id = "user_btns">
-        <div id = "deny_btn">
-            <%= link_to "Annulla modifiche", current_restaurant, :class => "btn btn-danger btn-responsive" %>
+        <div id = "row_m2">
+            <div>
+                <%= link_to "Annulla", current_restaurant, :class => "btn btn-danger" %>
+                <%= form.submit "Salva", :class => "btn btn-success"%>
+            </div>
         </div>
-        <div id = "save_btn">
-            <%= form.submit "Salva", :class => "btn btn-success btn-responsive"%>
-        </div>
-    </div>
     </div>
 </body>
 </html>
