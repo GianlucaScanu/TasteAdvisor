@@ -45,11 +45,19 @@
 <body>
     <div id = "middle">      
       <div id = "foto">
-        <%= image_tag @restaurant.profile_picture, :class => "foto", :alt => "image of pizza"%>
+        PROFILE_PICTURE - TODO:
+        <!-- MANCA IN BACKEND L'IMMAGINE DEL PROFILO DEL RISTORANTE -->
       </div>
         <div id = "user_desc_1">
             <div id = "username"><%= @restaurant.username %></div>
-            <div id = "description"><%= @restaurant.description %></div>
+            <div id = "description">
+              <% if(@restaurant.description == "") %>
+                Descrizione mancante
+                <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
+              <% else %>
+                <%= @restaurant.description%>
+              <% end %>
+              </div>
         </div>
         <div id = "user_desc_2">
             <div id = "position"><%= @restaurant.address %></div>
