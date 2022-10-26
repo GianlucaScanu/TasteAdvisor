@@ -46,7 +46,7 @@
     <div id = "middle">      
       <div id = "foto">
         PROFILE_PICTURE - TODO:
-        <!-- MANCA IN BACKEND L'IMMAGINE DEL PROFILO DEL RISTORANTE -->
+        <!-- MANCA IN BACKEND IMMAGINE DEL PROFILO DEL RISTORANTE -->
       </div>
         <div id = "user_desc_1">
             <div id = "username"><%= @restaurant.username %></div>
@@ -75,7 +75,7 @@
             </div>
             <div id = "inserted_dishes">
                 <% (Dish.all).each do |dish|%>
-                <% if dish.restaurant_id == current_restaurant.id %>
+                <% if dish.restaurant_id == @restaurant.id %>
                 <div class="card">
                     <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
                     <!-- tag img da modificare con tag ruby per ottenere immagine del piatto -->
@@ -84,6 +84,9 @@
                     <div class="card-text">Prezzo: <%= dish.price %></div>
                     <div class="card-text">Informazioni: TODO <!-- Vedere descrizione, forse da implementare nel db --></div>
                     <div id = "mod_dishes_btns">
+                      <%if reviewer_signed_in? %>
+                        <%= link_to "CREA NUOVA RECENSIONE", new_review_path, :class => "btn btn-warning" %>
+                      <%end%>
                       <%= link_to "Modifica", edit_dish_path(dish), :class => "btn btn-success" %>
                       <%= button_to "Rimuovi", dish, method: :delete, :class => "btn btn-danger" %>
                     </div>
