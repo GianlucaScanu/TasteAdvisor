@@ -17,7 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_18_103226) do
     t.float "price"
     t.integer "category"
     t.float "avg_rating"
-    t.string "imgs"
+    t.string "imgs" 
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "restaurant_id"
