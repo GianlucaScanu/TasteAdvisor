@@ -89,7 +89,9 @@
                     </div>
                 </div>
                 <div id = "det_col2">
+                    <%if (@dish.restaurant_id != nil)%>
                     <div id = "restaurant">Ristorante : <%= Restaurant.find(@dish.restaurant_id).name %></div>
+                    <%end%>
                     <div id = "price"> Prezzo : <%= @dish.price %> €</div>
                 </div>
             </div>
