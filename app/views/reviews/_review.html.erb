@@ -8,5 +8,13 @@
     DESCRIPTION:<%= review.description%><br>
     <%#imgs, da implementare bene...%>
     <%#INFO PER DEBUG%>
-    
+    <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
+        ESEGUITA DALL'UTENTE: (ID: <%=Reviewer.find(review.reviewer_id).id%> )
+        (USERNAME: <%=Reviewer.find(review.reviewer_id).username%> )<br>
+        DEL PIATTO: (ID: <%=Dish.find(review.dish_id).id%> ) (NOME:<%=Dish.find(review.dish_id).name%> )<br>
+        PRESSO IL RISTORANTE: (ID: <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).id%>)
+        (NOME: <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%> )<br>
+    <%end%>
+    <br>
+
 </div>

@@ -45,6 +45,9 @@
     <%= form.text_field :imgs %>
   </div>
 
+  <%= form.hidden_field :dish_id, value: session[:save_dish] %>
+  <%= form.hidden_field :reviewer_id, value: current_reviewer.id %>
+
   <div>
     <%= form.submit %>
   </div>
