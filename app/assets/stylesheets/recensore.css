@@ -1,8 +1,3 @@
-#top {
-    display: flex;
-    flex-direction: column;
-}
-
 #middle{
     display: flex;
     flex-direction: row;

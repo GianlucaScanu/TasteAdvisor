@@ -23,15 +23,6 @@
     margin-bottom: 1%;
 }
 
-#logo {
-    margin-left: 1%;
-    /* TODO */
-}
-
-#label{
-    font-size: x-large;
-}
-
 /*ELEMENTI AREA MIDDLE*/
 #foto{
     display: flex;
