@@ -5,6 +5,13 @@
 <div>
   <%= link_to "Back to reviews", reviews_path %> |
   <%= link_to "Back to dish", dish_path(@review.dish_id) %> |
-  <%= link_to "Edit this review", edit_review_path(@review) %> |
-  <%= button_to "Destroy this review", @review, method: :delete %>
+
+  <%#RICONTROLLA QUESTI IF%>
+  <%#SE COMMENTATI PUOI ELIMINARE OGNI RECENSIONE DELL'UTENTE%>
+  <%if reviewer_signed_in?%>
+    <%if @review.reviewer_id == current_reviewer.id%>
+      <%= link_to "Edit this review", edit_review_path(@review) %> |
+      <%= button_to "Destroy this review", @review, method: :delete %>
+    <%end%>
+  <%end%>
 </div>

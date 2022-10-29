@@ -13,31 +13,43 @@
   <%end%>
 <%end%>
 
+<br><p>--------------</p> 
+<%#counter risulta come stringa...%>
+<%@counter = 0.to_s%>
 
 <%if reviewer_signed_in? %>
   <div id="dishes">
-    LISTA RECENSIONI:
+    LISTA RECENSIONI: <br>
+    <p>--------------</p> 
+    
+    RECENSIONI DI ALTRI UTENTI:<br>
     <% (Review.all).each do |review| %>
-      <%if @dish.id == review.dish_id %>
+      <%if @dish.id == review.dish_id  && review.reviewer_id != current_reviewer.id%>
         <%= render review %>
-        <p> <%#= link_to "Show this dish", @dish %> </p> 
+        <p>--------------</p>
       <%end%>
     <% end %>
-  </div>
 
-  <%#TEMPORANEA%>
-  <%= link_to "CREA NUOVA RECENSIONE", new_review_path %><br>
-
-  <%#SI PUO' METTERE SOLO UNA RECENSIONE PER PIATTO DEL RISTORANTE?, da controllare%>
-  <%#l'if è sbagliato%>
+    
     <% (Review.all).each do |review| %>
       <%if @dish.id == review.dish_id  && review.reviewer_id == current_reviewer.id%>
-        <%#= link_to "LA TUA RECENSIONE", review %><br>
-        LA TUA RECENSIONE: <%=render review%>
-        <%#= link_to "LA TUA RECENSIONE", review %><br>
-      <%#elsif !(@dish.id == review.dish_id  && review.reviewer_id == current_reviewer.id)%>
-        <%#= link_to "CREA NUOVA RECENSIONE", new_review_path %><br>
+        LA TUA RECENSIONE:<br>
+        <%@counter = 1.to_s%>
+        <%= render review %>
+        <%= link_to "Edit this review", edit_review_path(review) %>
+        <%= button_to "Destroy this review", review, method: :delete %>
+        <p>--------------</p>
       <%end%>
     <% end %>
+
+    <p>--------------</p>
+
+  <%if @counter == 0.to_s%>
+    <%= link_to "CREA NUOVA RECENSIONE", new_review_path %><br>
+  <%end%>
     
+  <p> <%#= link_to "Show this dish", @dish %> </p> 
+
+  </div>
+
 <%end%>
