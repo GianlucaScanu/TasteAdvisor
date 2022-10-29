@@ -43,57 +43,100 @@
 
 </head>
 <body>
-    <div id = "middle">      
-      <div id = "foto">
-        PROFILE_PICTURE - TODO:
-        <!-- MANCA IN BACKEND IMMAGINE DEL PROFILO DEL RISTORANTE -->
-      </div>
+    <div id = "middle">
+      <%if restaurant_signed_in? %>
+        <div id = "foto">
+          PROFILE_PICTURE - TODO:
+          <!-- MANCA IN BACKEND IMMAGINE DEL PROFILO DEL RISTORANTE -->
+        </div>
         <div id = "user_desc_1">
-            <div id = "username"><%= @restaurant.username %></div>
-            <div id = "description">
-              <% if(@restaurant.description == "") %>
-                Descrizione mancante
-                <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
-              <% else %>
-                <%= @restaurant.description%>
-              <% end %>
-              </div>
+          <div id = "username"><%= @restaurant.username %></div>
+          <div id = "description">
+            <% if(@restaurant.description == "") %>
+              Descrizione mancante
+              <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
+            <% else %>
+              <%= @restaurant.description%>
+            <% end %>
+          </div>
         </div>
         <div id = "user_desc_2">
-            <div id = "position"><%= @restaurant.address %></div>
-            <div id = "website"><%= @restaurant.website %></div>
-            <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+          <div id = "position"><%= @restaurant.address %></div>
+          <div id = "website"><%= @restaurant.website %></div>
+          <div id = "phone_number"><%= @restaurant.telephone_number %></div>
         </div>
         <div id = "modify">
-            <%= button_to "Modifica profilo", edit_restaurant_path(@restaurant), method: :get, :class => "btn btn-success btn-responsive"%>
+          <%= button_to "Modifica profilo", edit_restaurant_path(@restaurant), method: :get, :class => "btn btn-success btn-responsive"%>
         </div>
+      <%else%>
+      <div id = "col_m1">
+        <div id = "foto">
+          PROFILE_PICTURE - TODO:
+          <!-- MANCA IN BACKEND IMMAGINE DEL PROFILO DEL RISTORANTE -->
+        </div>
+      </div>
+      <div id = "col_m2">
+        <div id = "username"><%= @restaurant.username %></div>
+        <div id = "description">
+          <% if(@restaurant.description == "") %>
+            Descrizione mancante
+            <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
+          <% else %>
+            <%= @restaurant.description%>
+          <% end %>
+          </div>
+      </div>
+      <% end %>
     </div>
-    <div id = "dishes_div">
-            <div id = "header_and_insertions">
-                <div id = "header">I miei piatti: </div>
+    <div id = "dishes_and_other_infos">
+      <div id = "col_d1">
+        <div id = "dishes_div">
+          <div id = "header_and_insertions">
+            <% if restaurant_signed_in?%>
+              <div id = "header">I miei piatti: </div>
                 <%= link_to "Nuovo piatto", new_dish_path, :id => "insert_dishes", :class => "btn btn-success" %>
-            </div>
-            <div id = "inserted_dishes">
-                <% (Dish.all).each do |dish|%>
-                <% if dish.restaurant_id == @restaurant.id %>
+            <% else %>
+              <div id = "header">I piatti: </div>
+            <% end %>
+          </div>
+          <div id = "inserted_dishes">
+            <% (Dish.all).each do |dish|%>
+              <% if dish.restaurant_id == @restaurant.id %>
                 <div class="card">
-                    <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
+                  <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
                     <!-- tag img da modificare con tag ruby per ottenere immagine del piatto -->
-                    <div class="card-body">
+                  <div class="card-body">
                     <h5 class="card-title">Nome: <%= dish.name %></h5>
                     <div class="card-text">Prezzo: <%= dish.price %></div>
                     <div class="card-text">Informazioni: TODO <!-- Vedere descrizione, forse da implementare nel db --></div>
                     <div id = "mod_dishes_btns">
-                      <%if reviewer_signed_in? %>
-                        <%= link_to "CREA NUOVA RECENSIONE", new_review_path, :class => "btn btn-warning" %>
-                      <%end%>
+                    <%if reviewer_signed_in? %>
+                      <%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %>
+                    <%elsif restaurant_signed_in? %>
                       <%= link_to "Modifica", edit_dish_path(dish), :class => "btn btn-success" %>
                       <%= button_to "Rimuovi", dish, method: :delete, :class => "btn btn-danger" %>
-                    </div>
-                    </div>
+                    <%end%>
+                  </div>
                 </div>
-                <%end%>
-                <%end%>
+              <%end%>
+            </div>
+          <%end%>
         </div>
+      </div>
     </div>
+    <% if restaurant_signed_in? %>
+      </div>
+      <% else %>
+        <div id = "col_d2">
+          <div id = "map_addresses">
+            <div id = "map"> MAPPA - TODO <!-- vedere api di gmaps  --></div>
+            <div id = "position"><%= @restaurant.address %></div>
+            <div id = "website"><%= @restaurant.website %></div>
+            <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  </body>
 </html>

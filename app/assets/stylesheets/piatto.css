@@ -36,7 +36,7 @@
 
 #actions{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 3%;
@@ -45,6 +45,8 @@
 
 #actions > *{
     margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 1%;
 }
 
@@ -77,6 +79,11 @@
     flex-direction: row;
     margin-left: 1%;
     margin-right: 1%;
+    margin-bottom: 2%;
+}
+
+.progress{
+    margin-bottom: 1%;
 }
 
 #reviews{
@@ -90,6 +97,8 @@
     border: solid;
     border-color: #1e5a1a;
     width: 100%;
+    height: auto;
+    overflow-y: auto;
 }
 
 #review_label{
