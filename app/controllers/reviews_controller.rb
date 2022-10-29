@@ -21,14 +21,14 @@ class ReviewsController < ApplicationController
   # GET /reviews/1/edit
   #vedi se funziona edit, e params
   def edit
-    @review = Review.find(params[:id])
+    @review = Review.new(review_params)
 
-    @review.rating1 = params[:review][:rating1]
-    @review.rating2 = params[:review][:rating2]
-    @review.rating3 = params[:review][:rating3]
+    #@review.rating1 = params[:review][:rating1]
+    #@review.rating2 = params[:review][:rating2]
+    #@review.rating3 = params[:review][:rating3]
 
-    @review.description = params[:review][:description]
-    @review.imgs = params[:review][:imgs]
+    #@review.description = params[:review][:description]
+    #@review.imgs = params[:review][:imgs]
 
     if @review.save
         format.html { redirect_to review_url(@review), notice: "Review was successfully edited." }

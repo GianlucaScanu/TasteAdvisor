@@ -5,9 +5,9 @@ class Review < ApplicationRecord
     validates :rating2, inclusion: { in: 1..5} #impiattamento
     validates :rating3, inclusion: { in: 1..5} #originalità
 
-    belongs_to :reviewer
+    #belongs_to :reviewer
 	#belongs_to :restaurant
-	belongs_to :dish
+	#belongs_to :dish
 
     #after_validation :increase_dish_number_of_review, :update_avg_rating
     

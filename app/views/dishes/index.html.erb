@@ -7,7 +7,8 @@
     <% @dishes.each do |dish| %>
       <%if dish.restaurant_id == current_restaurant.id %>
         <%= render dish %>
-        <p> <%= link_to "Show this dish", dish %> </p> 
+        <p> <%= link_to "Show this dish", dish %> </p>
+        <p> <%= button_to "Destroy this dish", dish, method: :delete %> </p>
       <%end%>
     <% end %>
   </div>
@@ -19,7 +20,7 @@
   <div id="dishes">
     <% @dishes.each do |dish| %>
       <%= render dish %>
-      <p> <%= link_to "Show this dish", dish %> </p> 
+      <p> <%= link_to "Show this dish", dish %> </p>
     <% end %>
   </div>
 <%else%>
