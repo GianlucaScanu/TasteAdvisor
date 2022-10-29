@@ -106,3 +106,10 @@
     margin-left: 1%;
     margin-right: 1%;
 }
+
+
+/*ELEMENTO ISOLATO TODO:*/
+#destroy_btn{
+    display: flex;
+    justify-content: center;
+}
