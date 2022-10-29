@@ -9,35 +9,39 @@ class Review < ApplicationRecord
 	#belongs_to :restaurant
 	belongs_to :dish
 
-    #after_validation :increase_dish_number_of_review, :update_avg_rating
+    after_validation :update_avg_rating_and_number_of_review
     
     private
-        def increase_dish_number_of_review
-            #credits. https://stackoverflow.com/questions/12329687/how-to-update-value-of-a-models-attribute, https://guides.rubyonrails.org/active_record_basics.html#update
-            dish = Dish.find(@dish)
-            dish.number_of_reviews += 1
-            dish.save
-        end
+    
+        #FUNZIONA MA DA SISTEMARE!
+        #after_validation viene applicato prima di salvare il modello sull dbs? in base a questo vanno modificate delle righe 
         
-        def update_avg_rating
-            dish = Dish.find(@dish)
+        def update_avg_rating_and_number_of_review
+            #credits. https://stackoverflow.com/questions/12329687/how-to-update-value-of-a-models-attribute, https://guides.rubyonrails.org/active_record_basics.html#update
+            
+            dish = Dish.find(dish_id)
 
             accumulator = 0
             counter = 0
 
-            @reviews = Review.all
             #ricalcolo la media, riprendendo la media di ogni recensione inserente al piatto, sommandole e poi dividendole per la nuova media
-            reviews.each do |review|
-                if(review.dish == @dish)
-                    accumulator += (review.rating1 + review.rating2 + review.rating3)/3
+            (Review.all).each do |review|
+                if(review.dish_id == dish_id)
                     counter += 1
+                    accumulator += (review.rating1 + review.rating2 + review.rating3)/3
                 end
             end
 
-            #tecnicamente dovrebbe eseguire questo metodo dopo aver validato il modello, quindi in Review.all dovrebbe comparire anche questa review
-            new_avg = accumulator/counter 
+            #tecnicamente dovrebbe eseguire questo metodo dopo aver validato il modello, quindi in Review.all dovrebbe comparire anche questa review (?)
+            if(counter != 0)
+                new_avg = accumulator/counter 
+            elsif 
+                new_avg = 0
+            end
 
             dish.avg_rating = new_avg
+            dish.number_of_reviews = (counter + 1)
+
             dish.save
         end
 end

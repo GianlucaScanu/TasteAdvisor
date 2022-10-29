@@ -1,7 +1,6 @@
 class ReviewsController < ApplicationController
   before_action :set_review, only: %i[ show edit update destroy ]
 
-
   #metodi std rails scaffold
 
   # GET /reviews or /reviews.json
@@ -19,24 +18,11 @@ class ReviewsController < ApplicationController
   end
 
   # GET /reviews/1/edit
-  #vedi se funziona edit, e params
   def edit
-    @review = Review.find(params[:id])
-
-    @review.rating1 = params[:review][:rating1]
-    @review.rating2 = params[:review][:rating2]
-    @review.rating3 = params[:review][:rating3]
-
-    @review.description = params[:review][:description]
-    @review.imgs = params[:review][:imgs]
-
-    if @review.save
-        format.html { redirect_to review_url(@review), notice: "Review was successfully edited." }
-        format.json { render :show, status: :created, location: @review }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @review.errors, status: :unprocessable_entity }
-      end
+    
+    #edit(controller)->form (view _form.html.erb di review)->update(controller)
+    #@review = Review.find(params[:id])
+  
   end
 
   # POST /reviews or /reviews.json
@@ -56,6 +42,18 @@ class ReviewsController < ApplicationController
 
   # PATCH/PUT /reviews/1 or /reviews/1.json
   def update
+    #presi da _form.html.erb di review
+
+    #@review.rating1 = params[:rating1] 
+    #@review.rating2 = params[:rating2]
+    #@review.rating3 = params[:rating3]
+    #@review.description = params[:description]
+    #@review.imgs = params[:imgs]
+
+    #@review.dish_id = params[:dish_id]
+    #@review.reviewer_id = params[:reviewer_id]
+    #equivalenti a @review.update(review_params)
+    
     respond_to do |format|
       if @review.update(review_params)
         format.html { redirect_to review_url(@review), notice: "Review was successfully updated." }

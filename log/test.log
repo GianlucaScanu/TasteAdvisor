@@ -1,0 +1,97 @@
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "dishes"[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE TABLE "dishes" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "number_of_reviews" integer, "price" float, "category" integer, "avg_rating" float, "imgs" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "restaurant_id" integer)[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE INDEX "index_dishes_on_restaurant_id" ON "dishes" ("restaurant_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "homepages"[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "homepages" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "reports"[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "reports" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "check_box" integer, "description" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "restaurants"[0m
+  [1m[35m (12.2ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "username" varchar, "website" varchar, "description" varchar, "profile_picture" varchar, "telephone_number" varchar, "address" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6))[0m
+  [1m[35m (10.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_restaurants_on_email" ON "restaurants" ("email")[0m
+  [1m[35m (8.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_restaurants_on_reset_password_token" ON "restaurants" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviewers"[0m
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "reviewers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "profile_picture" varchar, "telephone_number" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6))[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_reviewers_on_email" ON "reviewers" ("email")[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_reviewers_on_reset_password_token" ON "reviewers" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE IF EXISTS "reviews"[0m
+  [1m[35m (8.0ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "rating1" integer, "rating2" integer, "rating3" integer, "description" varchar, "imgs" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "dish_id" integer NOT NULL, "reviewer_id" integer NOT NULL)[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_dish_id" ON "reviews" ("dish_id")[0m
+  [1m[35m (8.1ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_reviewer_id" ON "reviews" ("reviewer_id")[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "areviews" ("id" integer NOT NULL PRIMARY KEY, "rating1" integer DEFAULT NULL, "rating2" integer DEFAULT NULL, "rating3" integer DEFAULT NULL, "description" varchar DEFAULT NULL, "imgs" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "dish_id" integer NOT NULL, "reviewer_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_areviews_on_reviewer_id" ON "areviews" ("reviewer_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "tindex_areviews_on_dish_id" ON "areviews" ("dish_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "areviews" ("id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id")
+                     SELECT "id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id" FROM "reviews"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "reviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer NOT NULL PRIMARY KEY, "rating1" integer DEFAULT NULL, "rating2" integer DEFAULT NULL, "rating3" integer DEFAULT NULL, "description" varchar DEFAULT NULL, "imgs" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "dish_id" integer NOT NULL, "reviewer_id" integer NOT NULL, CONSTRAINT "fk_rails_20a1166865"
+FOREIGN KEY ("dish_id")
+  REFERENCES "dishes" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_dish_id" ON "reviews" ("dish_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_reviewer_id" ON "reviews" ("reviewer_id")[0m
+  [1m[35m (0.0ms)[0m  [1m[32mINSERT INTO "reviews" ("id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id")
+                     SELECT "id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id" FROM "areviews"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mDROP TABLE "areviews"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "areviews" ("id" integer NOT NULL PRIMARY KEY, "rating1" integer DEFAULT NULL, "rating2" integer DEFAULT NULL, "rating3" integer DEFAULT NULL, "description" varchar DEFAULT NULL, "imgs" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "dish_id" integer NOT NULL, "reviewer_id" integer NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_areviews_on_reviewer_id" ON "areviews" ("reviewer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_areviews_on_dish_id" ON "areviews" ("dish_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "areviews" ("id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id")
+                     SELECT "id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id" FROM "reviews"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "reviews"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" integer NOT NULL PRIMARY KEY, "rating1" integer DEFAULT NULL, "rating2" integer DEFAULT NULL, "rating3" integer DEFAULT NULL, "description" varchar DEFAULT NULL, "imgs" varchar DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "dish_id" integer NOT NULL, "reviewer_id" integer NOT NULL, CONSTRAINT "fk_rails_20a1166865"
+FOREIGN KEY ("dish_id")
+  REFERENCES "dishes" ("id")
+, CONSTRAINT "fk_rails_007031d9cb"
+FOREIGN KEY ("reviewer_id")
+  REFERENCES "reviewers" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_dish_id" ON "reviews" ("dish_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_reviews_on_reviewer_id" ON "reviews" ("reviewer_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "reviews" ("id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id")
+                     SELECT "id","rating1","rating2","rating3","description","imgs","created_at","updated_at","dish_id","reviewer_id" FROM "areviews"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "areviews"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (10.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (6.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20221018103226)[0m
+  [1m[35m (9.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20220829111615),
+(20220829112328),
+(20220829112338),
+(20220829112349),
+(20220902083113),
+(20220902150413),
+(20220902150921),
+(20220902151002),
+(20220902151145),
+(20220902151233),
+(20220902151253),
+(20221018103219);
+
+[0m
+  [1m[35m (10.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-10-29 15:05:32.944601"], ["updated_at", "2022-10-29 15:05:32.944601"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "cd4d5f2d48554995e8a5c644c3c2386307b70319"], ["created_at", "2022-10-29 15:05:32.956241"], ["updated_at", "2022-10-29 15:05:32.956241"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
