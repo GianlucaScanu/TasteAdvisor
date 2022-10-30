@@ -1,5 +1,10 @@
 <h1>Home#index</h1>
 
+<%#= render  "app/views/search/_form.html.erb", :locale [:en], :formats [:html], :variants [], :handlers [:raw, :erb, :html, :builder, :ruby, :jbuilder] %>
+<%= render  "search/form" %>
+<%#https://guides.rubyonrails.org/layouts_and_rendering.html 3.4%>
+
+
 <% if reviewer_signed_in? %>
     
     <%=render current_reviewer%><br>

@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'search/index'
+  get 'search/show'
+  get 'search/edit'
+  get 'search/update'
+  get 'search/search_restaurant'
+  get 'search/search_dish'
+  get 'search/index'
+  get 'search/show'
+  get 'search/edit'
+  get 'search/update'
   get 'home/index'
 
   devise_for :reviewers
@@ -15,6 +25,10 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   root "home#index"
+
+  get '/search_restaurant', to: 'search#search_restaurant'
+  get '/search_dish', to: 'search#search_dish'
+  
 
   #le recensioni possono essere viste ed accedute solo attraverso i ristoranti e recensori, ma non tutte le funzionalita'
   #resources :restaurant do
