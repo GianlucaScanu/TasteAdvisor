@@ -3,8 +3,13 @@
 Parametri ricercati: <%= params[:form_input].to_s %> 
 <br><br>
 
+
 <%if params[:form_input].to_s != "" %>
-    <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ) %>
+    <%if params[:sort] != nil%>
+        <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ).order(params[:sort]) %>
+    <%else%>
+        <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ) %>
+    <% end %>
     <%= render @get_dish%>
 <%end%>
 

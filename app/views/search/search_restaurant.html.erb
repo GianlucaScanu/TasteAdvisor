@@ -4,13 +4,15 @@ Parametri ricercati: <%= params[:form_input].to_s %>
 <br><br>
 
 <%if params[:form_input].to_s != "" %>
-    <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ) %>
+    <%if params[:sort] != nil%>
+        <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ).order(params[:sort]) %>
+    <%else%>
+        <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ) %>
+    <% end %>
     <%= render @get_restaurant%>
-<% end %>
+<%end%>
 
 <br>
-
-
 
 <%= render  "search/form" %>
 

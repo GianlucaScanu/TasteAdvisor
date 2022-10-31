@@ -1,6 +1,23 @@
 <br>
+
+
+<%#= request.path %>
+<%@var_current_path =  request.path %>
+
+<%= form_with url: @var_current_path, method: :get do |form| %>
+  <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
+  <%= form.hidden_field :sort, value: "name" %>
+  <%= form.submit "ORDINA PER NOME" %><br>
+<% end %>
+
+<%#NB:IL RATING NON ESISTE NEL RISTORANTE!%>
+<%#NB:IL RATING PER I PATTI NON ESISTE UNIFICATO, SONO 3 RATING DIFFERENTI!%>
+
+<br>
+
 <%= form_with url: "/search_restaurant", method: :get do |form| %>
-  RICERCA RISTORANTE:<%= form.text_field :form_input %> 
+  RICERCA RISTORANTE:<%= form.text_field :form_input %>
+  <%= form.hidden_field :sort, value: nil%> 
   <%= form.submit "Search" %><br>
 <% end %>
 <br>
