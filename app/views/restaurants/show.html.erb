@@ -46,7 +46,8 @@
     <div id = "middle">
       <%if restaurant_signed_in? %>
         <div id = "foto">
-          PROFILE_PICTURE - TODO:
+        IMMAGINE DI PROFILO
+        <%= @restaurant.profile_picture%>
           <!-- MANCA IN BACKEND IMMAGINE DEL PROFILO DEL RISTORANTE -->
         </div>
         <div id = "user_desc_1">
@@ -71,8 +72,8 @@
       <%else%>
       <div id = "col_m1">
         <div id = "foto">
-          PROFILE_PICTURE - TODO:
-          <!-- MANCA IN BACKEND IMMAGINE DEL PROFILO DEL RISTORANTE -->
+        IMMAGINE DI PROFILO
+        <%= @restaurant.profile_picture %>
         </div>
       </div>
       <div id = "col_m2">
@@ -80,7 +81,7 @@
         <div id = "description">
           <% if(@restaurant.description == "") %>
             Descrizione mancante
-            <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
+            <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuoto -->
           <% else %>
             <%= @restaurant.description%>
           <% end %>
@@ -90,15 +91,16 @@
     </div>
     <div id = "dishes_and_other_infos">
       <div id = "col_d1">
-        <div id = "dishes_div">
+      <% if restaurant_signed_in? %>
+        <div id = "dishes_div_restaurant">
           <div id = "header_and_insertions">
-            <% if restaurant_signed_in?%>
-              <div id = "header">I miei piatti: </div>
-                <%= link_to "Nuovo piatto", new_dish_path, :id => "insert_dishes", :class => "btn btn-success" %>
-            <% else %>
-              <div id = "header">I piatti: </div>
-            <% end %>
+            <div id = "header">I miei piatti: </div>
+              <%= link_to "Nuovo piatto", new_dish_path, :id => "insert_dishes", :class => "btn btn-success" %>
           </div>
+      <% else %>
+        <div id = "dishes_div">
+          <div id = "header">I piatti: </div>
+      <%end%>
           <div id = "inserted_dishes">
             <% (Dish.all).each do |dish|%>
               <% if dish.restaurant_id == @restaurant.id %>
@@ -108,7 +110,7 @@
                   <div class="card-body">
                     <h5 class="card-title">Nome: <%= dish.name %></h5>
                     <div class="card-text">Prezzo: <%= dish.price %></div>
-                    <div class="card-text">Informazioni: TODO <!-- Vedere descrizione, forse da implementare nel db --></div>
+                    <div class="card-text">Informazioni: <%= dish.description%> </div>
                     <div id = "mod_dishes_btns">
                     <%if reviewer_signed_in? %>
                       <%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %>
