@@ -7,37 +7,53 @@ class Review < ApplicationRecord
 
     #belongs_to :reviewer
 	#belongs_to :restaurant
+<<<<<<< HEAD
 	#belongs_to :dish
 
     #after_validation :increase_dish_number_of_review, :update_avg_rating
+=======
+	belongs_to :dish
+>>>>>>> struttura_rails
     
+    #ora dovrebbe funziona, aggiornare sempre
+    after_create :update_avg_rating_and_number_of_review
+    after_update :update_avg_rating_and_number_of_review
+    after_destroy :update_avg_rating_and_number_of_review
+
     private
-        def increase_dish_number_of_review
-            #credits. https://stackoverflow.com/questions/12329687/how-to-update-value-of-a-models-attribute, https://guides.rubyonrails.org/active_record_basics.html#update
-            dish = Dish.find(@dish)
-            dish.number_of_reviews += 1
-            dish.save
-        end
+    
+        #FUNZIONA MA DA SISTEMARE!
+        #after_validation viene applicato prima di salvare il modello sull dbs? in base a questo vanno modificate delle righe 
         
-        def update_avg_rating
-            dish = Dish.find(@dish)
+        def update_avg_rating_and_number_of_review
+            
+            #credits. https://stackoverflow.com/questions/12329687/how-to-update-value-of-a-models-attribute, https://guides.rubyonrails.org/active_record_basics.html#update
+            
+            dish = Dish.find_by_id(dish_id)
+            #dish = Dish.find(52)
+            #tronca le divisioni senza .0 o .to_f
+            accumulator = 0.0
+            counter = 0.0
 
-            accumulator = 0
-            counter = 0
-
-            @reviews = Review.all
             #ricalcolo la media, riprendendo la media di ogni recensione inserente al piatto, sommandole e poi dividendole per la nuova media
-            reviews.each do |review|
-                if(review.dish == @dish)
-                    accumulator += (review.rating1 + review.rating2 + review.rating3)/3
-                    counter += 1
+            (Review.all).each do |review|
+                if(review.dish_id == dish_id)
+                    counter += 1.0
+                    accumulator += (review.rating1.to_f + review.rating2.to_f + review.rating3.to_f)/3.to_f
                 end
             end
 
-            #tecnicamente dovrebbe eseguire questo metodo dopo aver validato il modello, quindi in Review.all dovrebbe comparire anche questa review
-            new_avg = accumulator/counter 
+            if(counter != 0)
+                new_avg = accumulator.to_f/counter.to_f
+            elsif 
+                new_avg = 0
+            end
 
-            dish.avg_rating = new_avg
+            dish.avg_rating = new_avg.to_f
+            dish.number_of_reviews = counter.to_f
+
             dish.save
         end
+        
+    
 end

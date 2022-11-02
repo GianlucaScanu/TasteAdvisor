@@ -1,0 +1,21 @@
+<h1>RISULTATI RICERCA PIATTO </h1> <br>
+
+Parametri ricercati: <%= params[:form_input].to_s %> 
+<br><br>
+
+
+<%if params[:form_input].to_s != "" %>
+    <%if params[:sort] != nil%>
+        <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ).order(params[:sort]) %>
+    <%else%>
+        <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ) %>
+    <% end %>
+    <%= render @get_dish%>
+<%end%>
+
+<br>
+
+<%#= link_to "Refresh", url_for(""), method: :get %>
+
+<%#= button_to search_search_dish_path, method: :get %>
+<%= render  "search/form" %>
