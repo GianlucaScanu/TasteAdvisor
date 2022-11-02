@@ -20,7 +20,6 @@
 
     <div id = "col_m1">
       <div class = "field_div">
-        IMMAGINI - TODO:
         <%= form.label :imgs, style: "display: block" %>
         <%= form.text_field :imgs %>
       </div>
@@ -29,8 +28,8 @@
         <%= form.text_field :name %>
       </div>
       <div class = "field_div">
-        DESCRIZIONE - TODO:
-        <!-- descrizione da implementare nel lato backend -->
+        <%= form.label :description, style: "display: block" %>
+        <%= form.text_field :description %>
       </div>
     </div>
 
@@ -44,16 +43,9 @@
         <%= form.text_field :price %>
       </div>
       
-      <!--
       <div class = "field_div">
-        <%= form.label :name, style: "display: block" %>
-        <%= form.text_field :name %>
-      </div>
-      -->
-
-      <div class = "field_div">
-        INGREDIENTI - TODO:
-        <!-- ingredienti da implementare nel lato backend -->
+        <%= form.label :ingredients, style: "display: block" %>
+        <%= form.text_field :ingredients %>
       </div>
 
       <!--

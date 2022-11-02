@@ -30,22 +30,7 @@
             <div id = "description">DESCRIZIONE APPLICAZIONE </div>
         </div>
         <div id = "col2">
-            <div id = "researches">
-                <div id = "restaurant_research" class="research">
-                    <form action = "TODO with Ruby" >
-                        <!--Inserire Ruby -->
-                        <input type = "text" placeholder = "Inserire il ristorante">
-                        <button type="submit"><img src = "./images/lente.png"></button>
-                    </form>
-                </div>
-                <div id = "dish_research" class="research">
-                    <form action = "TODO with Ruby!" >
-                        <!--Inserire Ruby -->
-                        <input type = "text" placeholder = "Inserire il piatto">
-                        <button type="submit"><img src = "./images/lente.png"></button>
-                    </form>
-                </div>
-            </div>
+            <%= render  "search/form" %>
         </div>
     </div>
 </body>
