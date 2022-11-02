@@ -7,13 +7,7 @@ class Review < ApplicationRecord
 
     #belongs_to :reviewer
 	#belongs_to :restaurant
-<<<<<<< HEAD
-	#belongs_to :dish
-
-    #after_validation :increase_dish_number_of_review, :update_avg_rating
-=======
 	belongs_to :dish
->>>>>>> struttura_rails
     
     #ora dovrebbe funziona, aggiornare sempre
     after_create :update_avg_rating_and_number_of_review
