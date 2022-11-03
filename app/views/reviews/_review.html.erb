@@ -4,9 +4,14 @@
         <div id = "col1">
             <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
                 <div id = "names_div">
-                    <div id = "plate_name">Nome del piatto: <%=Dish.find(review.dish_id).name%></div>
-                    <div id = "restaurant_name">Presso il ristorante: <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%> </div>
-                </div>
+                    <div id = "plate_name">Nome del piatto: <%=Dish.find(review.dish_id).name%>
+                        <br><%= link_to "Vai al piatto", dish_path(review.dish_id), :class => "link" %>
+                    </div>
+                    
+                    <div id = "restaurant_name">Presso il ristorante: <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%>
+                        <br><%= link_to "Vai al ristorante", restaurant_path(Restaurant.find(Dish.find(review.dish_id).restaurant_id).id), :class => "link" %>
+                    </div>
+                 </div>   
             <%end%>
             <div id = "ratings">
                 <div class = "rating" id = "gusto">
