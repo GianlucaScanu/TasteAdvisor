@@ -1,3 +1,22 @@
+<script>
+        document.getElementById("review_rating1").setAttribute("onchange", "return modificaValore1(this);");
+        document.getElementById("review_rating2").setAttribute("onchange", "return modificaValore2(this);");
+        document.getElementById("review_rating3").setAttribute("onchange", "return modificaValore3(this);");
+
+        function modificaValore1(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg1").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+        function modificaValore2(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg2").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+        function modificaValore3(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg3").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+</script>
+
 <%= form_with(model: review) do |form| %>
 
 
@@ -13,7 +32,7 @@
     </div>
   <% end %>
 
-<div id = "middle">
+<div id = "middle" onload = "return modificaValore1(rating1);">
         <div id = "midtop">
             <div id = "col1">
                 <div id = "foto">
@@ -59,7 +78,7 @@
                         <div id = "originalità_lbl">Originalità</div>
                         <div  class = "rtg" id = "originalità_rtg">
                             <div id = "originalità_select">
-                                <%= form.select :rating2, ["1", "2", "3", "4", "5"], :name => "numbers", autofocus: true, :onchange => "return modificaValore3(this);" %>
+                                <%= form.select :rating3, ["1", "2", "3", "4", "5"], :name => "numbers", autofocus: true, :onchange => "return modificaValore3(this);" %>
                             </div>
                             <div class = "pb" id = "impiattamento_pb">
                                 <div class="progress">
@@ -107,27 +126,3 @@
 
 <%= stylesheet_link_tag "nuovaRecensione.css" %>
 
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-
-<script>
-$(document).ready(function first(){
-  
-
-    document.getElementById("review_rating1").setAttribute("onchange", "return modificaValore1(this);");
-})
-
-function modificaValore1(select){
-    var selezionato = select.options[select.selectedIndex].value;
-    document.getElementById("pg1").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-}
-function modificaValore2(select){
-    var selezionato = select.options[select.selectedIndex].value;
-    document.getElementById("pg2").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-}
-function modificaValore3(select){
-    var selezionato = select.options[select.selectedIndex].value;
-    document.getElementById("pg3").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-
-}
-</script>
