@@ -65,6 +65,7 @@ class ReviewersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reviewer_params
-      params.fetch(:reviewer, {})
+      #params.fetch(:reviewer, {})
+      params.require(:reviewer).permit(:username, :profile_picture, :telephone_number, :email)
     end
 end

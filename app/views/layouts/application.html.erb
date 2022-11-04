@@ -18,10 +18,10 @@
          <div id = "top">
           <div id = "row1">
               <div id = "logo">
-                  <img src = "TODO:" alt="logo TA">
+                  <a href="/"> <img src = "TODO:" alt="logo TA"> </a>
               </div>
               <div id = "label">
-                  TASTEADVISOR
+                  <a href="/"> TASTEADVISOR</a>
               </div>
 
               <div id = "log_buttons">
@@ -47,26 +47,27 @@
               <div id = "navbar">
                   <nav class = "navbar navbar-dark">
                       <div class = "nav nav-pills options-ul">
-                          <div class = "nav-item">
-                              <a id = "Antipasti" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Antipasti
-                              </a>
-                          </div>
-                          <div class = "nav-item">
-                              <a id = "Primi" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Primi
-                              </a>
-                          </div>
-                          <div class = "nav-item">
-                              <a id = "Secondi" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Secondi
-                              </a>
-                          </div>
-                          <div class = "nav-item">
-                              <a id = "Dolci" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Dolci
-                              </a>
-                          </div>
+
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "0" %>
+                                <%= form.submit "Antipasti" %><br>
+                            <% end %>
+                            
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "1" %>
+                                <%= form.submit "Primi" %><br>
+                            <% end %>
+
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "2" %>
+                                <%= form.submit "Secondi" %><br>
+                            <% end %>
+
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "3" %>
+                                <%= form.submit "Dolci" %><br>
+                            <% end %>
+
                       </div>
                   </nav>
               </div>
@@ -76,10 +77,10 @@
         <div id = "top">
           <div id = "row1">
               <div id = "logo">
-                  <img src = "TODO:" alt="logo TA">
+                  <a href="/"> <img src = "TODO:" alt="logo TA"> </a>
               </div>
               <div id = "label">
-                  TASTEADVISOR
+                 <a href="/"> TASTEADVISOR</a>
               </div>
 
               <div id = "log_buttons">
@@ -108,26 +109,27 @@
               <div id = "navbar">
                   <nav class = "navbar navbar-dark">
                       <div class = "nav nav-pills options-ul">
-                          <div class = "nav-item">
-                              <a id = "Antipasti" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Antipasti
-                              </a>
-                          </div>
-                          <div class = "nav-item">
-                              <a id = "Primi" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Primi
-                              </a>
-                          </div>
-                          <div class = "nav-item">
-                              <a id = "Secondi" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Secondi
-                              </a>
-                          </div>
-                          <div class = "nav-item">
-                              <a id = "Dolci" class = "nav-link" aria-current="page" href = "./TODO">
-                                  Dolci
-                              </a>
-                          </div>
+
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "0" %>
+                                <%= form.submit "Antipasti" %><br>
+                            <% end %>
+                            
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "1" %>
+                                <%= form.submit "Primi" %><br>
+                            <% end %>
+
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "2" %>
+                                <%= form.submit "Secondi" %><br>
+                            <% end %>
+
+                            <%= form_with url: "/search_dish", method: :get do |form| %>
+                                <%= form.hidden_field :category, value: "3" %>
+                                <%= form.submit "Dolci" %><br>
+                            <% end %>
+
                       </div>
                   </nav>
               </div>
