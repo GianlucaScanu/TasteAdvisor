@@ -20,6 +20,10 @@
     <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
   </div>
+  <%= form.hidden_field :targetId, value: session[:report_id] %>
+  <%= form.hidden_field :targerType, value: session[:report_type].to_s %>
+  <%=session[:report_id]%>
+  <%=session[:report_type]%>
 
   <div>
     <%= form.submit %>

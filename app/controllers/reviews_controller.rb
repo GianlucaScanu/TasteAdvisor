@@ -10,6 +10,8 @@ class ReviewsController < ApplicationController
 
   # GET /reviews/1 or /reviews/1.json
   def show
+    session[:report_id] = @review.id
+    session[:report_type] = "review"
   end
 
   # GET /reviews/new

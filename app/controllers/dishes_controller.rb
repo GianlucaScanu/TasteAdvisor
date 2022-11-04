@@ -8,6 +8,8 @@ class DishesController < ApplicationController
 
   # GET /dishes/1 or /dishes/1.json
   def show
+      session[:report_id] = @dish.id
+      session[:report_type] = "dish"
   end
 
   # GET /dishes/new
