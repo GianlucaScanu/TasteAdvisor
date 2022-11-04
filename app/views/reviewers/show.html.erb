@@ -1,12 +1,13 @@
-<%= render @reviewer %>
+<%#= render @reviewer %>
 <%= stylesheet_link_tag "recensore.css" %>
 
 <div id = "middle">
         <div id = "foto">
             <div id = "image">
-                <img alt="immagine profilo BACK-END">
+                <img src="<%= url_for(@reviewer.avatar)%>" alt="PP" width="100" height="100"> 
             </div>
-            <div id = "image_lbl"> foto profilo</div>
+                <div id = "image_lbl"> foto profilo
+            </div>
         </div>
         <div id = "user_desc">
             <div id = "username"> Username: <%= @reviewer.username %> </div>
