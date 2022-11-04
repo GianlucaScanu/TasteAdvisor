@@ -18,22 +18,33 @@
             </div>
         </div>
     </div>
+
+
+    <div id = "midbottom_lbl"> Le tue recensioni </div>
     <div id = "midbottom">
-        <div id = "bottom_row1">
-            <div id = "bottom_lbl"> Le tue recensioni </div>
-        </div>
-        <div id = "bottom_row2">
-            <div id = "recensione_tipo">
-                <div id = "recensione_text">TODO: @testoRecensione BACKEND</div>
-                <div id = "recensione_btn">
-                    <div id = "mod_div">
-                        <div id = "mod_btn" class = "btn btn-success btn-responsive">Modifica</div>
-                    </div>
-                    <div id = "del_div">
-                        <div id = "del_btn" class = "btn btn-success btn-responsive">Cancella</div>
+        <div id = "bottom_row">
+            <% (Review.all).each do |review|%>
+                <% if review.reviewer_id == @reviewer.id %>
+                <div id = "recensione_tipo">
+                    <div id = "recensione_text">"<%=review.description%>"</div>
+                    <div id = "recensione_info">sul piatto <%=review.dish_id%> del ristorante <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%></div>
+                    <div id = "recensione_btn">
+                        <div id = "mod_div">
+                            <%= link_to "Mostra", review_path(review), :class => "btn btn-success" %>
+                        </div>
+                        <% if (current_reviewer) and (review.reviewer_id == current_reviewer.id) %>
+                        <div id = "del_div">
+                            <%= button_to "Elimina", @review, method: :delete, :class => "btn btn-danger btn-responsive" %>
+                        </div>
+                        <%else%>
+                            <div id = "del_div">
+                                <%= link_to "SegnalaTODO:", review_path(review), :class => "btn btn-success" %>
+                            </div>
+                        <%end%>
                     </div>
                 </div>
-            </div>
+                <%end%>
+            <%end%>
         </div>
     </div>
   </div>
