@@ -87,7 +87,7 @@
 }
 
 #col2 > *{
-    margin-top: 2%
+    margin-top: 7%
 }
 
 .progress{
@@ -98,6 +98,10 @@
 #ratings{
     display: flex;
     flex-direction: column;
+}
+
+#ratings > *{
+    margin-top: 5%;
 }
 
 .rating{
