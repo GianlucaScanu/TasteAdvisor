@@ -6,6 +6,18 @@ local:
   service: Disk
   root: <%= Rails.root.join("storage") %>
 
+google_dev:
+  service: GCS
+  project: LASSI
+  credentials: <%=  Rails.root.join("lassi-367619-66f9fd5a4b0d.json") %>
+  bucket: lassi-media
+
+google:
+  service: GCS
+  project: LASSI
+  credentials:  <%=  Rails.root.join("lassi-367619-66f9fd5a4b0d.json") %>
+  bucket: lassi-media
+
 # Use bin/rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 # amazon:
 #   service: S3

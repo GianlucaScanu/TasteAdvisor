@@ -5,5 +5,7 @@
     USERNAME:<%= reviewer.username %><br>
     TEL:<%= reviewer.telephone_number%><br>
     EMAIL:<%= reviewer.email %><br>  
-
+    <div>
+        PROFILE PIC:  <%= image_tag url_for(reviewer.avatar)%>
+    </div>
 </div>

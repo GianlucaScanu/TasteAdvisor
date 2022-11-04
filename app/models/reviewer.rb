@@ -8,5 +8,7 @@ class Reviewer < ApplicationRecord
     validates :username, uniqueness: true
     
     has_many :review
+
+    has_one_attached :avatar, service: :google
     
 end
