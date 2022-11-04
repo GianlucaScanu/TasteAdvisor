@@ -67,7 +67,7 @@ class DishesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def dish_params
-      params.require(:dish).permit(:name, :number_of_reviews, :price, :category, :avg_rating, :imgs, :restaurant_id, :description, :ingredients)
+      params.require(:dish).permit(:name, :number_of_reviews, :price, :category, :avg_rating, :imgs, :restaurant_id, :description, :ingredients, images: [])
       #credits. https://stackoverflow.com/questions/43217456/cant-update-user-belongs-to-association-in-rails
       #altrimenti non passo il valore di restaurant_id (prima non era presente)
     end

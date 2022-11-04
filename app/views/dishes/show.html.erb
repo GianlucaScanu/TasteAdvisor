@@ -61,8 +61,11 @@
  <div id = "middle">
         <div id = "col1">
             <div id = "foto_piatto">
-                IMMAGINE - TODO
-                <%= @dish.imgs %>
+                <% i = 0 %>
+                <% while @dish.images[i] != nil%>
+                    <img src="<%= url_for(@dish.images[i])%>" alt="foto_piatto" width="200" height="200">
+                    <%i += 1%>
+                <%end%>
             </div>
             <div id = "actions">
                 <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %><br></div>

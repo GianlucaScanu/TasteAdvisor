@@ -5,5 +5,6 @@ class Dish < ApplicationRecord
     belongs_to :restaurant
     has_many :review
 
+    has_many_attached :images, service: :google
 
 end

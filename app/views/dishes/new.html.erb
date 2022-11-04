@@ -6,9 +6,7 @@
       
       <div id = "col_m1">
         <div class = "field_div">
-           IMMAGINI - TODO:
-            <%= f.label :imgs, style: "display: block" %>
-            <%= f.text_field :imgs %>
+          <%= f.file_field :images, multiple: true, direct_upload: false %>  
           <!-- implementare nel lato backend -->
         </div>
         <div class = "field_div">
