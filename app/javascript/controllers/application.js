@@ -1,6 +1,6 @@
 import { Application } from "@hotwired/stimulus"
 
-require("@rails/activestorage").start()
+//require("@rails/activestorage").start()
 
 const application = Application.start()
 
