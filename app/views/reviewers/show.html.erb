@@ -14,7 +14,9 @@
         </div>
         <div id = "user_desc">
             <div id = "username"> Username: <%= @reviewer.username %> </div>
-            <div id = "description">TODO: Descrizione utente BACK-END</div>
+            <div id = "description">
+                <p>   <%= @reviewer.description%>   <p>
+            </div>
         </div>
         <div id = "modify">
             <div id = "profilo_btn">
@@ -24,21 +26,33 @@
     </div>
     <div id = "midbottom">
         <div id = "bottom_row1">
-            <div id = "bottom_lbl"> Le tue recensioni </div>
+            <div id = "bottom_lbl"> Le tue recensioni: </div>
         </div>
-        <div id = "bottom_row2">
-            <div id = "recensione_tipo">
-                <div id = "recensione_text">TODO: @testoRecensione BACKEND</div>
-                <div id = "recensione_btn">
-                    <div id = "mod_div">
-                        <div id = "mod_btn" class = "btn btn-success btn-responsive">Modifica</div>
+        <%#=i è il limite di print di recensioni%>
+        <%i = 0%>
+
+        <%(Review.all).each do |review|%>
+            <%if(review != nil) and (review.reviewer_id == @reviewer.id) and (i < 2) %>
+                <%=render review%>
+                <!--<div id = "bottom_row2">
+                    <div id = "recensione_tipo">
+                        <div id = "recensione_text">
+                            <%=render review%> </div>
+                        <div id = "recensione_btn">
+                            <div id = "mod_div">
+                                <div id = "mod_btn" class = "btn btn-success btn-responsive">Modifica</div>
+                            </div>
+                            <div id = "del_div">
+                                <div id = "del_btn" class = "btn btn-success btn-responsive">Cancella</div>
+                            </div>
+                        </div>
                     </div>
-                    <div id = "del_div">
-                        <div id = "del_btn" class = "btn btn-success btn-responsive">Cancella</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                </div> -->
+            <%i += 1%>
+            <%end%>
+        <%end%>
+
+
     </div>
   </div>
 
