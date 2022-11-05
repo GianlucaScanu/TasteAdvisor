@@ -101,23 +101,16 @@
         <div id = "dishes_div">
           <div id = "header">I piatti: </div>
       <%end%>
-          <div id = "inserted_dishes">
-            <% (Dish.all).each do |dish|%>
-              <% if dish.restaurant_id == @restaurant.id %>
-                <div class="piattino">
-                  <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
-                    <!-- tag img da modificare con tag ruby per ottenere immagine del piatto -->
-                  <div class="card-body">
-                    <h5 class="card-title">Nome: <%= dish.name %></h5>
-                    <div class="card-text">Prezzo: <%= dish.price %></div>
-                    <div class="card-text">Informazioni: <br>
-                      <% if dish.description.length > 20%>
-                        <%= dish.description[0, 20] + "..."%>
-                      <% else %>
-                        <%= dish.description %>
-                      <% end %> 
-                    </div>
-                    <div id = "mod_dishes_btns">
+        <div id = "inserted_dishes">
+          <% (Dish.all).each do |dish|%>
+            <% if dish.restaurant_id == @restaurant.id %>
+              <div class = "piattino">
+                <div class = "interno_piattino">
+                  <div class = "foto_piatto"><%= dish.imgs %></div>
+                  <div class = "nome_piattino">Nome:<br><%= dish.name%></div>
+                  <div class = "prezzo_piattino">Prezzo: <%= dish.price%></div>
+                  <div class = "rating_piattino">Rating: <%= dish.avg_rating.round(2)%></div>
+                  <div id = "mod_btns">
                     <%if reviewer_signed_in? %>
                       <%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %>
                     <%elsif restaurant_signed_in? %>
@@ -126,9 +119,9 @@
                     <%end%>
                   </div>
                 </div>
-              <%end%>
-            </div>
-          <%end%>
+              </div>
+            <% end %>
+          <% end %>
         </div>
       </div>
     </div>
@@ -146,5 +139,6 @@
       </div>
     <% end %>
   </div>
+
   </body>
 </html>

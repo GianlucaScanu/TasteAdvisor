@@ -163,7 +163,6 @@
 .piattino{
     display: flex;
     flex-direction: column;
-    width: auto;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 1%;
@@ -173,24 +172,19 @@
     border-color: #1e5a1a;
 }
 
-.piattino-body{
-    margin-left: 2%;
-    margin-right: 2%;
-}
-
-#mod_dishes_btns{
+.interno_piattino{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-#mod_dishes_btns > *{
-    margin-left: 0.5%;
-    margin-right: 0.5%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+#mod_btns{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #bottom{
