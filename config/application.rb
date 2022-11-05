@@ -18,5 +18,10 @@ module TasteAdvisor
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    #imgs
+    config.public_file_server.enabled = true
+    config.serve_static_assets = true
+    
   end
 end

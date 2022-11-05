@@ -7,5 +7,5 @@ class Restaurant < ApplicationRecord
     validates :username,  uniqueness: true
 
     has_one_attached :profile_picture, service: :google
-
+    validates :profile_picture,  blob: { content_type: :image }
 end

@@ -8,23 +8,19 @@
     <%= stylesheet_link_tag "homepage.css" %>
 </head>
 <body>
-    
     <div id = "middle">
         <div id = "col1">
+        <%#= HO LAVORATO SU DEI FILE e dei permessi (per mostrare le img) , questi si chiamano asset e vanno inseriti in app/asset/image %>
             <div id = "carousel_homepage" class = "carousel slide" data-bs-ride="carousel">
                 <div class = "carousel-inner">
+                    
                     <div class = "carousel-item active">
-                        <img src="./images/pizza_sample.jpg" class = "d-block w-auto" alt="image of pizza">
+                        <%=image_tag("pizza-sample1.jpg", :class => "d-block w-auto", :alt => "image of pizza")%>
                     </div>
                     <div class = "carousel-item">
-                            <img src="./images/carbonara_sample.jpg" class = "d-block w-auto" alt="image of carbonara">
+                        <%=image_tag("pizza-sample2.jpg", :class => "d-block w-auto", :alt => "image of pizza")%>
                     </div>
-                    <div class = "carousel-item">
-                        <img src="./images/grigliata_sample.jpg" class = "d-block w-auto" alt="image of grill">
-                    </div>
-                    <div class = "carousel-item">
-                        <img src="./images/tiramisu_sample.jpg" class = "d-block w-auto" alt="image of tiramisu">
-                    </div>
+                    
                 </div>
             </div>
             <div id = "description">DESCRIZIONE APPLICAZIONE </div>

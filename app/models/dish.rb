@@ -6,5 +6,5 @@ class Dish < ApplicationRecord
     has_many :review
 
     has_many_attached :images, service: :google
-
+    validates :images,  blob: { content_type: :image }
 end
