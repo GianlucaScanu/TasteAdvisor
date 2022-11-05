@@ -10,5 +10,7 @@ class Reviewer < ApplicationRecord
     has_many :review
 
     has_one_attached :profile_picture, service: :google
-    
+
+    #validates :profile_picture, blob: { content_type: ['image/*'] }
+    #https://github.com/aki77/activestorage-validator
 end

@@ -8,6 +8,8 @@ class Review < ApplicationRecord
     #belongs_to :reviewer
 	#belongs_to :restaurant
 	belongs_to :dish
+
+    has_many_attached :images, service: :google
     
     #ora dovrebbe funziona, aggiornare sempre
     after_create :update_avg_rating_and_number_of_review

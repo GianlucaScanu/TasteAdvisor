@@ -54,23 +54,29 @@
                 <div id = "user_name">Recensione effettuata da <%=Reviewer.find(review.reviewer_id).username%> </div>
             <%end%>
         </div>
+
+
+        
         <div id = "col2">
-            <div id = "carousel_review" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/pizza-sample1.jpg" class="d-block w-100" alt="Immagine 1">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/pizza-sample2.jpg" class="d-block w-100" alt="Immagine 2">
-                    </div>
-                </div>
-            </div>
+            <%#=ELIMINATO TEMPORANEAMENTE CAROSELLO, DA RIAGGIUNGERE%>
+            <%if review.images[0] != nil%>
+
+                FOTO:  
+                <% i = 0 %>
+                <% while review.images[i] != nil%>
+                    <img src="<%= url_for(review.images[i])%>" alt="foto_recensione" width="200" height="200">
+                    <%i += 1%>
+                <%end%>
+                <br>
+
+            <%end%>
             <div id = "report">
                 <div id = "report_btn" class = "btn btn-danger btn-responsive">
                     Segnala recensione TODO:
                 </div>
             </div>
         </div>
+        
     </div>
 
 </div>

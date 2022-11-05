@@ -37,11 +37,12 @@
     <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
   </div>
-
+  
   <div>
-    <%= form.label :imgs, style: "display: block" %>
-    <%= form.text_field :imgs %>
+    CARICA IMG: <%= form.file_field :images, multiple: true, direct_upload: false, accept:"image/*" %>
+
   </div>
+
 
   <%= form.hidden_field :dish_id, value: session[:save_dish] %>
   <%= form.hidden_field :reviewer_id, value: current_reviewer.id %>

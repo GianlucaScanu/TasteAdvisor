@@ -32,7 +32,7 @@
         <%i = 0%>
 
         <%(Review.all).each do |review|%>
-            <%if(review != nil) and (review.reviewer_id == @reviewer.id) and (i < 2) %>
+            <%if(review != nil) and (review.reviewer_id == @reviewer.id) and (i < 5) %>
                 <%=render review%>
                 <!--<div id = "bottom_row2">
                     <div id = "recensione_tipo">
