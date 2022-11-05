@@ -87,12 +87,8 @@
                     </div>
                 </div>
                 <div id = "description">
-                    <div id = "desc_lbl">
-                        Inserisci una descrizione
-                    </div>
-                    <div id = "desc_area">
-                        <%= form.text_field :description %>
-                    </div>
+                    <%= form.label :description, "Descrizione ", style: "display: block" %>
+                    <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione" %>
                 </div>
                 
             </div>
