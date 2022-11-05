@@ -4,7 +4,10 @@
 <div id = "middle">
         <div id = "foto">
             <div id = "image">
-                <img src="<%= url_for(@reviewer.avatar)%>" alt="PP" width="100" height="100"> 
+                <%#=da controllare questo if%>
+                <% if @reviewer.profile_picture != nil %>
+                    <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="100" height="100"> 
+                <% end %>
             </div>
                 <div id = "image_lbl"> foto profilo
             </div>

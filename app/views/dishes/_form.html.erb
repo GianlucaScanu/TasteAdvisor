@@ -20,7 +20,7 @@
 
     <div id = "col_m1">
       <div class = "field_div">
-        <%= form.file_field :images, multiple: true, direct_upload: false %>
+        <%= form.file_field :images, multiple: true, direct_upload: false, accept:"image/*" %>  %>
       </div>
       <div class = "field_div">
         <%= form.label :name, style: "display: block" %>

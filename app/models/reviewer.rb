@@ -9,6 +9,6 @@ class Reviewer < ApplicationRecord
     
     has_many :review
 
-    has_one_attached :avatar, service: :google
+    has_one_attached :profile_picture, service: :google
     
 end

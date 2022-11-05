@@ -6,5 +6,6 @@ class Restaurant < ApplicationRecord
     validates :name, :username, presence: true
     validates :username,  uniqueness: true
 
-    has_many :dish
+    has_one_attached :profile_picture, service: :google
+
 end
