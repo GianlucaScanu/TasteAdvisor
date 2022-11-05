@@ -105,8 +105,13 @@
             <% (Dish.all).each do |dish|%>
               <% if dish.restaurant_id == @restaurant.id %>
                 <div class="card">
-                  <img class="card-img-top" src="./images/tortellini.jpg" alt="immagine piatto">
-                    <!-- tag img da modificare con tag ruby per ottenere immagine del piatto -->
+                
+                <% i = 0 %>
+                <% while dish.images[i] != nil%>
+                    <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" width="120" height="120">
+                    <%i += 1%>
+                <%end%>
+
                   <div class="card-body">
                     <h5 class="card-title">Nome: <%= dish.name %></h5>
                     <div class="card-text">Prezzo: <%= dish.price %></div>

@@ -63,7 +63,7 @@
             <div id = "foto_piatto">
                 <% i = 0 %>
                 <% while @dish.images[i] != nil%>
-                    <img src="<%= url_for(@dish.images[i])%>" alt="foto_piatto" width="200" height="200">
+                    <img src="<%= url_for(@dish.images[i])%>" alt="foto_piatto" width="300" height="300">
                     <%i += 1%>
                 <%end%>
             </div>

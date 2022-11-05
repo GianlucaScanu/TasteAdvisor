@@ -11,7 +11,16 @@
   PRICE: <%= dish.price %><br>
   DESCRIPTION: <%= dish.description %><br>
   INGREDIENTS: <%= dish.ingredients %><br>
-  
-  <%session[:save_dish] = dish.id%>
-    
+  <%if dish.images[0] != nil%>
+
+    FOTO:  
+    <% i = 0 %>
+    <% while dish.images[i] != nil%>
+        <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" width="300" height="300">
+        <%i += 1%>
+    <%end%>
+    <br>
+    <%session[:save_dish] = dish.id%>
+
+  <%end%>
 </div>

@@ -50,22 +50,22 @@
 
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "0" %>
-                                <%= form.submit "Antipasti" %><br>
+                                <%= form.submit "Antipasti", :class => "btn btn-link" %><br>
                             <% end %>
                             
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "1" %>
-                                <%= form.submit "Primi" %><br>
+                                <%= form.submit "Primi", :class => "btn btn-link"  %><br>
                             <% end %>
 
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "2" %>
-                                <%= form.submit "Secondi" %><br>
+                                <%= form.submit "Secondi", :class => "btn btn-link"  %><br>
                             <% end %>
 
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "3" %>
-                                <%= form.submit "Dolci" %><br>
+                                <%= form.submit "Dolci", :class => "btn btn-link"  %><br>
                             <% end %>
 
                       </div>
