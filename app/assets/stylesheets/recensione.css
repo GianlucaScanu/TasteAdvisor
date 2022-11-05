@@ -95,6 +95,10 @@
     margin-top: 3%;
 }
 
+.link{
+    color: royalblue;
+    text-decoration: underline;
+}
 
 /*ELEMENTI AREA BOTTOM*/
 #contacts{
@@ -108,8 +112,14 @@
 }
 
 
-/*ELEMENTO ISOLATO TODO:*/
-#destroy_btn{
+/*ELEMENTI ISOLATI SHOW*/
+#review_btns{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    margin-top: 3%;
+}
+
+#destroy_btn{
+    margin-left: 5%;
 }
