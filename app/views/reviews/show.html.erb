@@ -2,23 +2,15 @@
 
 <%= render @review %>
 
-<div>
-  <%= link_to "Back to reviews - TODO:", reviews_path %> |
-  <%= link_to "Back to dish - TODO:", dish_path(@review.dish_id) %> |
-
-  <%#RICONTROLLA QUESTI IF%>
-  <%#SE COMMENTATI PUOI ELIMINARE OGNI RECENSIONE DELL'UTENTE%>
-  <%if reviewer_signed_in?%>
-    <%if @review.reviewer_id == current_reviewer.id%>
-      <%= link_to "Edit this review", edit_review_path(@review) %> |
-      <%= button_to "Destroy this review", @review, method: :delete %>
-    <%end%>
+<%if reviewer_signed_in?%>
+  <% if current_reviewer.id == @review.reviewer_id %>
+    <div id = "review_btns">
+      <div id = "edit_btn">
+        <%= link_to "Edit this review", edit_review_path(@review), :class => "btn btn-primary btn-responsive" %>
+      </div>
+      <div id =  "destroy_btn">
+        <%= button_to "Destroy this review", @review, method: :delete, :class => "btn btn-danger btn-responsive" %>
+      </div>
+    </div>
   <%end%>
-</div>
-
-
-<% if current_reviewer.id == Reviewer.find(@review.reviewer_id).id %>
-  <div id =  "destroy_btn">
-    <%= button_to "Destroy this review", @review, method: :delete, :class => "btn btn-danger btn-responsive" %>
-  </div>
 <%end%>

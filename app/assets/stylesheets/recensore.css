@@ -12,15 +12,16 @@
 #midbottom{
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 5%;
     border-style: solid;
     border-color: #1e5a1a;
     height: 33vh;
-    overflow-y: scroll;
+    
 
     /*DISPOSIZIONE TEMPORANEA, DA RIVEDERE DOPO BACKEND*/
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction:  column;
+    overflow-x: scroll;
 }
 
 
@@ -96,6 +97,19 @@
 
 
 /*ELEMENTI AREA MIDBOTTOM*/
+#midbottom_lbl{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    bottom: 0%;
+    font-size: large;
+}
+
+#bottom_row{
+    display: flex;
+}
+
+
 #recensione_tipo{
     display: flex;
     flex-direction: column;
@@ -104,13 +118,16 @@
     border-width: thin;
 
 
-    /*DISPOSIZIONE TEMPORANEA, DA RIVEDERE DOPO BACKEND*/
+    /*DISPOSIZIONE TEMPORANEA, DA RIVEDERE DOPO BACKEND TODO:*/
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 5%;
+    min-width: max-content;
+    min-height: max-content;
     max-width: 25vw;
     max-height: 25vh;
 
+
+    /*ATTENZIONE!!!!! CANCELLA PARTE DELLA REVIEW, SE SERVE RITOCCARE TODO:*/
     overflow: hidden;
 }
 
