@@ -16,7 +16,8 @@
           <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
         </div>
         <div class = "field_div">
-          DESCRIZIONE - TODO:
+          Descrizione
+          <%= f.text_field :description, autofocus: true, autocomplete: "description" %>
           <!-- implementare nel lato backend -->
         </div>  
       
@@ -25,7 +26,7 @@
       <div id = "col_m2">
         <div class = "field_div">
           <% f.label :category %>Categoria<br>
-          <%= f.select :category, ["1", "2", "3"], autofocus: true, autocomplete: "category" %>
+          <%= f.select :category, ["0", "1", "2", "3"], autofocus: true, autocomplete: "category" %>
           <%#= f.text_field :category, autofocus: true, autocomplete: "category" %>
         </div>
         <div class = "field_div">
@@ -33,7 +34,7 @@
           <%= f.text_field :price, autofocus: true, autocomplete: "price" %>
         </div>  
         <div class = "field_div">Ingredienti:<br>
-          INGREDIENTI - TODO:
+          <%= f.text_field :ingredients, autofocus: true, autocomplete: "ingredients" %>
         </div>  
       </div>
     
