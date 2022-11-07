@@ -55,3 +55,14 @@
     .li_navbar{
       color: #ffffff;
     }
+
+.btn-link{
+  color: white;
+  text-decoration: none;
+}
+
+.btn-link:hover{
+  color: white;
+  font-weight:425;
+  text-shadow: black 2px 2px 2px;
+}

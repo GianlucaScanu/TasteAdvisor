@@ -11,6 +11,12 @@
     </div>
   <% end %>
 
+  <%if session[:report_type] == "dish"%>
+    <h5> Segnalazione piatto di <%= Dish.find(session[:report_id]).restaurant.name %> </h5>
+  <% else %>
+    <h5> Segnalazione recensione di <%= Review.find(session[:report_id].reviewer.name) %> </h5>
+  <% end %>
+
   <div>
     <%= form.label :check_box, style: "display: block" %>
     <%= form.number_field :check_box %>
