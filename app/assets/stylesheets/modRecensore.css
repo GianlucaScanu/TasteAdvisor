@@ -13,15 +13,6 @@
     overflow: scroll;
 }
 
-#bottom{
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 5%;
-    border-style: solid;
-    border-color: #1e5a1a;
-}
-
-
 #log_buttons{
     display: flex;
     flex-direction: row;

@@ -8,15 +8,6 @@
     border-color: #1e5a1a;
 }
 
-#bottom{
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border-style: solid;
-    border-color: #1e5a1a;
-}
-
 /*ELEMENTI AREA MIDDLE*/
 #google_div{
     display: flex;

@@ -68,22 +68,3 @@
     margin-top: 1%;
     margin-bottom: 1%;
 }
-
-#bottom{
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-bottom: 1%;
-    border-style: solid;
-    border-color: #1e5a1a;
-}
-
-#contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}

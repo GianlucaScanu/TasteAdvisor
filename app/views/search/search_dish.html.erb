@@ -1,3 +1,5 @@
+<%= stylesheet_link_tag "ricerca_piatto.css"%>
+
 <h1>RISULTATI RICERCA PIATTO </h1> <br>
 
 <%if params[:category] != nil%>
@@ -13,35 +15,51 @@
         <% @temp1 = "Dolci" %>
     <%end%>
     
-    <p> Risultati ricerca <%= @temp1 %> : </p><br>
+    <div id = "middle">
+        <div> Risultati ricerca "<%= @temp1 %>" : </div><br>
 
-    <% (Dish.all).each do |dish| %>
+        <% (Dish.all).each do |dish| %>
 
-        <%if dish.category == params[:category].to_i %>
-            <%= render dish%>
-            <p> <%= link_to "Show this dish", dish %> </p> 
+            <%if dish.category == params[:category].to_i %>
+                <% render dish%>
+                <div class = "dish_container">
+                    <div class = "col_1">
+                        <div class = "dish_pic"><img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" width="200" height="200"></div>
+                    </div>
+                    <div class = "col_2">
+                        <div class = "dish_name">Nome : <%= dish.name%></div>
+                        <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
+                        <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
+                        <div class = "dish_desc">Descrizione : <%= dish.description%></div>
+                        <div class = "btns">
+                            <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success" %></div>
+                            <div class = "div_review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %></div>
+                        </div>
+                    </div>
+                </div> 
+            <%end%>
+
+        <% end %>
+
+    <%else%>
+
+        Parametri ricercati: <%= params[:form_input].to_s %> 
+        <br><br>
+        <%if params[:form_input].to_s != "" %>
+            <%if params[:sort] != nil%>
+                <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ).order(params[:sort]) %>
+            <%else%>
+                <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ) %>
+            <% end %>
+            <%= render @get_dish%>
         <%end%>
 
-    <% end %>
+        <br>
 
-<%else%>
+        <%#= link_to "Refresh", url_for(""), method: :get %>
 
-    Parametri ricercati: <%= params[:form_input].to_s %> 
-    <br><br>
-    <%if params[:form_input].to_s != "" %>
-        <%if params[:sort] != nil%>
-            <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ).order(params[:sort]) %>
-        <%else%>
-            <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ) %>
-        <% end %>
-        <%= render @get_dish%>
+        <%#= button_to search_search_dish_path, method: :get %>
+        <%= render  "search/form" %>
+        
     <%end%>
-
-    <br>
-
-    <%#= link_to "Refresh", url_for(""), method: :get %>
-
-    <%#= button_to search_search_dish_path, method: :get %>
-    <%= render  "search/form" %>
-    
-<%end%>
+</div>
