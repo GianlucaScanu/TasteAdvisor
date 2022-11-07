@@ -64,8 +64,6 @@
         
         <div id = "col2">
             <%#=ELIMINATO TEMPORANEAMENTE CAROSELLO, DA RIAGGIUNGERE%>
-            <%=session[:report_id]%>
-            <%=session[:report_type]%>
             
             <%if review.images[0] != nil%>
 
@@ -79,9 +77,7 @@
 
             <%end%>
             <div id = "report">
-                <%# session[:report_type] = "review" %>
-                <%#= session[:report_id] = review.id %>
-                <%= link_to "Segnala", new_report_path, :class => "btn btn-danger", :id => "report_btn"%>
+                <%= link_to "Segnala", new_report_path,  method: :aggiorna,  :class => "btn btn-danger", :id => "report_btn"%>
             </div>
         </div>
     </div>
