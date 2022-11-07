@@ -13,10 +13,7 @@
 
   <%if session[:report_type] == "dish"%>
     <h5> Segnalazione piatto di <%= Dish.find(session[:report_id]).restaurant.name %> </h5>
-  <% else %>
-    <h5> Segnalazione recensione di <%= Reviewer.find(Review.find(session[:report_id]).reviewer_id).username %> </h5>
-  <% end %>
-
+       
   <div>
     <%= form.label :check_box, style: "display: block" %>
     <%= form.number_field :check_box %>
@@ -34,4 +31,81 @@
   <div>
     <%= form.submit %>
   </div>
+  <% else %>
+    <%= stylesheet_link_tag "segnalaRecensione.css" %>
+    <h5> Segnalazione recensione di <%= Reviewer.find(Review.find(session[:report_id]).reviewer_id).username %> </h5>
+
+  <div>
+    <%= form.label :check_box, style: "display: block" %>
+    <%= check_box_tag :check_box, '1', false %>
+    <%= check_box_tag :check_box, '2', false %>
+    <%= check_box_tag :check_box, '2', false %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_field :description %>
+  </div>
+  <%= form.hidden_field :targetId, value: session[:report_id] %>
+  <%= form.hidden_field :targerType, value: session[:report_type].to_s %>
+  <%=session[:report_id]%>
+  <%=session[:report_type]%>
+
+
+  <div id = "middle">
+        <div id = "nome">
+            Segnala la recensione di @UTENTE backend
+        </div>
+        <div id = "motivazioni">
+            <div id = "motivazioni_lbl">Motivazioni:</div>
+            <div id = "motivazioni1">
+                <div class="form-check">
+                
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Contenuti Offensivi
+                    </label>
+                </div>
+            </div>
+            <div id = "motivazioni2">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Non pertinente
+                    </label>
+                </div>
+            </div>
+            <div id = "motivazioni3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Informazioni false
+                    </label>
+                </div>
+            </div>
+            <div id = "motivazioni4">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Altro:
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id = "descrizione">
+            <textarea id="desc_area" rows="4" cols="50">Inserisci descrizione qui</textarea>
+        </div>
+        <div id = "segnala_div">
+            <div>  
+              <%= form.submit "Segnala", :class => "btn btn-danger btn-responsive"%>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  <% end %>
+
+
 <% end %>

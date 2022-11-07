@@ -1,0 +1,41 @@
+#middle{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+}
+
+
+/*ELEMENTI AREA MIDDLE*/
+#nome{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+#motivazioni{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 15%;
+}
+
+#motivazioni_lbl{
+    font-size: large;
+}
+
+#descrizione{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#segnala_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
