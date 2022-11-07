@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_05_120209) do
+ActiveRecord::Schema[7.0].define(version: 2022_11_07_165529) do
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -59,12 +59,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_05_120209) do
   end
 
   create_table "reports", force: :cascade do |t|
-    t.integer "check_box"
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "targetId"
     t.string "targetType"
+    t.boolean "checkbox1"
+    t.boolean "checkbox2"
+    t.boolean "checkbox3"
+    t.boolean "checkbox4"
   end
 
   create_table "restaurants", force: :cascade do |t|
