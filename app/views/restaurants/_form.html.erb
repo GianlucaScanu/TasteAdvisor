@@ -27,7 +27,7 @@
             <div id = "editable">
                 <div id = "foto">
                     <div id = "image">
-                        <% if current_restaurant.profile_picture != nil %>
+                        <% if current_restaurant.profile_picture.attached? %>
                             <img src="<%= url_for(current_restaurant.profile_picture)%>" alt="PP" width="100" height="100">
                         <% end %>
                     </div>

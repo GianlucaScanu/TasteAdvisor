@@ -16,7 +16,7 @@
   <div id = "midrow1">
       <div id = "foto">
           <div id = "image">
-            <% if @reviewer.profile_picture != nil %>
+            <% if @reviewer.profile_picture.attached? %>
                 <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="250" height="250"> 
                 <br><br>
             <% end %>
