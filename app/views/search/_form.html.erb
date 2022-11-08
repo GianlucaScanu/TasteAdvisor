@@ -1,55 +1,64 @@
-<br>
-
+<%= stylesheet_link_tag "form_ricerca.css"%>
 
 <%#= request.path %>
 <%@var_current_path =  request.path %>
 
+<div id = "searchbars">
+  <div class = "search_field">
+    <%= form_with url: "/search_restaurant", method: :get do |form| %>
+      <div class = "search_label">Ricerca ristorante:</div>
+      <div class = "text_btn">
+        <%= form.text_field :form_input, :class => "form-control" %>
+        <%= form.hidden_field :sort, value: nil%> 
+        <%= form.submit "Cerca", :class => "btn btn-success" %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class = "search_field">
+    <%= form_with url: "/search_dish", method: :get do |form| %>
+      <div class = "search_label">Ricerca piatto:</div>
+      <div class = "text_btn">
+        <%= form.text_field :form_input, :class => "form-control" %>
+        <%= form.hidden_field :sort, value: nil%> 
+        <%= form.submit "Cerca", :class => "btn btn-success" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
 <%if @var_current_path.to_s != "/" and params[:form_input].to_s != ""%>
+  <div id = "sorts">
+    <div id = "sorts_label">Tipo di ordinamento</div>
+    <%if @var_current_path.to_s == "/search_restaurant" and @get_restaurant.first != nil%>
+      <%= form_with url: @var_current_path, method: :get do |form| %>
+        <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
+        <%= form.hidden_field :sort, value: "name" %>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success" %><br>
+      <% end %>
 
-  <%if @var_current_path.to_s == "/search_restaurant" and @get_restaurant.first != nil%>
-    <%= form_with url: @var_current_path, method: :get do |form| %>
-      <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
-      <%= form.hidden_field :sort, value: "name" %>
-      <%= form.submit "ORDINA PER NOME" %><br>
-    <% end %>
+      <%#FORM DISABILITATO TEMPORANEAMENTE%>
+      <%#=form_with url: @var_current_path, method: :get do |form| %>
+        <%#= form.hidden_field :form_input, value: params[:form_input].to_s%>
+        <%#= form.hidden_field :sort, value: "..." %>
+        <%#= form.submit "ORDINA PER ..." %><br>
+      <%# end %>
 
-    <%#FORM DISABILITATO TEMPORANEAMENTE%>
-    <%#=form_with url: @var_current_path, method: :get do |form| %>
-      <%#= form.hidden_field :form_input, value: params[:form_input].to_s%>
-      <%#= form.hidden_field :sort, value: "..." %>
-      <%#= form.submit "ORDINA PER ..." %><br>
-    <%# end %>
+    <%end%>
 
-  <%end%>
+    <%if @var_current_path.to_s == "/search_dish" and @get_dish.first != nil%>
 
-  <%if @var_current_path.to_s == "/search_dish" and @get_dish.first != nil%>
+      <%= form_with url: @var_current_path, method: :get do |form| %>
+        <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
+        <%= form.hidden_field :sort, value: "name" %>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success" %><br>
+      <% end %>
 
-    <%= form_with url: @var_current_path, method: :get do |form| %>
-      <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
-      <%= form.hidden_field :sort, value: "name" %>
-      <%= form.submit "ORDINA PER NOME" %><br>
-    <% end %>
-
-    <%= form_with url: @var_current_path, method: :get do |form| %>
-      <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
-      <%= form.hidden_field :sort, value: "avg_rating" %>
-      <%= form.submit "ORDINA PER RATING" %><br>
-    <% end %>
-  <%end%>
-
-
+      <%= form_with url: @var_current_path, method: :get do |form| %>
+        <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
+        <%= form.hidden_field :sort, value: "avg_rating" %>
+        <%= form.submit "ORDINA PER RATING", :class => "btn btn-success" %><br>
+      <% end %>
+    <%end%>
+  </div>
 <%end%>
-
-<br>
-
-<%= form_with url: "/search_restaurant", method: :get do |form| %>
-  RICERCA RISTORANTE:<%= form.text_field :form_input %>
-  <%= form.hidden_field :sort, value: nil%> 
-  <%= form.submit "Search" %><br>
-<% end %>
-<br>
-<%= form_with url: "/search_dish", method: :get do |form| %>
-  RICERCA PIATTO:<%= form.text_field :form_input %> 
-  <%= form.submit "Search" %><br>
-<% end %>
-<br>

@@ -1,3 +1,45 @@
+#middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+.search_infos{
+    color: black;
+    font-size: large;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+#searches{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    margin-left: 5%;
+    margin-right: 1.5%;
+    border-color: #1e5a1a;
+    border-style: solid;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#search_opts{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    margin-top: 1%;
+    margin-left: 1.5%;
+    margin-right: 5%;
+    width: 55%;
+}
+
 .dish_container{
     display: flex;
     flex-direction: row;
@@ -6,6 +48,7 @@
     margin-left: 5%;
     margin-right: 5%;
     border-style: solid;
+    border-width: thin;
     border-color: #1e5a1a;
 }
 
@@ -17,9 +60,18 @@
     justify-content: center;
 }
 
+.dish_name{
+    color: black;
+    font-size: x-large;
+    font-weight: bold;
+}
+
 .btns{
     display: flex;
     flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
 .btns > *{

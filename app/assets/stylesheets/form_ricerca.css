@@ -1,0 +1,65 @@
+#searchbars{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    margin-left: 2%;
+    align-items: center;
+    border-style: solid;
+    border-color: #1e5a1a;
+    width: 100%;
+}
+
+#searchbars > *, #sorts > *{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.search_field{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.search_field > *{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.search_label{
+    /* TODO */
+}
+
+#sorts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0%;
+    margin-right: 2%;
+    margin-left: 2%;
+    align-items: center;
+    border-style: solid;
+    border-color: #1e5a1a;
+    width: 100%;
+}
+
+#sorts_label{
+    color: black;
+    font-size: medium;
+}
+
+.text_btn{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    margin-left: 1%;
+}

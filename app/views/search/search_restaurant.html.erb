@@ -1,20 +1,35 @@
-<h1>RISULTATI RICERCA RISTORANTE </h1> <br>
+<%= stylesheet_link_tag "ricerca_ristorante.css"%>
 
-Parametri ricercati: <%= params[:form_input].to_s %> 
-<br><br>
-
-<%if params[:form_input].to_s != "" %>
-    <%if params[:sort] != nil%>
-        <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ).order(params[:sort]) %>
-    <%else%>
-        <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ) %>
-    <% end %>
-    <%= render @get_restaurant%>
-<%end%>
-
-<br>
-
-<%= render  "search/form" %>
-
+<div id = "middle">
+    <div id = "searches">
+        <div class = "search_infos">Parametri ricercati: <%= params[:form_input].to_s %></div>
+        <%if params[:form_input].to_s != "" %>
+            <%if params[:sort] != nil%>
+                <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ).order(params[:sort]) %>
+            <%else%>
+                <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ) %>
+            <% end %>
+            <% render @get_restaurant%>
+            <% @get_restaurant.each do |restaurant|%>
+                <div class = "rest_container">
+                    <div class = "col_1">
+                        <div class = "rest_pic"><img src="<%= restaurant.profile_picture %>" alt="foto_piatto" width="200" height="200"></div>                    </div>
+                        <div class = "col_2">
+                        <div class = "rest_name"><%= restaurant.name%></div>
+                        <div class = "rest_phone">Telefono : <%= restaurant.telephone_number%></div>
+                        <div class = "rest_address">Indirizzo : <%= restaurant.address%></div>
+                        <div class = "rest_mail">Email : <%= restaurant.email%></div>
+                        <div class = "btns">
+                            <div class = "div_show"><%= link_to "Mostra ristornate", restaurant, :class => "btn btn-success" %></div>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        <%end%>
+    </div>
+    <div id = "search_opts">
+        <%= render  "search/form" %>
+    </div>
+</div>
 
 
