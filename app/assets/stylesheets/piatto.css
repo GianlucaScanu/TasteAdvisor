@@ -97,8 +97,13 @@
     border: solid;
     border-color: #1e5a1a;
     width: 100%;
-    height: auto;
     overflow-y: auto;
+}
+
+#reviews > *{
+    color: black;
+    text-decoration: none;
+
 }
 
 #review_label{

@@ -104,6 +104,7 @@
                 <div id = "review_label"> Recensioni: <%= @dish.number_of_reviews %></div>
                 <% (Review.all).each do |review| %>
                     <%if @dish.id == review.dish_id %>
+                    <%= link_to review_path(review) do %>
                         <div id = "review_" class ="review">
                         <div id = "img_" class="img_review">
                             <img src="..." alt="Immagine del recensore">
@@ -130,6 +131,7 @@
                         </div>
                     </div>
                     
+                    <%end%>
                     <%end%>
             <% end %>
             </div>

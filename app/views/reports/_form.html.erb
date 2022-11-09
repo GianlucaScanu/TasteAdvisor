@@ -12,25 +12,66 @@
   <% end %>
 
   <%if session[:report_type] == "dish"%>
-    <h5> Segnalazione piatto di <%= Dish.find(session[:report_id]).restaurant.name %> </h5>
-       
-  <div>
-    <%= form.label :check_box, style: "display: block" %>
-    <%= form.number_field :check_box %>
-  </div>
+    <%= stylesheet_link_tag "segnalaRecensione.css" %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
-  </div>
-  <%= form.hidden_field :targetId, value: session[:report_id] %>
-  <%= form.hidden_field :targerType, value: session[:report_type].to_s %>
-  <%=session[:report_id]%>
-  <%=session[:report_type]%>
+    <div id = "middle">
+      
+      <%= form.hidden_field :targetId, value: session[:report_id] %>
+      <%= form.hidden_field :targerType, value: session[:report_type].to_s %>
 
-  <div>
-    <%= form.submit %>
-  </div>
+      <h5> Segnalazione piatto di <%= Dish.find(session[:report_id]).restaurant.name %> </h5>
+        <div id = "nome">
+        </div>
+        <div id = "motivazioni">
+          <div id = "motivazioni_lbl">Motivazioni:</div>
+          <div id = "motivazioni1">
+            <div class="form-check">
+              <%= form.check_box :checkbox1, :class => "form-check-input", :type => "checkbox"%>
+              <label class="form-check-label" for="flexCheckDefault">
+                Prezzo non corrisponde
+                </label>
+              </div>
+            </div>
+            <div id = "motivazioni2">
+              <div class="form-check">
+                <%= form.check_box :checkbox2, :class => "form-check-input", :type => "checkbox"%>
+                <label class="form-check-label" for="flexCheckDefault">
+                  Ingredienti diversi
+                </label>
+              </div>
+            </div>
+            <div id = "motivazioni3">
+              <div class="form-check">
+                <%= form.check_box :checkbox3, :class => "form-check-input", :type => "checkbox"%>
+                <label class="form-check-label" for="flexCheckDefault">
+                  Non più presente
+                </label>
+              </div>
+            </div>
+            <div id = "motivazioni4">
+              <div class="form-check">
+                <%= form.check_box :checkbox4, :class => "form-check-input", :type => "checkbox"%>
+                <label class="form-check-label" for="flexCheckDefault">
+                  Altro:
+                </label>
+              </div>
+            </div>
+          </div>
+          <div id = "descrizione">
+              <div>
+                <%= form.label :description, "Descrizione"%>
+              </div>
+              <div id = "text_div">
+                <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione"%>
+              </div>
+          </div>
+          <div id = "segnala_div">
+              <div>  
+                <%= form.submit "Segnala", :class => "btn btn-danger btn-responsive"%>
+              </div>
+          </div>
+      </div>
+
   <% else %>
   
   <%= stylesheet_link_tag "segnalaRecensione.css" %>

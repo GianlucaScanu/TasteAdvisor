@@ -8,12 +8,12 @@
       background-color: #1e5a1a;
   }
   
-  a {
+  .link_homepage {
       text-decoration: none;
       color: lightgray;
   }
   
-  a:hover{
+  .link_homepage:hover{
       color: black;
   }
   
