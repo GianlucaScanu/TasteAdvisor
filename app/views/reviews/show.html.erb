@@ -6,10 +6,10 @@
   <% if current_reviewer.id == @review.reviewer_id %>
     <div id = "review_btns">
       <div id = "edit_btn">
-        <%= link_to "Edit this review", edit_review_path(@review), :class => "btn btn-primary btn-responsive" %>
+        <%= link_to "Modifica recensione", edit_review_path(@review), :class => "btn btn-primary", :id => "mod_link" %>
       </div>
       <div id =  "destroy_btn">
-        <%= button_to "Destroy this review", @review, method: :delete, :class => "btn btn-danger btn-responsive" %>
+        <%= button_to "Elimina recensione", @review, method: :delete, :class => "btn btn-danger", :id => "dest_link" %>
       </div>
     </div>
   <%end%>
