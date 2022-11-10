@@ -91,7 +91,7 @@ a{
         font-size: small;
     }
 
-    #reviewer_remember_me{
+    #reviewer_remember_me, #restaurant_remember_me{
         transform: scale(1.0);
     }
 
@@ -108,7 +108,7 @@ a{
         font-size: medium;
     }
 
-    #reviewer_remember_me{
+    #reviewer_remember_me, #restaurant_remember_me{
         transform: scale(1.1);
     }
 
@@ -126,7 +126,7 @@ a{
         font-size: large;
     }
 
-    #reviewer_remember_me{
+    #reviewer_remember_me, #restaurant_remember_me{
         transform: scale(1.2);
     }
 
@@ -143,7 +143,7 @@ a{
         font-size: large;
     }
 
-    #reviewer_remember_me{
+    #reviewer_remember_me, #restaurant_remember_me{
         transform: scale(1.3);
     }
 
