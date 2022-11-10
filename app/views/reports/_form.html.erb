@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  <%if session[:report_type] == "dish"%>
+  <%if params[:report_type].to_s == "dish"%>
     <%= stylesheet_link_tag "segnalaRecensione.css" %>
 
     <div id = "middle">
       
-      <%= form.hidden_field :targetId, value: session[:report_id] %>
-      <%= form.hidden_field :targerType, value: session[:report_type].to_s %>
+      <%= form.hidden_field :targetId, value:  params[:report_id].to_s %>
+      <%= form.hidden_field :targetType, value:  params[:report_type].to_s %>
 
-      <h5> Segnalazione piatto di <%= Dish.find(session[:report_id]).restaurant.name %> </h5>
+      <h5> Segnalazione piatto di <%= Dish.find(params[:report_id].to_s).restaurant.name %> </h5>
         <div id = "nome">
         </div>
         <div id = "motivazioni">
@@ -76,12 +76,12 @@
   
   <%= stylesheet_link_tag "segnalaRecensione.css" %>
   <!-- Necessarie al passaggio di valori tramite form: non cancellare-->
-  <%= form.hidden_field :targetId, value: session[:report_id] %>
-  <%= form.hidden_field :targerType, value: session[:report_type].to_s %>
+  <%= form.hidden_field :targetId, value: params[:report_id].to_i %>
+  <%= form.hidden_field :targetType, value: params[:report_type].to_s %>
 
   <div id = "middle">
         <div id = "nome">
-            Segnala la recensione di <%= Reviewer.find(Review.find(session[:report_id]).reviewer_id).username %>
+            Segnala la recensione di <%= Reviewer.find(Review.find(params[:report_id]).reviewer_id).username %>
         </div>
         <div id = "motivazioni">
             <div id = "motivazioni_lbl">Motivazioni:</div>

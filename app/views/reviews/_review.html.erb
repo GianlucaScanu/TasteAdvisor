@@ -77,7 +77,13 @@
 
             <%end%>
             <div id = "report">
-                <%= link_to "Segnala", new_report_path,  method: :aggiorna,  :class => "btn btn-danger", :id => "report_btn"%>
+
+                <%= form_with url: new_report_path, method: :get do |form| %>
+                    <%= form.hidden_field :report_id, value: review.id%>
+                    <%= form.hidden_field :report_type, value:"review"%>
+                    <%= submit_tag "Segnala", :class => "btn btn-danger", :id => "report_btn"%>
+                <% end  %>
+
             </div>
         </div>
     </div>

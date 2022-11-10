@@ -69,7 +69,15 @@
             </div>
             <div id = "actions">
                 <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %><br></div>
-                <div id = "report"><%= link_to "Segnala", new_report_path, :class => "btn btn-danger"%></div>
+                <div id = "report">
+                
+                <%= form_with url: new_report_path, method: :get do |form| %>
+                    <%= form.hidden_field :report_id, value: @dish.id%>
+                    <%= form.hidden_field :report_type, value:"dish"%>
+                    <%= submit_tag "Segnala", :class => "btn btn-danger" %>
+                <% end  %>
+
+                </div>
             </div>
         </div>
         <div id = "col2">
