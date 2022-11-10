@@ -82,3 +82,73 @@ a{
     color: royalblue;
     text-decoration: underline;
 }
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    #submit_btn, #forgot_lbl{
+        font-size: small;
+    }
+
+    #reviewer_remember_me{
+        transform: scale(1.0);
+    }
+
+    a{
+        font-size: small;
+    }
+
+
+  }
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    T#oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    #submit_btn, #forgot_lbl{
+        font-size: medium;
+    }
+
+    #reviewer_remember_me{
+        transform: scale(1.1);
+    }
+
+    a{
+        font-size: medium;
+    }
+
+
+  }
+
+/* notebook */
+@media(min-width: 993px){
+    #oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    #submit_btn, #forgot_lbl{
+        font-size: large;
+    }
+
+    #reviewer_remember_me{
+        transform: scale(1.2);
+    }
+
+    a{
+        font-size: large;
+    }
+
+}
+
+/* desktop */
+@media(min-width: 1440px){
+    #oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    #submit_btn, #forgot_lbl{
+        font-size: large;
+    }
+
+    #reviewer_remember_me{
+        transform: scale(1.3);
+    }
+
+    a{
+        font-size: large;
+    }
+
+}
