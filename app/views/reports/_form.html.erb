@@ -124,12 +124,12 @@
               <%= form.label :description, "Descrizione"%>
             </div>
             <div id = "text_div">
-              <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione"%>
+              <%= form.text_area :description, :class => "form-control", :placeholder => "Inserisci descrizione", :rows => "3"%>
             </div>
         </div>
         <div id = "segnala_div">
             <div>  
-              <%= form.submit "Segnala", :class => "btn btn-danger btn-responsive"%>
+              <%= form.submit "Segnala", :class => "btn btn-danger btn-responsive", :id => "segnala_lbl"%>
             </div>
         </div>
     </div>
