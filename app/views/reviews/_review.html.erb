@@ -76,15 +76,32 @@
                 <br>
 
             <%end%>
-            <div id = "report">
+            <%if reviewer_signed_in? or restaurant_signed_in?%>
+                <% if reviewer_signed_in? %>
+                    <%if current_reviewer.id != review.reviewer_id%>
+                        <div id = "report">
 
-                <%= form_with url: new_report_path, method: :get do |form| %>
-                    <%= form.hidden_field :report_id, value: review.id%>
-                    <%= form.hidden_field :report_type, value:"review"%>
-                    <%= submit_tag "Segnala", :class => "btn btn-danger", :id => "report_btn"%>
-                <% end  %>
+                            <%= form_with url: new_report_path, method: :get do |form| %>
+                                <%= form.hidden_field :report_id, value: review.id%>
+                                <%= form.hidden_field :report_type, value:"review"%>
+                                <%= submit_tag "Segnala", :class => "btn btn-danger", :id => "report_btn"%>
+                            <% end  %>
 
-            </div>
+                        </div>
+                    <%end%>
+                <%end%>
+                <%if restaurant_signed_in?%>
+                    <div id = "report">
+
+                        <%= form_with url: new_report_path, method: :get do |form| %>
+                            <%= form.hidden_field :report_id, value: review.id%>
+                            <%= form.hidden_field :report_type, value:"review"%>
+                            <%= submit_tag "Segnala", :class => "btn btn-danger", :id => "report_btn"%>
+                        <% end  %>
+
+                    </div>
+                <%end%>
+            <%end%>
         </div>
     </div>
 

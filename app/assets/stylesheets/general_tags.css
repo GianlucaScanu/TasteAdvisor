@@ -86,6 +86,11 @@
         margin-right: 1%;
     }
 
+    .progress{
+        height: 14px;
+        width: 9vw;
+    }
+
 }
 @media screen and (min-width: 769px) {
     
@@ -106,6 +111,11 @@
 
     #label{
         font-size: medium;
+    }
+
+    .progress{
+        height: 18px;
+        width: 11vw;
     }
 }
 
@@ -129,6 +139,11 @@
     #label{
         font-size: large;
     }
+
+    .progress{
+        height: 22px;
+        width: 13vw;
+    }
 }
 @media screen and (min-width: 1440px){
     
@@ -144,5 +159,10 @@
 
     #label{
         font-size: x-large;
+    }
+
+    .progress{
+        height: 26px;
+        width: 15vw;
     }
 }
