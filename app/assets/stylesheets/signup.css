@@ -69,4 +69,40 @@
     margin-top: 10%;
 }
 
+@media screen and (max-width: 768px) {
+    .form-group, .form-control, #google_btn, #facebook_btn{
+        font-size: small;
+    }
 
+    #oppure_lbl, #submit_btn{
+        font-size: small;
+    }
+}
+@media screen and (min-width: 769px) {
+    .form-group, .form-control, #google_btn, #facebook_btn{
+        font-size: medium;
+    }
+
+    #oppure_lbl, #submit_btn{
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .form-group, .form-control, #google_btn, #facebook_btn{
+        font-size: medium;
+    }
+
+    #oppure_lbl, #submit_btn{
+        font-size: large;
+    }
+}
+@media screen and (min-width: 1440px){
+    .form-group, .form-control, #google_btn, #facebook_btn{
+        font-size: large;
+    }
+
+    #oppure_lbl, #submit_btn{
+        font-size: large;
+    }
+}
