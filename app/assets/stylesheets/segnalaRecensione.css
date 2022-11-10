@@ -13,7 +13,6 @@
 #nome{
     display: flex;
     justify-content: center;
-    font-size: x-large;
 }
 
 #motivazioni{
@@ -21,10 +20,6 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 15%;
-}
-
-#motivazioni_lbl{
-    font-size: large;
 }
 
 #descrizione{
@@ -50,3 +45,59 @@
     margin-bottom: 3%;
 }
 
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    .form-check > *, #segnala_lbl, #report_description{
+        font-size: small;
+    }
+    #motivazioni_lbl, #descrizione{
+        font-size: medium;
+    }
+    #nome{
+        font-size: large;
+    }
+
+  }
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    .form-check > *, #segnala_lbl, #report_description{
+        font-size: medium;
+    }
+    #motivazioni_lbl, #descrizione{
+        font-size: large;
+    }
+    #nome{
+        font-size: large;
+    }
+
+  }
+
+/* notebook */
+@media(min-width: 993px){
+    .form-check > *, #segnala_lbl, #report_description{
+        font-size: medium;
+    }
+    #motivazioni_lbl, #descrizione{
+        font-size: large;
+    }
+    #nome{
+        font-size: x-large;
+    }
+
+}
+
+/* desktop */
+@media(min-width: 1440px){
+    .form-check > *, #segnala_lbl, #report_description{
+        font-size: large;
+    }
+    #motivazioni_lbl, #descrizione{
+        font-size: x-large;
+    }
+    #nome{
+        font-size: xx-large;
+    }
+
+}
