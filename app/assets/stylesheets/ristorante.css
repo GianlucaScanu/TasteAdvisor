@@ -106,7 +106,7 @@
     margin-top: 1%;
     margin-right: 1%;
     margin-left: 1%;
-    margin-bottom: 1%;
+    margin-bottom: 1%;    
     border-style: solid;
     border-color: #1e5a1a;
 }
@@ -124,7 +124,7 @@
     width: 100%;
 }
 
-#map_addresses > *{
+#map_addresses{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -160,6 +160,7 @@
     flex-direction: row;
     overflow-x: auto;
     width: auto;
+    height: 100%;
 }
 
 .piattino{
@@ -187,6 +188,10 @@
     justify-content: space-around;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+#dishes_div, #map_addresses{
+    height:max-content;
 }
 
 /* MOBILE */

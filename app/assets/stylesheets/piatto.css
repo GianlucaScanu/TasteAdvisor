@@ -24,7 +24,6 @@
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 100%;
 }
 
 #foto_piatto{
@@ -41,6 +40,8 @@
     margin-right: 1%;
     margin-top: 3%;
     margin-bottom: 3%;
+    width: 100%;
+    justify-content: center;
 }
 
 #actions > *{
@@ -139,3 +140,58 @@
     margin-bottom: 2%;
     width: 80%;   
 }
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    #middle{
+        flex-direction: column;
+    }
+
+    .review > *, #plate_desc, #actions > *, .btn-custom{
+        font-size: small;
+    }
+
+    #col1, #col2{
+        width: 90%;
+        margin-left:2%;
+        margin-right:2%;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 769px) {
+    .review > *, #plate_desc, .btn-custom{
+        font-size: medium;
+    }
+
+    #col1, #col2{
+        width: 90%;
+        margin-left:2%;
+        margin-right:2%;
+    }
+}
+
+/* NOTEBOOK */
+@media screen and (min-width: 993px) {
+    .review > *, #plate_desc, .btn-custom{
+        font-size: large;
+    }
+
+    #col1, #col2{
+        width: 100%;
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+    .review > *, #plate_desc, .btn-custom{
+        font-size: large;
+    }
+
+    #col1, #col2{
+        width: 100%;
+    }
+}
+
+
+
