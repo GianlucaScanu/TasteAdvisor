@@ -134,11 +134,19 @@
         <div id = "col_d2">
           <div id = "map_addresses">
             <div id = "map">
-              <%if @restaurant.address.to_s != ""%>
-                <%if Google::Maps.geocode(@restaurant.address).to_s != "[]"%>
+              <%if @restaurant.address.to_s != "" and Google::Maps.geocode(@restaurant.address).to_s != "[]"%>
                   <% place = Google::Maps.place(Google::Maps.places(@restaurant.address).first.place_id)%>
-                  <img src="<%= "https://maps.googleapis.com/maps/api/staticmap?zoom=18&size=600x200&center=#{place.latitude},#{place.longitude}&key=AIzaSyCBUqcJsA9jI_iJnQLpU4r9bAFMTFgQl38"%>" alt="Map" width="600" height="200">
-                <%end%>
+                  <iframe
+                    width="600"
+                    height="200"
+                    style="border:0"
+                    loading="eager"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI
+                    &q= <%=place%>
+                    &zoom=15
+                    &language=it">
+                  </iframe>
               <%end%>
             </div>
             <div id = "position"><%= @restaurant.address %></div>

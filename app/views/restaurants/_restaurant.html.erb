@@ -9,11 +9,23 @@
   EMAIL:<%= restaurant.email %><br>
 
   <%#https://github.com/zilverline/google-maps%>
-  <%if restaurant.address.to_s != ""%>
-    <%if Google::Maps.geocode(restaurant.address).to_s != "[]"%>
+
+  <%if restaurant.address.to_s != "" and Google::Maps.geocode(restaurant.address).to_s != "[]"%>
       <% place = Google::Maps.place(Google::Maps.places(restaurant.address).first.place_id)%>
-      <%= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x300&center=#{place.latitude},#{place.longitude}&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI", alt: "Map" %>
-    <%end%>
+      <%#= image_tag "https://maps.googleapis.com/maps/api/staticmap?zoom=15&size=400x300&center=#{place.latitude},#{place.longitude}&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI", alt: "Map" %>
+      <%#=https://developers.google.com/maps/documentation/embed/embedding-map%>
+      <iframe
+        width="400"
+        height="300"
+        style="border:0"
+        loading="eager"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI
+        &q= <%=place%>
+        &zoom=15
+        &language=it">
+      </iframe>
   <%end%>
   
 </div>
