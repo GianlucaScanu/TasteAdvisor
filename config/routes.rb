@@ -28,8 +28,13 @@ Rails.application.routes.draw do
 
   get '/search_restaurant', to: 'search#search_restaurant'
   get '/search_dish', to: 'search#search_dish'
-  
 
+  #default, per percorsi inesistenti (es.No route matches [GET])
+  #se danno problemi commentare
+  get '*all', to: 'home#index', constraints: lambda { |req|
+    req.path.exclude? 'rails/active_storage'
+  }
+  
   #le recensioni possono essere viste ed accedute solo attraverso i ristoranti e recensori, ma non tutte le funzionalita'
   #resources :restaurant do
 	#	resources :reviews, only: [:new, :show, :create]
