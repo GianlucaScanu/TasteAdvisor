@@ -1,21 +1,4 @@
-<script>
-        document.getElementById("review_rating1").setAttribute("onchange", "return modificaValore1(this);");
-        document.getElementById("review_rating2").setAttribute("onchange", "return modificaValore2(this);");
-        document.getElementById("review_rating3").setAttribute("onchange", "return modificaValore3(this);");
 
-        function modificaValore1(select){
-            var selezionato = select.options[select.selectedIndex].value;
-            document.getElementById("pg1").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-        }
-        function modificaValore2(select){
-            var selezionato = select.options[select.selectedIndex].value;
-            document.getElementById("pg2").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-        }
-        function modificaValore3(select){
-            var selezionato = select.options[select.selectedIndex].value;
-            document.getElementById("pg3").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-        }
-</script>
 
 <%= form_with(model: review) do |form| %>
 
@@ -32,7 +15,7 @@
     </div>
   <% end %>
 
-<div id = "middle" onload = "return modificaValore1(rating1);">
+<div id = "middle">
         <div id = "midtop">
             <div id = "col1">
                 <div id = "foto">
@@ -120,3 +103,21 @@
 
 <%= stylesheet_link_tag "nuovaRecensione.css" %>
 
+<script>
+        document.getElementById("review_rating1").setAttribute("onchange", "return modificaValore1(this);");
+        document.getElementById("review_rating2").setAttribute("onchange", "return modificaValore2(this);");
+        document.getElementById("review_rating3").setAttribute("onchange", "return modificaValore3(this);");
+
+        function modificaValore1(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg1").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+        function modificaValore2(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg2").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+        function modificaValore3(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg3").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+</script>

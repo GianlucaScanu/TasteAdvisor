@@ -117,3 +117,22 @@
     margin-right: 10%;
 }
     
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+  
+  }
+  /*tablet*/
+  @media (min-width: 769px) and (max-width: 992px) {
+  
+  }
+  
+  /* notebook */
+  @media(min-width: 993px){
+
+  }
+  
+  /* desktop */
+  @media(min-width: 1440px){
+
+  }
