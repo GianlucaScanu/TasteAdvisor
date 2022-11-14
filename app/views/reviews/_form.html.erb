@@ -70,8 +70,8 @@
                     </div>
                 </div>
                 <div id = "description">
-                    <%= form.label :description, "Descrizione ", style: "display: block" %>
-                    <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione" %>
+                    <%= form.label :description, "Descrizione ", style: "display: block", :id => "descr_id" %>
+                    <%= form.text_area :description, :class => "form-control", :placeholder => "Inserisci descrizione", :rows =>"3" %>
                 </div>
                 
             </div>
@@ -86,9 +86,9 @@
             </div>
             <div id = "cancel">
             <% if @review.id != nil%>
-                <%= link_to "Annulla modifiche", review_path(@review), :class => "btn btn-danger" %>
+                <%= link_to "Annulla modifiche", review_path(@review), :class => "btn btn-danger", :id => "cancel_btn" %>
             <%else%>
-                <%= link_to "Annulla creazione", dish_path(session[:save_dish]), :class => "btn btn-danger" %>
+                <%= link_to "Annulla creazione", dish_path(session[:save_dish]), :class => "btn btn-danger", :id => "cancel_btn"  %>
             <%end%>
             </div>
         </div>

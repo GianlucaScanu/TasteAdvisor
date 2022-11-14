@@ -8,11 +8,11 @@
     border-style: solid;
     border-color: #1e5a1a;
     justify-content: center;
-    height: 50vh;
+    height: fit-content;
 
 
     /*Temporaneo*/
-    overflow: auto;
+    overflow-x: auto;
 }
 
 /*ELEMENTI AREA TOP*/
@@ -52,14 +52,15 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    margin-top: 1%;
 }
 
 #midbottom{
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
 #col1{
@@ -67,6 +68,12 @@
     align-self: center;
     display: flex;
     flex-direction: column;
+}
+
+#foto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
 }
 
 #col2{
@@ -79,7 +86,6 @@
 }
 
 .progress{
-    width: 10vw;
     align-self: center; 
 }
 
@@ -120,19 +126,46 @@
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
-  
-  }
-  /*tablet*/
-  @media (min-width: 769px) and (max-width: 992px) {
-  
-  }
-  
-  /* notebook */
-  @media(min-width: 993px){
+    #review_description, #image_lbl{
+        font-size: x-small;
+    }
 
+    #originalità_lbl, #impiattamento_lbl, #gusto_lbl, #descr_id, #review_images,
+    #review_rating1, #review_rating2, #review_rating3, #confirm_btn, #cancel_btn{
+                font-size: small;
+    }
+  }
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #review_description, #image_lbl{
+        font-size: small;
+    }
+
+    #originalità_lbl, #impiattamento_lbl, #gusto_lbl, #descr_id, #review_images,
+    #review_rating1, #review_rating2, #review_rating3, #confirm_btn, #cancel_btn{
+                font-size: medium;
+    }
   }
   
-  /* desktop */
-  @media(min-width: 1440px){
+/* notebook */
+@media(min-width: 993px){
+    #review_description, #image_lbl{
+        font-size: medium;
+    }
+    #originalità_lbl, #impiattamento_lbl, #gusto_lbl, #descr_id, #review_images,
+    #review_rating1, #review_rating2, #review_rating3, #confirm_btn, #cancel_btn{
+        font-size: large;
+    }
+  }
+  
+/* desktop */
+@media(min-width: 1440px){
+    #review_description, #image_lbl{
+        font-size: large;
+    }
 
+    #originalità_lbl, #impiattamento_lbl, #gusto_lbl, #descr_id, #review_images,
+    #review_rating1, #review_rating2, #review_rating3, #confirm_btn, #cancel_btn{
+        font-size: x-large;
+    }
   }
