@@ -41,3 +41,41 @@
 .research{
     margin-top: 8%;
 }
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #description{
+        font-size: x-small;
+    }
+    .search_label, #dish_search, #restaurant_search, #dish_btn, #restaurant_btn{
+        font-size: small;
+    }
+  }
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #description{
+        font-size: small;
+    }
+    .search_label, #restaurant_search, #dish_btn, #restaurant_btn{
+        font-size: medium;
+    }
+  }
+  
+/* notebook */
+@media(min-width: 993px){
+    #description{
+        font-size: medium;
+    }
+    .search_label, #restaurant_search, #dish_btn, #restaurant_btn{
+        font-size: large;
+    }
+  }
+  
+/* desktop */
+@media(min-width: 1440px){
+    #description, .search_label, #restaurant_search, #dish_btn, #restaurant_btn{
+        font-size: large;
+    }
+
+  }
