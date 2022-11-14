@@ -65,8 +65,51 @@
     margin-bottom: 5%;
 }
 
-#save_btn{
+#save_div{
     margin-right: 10%;
     align-self: center;
 }
 
+
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description{
+        font-size: x-small;
+    }
+    #reviewer_profile_picture, #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: small;
+    }
+}
+
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description{
+        font-size: small;
+    }
+    #reviewer_profile_picture, #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: medium;
+    }
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description{
+        font-size: medium;
+    }
+    #reviewer_profile_picture, #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: large;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description{
+        font-size: large;
+    }
+
+    #reviewer_profile_picture, #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: x-large;
+    }
+}
