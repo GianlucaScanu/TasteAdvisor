@@ -17,10 +17,14 @@
       <div id = "foto">
           <div id = "image">
             <% if @reviewer.profile_picture.attached? %>
-                <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="250" height="250" id="profile_picture"> 
-                <br><br>
+                <div>
+                  <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="250" height="250" id="profile_picture">
+                </div>
+                <br> 
             <% end %>
-            <%= form.file_field :profile_picture, direct_upload: false,  accept:"image/*" %>     
+            <div>
+              <%= form.file_field :profile_picture, direct_upload: false,  accept:"image/*" %>
+            </div>     
           </div>
 
       </div>

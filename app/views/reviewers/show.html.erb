@@ -6,21 +6,26 @@
             <div id = "image">
                 <%#=da controllare questo if%>
                 <% if @reviewer.profile_picture.attached? %>
-                    <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="100" height="100"> 
+                    <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="250" height="250" id="profile_picture"> 
                 <% end %>
             </div>
-                <div id = "image_lbl"> foto profilo
-            </div>
+                <div id = "image_lbl">
+                 Foto profilo
+                </div>
         </div>
         <div id = "user_desc">
-            <div id = "username"> Username: <%= @reviewer.username %> </div>
+            <div id = "username">
+                <div id = "user_lbl">
+                Username:&nbsp<span id = "name_lbl"><%= @reviewer.username %></span>
+                </div>
+            </div>
             <div id = "description">
                 <%= @reviewer.description%>
             </div>
         </div>
         <div id = "modify">
-            <div id = "profilo_btn">
-              <%= link_to "Modifica profilo", edit_reviewer_path(@reviewer), :class => "btn btn-success" %>
+            <div id = "profile_div">
+              <%= link_to "Modifica profilo", edit_reviewer_path(@reviewer), :class => "btn btn-success", :id => "profile_btn" %>
             </div>
         </div>
     </div>

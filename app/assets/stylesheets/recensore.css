@@ -7,6 +7,7 @@
     border-style: solid;
     border-color: #1e5a1a;
     justify-content: space-between;
+    overflow-x: auto;
 }
 
 #midbottom{
@@ -61,7 +62,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#username{
+    display: flex;
+    flex-direction: row;
 }
 
 #user_desc{
@@ -77,10 +86,14 @@
     border-width: thin;
 }
 
-#profilo_btn{
-    margin-top: 50%;
-    margin-bottom: 50%;
-    margin-right: 5%;
+#modify{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#profile_div{
+    align-self: center;
 }
 
 
@@ -137,3 +150,67 @@
     margin-left: 5%;
 }
 
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #image_lbl, #name_lbl{
+        font-size: small;
+    }
+
+    #profile_picture{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #user_lbl{
+        font-size: small;
+    }
+}
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #image_lbl, #name_lbl{
+        font-size: medium;
+    }
+
+    #profile_picture{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #user_lbl{
+        font-size: small;
+    }
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    #image_lbl, #name_lbl{
+        font-size: large;
+    }
+
+    #profile_picture{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #user_lbl{
+        font-size: medium;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    #image_lbl, #name_lbl{
+        font-size: x-large;
+    }
+
+    #user_lbl{
+        font-size: large;
+    }
+
+    #profile_picture{
+        max-width: 300px;
+        max-height: 300px;
+    }
+}

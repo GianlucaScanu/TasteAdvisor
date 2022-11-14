@@ -34,6 +34,11 @@
     margin-left: 5%;
 }
 
+#image{
+    display: flex;
+    flex-direction: column;
+}
+
 #image_lbl{
     display: flex;
     justify-content: center;
