@@ -13,10 +13,6 @@
     overflow: scroll;
 }
 
-#log_buttons{
-    display: flex;
-    flex-direction: row;
-}
 
 /*ELEMENTI AREA MIDDLE*/
 #midrow1{
