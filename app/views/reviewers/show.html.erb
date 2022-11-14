@@ -19,8 +19,9 @@
                 Username:&nbsp<span id = "name_lbl"><%= @reviewer.username %></span>
                 </div>
             </div>
-            <div id = "description">
-                <%= @reviewer.description%>
+            <div id = "description_div">
+                <div id ="description_lbl">Descrizione dell'utente:&nbsp</div>
+                <div id = "description">&nbsp<%= @reviewer.description%>&nbsp</div>
             </div>
         </div>
         <div id = "modify">
@@ -37,19 +38,23 @@
             <% (Review.all).each do |review|%>
                 <% if review.reviewer_id == @reviewer.id %>
                 <div id = "recensione_tipo">
-                    <div id = "recensione_text">"<%=review.description%>"</div>
-                    <div id = "recensione_info">sul piatto <%=review.dish_id%> del ristorante <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%></div>
+                    <div id = "recensione_ratings">
+                        <div id = "rtg1" class = "rtg">Gusto: <%=review.rating1%>/5</div>
+                        <div id = "rtg2" class = "rtg">Impiattamento: <%=review.rating2%>/5</div>
+                        <div id = "rtg3" class = "rtg">Originalità: <%=review.rating3%>/5</div>
+                    </div>
+                    <div id = "recensione_info">&nbspsul piatto <%=Dish.find(review.dish_id).name%> del ristorante <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%>&nbsp</div>
                     <div id = "recensione_btn">
-                        <div id = "mod_div">
-                            <%= link_to "Mostra", review_path(review), :class => "btn btn-success" %>
+                        <div id = "show_div">
+                            <%= link_to "Mostra", review_path(review), :class => "btn btn-success", :id => "show_btn" %>
                         </div>
                         <% if (current_reviewer) and (review.reviewer_id == current_reviewer.id) %>
                         <div id = "del_div">
-                            <%= button_to "Elimina", @review, method: :delete, :class => "btn btn-danger btn-responsive" %>
+                            <%= button_to "Elimina", @review, method: :delete, :class => "btn btn-danger", :id => "del_btn" %>
                         </div>
                         <%else%>
                             <div id = "del_div">
-                                <%= link_to "Segnala", new_report_path, :class => "btn btn-danger"%>
+                                <%= link_to "Segnala", new_report_path, :class => "btn btn-danger", :id => "report_btn"%>
                             </div>
                         <%end%>
                     </div>

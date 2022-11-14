@@ -25,35 +25,6 @@
     overflow-x: scroll;
 }
 
-/*ELEMENTI AREA TOP*/
-#row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-#logo {
-    margin-left: 1%;
-    /* TODO */
-}
-
-#label{
-    font-size: x-large;
-}
-
-#signin_btn{
-    margin-right: 3%;
-}
-
-#log_buttons{
-    display: flex;
-    flex-direction: row;
-}
-
 
 /*ELEMENTI AREA MIDDLE*/
 
@@ -78,6 +49,11 @@
     flex-direction: column;
     justify-content: center;
     
+}
+
+#description_div{
+    display: flex;
+    flex-direction: column;
 }
 
 #description{
@@ -132,10 +108,15 @@
     overflow: hidden;
 }
 
-#recensione_text{
+#recensione_ratings{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.rtg{
     display: flex;
     justify-content: center;
-    margin-top: 2%;
 }
 
 #recensione_btn{
@@ -154,7 +135,7 @@
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
-    #image_lbl, #name_lbl{
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
         font-size: small;
     }
 
@@ -163,13 +144,17 @@
         max-height: 100px;
     }
 
-    #user_lbl{
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+        font-size: small;
+    }
+
+    .rtg, #recensione_info{
         font-size: small;
     }
 }
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
-    #image_lbl, #name_lbl{
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl, #show_btn, #del_btn, #report_btn{
         font-size: medium;
     }
 
@@ -178,14 +163,18 @@
         max-height: 150px;
     }
 
-    #user_lbl{
+    #user_lbl, #description_lbl, #description{
+        font-size: small;
+    }
+
+    .rtg, #recensione_info{
         font-size: small;
     }
 }
   
 /* notebook */
 @media(min-width: 993px){
-    #image_lbl, #name_lbl{
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
         font-size: large;
     }
 
@@ -194,23 +183,31 @@
         max-height: 200px;
     }
 
-    #user_lbl{
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+        font-size: medium;
+    }
+
+    .rtg, #recensione_info{
         font-size: medium;
     }
 }
   
 /* desktop */
 @media(min-width: 1440px){
-    #image_lbl, #name_lbl{
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
         font-size: x-large;
     }
 
-    #user_lbl{
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
         font-size: large;
     }
 
     #profile_picture{
         max-width: 300px;
         max-height: 300px;
+    }
+
+    .rtg, #recensione_info{
+        font-size: medium;
     }
 }
