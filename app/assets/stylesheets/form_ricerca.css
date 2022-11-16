@@ -31,10 +31,6 @@
     margin-left: 2%;
 }
 
-.search_label{
-    /* TODO */
-}
-
 #sorts{
     display: flex;
     flex-direction: column;

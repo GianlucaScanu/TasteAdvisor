@@ -29,8 +29,8 @@
                                 <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
                                 <div class = "dish_desc">Descrizione : <%= dish.description%></div>
                                 <div class = "btns">
-                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success" %></div>
-                                    <div class = "div_review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %></div>
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>
+                                    <div class = "div_review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning", :id =>"review_btn" %></div>
                                 </div>
                             </div>
                         </div> 
@@ -54,15 +54,15 @@
                     <% @get_dish.each do |dish|%>
                         <div class = "dish_container">
                             <div class = "col_1">
-                                <div class = "dish_pic"><img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" width="200" height="200"></div>                    </div>
+                                <div class = "dish_pic"><img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" width="250" height="250"></div>                    </div>
                             <div class = "col_2">
                                 <div class = "dish_name">Nome : <%= dish.name%></div>
                                 <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
                                 <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
                                 <div class = "dish_desc">Descrizione : <%= dish.description%></div>
                                 <div class = "btns">
-                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success" %></div>
-                                    <div class = "div_review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %></div>
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>
+                                    <div class = "div_review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning", :id =>"review_btn" %></div>
                                 </div>
                             </div>
                         </div>

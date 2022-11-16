@@ -26,7 +26,6 @@
     margin-right: 1.5%;
     border-color: #1e5a1a;
     border-style: solid;
-    /*max-width: 99vw;*/
     overflow-y: auto;
 }
 
@@ -35,8 +34,6 @@
     flex-direction: column;
     margin-bottom: auto;
     margin-top: 1%;
-    margin-left: 1.5%;
-    margin-right: 5%;
     width: 55%;
 }
 
@@ -89,11 +86,18 @@
         flex-direction: column-reverse;
         justify-content: center;
     }
-    #searchbars{
-        margin-right: 50%;
-        margin-left: 50%;
+    #searches{
+        margin-left: 2%;
+        margin-right: 2%;
     }
-    .search_infos{
+    #search_opts{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+        font-size: small;
+    }
+    .search_infos, .dish_name{
         font-size: medium;
     }
     #dish_pic{
@@ -108,11 +112,15 @@
         flex-direction: column-reverse;
         justify-content: center;
     }
-    #searchbars{
-        margin-right: 50%;
-        margin-left: 50%;
+    #searches{
+        margin-left: 2%;
+        margin-right: 2%;
     }
-    .search_infos{
+    #search_opts{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .search_infos, .dish_name, .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
         font-size: medium;
     }
     #dish_pic{
@@ -123,10 +131,10 @@
   
 /* notebook */
 @media(min-width: 993px){
-    #middle{
-        flex-direction: row;
+    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+        font-size: medium;
     }
-    .search_infos{
+    .search_infos, .dish_name{
         font-size: large;
     }
     #dish_pic{
@@ -137,10 +145,10 @@
   
 /* desktop */
 @media(min-width: 1440px){
-    #middle{
-        flex-direction: row;
+    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+        font-size: large;
     }
-    .search_infos{
+    .search_infos, .dish_name{
         font-size: x-large;
     }
     #dish_pic{
