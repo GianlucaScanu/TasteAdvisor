@@ -26,7 +26,7 @@
     margin-right: 1.5%;
     border-color: #1e5a1a;
     border-style: solid;
-    width: 100%;
+    /*max-width: 99vw;*/
     overflow-y: auto;
 }
 
@@ -80,4 +80,71 @@
     margin-bottom: 3%;
     margin-left: 3%;
     margin-right: 3%;
+}
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #middle{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #searchbars{
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+    .search_infos{
+        font-size: medium;
+    }
+    #dish_pic{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #middle{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #searchbars{
+        margin-right: 50%;
+        margin-left: 50%;
+    }
+    .search_infos{
+        font-size: medium;
+    }
+    #dish_pic{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    #middle{
+        flex-direction: row;
+    }
+    .search_infos{
+        font-size: large;
+    }
+    #dish_pic{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    #middle{
+        flex-direction: row;
+    }
+    .search_infos{
+        font-size: x-large;
+    }
+    #dish_pic{
+        max-width: 300px;
+        max-height: 300px;
+    }
 }
