@@ -76,7 +76,6 @@
 }
 
 #username{
-    font-size: x-large;
     font-weight: bold;
 }
 
@@ -201,11 +200,11 @@
         display: block;
     }
 
-    #col_d2 > *, #col_d1 > *, #description, #user_description{
+    #col_d2 > *, #col_d1 > *, #description, #user_description, #pic_lbl, #position, #website, #phone_number{
         font-size: small;
     }
 
-    #col_m2, #header{
+    #col_m2, #header, #username{
         font-size: medium;
     }
 }
@@ -221,7 +220,7 @@
         font-size: small;
     }
 
-    #col_m2, #header{
+    #col_m2, #header, #pic_lbl, #username, #position, #website, #phone_number{
         font-size: medium;
     }
 }
@@ -234,11 +233,11 @@
         flex-direction: row;
     }
 
-    #col_d2 > *, #col_d1 > *, #description, #user_description{
+    #col_d2 > *, #col_d1 > *, #description, #user_description, #pic_lbl, #position, #website, #phone_number{
         font-size: medium;
     }
 
-    #col_m2, #header{
+    #col_m2, #header, #username{
         font-size: large;
     }
 }
@@ -251,11 +250,12 @@
         flex-direction: row;
     }
 
-    #col_d2 > *, #col_d1 > *, #description, #user_description{
+    #col_d2 > *, #col_d1 > *, #description, #user_description, #pic_lbl, #position, #website, #phone_number{
         font-size: large;
     }
 
-    #col_m2, #header{
+    #col_m2, #header, #username{
         font-size: x-large;
     }
+
 }

@@ -46,10 +46,10 @@
     <div id = "middle">
       <%if restaurant_signed_in? %>
         <div id = "foto">
-          IMMAGINE DI PROFILO
           <% if current_restaurant.profile_picture.attached? %>
-              <img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="100" height="100">
+              <div><img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="100" height="100"></div>
           <% end %>
+          <div id = "pic_lbl">Foto profilo</div>
         </div>
         <div id = "user_desc_1">
           <div id = "username"><%= @restaurant.username %></div>
@@ -73,8 +73,8 @@
       <%else%>
       <div id = "col_m1">
         <div id = "foto">
-        IMMAGINE DI PROFILO
-        <img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="100" height="100">
+        <div><img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="250" height="250" id = "profile_pic"></div>
+        <div id = "pic_lbl">Foto profilo</div>
         </div>
       </div>
       <div id = "col_m2">
