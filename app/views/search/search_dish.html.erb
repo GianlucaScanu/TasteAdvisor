@@ -54,7 +54,8 @@
                     <% @get_dish.each do |dish|%>
                         <div class = "dish_container">
                             <div class = "col_1">
-                                <div class = "dish_pic"><img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" width="250" height="250"></div>                    </div>
+                                <div class = "dish_pic"><img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" width="250" height="250"></div>
+                            </div>
                             <div class = "col_2">
                                 <div class = "dish_name">Nome : <%= dish.name%></div>
                                 <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
