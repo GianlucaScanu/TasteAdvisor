@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 2%;
@@ -11,6 +11,7 @@
     overflow: auto;
 }
 
+/*TODO: cosa è row1? */
 #row1 {
     display: flex;
     flex-direction: row;
@@ -26,13 +27,18 @@
 /*ELEMENTI AREA MIDDLE*/
 #foto{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
 
 }
+
+#photo_picker{
+    margin-left: 15%;
+}
+
 
 #description{
     display: flex;
@@ -44,18 +50,20 @@
 #row_m1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
+    /*Per far rimanere la row all'interno dell'outer div: i margin causano problemi se non controllati*/
+    width: calc(100% - 12%);
 }
 
 #row_m2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 1%;
@@ -67,7 +75,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 2%;
+    margin-left: 10%;
     margin-right: 2%;
     margin-bottom: 2%;
     margin-top: 2%;
@@ -165,6 +173,70 @@
     margin-top: 1%;
     margin-bottom: 1%;
     border-style: solid;
-    border-width: medium;
+    border-width: medium;   
     border-color: #1e5a1a;
+}
+
+#save_div{
+    margin-right: 10%;
+}
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #profile_pic{
+        max-width: 100px;
+        max-height: 100px;
+    }
+    
+    #input_img, #description, #position, #website, #phone_number, .form_fields>*, #save_btn, #cancel_btn{
+        font-size: small;
+    }
+
+    #username{
+        font-size: medium;
+    }
+}
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #profile_pic{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #input_img, #description, #username, #position, #website, #phone_number, .form_fields>*, #save_btn, #cancel_btn{
+        font-size: medium;
+    }
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    #profile_pic{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #input_img, #description, #position, #website, #phone_number, .form_fields>*, #save_btn, #cancel_btn{
+        font-size: medium;
+    }
+    
+    #username{
+        font-size: large;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    #profile_pic{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    #input_img, #description, #position, #website, #phone_number, .form_fields>*, #save_btn, #cancel_btn{
+        font-size: large;
+    }
+
+    #username{
+        font-size: x-large;
+    }
 }

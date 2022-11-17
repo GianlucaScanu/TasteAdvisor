@@ -28,7 +28,7 @@
                 <div id = "foto">
                     <div id = "image">
                         <% if current_restaurant.profile_picture.attached? %>
-                            <img src="<%= url_for(current_restaurant.profile_picture)%>" alt="PP" width="250" height="250">
+                            <img src="<%= url_for(current_restaurant.profile_picture)%>" alt="PP" width="250" height="250" id="profile_pic">
                         <% end %>
                     </div>
                 </div>
@@ -38,12 +38,12 @@
                         </br>
                         <input type="file" class = "form-control-file">
                         -->
-                        <%= form.file_field :profile_picture, direct_upload: false, accept:"image/*" %> 
+                        <div id = "input_img"><%= form.file_field :profile_picture, direct_upload: false, accept:"image/*" %> </div>
                 </div>
             </div>
             <div id = "user_desc_1">
                 <div id = "username"><%= current_restaurant.username%></div>
-                <%= form.text_field :description, :id => "description" %>
+                <div><%= form.text_field :description, :id => "description" %></div>
             </div>
             <div id = "user_desc_2">
                 <div class = "form_labels">
@@ -59,10 +59,8 @@
             </div>
         </div>
         <div id = "row_m2">
-            <div>
-                <%= form.submit "Salva", :class => "btn btn-success"%>
-                <%= link_to "Annulla", current_restaurant, :class => "btn btn-danger" %>
-            </div>
+                <div id = "save_div"><%= form.submit "Salva", :class => "btn btn-success",:id => "save_btn"%></div>
+                <div id = "cancel_div"><%= link_to "Annulla", current_restaurant, :class => "btn btn-danger", :id => "cancel_btn" %></div>
         </div>
     </div>
 </body>
