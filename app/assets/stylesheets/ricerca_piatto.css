@@ -3,10 +3,10 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: auto;
-    width: 100%;
+    width: auto;
 }
 
 .search_infos{
@@ -21,12 +21,12 @@
     display: flex;
     flex-direction: column;
     margin-top: 1%;
+    margin-right: 1%;
     margin-bottom: 0%;
-    margin-left: 5%;
-    margin-right: 1.5%;
     border-color: #1e5a1a;
     border-style: solid;
     overflow-y: auto;
+    width: 100%;
 }
 
 #search_opts{
@@ -134,6 +134,11 @@
     .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
         font-size: medium;
     }
+
+    #searches{
+        width: 100%;
+    }
+
     .search_infos, .dish_name{
         font-size: large;
     }
@@ -151,6 +156,11 @@
     .search_infos, .dish_name{
         font-size: x-large;
     }
+
+    #searches{
+        width: 100%;
+    }
+
     #dish_pic{
         max-width: 300px;
         max-height: 300px;
