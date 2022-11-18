@@ -95,7 +95,7 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 1%;
+    margin-left: 5%;
     margin-right: 1%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -184,6 +184,18 @@
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
+    #row_m1{
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #editable{
+        margin-left: 2%;
+    }
+    #user_desc_2{
+        margin-left: 1%;
+    }
+
     #profile_pic{
         max-width: 100px;
         max-height: 100px;
@@ -199,6 +211,18 @@
 }
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
+    #row_m1{
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #editable{
+        margin-left: 2%;
+    }
+    #user_desc_2{
+        margin-left: 1%;
+    }
+
     #profile_pic{
         max-width: 150px;
         max-height: 150px;
