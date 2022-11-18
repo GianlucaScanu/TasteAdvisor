@@ -135,6 +135,33 @@
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
+    /*Allineamento in colonna*/
+    #middle{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #middle > *{
+        margin-bottom: 5%;
+    }
+    #foto{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #user_desc{
+        justify-content: unset;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #modify{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #recensione_tipo{
+        overflow: auto;
+    }
+    /*Fine*/
+
+
     #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
         font-size: small;
     }
