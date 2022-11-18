@@ -106,6 +106,7 @@
           <% (Dish.all).each do |dish|%>
             <% if dish.restaurant_id == @restaurant.id %>
               <div class = "piattino">
+              <%= link_to dish_path(dish) do %>
                 <div class = "interno_piattino">
                   <div class = "foto_piatto">
                     <!-- <img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" class="img-fluid"> -->
@@ -123,6 +124,7 @@
                   </div>
                 </div>
               </div>
+              <% end %>
             <% end %>
           <% end %>
         </div>

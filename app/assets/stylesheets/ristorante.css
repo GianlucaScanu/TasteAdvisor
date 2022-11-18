@@ -181,6 +181,11 @@
     margin-right: 5%;
 }
 
+.interno_piattino > *, .interno_piattino > *:active{
+    color: black;
+    text-decoration: none;
+}
+
 #mod_btns{
     display: flex;
     flex-direction: row; 
