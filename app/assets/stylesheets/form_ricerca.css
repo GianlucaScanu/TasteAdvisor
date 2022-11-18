@@ -48,7 +48,6 @@
 
 #sorts_label{
     color: black;
-    font-size: medium;
 }
 
 .text_btn{
@@ -65,28 +64,29 @@
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
-    .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search{
+    .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search, #sorts_label, #sort_btn{
         font-size: small;
     }
 }
 
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
-    .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search{
+    .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search, #sorts_label, #sort_btn{
         font-size: medium;
     }
 }
   
 /* notebook */
 @media(min-width: 993px){
-    .search_label,#dish_btn, #restaurant_btn, #restaurant_search, #dish_search{
+    .search_label,#dish_btn, #restaurant_btn, #restaurant_search, #dish_search, #sorts_label, #sort_btn{
         font-size: medium;
     }
 }
   
 /* desktop */
 @media(min-width: 1440px){
-    .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search{
+    .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search, #sorts_label, #sort_btn{
         font-size: large;
     }
+    
 }

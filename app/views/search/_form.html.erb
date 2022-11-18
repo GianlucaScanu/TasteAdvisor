@@ -34,7 +34,7 @@
       <%= form_with url: @var_current_path, method: :get do |form| %>
         <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
         <%= form.hidden_field :sort, value: "name" %>
-        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success" %><br>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
       <% end %>
 
       <%#FORM DISABILITATO TEMPORANEAMENTE%>
@@ -51,13 +51,13 @@
       <%= form_with url: @var_current_path, method: :get do |form| %>
         <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
         <%= form.hidden_field :sort, value: "name" %>
-        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success" %><br>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
       <% end %>
 
       <%= form_with url: @var_current_path, method: :get do |form| %>
         <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
         <%= form.hidden_field :sort, value: "avg_rating" %>
-        <%= form.submit "ORDINA PER RATING", :class => "btn btn-success" %><br>
+        <%= form.submit "ORDINA PER RATING", :class => "btn btn-success", :id => "sort_btn" %><br>
       <% end %>
     <%end%>
   </div>

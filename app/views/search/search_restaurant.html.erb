@@ -13,14 +13,14 @@
             <% @get_restaurant.each do |restaurant|%>
                 <div class = "rest_container">
                     <div class = "col_1">
-                        <div class = "rest_pic"><img src="<%= restaurant.profile_picture %>" alt="foto_piatto" width="200" height="200"></div>                    </div>
+                        <div class = "rest_pic"><img src="<%= restaurant.profile_picture %>" alt="foto_piatto" width="250" height="250" id = "profile_pic"></div>                    </div>
                         <div class = "col_2">
                         <div class = "rest_name"><%= restaurant.name%></div>
                         <div class = "rest_phone">Telefono : <%= restaurant.telephone_number%></div>
                         <div class = "rest_address">Indirizzo : <%= restaurant.address%></div>
                         <div class = "rest_mail">Email : <%= restaurant.email%></div>
                         <div class = "btns">
-                            <div class = "div_show"><%= link_to "Mostra ristorante", restaurant, :class => "btn btn-success" %></div>
+                            <div class = "div_show"><%= link_to "Mostra ristorante", restaurant, :class => "btn btn-success", :id =>"show_btn" %></div>
                         </div>
                     </div>
                 </div>
