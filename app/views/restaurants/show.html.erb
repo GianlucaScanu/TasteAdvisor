@@ -51,21 +51,23 @@
           <% end %>
           <div id = "pic_lbl">Foto profilo</div>
         </div>
-        <div id = "user_desc_1">
-          <div id = "username"><%= @restaurant.username %></div>
-          <div id = "description">
-            <% if(@restaurant.description == "") %>
-              Descrizione mancante
-              <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
-            <% else %>
-              <%= @restaurant.description%>
-            <% end %>
+        <div id = "infos">
+          <div id = "user_desc_1">
+            <div id = "username"><%= @restaurant.username %></div>
+            <div id = "description">
+              <% if(@restaurant.description == "") %>
+                Descrizione mancante
+                <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
+              <% else %>
+                <%= @restaurant.description%>
+              <% end %>
+            </div>
           </div>
-        </div>
-        <div id = "user_desc_2">
-          <div id = "position"><%= @restaurant.address %></div>
-          <div id = "website"><%= @restaurant.website %></div>
-          <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+          <div id = "user_desc_2">
+            <div id = "position"><%= @restaurant.address %></div>
+            <div id = "website"><%= @restaurant.website %></div>
+            <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+          </div>
         </div>
         <div id = "modify">
           <%= button_to "Modifica profilo", edit_restaurant_path(@restaurant), method: :get, :class => "btn btn-success btn-responsive"%>
