@@ -21,7 +21,7 @@
                   <a href="/" class = "link_homepage"> <img src = "TODO:" alt="logo TA"> </a>
               </div>
               <div id = "label">
-                  <a href="/" class = "link_homepage"> TASTEADVISOR</a>
+                  <a href="/" class = "link_homepage">TASTEADVISOR</a>
               </div>
 
               <div id = "log_buttons">
@@ -80,7 +80,7 @@
                   <a href="/" class = "link_homepage"> <img src = "TODO:" alt="logo TA"> </a>
               </div>
               <div id = "label">
-                  <a href="/" class = "link_homepage"> TASTEADVISOR</a>
+                  <a href="/" class = "link_homepage">TASTEADVISOR</a>
               </div>
 
               <div id = "log_buttons">
@@ -112,22 +112,22 @@
 
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "0" %>
-                                <%= form.submit "Antipasti", :class => "btn btn-link" %><br>
+                                <%= form.submit "Antipasti", :class => "btn btn-link nav_links" %><br>
                             <% end %>
                             
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "1" %>
-                                <%= form.submit "Primi", :class => "btn btn-link"  %><br>
+                                <%= form.submit "Primi", :class => "btn btn-link nav_links"  %><br>
                             <% end %>
 
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "2" %>
-                                <%= form.submit "Secondi", :class => "btn btn-link"  %><br>
+                                <%= form.submit "Secondi", :class => "btn btn-link nav_links"  %><br>
                             <% end %>
 
                             <%= form_with url: "/search_dish", method: :get do |form| %>
                                 <%= form.hidden_field :category, value: "3" %>
-                                <%= form.submit "Dolci", :class => "btn btn-link"  %><br>
+                                <%= form.submit "Dolci", :class => "btn btn-link nav_links"  %><br>
                             <% end %>
 
                       </div>
@@ -136,7 +136,14 @@
           </div>
     </div>
         <% end %>
-
+        
+        <!--Condizionali così i div non compaiono se non richiesti-->
+        <%if alert %>
+            <div class = "alert_div"><%= alert %></div>
+        <%end%>
+        <%if notice %>
+            <div class = "notice_div"><%= notice%></div>
+        <%end%>
         <%= yield %>
 
     <div id = "bottom">
