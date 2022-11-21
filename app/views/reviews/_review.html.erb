@@ -56,7 +56,8 @@
             </div>
             <textarea id = "description" rows="4" cols="50" disabled="true"> <%= review.description%> </textarea>
             <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
-                <div id = "user_name">Recensione effettuata da <%=Reviewer.find(review.reviewer_id).username%> </div>
+                <% username = Reviewer.find(review.reviewer_id).username %>
+                <div id = "user_name">Recensione effettuata da <%= link_to username, reviewer_path(review.reviewer_id) %> </div>
             <%end%>
         </div>
 

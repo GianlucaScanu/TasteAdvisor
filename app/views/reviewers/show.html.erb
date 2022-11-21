@@ -25,9 +25,11 @@
             </div>
         </div>
         <div id = "modify">
-            <div id = "profile_div">
-              <%= link_to "Modifica profilo", edit_reviewer_path(@reviewer), :class => "btn btn-success", :id => "profile_btn" %>
-            </div>
+            <%if (reviewer_signed_in?) and (@reviewer == current_reviewer)%>
+                <div id = "profile_div">
+                    <%= link_to "Modifica profilo", edit_reviewer_path(@reviewer), :class => "btn btn-success", :id => "profile_btn" %>
+                </div>
+            <%end%>
         </div>
     </div>
 
