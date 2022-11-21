@@ -46,6 +46,7 @@
     flex-direction: column;
     align-items: center;
     color: green;
+    margin-top: 1%;
 }
 
 .alert_div{
@@ -53,6 +54,7 @@
     flex-direction: column;
     align-items: center;
     color: red;
+    margin-top: 1%;
 }
 
 #contacts{

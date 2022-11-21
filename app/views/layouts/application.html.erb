@@ -136,7 +136,14 @@
           </div>
     </div>
         <% end %>
-
+        
+        <!--Condizionali così i div non compaiono se non richiesti-->
+        <%if alert %>
+            <div class = "alert_div"><%= alert %></div>
+        <%end%>
+        <%if notice %>
+            <div class = "notice_div"><%= notice%></div>
+        <%end%>
         <%= yield %>
 
     <div id = "bottom">

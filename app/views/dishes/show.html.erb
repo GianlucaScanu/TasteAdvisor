@@ -68,7 +68,15 @@
                 <%end%>
             </div>
             <div id = "actions">
-                <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-custom" %><br></div>
+                <%if reviewer_signed_in?%>
+                    <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-custom" %><br></div>
+                <%elsif restaurant_signed_in?%>
+                    <!-- Alert passato come parametro alla richiesta url di ricaricamento della pagina-->
+                    <div id = "review"><%= link_to "Lascia recensione", dish_path(@dish.id, flash_alert: "Non puoi recensire un piatto"), :class => "btn btn-warning btn-custom", :alert => "Non puoi recensire un tuo piatto" %><br></div>
+                    <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
+                <%else%>
+                    <div id = "review"><%= link_to "Lascia recensione", new_reviewer_session_path, :class => "btn btn-warning btn-custom" %><br></div>
+                <%end%>
                 <div id = "report">
                 
                 <%= form_with url: new_report_path, method: :get do |form| %>
