@@ -72,19 +72,27 @@
                     <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-custom" %><br></div>
                 <%elsif restaurant_signed_in?%>
                     <!-- Alert passato come parametro alla richiesta url di ricaricamento della pagina-->
-                    <div id = "review"><%= link_to "Lascia recensione", dish_path(@dish.id, flash_alert: "Non puoi recensire un piatto"), :class => "btn btn-warning btn-custom", :alert => "Non puoi recensire un tuo piatto" %><br></div>
+                    <div id = "review"><%= link_to "Lascia recensione", dish_path(@dish.id, flash_alert: "Non puoi recensire un piatto"), :class => "btn btn-warning btn-custom"%><br></div>
                     <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
                 <%else%>
                     <div id = "review"><%= link_to "Lascia recensione", new_reviewer_session_path, :class => "btn btn-warning btn-custom" %><br></div>
                 <%end%>
                 <div id = "report">
-                
-                <%= form_with url: new_report_path, method: :get do |form| %>
-                    <%= form.hidden_field :report_id, value: @dish.id%>
-                    <%= form.hidden_field :report_type, value:"dish"%>
-                    <%= submit_tag "Segnala", :class => "btn btn-danger btn-custom" %>
-                <% end  %>
-
+                    <%if reviewer_signed_in? %>
+                        <%= form_with url: new_report_path, method: :get do |form| %>
+                            <%= form.hidden_field :report_id, value: @dish.id%>
+                            <%= form.hidden_field :report_type, value:"dish"%>
+                            <%= submit_tag "Segnala", :class => "btn btn-danger btn-custom" %>
+                        <% end  %>
+                    <%elsif (restaurant_signed_in?) and (current_restaurant == @dish.restaurant)%>
+                        <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare un tuo piatto"), :class => "btn btn-danger btn-custom" %>
+                        <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
+                    <%elsif (restaurant_signed_in?) and (current_restaurant != @dish.restaurant)%>
+                        <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare tuo piatto perchè non sei un recensore"), :class => "btn btn-danger btn-custom" %>
+                        <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
+                    <%else%>
+                        <%= link_to "Segnala", new_reviewer_session_path, :class => "btn btn-danger btn-custom" %>
+                    <%end%>
                 </div>
             </div>
         </div>
