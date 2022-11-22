@@ -12,5 +12,31 @@
         <%= button_to "Elimina recensione", @review, method: :delete, :class => "btn btn-danger", :id => "dest_link" %>
       </div>
     </div>
+  <%else%>
+    <div id = "review_btns">
+      <div id = "report_div">
+        <%=form_with url: new_report_path, method: :get do |form| %>
+            <%= form.hidden_field :report_id, value: @review.id%>
+            <%= form.hidden_field :report_type, value:"review"%>
+            <%= submit_tag "Segnala Recensione", :class => "btn btn-danger", :id => "report_link"%>
+        <%end%>
+      </div>
+    </div>
   <%end%>
+<%elsif restaurant_signed_in?%>
+  <div id = "review_btns">
+      <div id = "report_div">
+          <%=form_with url: new_report_path, method: :get do |form| %>
+            <%= form.hidden_field :report_id, value: @review.id%>
+            <%= form.hidden_field :report_type, value:"review"%>
+            <%= submit_tag "Segnala Recensione", :class => "btn btn-danger", :id => "report_link"%>
+          <%end%>
+        </div>
+  </div>
+<%else%>
+  <div id = "review_btns">
+      <div id = "report_div">
+        <%= button_to "Segnala recensione", new_reviewer_session_path, :class => "btn btn-danger", :id => "report_link" %>
+      </div>
+  </div>
 <%end%>

@@ -111,7 +111,7 @@
         font-size: small;
     }
 
-    #mod_link, #dest_link, #report_btn, #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
+    #mod_link, #dest_link, #report_link, #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
     #impiattamento_value, #originalità_value, #user_name, #description{
         font-size: small;
     }
@@ -123,7 +123,7 @@
         font-size: medium;
     }
   
-    #mod_link, #dest_link, #report_btn, #description{
+    #mod_link, #dest_link, #report_link, #description{
         font-size: medium;
     }
 
@@ -140,7 +140,7 @@
         font-size: large;
     }
 
-    #mod_link, #dest_link, #report_btn, #description{
+    #mod_link, #dest_link, #report_link, #description{
         font-size: large;
     }
 
@@ -157,7 +157,7 @@
         font-size: large;
     }
 
-    #mod_link, #dest_link, #report_btn, #description{
+    #mod_link, #dest_link, #report_link, #description{
         font-size: large;
     }
 
