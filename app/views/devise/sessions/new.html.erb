@@ -20,8 +20,6 @@
         <div id = "oppure_lbl">Oppure</div>
         <div id = "form_div">
             <div class = "form-group">
-                <div class = "notice_div"><%= notice %></div>
-                <div class = "alert_div"><%= alert %></div>
                 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                     <div class="field">
                         <%= f.label :email, :id => "email_lbl" %><br />
