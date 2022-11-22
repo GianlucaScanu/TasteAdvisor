@@ -56,7 +56,8 @@
             </div>
             <textarea id = "description" rows="4" cols="50" disabled="true"> <%= review.description%> </textarea>
             <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
-                <div id = "user_name">Recensione effettuata da <%=Reviewer.find(review.reviewer_id).username%> </div>
+                <% username = Reviewer.find(review.reviewer_id).username %>
+                <div id = "user_name">Recensione effettuata da <%= link_to username, reviewer_path(review.reviewer_id) %> </div>
             <%end%>
         </div>
 
@@ -76,15 +77,6 @@
                 <br>
 
             <%end%>
-            <div id = "report">
-
-                <%= form_with url: new_report_path, method: :get do |form| %>
-                    <%= form.hidden_field :report_id, value: review.id%>
-                    <%= form.hidden_field :report_type, value:"review"%>
-                    <%= submit_tag "Segnala", :class => "btn btn-danger", :id => "report_btn"%>
-                <% end  %>
-
-            </div>
         </div>
     </div>
 

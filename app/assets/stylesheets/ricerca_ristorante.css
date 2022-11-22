@@ -11,7 +11,6 @@
 
 .search_infos{
     color: black;
-    font-size: x-large;
     margin-top: 1%;
     margin-left: 5%;
     margin-right: 2%;
@@ -20,13 +19,8 @@
 #searches{
     display: flex;
     flex-direction: column;
-    margin-top: 1%;
-    margin-bottom: 0;
-    margin-left: 5%;
-    margin-right: 1.5%;
     border-color: #1e5a1a;
     border-style: solid;
-    width: 100%;
     overflow-y: auto;
 }
 
@@ -62,7 +56,6 @@
 
 .rest_name{
     color: black;
-    font-size: x-large;
     font-weight: bold;
 }
 
@@ -79,4 +72,105 @@
     margin-bottom: 3%;
     margin-left: 3%;
     margin-right: 3%;
+}
+
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #middle{
+        flex-direction: column-reverse;
+    }
+    #search_opts{
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #searches{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .rest_name, #search_infos{
+        font-size: medium;
+    }
+    .rest_phone, .rest_address, .rest_name, .rest_mail, #show_btn{
+        font-size: small;
+    }
+    #profile_pic{
+        max-width: 99px;
+        max-width: 99px;
+    }
+}
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #middle{
+        flex-direction: column-reverse;
+    }
+    #search_opts{
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 5%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .rest_name, #search_infos{
+        font-size: large;
+    
+    } 
+    .rest_phone, .rest_address, .rest_name, .rest_mail, #show_btn{
+        font-size: medium;
+    }
+    #profile_pic{
+        max-width: 150px;
+        max-width: 150px;
+    } 
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    .rest_name, #search_infos{
+        font-size: large;
+    }
+
+    .rest_phone, .rest_address, .rest_name, .rest_mail, #show_btn{
+        font-size: medium;
+    }
+    #searches{
+        margin-top: 1%;
+        margin-bottom: 0;
+        margin-left: 5%;
+        margin-right: 1%;
+        width: 100%;
+    }
+
+    #profile_pic{
+        max-width: 200px;
+        max-width: 200px;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    .rest_name{
+        font-size: x-large;
+    }
+    .rest_phone, .rest_address, .rest_name, .rest_mail, #show_btn{
+        font-size: large;
+    }
+
+    #searches{
+        margin-top: 1%;
+        margin-bottom: 0;
+        margin-left: 5%;
+        margin-right: 1%;
+        width: 100%;
+    }
+    
+    #profile_pic{
+        max-width: 300px;
+        max-width: 300px;
+    }
 }

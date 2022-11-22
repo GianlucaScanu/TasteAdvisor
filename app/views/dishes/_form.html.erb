@@ -23,27 +23,27 @@
         <%= form.file_field :images, multiple: true, direct_upload: false, accept:"image/*" %>
       </div>
       <div class = "field_div">
-        <%= form.label :name, style: "display: block" %>
+        <%= form.label :Nome, style: "display: block" %>
         <%= form.text_field :name %>
       </div>
       <div class = "field_div">
-        <%= form.label :description, style: "display: block" %>
+        <%= form.label :Descrizione, style: "display: block" %>
         <%= form.text_field :description %>
       </div>
     </div>
 
     <div id = "col_m2">
       <div class = "field_div">
-        <%= form.label :category, style: "display: block" %>
+        <%= form.label :Categoria, style: "display: block" %>
         <%= form.number_field :category ,in: 0..3 %>
       </div>
       <div class = "field_div">
-        <%= form.label :price, style: "display: block" %>
+        <%= form.label :Prezzo, style: "display: block" %>
         <%= form.text_field :price %>
       </div>
       
       <div class = "field_div">
-        <%= form.label :ingredients, style: "display: block" %>
+        <%= form.label :Ingredienti, style: "display: block" %>
         <%= form.text_field :ingredients %>
       </div>
 
@@ -64,8 +64,8 @@
 
   <div id = "row_m2">
     <div>
-        <%= link_to "Annulla", current_restaurant, :class => "btn btn-danger"%>
-        <%= form.submit "Conferma", :class => "btn btn-success" %>
+        <%= link_to "Annulla", current_restaurant, :class => "btn btn-danger btn-opt"%>
+        <%= form.submit "Conferma", :class => "btn btn-success btn-opt" %>
       </div>
     <% end %>
   </div>

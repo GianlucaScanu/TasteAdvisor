@@ -1,21 +1,4 @@
-<script>
-        document.getElementById("review_rating1").setAttribute("onchange", "return modificaValore1(this);");
-        document.getElementById("review_rating2").setAttribute("onchange", "return modificaValore2(this);");
-        document.getElementById("review_rating3").setAttribute("onchange", "return modificaValore3(this);");
 
-        function modificaValore1(select){
-            var selezionato = select.options[select.selectedIndex].value;
-            document.getElementById("pg1").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-        }
-        function modificaValore2(select){
-            var selezionato = select.options[select.selectedIndex].value;
-            document.getElementById("pg2").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-        }
-        function modificaValore3(select){
-            var selezionato = select.options[select.selectedIndex].value;
-            document.getElementById("pg3").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
-        }
-</script>
 
 <%= form_with(model: review) do |form| %>
 
@@ -32,7 +15,7 @@
     </div>
   <% end %>
 
-<div id = "middle" onload = "return modificaValore1(rating1);">
+<div id = "middle">
         <div id = "midtop">
             <div id = "col1">
                 <div id = "foto">
@@ -87,8 +70,8 @@
                     </div>
                 </div>
                 <div id = "description">
-                    <%= form.label :description, "Descrizione ", style: "display: block" %>
-                    <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione" %>
+                    <%= form.label :description, "Descrizione ", style: "display: block", :id => "descr_id" %>
+                    <%= form.text_area :description, :class => "form-control", :placeholder => "Inserisci descrizione", :rows =>"3" %>
                 </div>
                 
             </div>
@@ -96,16 +79,16 @@
         <div id = "midbottom">
 
             <%= form.hidden_field :dish_id, value: session[:save_dish] %>
-            <%= form.hidden_field :reviewer_id, value: current_reviewer.id %>
+            <%= form.hidden_field :reviewer_id, value: current_reviewer %>
 
             <div id = "confirm">
                     <%= form.submit "Conferma", :class => "btn btn-success", :id => "confirm_btn"%>
             </div>
             <div id = "cancel">
             <% if @review.id != nil%>
-                <%= link_to "Annulla modifiche", review_path(@review), :class => "btn btn-danger" %>
+                <%= link_to "Annulla modifiche", review_path(@review), :class => "btn btn-danger", :id => "cancel_btn" %>
             <%else%>
-                <%= link_to "Annulla creazione", dish_path(session[:save_dish]), :class => "btn btn-danger" %>
+                <%= link_to "Annulla creazione", dish_path(session[:save_dish]), :class => "btn btn-danger", :id => "cancel_btn"  %>
             <%end%>
             </div>
         </div>
@@ -120,3 +103,21 @@
 
 <%= stylesheet_link_tag "nuovaRecensione.css" %>
 
+<script>
+        document.getElementById("review_rating1").setAttribute("onchange", "return modificaValore1(this);");
+        document.getElementById("review_rating2").setAttribute("onchange", "return modificaValore2(this);");
+        document.getElementById("review_rating3").setAttribute("onchange", "return modificaValore3(this);");
+
+        function modificaValore1(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg1").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+        function modificaValore2(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg2").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+        function modificaValore3(select){
+            var selezionato = select.options[select.selectedIndex].value;
+            document.getElementById("pg3").setAttribute("style", "width: "+  String(Number(selezionato)*20)+"%");
+        }
+</script>

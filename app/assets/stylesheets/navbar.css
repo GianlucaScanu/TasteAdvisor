@@ -66,3 +66,40 @@
   font-weight:425;
   text-shadow: black 2px 2px 2px;
 }
+
+
+
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+  .nav_links{
+    font-size: small;
+}
+
+
+
+}
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+  .nav_links{
+    font-size: medium;
+}
+
+}
+
+/* notebook */
+@media(min-width: 993px){
+  .nav_links{
+    font-size: large;
+}
+
+}
+
+/* desktop */
+@media(min-width: 1440px){
+  .nav_links{
+      font-size: x-large;
+  }
+
+}

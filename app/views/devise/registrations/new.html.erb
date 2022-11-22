@@ -44,12 +44,15 @@
                             </div>
 
                             <div class="form-group">
-                            <%= f.label :email, "Inserisci e-mail" %>
-                            <%= f.email_field :email , :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua email" %>
+                                <%= f.label :email, "Inserisci e-mail" %>
+                                <%= f.email_field :email , :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua email" %>
                             </div>
                             
                             <div class="form-group">
                                 <%= f.label :password, "Inserisci password" %>
+                                <% if @minimum_password_length %>
+                                    <em>(minimo <%= @minimum_password_length %> caratteri)</em>
+                                <% end %>
                                 <%= f.password_field :password, :class => "form-control", autofocus: true, :placeholder => "Inserisci la tua password" %>
                             </div>
 

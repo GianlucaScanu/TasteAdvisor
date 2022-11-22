@@ -3,10 +3,10 @@
     flex-direction: row;
     justify-content: center;
     margin-top: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: auto;
-    width: 100%;
+    width: auto;
 }
 
 .search_infos{
@@ -21,13 +21,12 @@
     display: flex;
     flex-direction: column;
     margin-top: 1%;
+    margin-right: 1%;
     margin-bottom: 0%;
-    margin-left: 5%;
-    margin-right: 1.5%;
     border-color: #1e5a1a;
     border-style: solid;
-    width: 100%;
     overflow-y: auto;
+    width: 100%;
 }
 
 #search_opts{
@@ -35,18 +34,15 @@
     flex-direction: column;
     margin-bottom: auto;
     margin-top: 1%;
-    margin-left: 1.5%;
-    margin-right: 5%;
-    width: 55%;
 }
 
 .dish_container{
     display: flex;
-    flex-direction: row;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
+    width: auto;
     border-style: solid;
     border-width: thin;
     border-color: #1e5a1a;
@@ -79,4 +75,123 @@
     margin-bottom: 3%;
     margin-left: 3%;
     margin-right: 3%;
+}
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #middle{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #searches{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #search_opts{
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2%;
+    }
+
+    .dish_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+        font-size: small;
+    }
+    .search_infos, .dish_name{
+        font-size: medium;
+    }
+    #dish_pic{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #middle{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #searches{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #search_opts{
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        margin-bottom: 2%;
+    }
+
+    .dish_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search_infos, .dish_name, .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+        font-size: medium;
+    }
+    #dish_pic{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+        font-size: medium;
+    }
+
+    #searches{
+        width: 100%;
+    }
+
+    .dish_container{
+        flex-direction: row;
+    }
+
+    #search_opts{
+        width: 55%;
+    }
+
+    .search_infos, .dish_name{
+        font-size: large;
+    }
+    #dish_pic{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    .dish_container{
+        flex-direction: row;
+    }
+
+    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+        font-size: large;
+    }
+    .search_infos, .dish_name{
+        font-size: x-large;
+    }
+
+    #searches{
+        width: 100%;
+    }
+
+    #search_opts{
+        width: 55%;    
+    }
+
+    #dish_pic{
+        max-width: 300px;
+        max-height: 300px;
+    }
 }

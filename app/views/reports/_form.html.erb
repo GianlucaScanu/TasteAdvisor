@@ -12,15 +12,16 @@
   <% end %>
 
   <%if params[:report_type].to_s == "dish"%>
-    <%= stylesheet_link_tag "segnalaRecensione.css" %>
+    <%= stylesheet_link_tag "segnala.css" %>
 
     <div id = "middle">
       
       <%= form.hidden_field :targetId, value:  params[:report_id].to_s %>
       <%= form.hidden_field :targetType, value:  params[:report_type].to_s %>
 
-      <h5> Segnalazione piatto di <%= Dish.find(params[:report_id].to_s).restaurant.name %> </h5>
+       
         <div id = "nome">
+          Segnalazione piatto di <%= Dish.find(params[:report_id].to_s).restaurant.name %>
         </div>
         <div id = "motivazioni">
           <div id = "motivazioni_lbl">Motivazioni:</div>
@@ -62,19 +63,19 @@
                 <%= form.label :description, "Descrizione"%>
               </div>
               <div id = "text_div">
-                <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione"%>
+                 <%= form.text_area :description, :class => "form-control", :placeholder => "Inserisci descrizione", :rows => "3"%>
               </div>
           </div>
           <div id = "segnala_div">
               <div>  
-                <%= form.submit "Segnala", :class => "btn btn-danger btn-responsive"%>
+                <%= form.submit "Segnala", :class => "btn btn-danger", :id => "segnala_lbl"%>
               </div>
           </div>
       </div>
 
   <% else %>
   
-  <%= stylesheet_link_tag "segnalaRecensione.css" %>
+  <%= stylesheet_link_tag "segnala.css" %>
   <!-- Necessarie al passaggio di valori tramite form: non cancellare-->
   <%= form.hidden_field :targetId, value: params[:report_id].to_i %>
   <%= form.hidden_field :targetType, value: params[:report_type].to_s %>
@@ -124,12 +125,12 @@
               <%= form.label :description, "Descrizione"%>
             </div>
             <div id = "text_div">
-              <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione"%>
+              <%= form.text_area :description, :class => "form-control", :placeholder => "Inserisci descrizione", :rows => "3"%>
             </div>
         </div>
         <div id = "segnala_div">
             <div>  
-              <%= form.submit "Segnala", :class => "btn btn-danger btn-responsive"%>
+              <%= form.submit "Segnala", :class => "btn btn-danger", :id => "segnala_lbl"%>
             </div>
         </div>
     </div>
