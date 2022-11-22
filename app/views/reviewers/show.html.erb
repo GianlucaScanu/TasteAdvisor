@@ -54,9 +54,13 @@
                         <div id = "del_div">
                             <%= button_to "Elimina", @review, method: :delete, :class => "btn btn-danger", :id => "del_btn" %>
                         </div>
-                        <%else%>
+                        <%elsif (reviewer_signed_in?)or(restaurant_signed_in?)%>
                             <div id = "del_div">
                                 <%= link_to "Segnala", new_report_path, :class => "btn btn-danger", :id => "report_btn"%>
+                            </div>
+                        <%else%>
+                            <div id = "del_div">
+                                <%= link_to "Segnala", new_reviewer_session_path, :class => "btn btn-danger", :id => "report_btn"%>
                             </div>
                         <%end%>
                     </div>
