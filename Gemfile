@@ -45,7 +45,7 @@ gem "bootsnap", require: false
 #devise
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
-#oauth google
+#oauth
 gem "dotenv-rails"
 gem "omniauth"
 gem "omniauth-google-oauth2"
