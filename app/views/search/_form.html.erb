@@ -8,9 +8,9 @@
     <%= form_with url: "/search_restaurant", method: :get do |form| %>
       <div class = "search_label">Ricerca ristorante:</div>
       <div class = "text_btn">
-        <%= form.text_field :form_input, :class => "form-control" %>
+        <%= form.text_field :form_input, :class => "form-control",  :id => "restaurant_search" %>
         <%= form.hidden_field :sort, value: nil%> 
-        <%= form.submit "Cerca", :class => "btn btn-success" %>
+        <%= form.submit "Cerca", :class => "btn btn-success", :id => "restaurant_btn" %>
       </div>
     <% end %>
   </div>
@@ -19,9 +19,9 @@
     <%= form_with url: "/search_dish", method: :get do |form| %>
       <div class = "search_label">Ricerca piatto:</div>
       <div class = "text_btn">
-        <%= form.text_field :form_input, :class => "form-control" %>
+        <%= form.text_field :form_input, :class => "form-control", :id => "dish_search" %>
         <%= form.hidden_field :sort, value: nil%> 
-        <%= form.submit "Cerca", :class => "btn btn-success" %>
+        <%= form.submit "Cerca", :class => "btn btn-success",  :id => "dish_btn" %>
       </div>
     <% end %>
   </div>
@@ -34,7 +34,7 @@
       <%= form_with url: @var_current_path, method: :get do |form| %>
         <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
         <%= form.hidden_field :sort, value: "name" %>
-        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success" %><br>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
       <% end %>
 
       <%#FORM DISABILITATO TEMPORANEAMENTE%>
@@ -51,13 +51,13 @@
       <%= form_with url: @var_current_path, method: :get do |form| %>
         <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
         <%= form.hidden_field :sort, value: "name" %>
-        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success" %><br>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
       <% end %>
 
       <%= form_with url: @var_current_path, method: :get do |form| %>
         <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
         <%= form.hidden_field :sort, value: "avg_rating" %>
-        <%= form.submit "ORDINA PER RATING", :class => "btn btn-success" %><br>
+        <%= form.submit "ORDINA PER RATING", :class => "btn btn-success", :id => "sort_btn" %><br>
       <% end %>
     <%end%>
   </div>

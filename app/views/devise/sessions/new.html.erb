@@ -8,8 +8,6 @@
 
     <%= stylesheet_link_tag "signin.css" %>
 
-    <!-- Carosello ha qualche problema, necessario questo script per renderlo dinamico -->
-
 </head>
 <body>
     <div id = "middle">
@@ -21,37 +19,22 @@
         </div>
         <div id = "oppure_lbl">Oppure</div>
         <div id = "form_div">
-                <!-- 
-                <form>
-                <div class="form-group">
-                  <label for="email_id">Indirizzo e-mail</label>
-                  <input type="email" class="form-control" id="email_id" placeholder="Inserisci la tua email">
-                </div>
-                <div class="form-group">
-                  <label for="password_id">Password</label>
-                  <input type="password" class="form-control" id="password_id" placeholder="Inserisci la tua password">
-                </div>
-                <button id = "submit_btn" type="submit" class="btn btn-success">Conferma</button>
-              </form>
-              -->
             <div class = "form-group">
-                <div class = "notice_div"><%= notice %></div>
-                <div class = "alert_div"><%= alert %></div>
                 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
                     <div class="field">
-                        <%= f.label :email %><br />
+                        <%= f.label :email, :id => "email_lbl" %><br />
                         <%= f.email_field :email, :class => "form-control", autofocus: true, autocomplete: "email" %>
                     </div>
 
                     <div class="field">
-                        <%= f.label :password %><br />
+                        <%= f.label :password, :id => "password_lbl" %><br />
                         <%= f.password_field :password, :class => "form-control", autocomplete: "current-password" %>
                     </div>
 
                     <% if devise_mapping.rememberable? %>
                         <div class="field">
                             <%= f.check_box :remember_me %>
-                            <%= f.label :remember_me %>
+                            <%= f.label :remember_me, :id => "remember_lbl" %>
                         </div>
                     <% end %>
 

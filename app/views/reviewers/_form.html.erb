@@ -17,24 +17,28 @@
       <div id = "foto">
           <div id = "image">
             <% if @reviewer.profile_picture.attached? %>
-                <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="250" height="250"> 
-                <br><br>
+                <div>
+                  <img src="<%= url_for(@reviewer.profile_picture)%>" alt="PP" width="250" height="250" id="profile_picture">
+                </div>
+                <br> 
             <% end %>
-            <%= form.file_field :profile_picture, direct_upload: false,  accept:"image/*" %>     
+            <div>
+              <%= form.file_field :profile_picture, direct_upload: false,  accept:"image/*" %>
+            </div>     
           </div>
 
       </div>
       <div id = "labels">
           <div id = "username" class = "form-group">
-            <%= form.label :username, style: "display: block" %>
+            <%= form.label :username, style: "display: block", :id => "username_lbl" %>
             <%= form.text_field :username, :class => "form-control" %>
           </div>
           <div id = "email" class = "form-group">
-            <%= form.label :email, style: "display: block" %>
+            <%= form.label :email, style: "display: block",  :id => "email_lbl" %>
             <%= form.text_field :email, :class => "form-control" %>
           </div>
           <div id = "tel_div" class = "form-group">
-            <%= form.label :telephone_number, "Telefono", style: "display: block" %>
+            <%= form.label :telephone_number, "Telefono", style: "display: block",  :id => "tel_lbl" %>
             <%= form.text_field :telephone_number, :class => "form-control", :placeholder => "Inserisci numero" %>
           </div>
       </div>
@@ -42,18 +46,18 @@
       
           <div id = "desc_text">
           
-            <%= form.label :description, "Descrizione ", style: "display: block" %>
-            <%= form.text_field :description, :class => "form-control", :placeholder => "Inserisci descrizione" %>
+            <%= form.label :description, "Descrizione ", style: "display: block", :id => "descr_lbl" %>
+            <%= form.text_area :description, :class => "form-control", :placeholder => "Inserisci descrizione", :rows => "3" %>
           
           </div>
       </div>
   </div>
   <div id = "midrow2">
-      <div id = "save_btn">
-            <%= form.submit "Salva", :class => "btn btn-success"%>
+      <div id = "save_div">
+            <%= form.submit "Salva", :class => "btn btn-success", :id => "save_btn" %>
       </div>
-      <div id = "cancel_btn">
-        <%= link_to "Annulla modifiche", current_reviewer, :class => "btn btn-danger" %>
+      <div id = "cancel_div">
+        <%= link_to "Annulla modifiche", current_reviewer, :class => "btn btn-danger", :id => "cancel_btn" %>
       </div>
   </div>
   </div>

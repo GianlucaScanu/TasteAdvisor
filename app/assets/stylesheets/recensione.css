@@ -40,7 +40,6 @@
 }
 
 .progress{
-    width: 10vw;
     align-self: center; 
 }
 
@@ -69,6 +68,7 @@
     border-style: solid;
     border-color: #1e5a1a;
     border-width: thin;
+    overflow-y: scroll;
 }
 
 .carousel-item{
@@ -101,4 +101,69 @@
 
 #destroy_btn{
     margin-left: 5%;
+}
+
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    .link{
+        font-size: small;
+    }
+
+    #mod_link, #dest_link, #report_link, #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
+    #impiattamento_value, #originalità_value, #user_name, #description{
+        font-size: small;
+    }
+
+  }
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    .link{
+        font-size: medium;
+    }
+  
+    #mod_link, #dest_link, #report_link, #description{
+        font-size: medium;
+    }
+
+    #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
+    #impiattamento_value, #originalità_value, #user_name{
+        font-size: medium;
+    }
+
+  }
+
+/* notebook */
+@media(min-width: 993px){
+    .link{
+        font-size: large;
+    }
+
+    #mod_link, #dest_link, #report_link, #description{
+        font-size: large;
+    }
+
+    #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
+    #impiattamento_value, #originalità_value, #user_name{
+        font-size: large;
+    }
+}
+
+/* desktop */
+@media(min-width: 1440px){
+
+    .link{
+        font-size: large;
+    }
+
+    #mod_link, #dest_link, #report_link, #description{
+        font-size: large;
+    }
+
+    #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
+    #impiattamento_value, #originalità_value, #user_name{
+        font-size: x-large;
+    }
+
 }

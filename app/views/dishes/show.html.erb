@@ -63,20 +63,36 @@
             <div id = "foto_piatto">
                 <% i = 0 %>
                 <% while @dish.images[i] != nil%>
-                    <img src="<%= url_for(@dish.images[i])%>" alt="foto_piatto" width="300" height="300">
+                    <img src="<%= url_for(@dish.images[i])%>" alt="foto_piatto" width="250" height="250" id="dish_pic">
                     <%i += 1%>
                 <%end%>
             </div>
             <div id = "actions">
-                <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning" %><br></div>
+                <%if reviewer_signed_in?%>
+                    <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-custom" %><br></div>
+                <%elsif restaurant_signed_in?%>
+                    <!-- Alert passato come parametro alla richiesta url di ricaricamento della pagina-->
+                    <div id = "review"><%= link_to "Lascia recensione", dish_path(@dish.id, flash_alert: "Non puoi recensire un piatto"), :class => "btn btn-warning btn-custom"%><br></div>
+                    <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
+                <%else%>
+                    <div id = "review"><%= link_to "Lascia recensione", new_reviewer_session_path, :class => "btn btn-warning btn-custom" %><br></div>
+                <%end%>
                 <div id = "report">
-                
-                <%= form_with url: new_report_path, method: :get do |form| %>
-                    <%= form.hidden_field :report_id, value: @dish.id%>
-                    <%= form.hidden_field :report_type, value:"dish"%>
-                    <%= submit_tag "Segnala", :class => "btn btn-danger" %>
-                <% end  %>
-
+                    <%if reviewer_signed_in? %>
+                        <%= form_with url: new_report_path, method: :get do |form| %>
+                            <%= form.hidden_field :report_id, value: @dish.id%>
+                            <%= form.hidden_field :report_type, value:"dish"%>
+                            <%= submit_tag "Segnala", :class => "btn btn-danger btn-custom" %>
+                        <% end  %>
+                    <%elsif (restaurant_signed_in?) and (current_restaurant == @dish.restaurant)%>
+                        <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare un tuo piatto"), :class => "btn btn-danger btn-custom" %>
+                        <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
+                    <%elsif (restaurant_signed_in?) and (current_restaurant != @dish.restaurant)%>
+                        <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare tuo piatto perchè non sei un recensore"), :class => "btn btn-danger btn-custom" %>
+                        <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
+                    <%else%>
+                        <%= link_to "Segnala", new_reviewer_session_path, :class => "btn btn-danger btn-custom" %>
+                    <%end%>
                 </div>
             </div>
         </div>
@@ -91,10 +107,9 @@
                     <div id = "rating">
                         <label id = "rating_label">Rating: </label>
                         <div id = "rating_score" class = "rating_score">
-                            <div class = "value" id = "rating_value"> <%= @dish.avg_rating.round(2) %></div>
+                            <div class = "value" id = "rating_value"> <%= @dish.avg_rating.round(2) %>/5</div>
                             <div class = "pb" id = "rating_pb">
                                 <div class = "progress">
-                                    <!-- DA VEDERE CON RECENSIONI <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div> -->
                                     <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: <%= @dish.avg_rating*20%>%" aria-valuenow="<%= @dish.avg_rating*20 %>" aria-valuemin="0" aria-valuemax="20"></div>
                                 </div>
                             </div>
@@ -124,7 +139,7 @@
                                 </div>
                                 <div id = "rating_no1" class = "rating_score">
                                     <div class = "value" id = "rating_value">
-                                        <%= @avg_rate = ((review.rating1 + review.rating2 + review.rating3)/3) %>
+                                        <%= @avg_rate = ((review.rating1 + review.rating2 + review.rating3)/3) %>/5
                                     </div>
                                     <div class = "pb" id = "rating_pb">
                                         <div class = "progress">
@@ -145,5 +160,3 @@
             </div>
         </div>
     </div>
-    <%= session[:report_type]%> <br> <%= @dish.id %>
-    <%= link_to "Back to dishes", dishes_path, :class => "btn btn-primary" %>

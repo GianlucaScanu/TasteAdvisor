@@ -13,10 +13,6 @@
     overflow: scroll;
 }
 
-#log_buttons{
-    display: flex;
-    flex-direction: row;
-}
 
 /*ELEMENTI AREA MIDDLE*/
 #midrow1{
@@ -34,6 +30,11 @@
     margin-left: 5%;
 }
 
+#image{
+    display: flex;
+    flex-direction: column;
+}
+
 #image_lbl{
     display: flex;
     justify-content: center;
@@ -44,6 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 2%;
 }
 
 #description{
@@ -65,8 +67,75 @@
     margin-bottom: 5%;
 }
 
-#save_btn{
+#save_div{
     margin-right: 10%;
     align-self: center;
 }
 
+
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description, #reviewer_profile_picture{
+        font-size: x-small;
+    }
+    
+    #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: small;
+    }
+
+    #profile_picture{
+        max-width: 100px;
+        max-height: 100px;
+    }
+}
+
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description, #reviewer_profile_picture{
+        font-size: small;
+    }
+
+    #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: medium;
+    }
+
+    #profile_picture{
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description, #reviewer_profile_picture{
+        font-size: medium;
+    }
+
+    #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: large;
+    }
+
+    #profile_picture{
+        max-width: 200px;
+        max-height: 200px;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    #reviewer_username, #reviewer_email, #reviewer_telephone_number, #reviewer_description, #reviewer_profile_picture{
+        font-size: large;
+    }
+
+    #username_lbl, #email_lbl, #tel_div, #descr_lbl, #save_btn, #cancel_btn{
+        font-size: x-large;
+    }
+
+    #profile_picture{
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+}

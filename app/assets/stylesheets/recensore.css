@@ -7,6 +7,7 @@
     border-style: solid;
     border-color: #1e5a1a;
     justify-content: space-between;
+    overflow-x: auto;
 }
 
 #midbottom{
@@ -24,35 +25,6 @@
     overflow-x: scroll;
 }
 
-/*ELEMENTI AREA TOP*/
-#row1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-#logo {
-    margin-left: 1%;
-    /* TODO */
-}
-
-#label{
-    font-size: x-large;
-}
-
-#signin_btn{
-    margin-right: 3%;
-}
-
-#log_buttons{
-    display: flex;
-    flex-direction: row;
-}
-
 
 /*ELEMENTI AREA MIDDLE*/
 
@@ -61,7 +33,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#username{
+    display: flex;
+    flex-direction: row;
 }
 
 #user_desc{
@@ -71,16 +51,25 @@
     
 }
 
+#description_div{
+    display: flex;
+    flex-direction: column;
+}
+
 #description{
     border-style: solid;
     border-color: #1e5a1a;
     border-width: thin;
 }
 
-#profilo_btn{
-    margin-top: 50%;
-    margin-bottom: 50%;
-    margin-right: 5%;
+#modify{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+#profile_div{
+    align-self: center;
 }
 
 
@@ -119,10 +108,15 @@
     overflow: hidden;
 }
 
-#recensione_text{
+#recensione_ratings{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.rtg{
     display: flex;
     justify-content: center;
-    margin-top: 2%;
 }
 
 #recensione_btn{
@@ -137,3 +131,110 @@
     margin-left: 5%;
 }
 
+
+/*Media queries*/
+/*mobile*/ 
+@media (max-width: 768px) {
+    /*Allineamento in colonna*/
+    #middle{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #middle > *{
+        margin-bottom: 5%;
+    }
+    #foto{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #user_desc{
+        justify-content: unset;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #modify{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #recensione_tipo{
+        overflow: auto;
+    }
+    /*Fine*/
+
+
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
+        font-size: small;
+    }
+
+    #profile_picture{
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+        font-size: small;
+    }
+
+    .rtg, #recensione_info{
+        font-size: small;
+    }
+}
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl, #show_btn, #del_btn, #report_btn{
+        font-size: medium;
+    }
+
+    #profile_picture{
+        max-width: 150px;
+        max-height: 150px;
+    }
+
+    #user_lbl, #description_lbl, #description{
+        font-size: small;
+    }
+
+    .rtg, #recensione_info{
+        font-size: small;
+    }
+}
+  
+/* notebook */
+@media(min-width: 993px){
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
+        font-size: large;
+    }
+
+    #profile_picture{
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+        font-size: medium;
+    }
+
+    .rtg, #recensione_info{
+        font-size: medium;
+    }
+}
+  
+/* desktop */
+@media(min-width: 1440px){
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
+        font-size: x-large;
+    }
+
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+        font-size: large;
+    }
+
+    #profile_picture{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .rtg, #recensione_info{
+        font-size: medium;
+    }
+}
