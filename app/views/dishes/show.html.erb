@@ -88,7 +88,7 @@
                         <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare un tuo piatto"), :class => "btn btn-danger btn-custom" %>
                         <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
                     <%elsif (restaurant_signed_in?) and (current_restaurant != @dish.restaurant)%>
-                        <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare tuo piatto perchè non sei un recensore"), :class => "btn btn-danger btn-custom" %>
+                        <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare un piatto perchè non sei un recensore"), :class => "btn btn-danger btn-custom" %>
                         <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
                     <%else%>
                         <%= link_to "Segnala", new_reviewer_session_path, :class => "btn btn-danger btn-custom" %>
