@@ -43,7 +43,7 @@
       require 'json'
       string_query = "https://maps.googleapis.com/maps/api/place/details/json?place_id="
       string_query += Google::Maps.places(restaurant.name + "," + restaurant.address).first.place_id.to_s
-      string_query += "&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI"
+      string_query += "&language=it&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI"
       
       #string_query2 = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI"
       url = URI(string_query)
@@ -56,17 +56,25 @@
       %>
       
       <%#= response%>
-      
-      <%#= response["result"]["place_id"]%>
-      <%#= response["result"]["name"]%>
-      <%#= response["result"]["reviews"].to_s%>
-      <%#= response["result"]["reviews"]%>
-      <%
-      if response != nil and response["result"] != nil and response["result"]["reviews"] != nil
-        data = JSON.parse(response["result"]["reviews"]) 
-        data.each do |d|
 
+      <%=
+      #  response["result"]["reviews"][i]["author_name"]
+      if response != nil and response["result"] != nil and 
+        temp = ""
+        #false, disabilitato temporaneamente
+        if false and response["result"]["reviews"] != nil
+          response["result"]["reviews"].each do |review|
+            temp += review["author_name"]
+            temp += " dice: "
+            temp += review["text"]
+            temp += ", "
+          end
         end
+        if response["result"]["website"] != nil
+          temp += response["result"]["website"]
+        end
+        temp.chomp(", ")
+        temp
       end  
       %>
 
