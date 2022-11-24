@@ -32,6 +32,51 @@
         &zoom=15
         &language=it">
       </iframe>
+
+      <br>
+      <%
+      #https://stackoverflow.com/questions/21542530/rails-get-values-of-http-response
+      #https://ruby-doc.org/stdlib-3.1.2/libdoc/net/http/rdoc/Net/HTTP.html
+      #https://developers.google.com/maps/documentation/places/web-service/search-nearby#json
+      require "uri"
+      require "net/http"
+      require 'json'
+      string_query = "https://maps.googleapis.com/maps/api/place/details/json?place_id="
+      string_query += Google::Maps.places(restaurant.name + "," + restaurant.address).first.place_id.to_s
+      string_query += "&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI"
+      
+      #string_query2 = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI"
+      url = URI(string_query)
+
+      https = Net::HTTP.new(url.host, url.port)
+      https.use_ssl = true
+
+      request = Net::HTTP::Get.new(url)
+      response = JSON.parse(https.request(request).body)
+      %>
+      
+      <%#= response%>
+      
+      <%#= response["result"]["place_id"]%>
+      <%#= response["result"]["name"]%>
+      <%#= response["result"]["reviews"].to_s%>
+      <%#= response["result"]["reviews"]%>
+      <%
+      if response != nil and response["result"] != nil and response["result"]["reviews"] != nil
+        data = JSON.parse(response["result"]["reviews"]) 
+        data.each do |d|
+
+        end
+      end  
+      %>
+
+      <!--<br>
+      <%#= Google::Maps.places(restaurant.name + "," + restaurant.address).first.to_s %>
+      <br>
+      <%#= Google::Maps.places(restaurant.name + "," + restaurant.address).first.place_id.to_s %>
+      <br>
+      <%#= Google::Maps.places(restaurant.name + "," + restaurant.address).first.place_id.to_s %>-->
+      
   <%end%>
   
 </div>
