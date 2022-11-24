@@ -27,3 +27,7 @@
     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), method: :post %><br />
   <% end %>
 <% end %>
+
+<%= form_tag(reviewer_google_oauth2_omniauth_authorize_path, method: 'post', data: {turbo: false}) do %>
+  <button type='submit'>Login with Google</button>
+<% end %>
