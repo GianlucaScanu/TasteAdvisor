@@ -77,6 +77,11 @@
     margin-right: 3%;
 }
 
+.btns_rev{
+    display: flex;
+    justify-content: center;
+}
+
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
