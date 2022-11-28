@@ -20,7 +20,6 @@ class Review < ApplicationRecord
     private
     
         #FUNZIONA MA DA SISTEMARE!
-        #after_validation viene applicato prima di salvare il modello sull dbs? in base a questo vanno modificate delle righe 
         
         def update_avg_rating_and_number_of_review
             

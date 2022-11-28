@@ -75,7 +75,9 @@
       <%else%>
       <div id = "col_m1">
         <div id = "foto">
-        <div><img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="250" height="250" id = "profile_pic"></div>
+        <% if @restaurant.profile_picture.attached? %>
+          <div><img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="250" height="250" id = "profile_pic"></div>
+        <% end %>
         <div id = "pic_lbl">Foto profilo</div>
         </div>
       </div>
@@ -137,7 +139,22 @@
       <% else %>
         <div id = "col_d2">
           <div id = "map_addresses">
-            <div id = "map"> MAPPA - TODO <!-- vedere api di gmaps  --></div>
+            <div id = "map">
+              <%if @restaurant.address.to_s != "" and Google::Maps.geocode(@restaurant.address).to_s != "[]"%>
+                  <% place = Google::Maps.place(Google::Maps.places(@restaurant.address).first.place_id)%>
+                  <iframe
+                    width="600"
+                    height="200"
+                    style="border:0"
+                    loading="eager"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI
+                    &q= <%=place%>
+                    &zoom=15
+                    &language=it">
+                  </iframe>
+              <%end%>
+            </div>
             <div id = "position"><%= @restaurant.address %></div>
             <div id = "website"><%= @restaurant.website %></div>
             <div id = "phone_number"><%= @restaurant.telephone_number %></div>
@@ -149,3 +166,4 @@
 
   </body>
 </html>
+

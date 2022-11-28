@@ -22,6 +22,12 @@ module TasteAdvisor
     #imgs
     config.public_file_server.enabled = true
     config.serve_static_assets = true
+
+    Google::Maps.configure do |config|
+      config.authentication_mode = Google::Maps::Configuration::API_KEY
+      config.api_key = 'AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI'
+      config.default_language = :it
+    end
     
   end
 end
