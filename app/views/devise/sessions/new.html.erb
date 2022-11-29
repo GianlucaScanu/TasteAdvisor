@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id = "middle">
+        <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
         <div id = "google_div">
             <button id = "google_btn" type="button" class="btn btn-outline-success">Entra con Google</button>
         </div>

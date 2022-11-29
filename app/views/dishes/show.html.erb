@@ -75,7 +75,7 @@
                     <div id = "review"><%= link_to "Lascia recensione", dish_path(@dish.id, flash_alert: "Non puoi recensire un piatto perchè non sei un recensore"), :class => "btn btn-warning btn-custom"%><br></div>
                     <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
                 <%else%>
-                    <div id = "review"><%= link_to "Lascia recensione", new_reviewer_session_path, :class => "btn btn-warning btn-custom" %><br></div>
+                    <div id = "review"><%= link_to "Lascia recensione", new_reviewer_session_path(flash_alert: "Devi prima accedere come recensore"), :class => "btn btn-warning btn-custom" %><br></div>
                 <%end%>
                 <div id = "report">
                     <%if reviewer_signed_in? %>
@@ -91,7 +91,7 @@
                         <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare un piatto perchè non sei un recensore"), :class => "btn btn-danger btn-custom" %>
                         <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
                     <%else%>
-                        <%= link_to "Segnala", new_reviewer_session_path, :class => "btn btn-danger btn-custom" %>
+                        <%= link_to "Segnala", new_reviewer_session_path(flash_alert: "Devi prima accedere"), :class => "btn btn-danger btn-custom" %>
                     <%end%>
                 </div>
             </div>

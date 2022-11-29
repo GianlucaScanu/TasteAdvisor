@@ -25,7 +25,7 @@ class ReviewersController < ApplicationController
 
     respond_to do |format|
       if @reviewer.save
-        format.html { redirect_to reviewer_url(@reviewer), notice: "Reviewer was successfully created." }
+        format.html { redirect_to reviewer_url(@reviewer), notice: "Il tuo profilo è stato creato correttamente" }
         format.json { render :show, status: :created, location: @reviewer }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ReviewersController < ApplicationController
   def update
     respond_to do |format|
       if @reviewer.update(reviewer_params)
-        format.html { redirect_to reviewer_url(@reviewer), notice: "Reviewer was successfully updated." }
+        format.html { redirect_to reviewer_url(@reviewer), notice: "Il tuo profilo è stato aggiornato correttamente" }
         format.json { render :show, status: :ok, location: @reviewer }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ReviewersController < ApplicationController
     @reviewer.destroy
 
     respond_to do |format|
-      format.html { redirect_to reviewers_url, notice: "Reviewer was successfully destroyed." }
+      format.html { redirect_to home_index_path, notice: "Il tuo profilo è stato cancellato correttamente" }
       format.json { head :no_content }
     end
   end

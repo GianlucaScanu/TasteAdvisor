@@ -64,7 +64,7 @@
                             </div>
                         <%else%>
                             <div id = "del_div">
-                                <%= link_to "Segnala", new_reviewer_session_path, :class => "btn btn-danger", :id => "report_btn"%>
+                                <%= link_to "Segnala", new_reviewer_session_path(flash_alert: "Devi prima accedere"), :class => "btn btn-danger", :id => "report_btn"%>
                             </div>
                         <%end%>
                     </div>

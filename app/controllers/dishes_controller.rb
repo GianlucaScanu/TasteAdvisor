@@ -26,7 +26,7 @@ class DishesController < ApplicationController
 
     respond_to do |format|
       if @dish.save
-        format.html { redirect_to dish_url(@dish), notice: "Dish was successfully created." }
+        format.html { redirect_to dish_url(@dish), notice: "Il piatto è stato creato correttamente" }
         format.json { render :show, status: :created, location: @dish }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class DishesController < ApplicationController
   def update
     respond_to do |format|
       if @dish.update(dish_params)
-        format.html { redirect_to dish_url(@dish), notice: "Dish was successfully updated." }
+        format.html { redirect_to dish_url(@dish), notice: "Il piatto è stato aggiornato correttamente" }
         format.json { render :show, status: :ok, location: @dish }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -53,7 +53,7 @@ class DishesController < ApplicationController
     @dish.destroy
 
     respond_to do |format|
-      format.html { redirect_to dishes_url, notice: "Dish was successfully destroyed." }
+      format.html { redirect_to dishes_url, notice: "Il piatto è stato cancellato correttamente" }
       format.json { head :no_content }
     end
   end

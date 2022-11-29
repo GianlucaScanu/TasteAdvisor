@@ -40,6 +40,16 @@
     border-color: #1e5a1a;
 }
 
+#description_mod{
+    display: flex;
+    flex-direction: row;
+    border-style: solid;
+    border-width: thin;
+    border-color: #1e5a1a;
+    margin-top: 5%;
+    width: fit-content;
+}
+
 #user_desc_1{
     display:flex;
     flex-direction: column;
@@ -220,7 +230,7 @@
         display: block;
     }
 
-    #col_d2 > *, #col_d1 > *, #description, #user_description, #pic_lbl, #position, #website, #phone_number{
+    #col_d2 > *, #col_d1 > *, #description, #description_mod #user_description, #pic_lbl, #position, #website, #phone_number{
         font-size: small;
     }
 
@@ -246,7 +256,7 @@
         display: block;
     }
     
-    #col_d2 > *, #col_d1 > *, #description, #user_description{
+    #col_d2 > *, #col_d1 > *, #description, #description_mod, #user_description{
         font-size: small;
     }
 
@@ -267,7 +277,7 @@
         flex-direction: row;
     }
 
-    #col_d2 > *, #col_d1 > *, #description, #user_description, #pic_lbl, #position, #website, #phone_number{
+    #col_d2 > *, #col_d1 > *, #description, #description_mod, #user_description, #pic_lbl, #position, #website, #phone_number{
         font-size: medium;
     }
 
@@ -288,7 +298,7 @@
         flex-direction: row;
     }
 
-    #col_d2 > *, #col_d1 > *, #description, #user_description, #pic_lbl, #position, #website, #phone_number{
+    #col_d2 > *, #col_d1 > *, #description, #description_mod, #user_description, #pic_lbl, #position, #website, #phone_number{
         font-size: large;
     }
 
