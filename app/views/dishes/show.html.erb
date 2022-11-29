@@ -60,12 +60,20 @@
 
  <div id = "middle">
         <div id = "col1">
-            <div id = "foto_piatto">
-                <% i = 0 %>
-                <% while @dish.images[i] != nil%>
-                    <img src="<%= url_for(@dish.images[i])%>" alt="foto_piatto" width="250" height="250" id="dish_pic">
-                    <%i += 1%>
-                <%end%>
+            <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <% i = 0 %>
+                    <% while @dish.images[i] != nil%>
+                        <% if (i == 0) %>
+                            <div class="carousel-item active">
+                        <% else %>
+                            <div class="carousel-item">
+                        <% end %>
+                        <img src="<%= url_for(@dish.images[i])%>" alt="foto_piatto" id="dish_pic">
+                        <%i += 1%>
+                        </div>
+                    <%end%>
+                </div>
             </div>
             <div id = "actions">
                 <%if reviewer_signed_in?%>
@@ -118,7 +126,8 @@
                 </div>
                 <div id = "det_col2">
                     <%if (@dish.restaurant_id != nil)%>
-                    <div id = "restaurant">Ristorante : <%= Restaurant.find(@dish.restaurant_id).name %></div>
+                    <% username = Restaurant.find(@dish.restaurant_id).username %>
+                    <div id = "restaurant">Ristorante : <%= link_to username, restaurant_path(@dish.restaurant_id) %></div>
                     <%end%>
                     <div id = "price"> Prezzo : <%= @dish.price %> €</div>
                 </div>
