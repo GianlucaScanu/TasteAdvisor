@@ -186,9 +186,14 @@
     margin-right: 5%;
 }
 
-.interno_piattino > *, .interno_piattino > *:active, .interno_piattino > *.hover{
+.interno_piattino > *, .interno_piattino > *:active{
     color: black;
     text-decoration: none;
+}
+
+.interno_piattino > *:hover{
+    color: #1e5a1a;
+    text-shadow: 0.1px 0.1px 0.1px grey;
 }
 
 #mod_btns{
