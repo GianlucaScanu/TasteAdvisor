@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
  
-  devise_for :reviewers, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
+  devise_for :reviewers, controllers: { omniauth_callbacks: 'reviewer/omniauth_callbacks' }
   devise_for :restaurants
   
   get 'search/index'

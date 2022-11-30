@@ -21,15 +21,17 @@ class Reviewer < ApplicationRecord
         end
     end
 
-    def self.from_google_params
+    def auth
+      @auth ||= request.env['omniauth.auth']
+    end
+
+    def self.from_google_params(from_google_params)
         @from_google_params ||= {
           uid: auth.uid,
           email: auth.info.email
         }
-     end
+    end
   
-     def auth
-        @auth ||= request.env['omniauth.auth']
-     end
+
     #https://github.com/aki77/activestorage-validator
 end

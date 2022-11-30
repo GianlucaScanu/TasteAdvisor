@@ -1,6 +1,6 @@
 class Reviewer::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     def google_oauth2
-      reviewer = Reviewer.from_google(from_google_params)
+      reviewer = Reviewer.from_google_params(google_params)
  
       if reviewer.present?
         sign_out_all_scopes
@@ -10,16 +10,7 @@ class Reviewer::OmniauthCallbacksController < Devise::OmniauthCallbacksControlle
         flash[:alert] = t 'devise.omniauth_callbacks.failure', kind: 'Google', reason: "#{auth.info.email} is not authorized."
         redirect_to new_reviewer_session_path
       end
-     end
+    end
  
-     def from_google_params
-       @from_google_params ||= {
-         uid: auth.uid,
-         email: auth.info.email
-       }
-     end
- 
-     def auth
-       @auth ||= request.env['omniauth.auth']
-     end
+
  end
