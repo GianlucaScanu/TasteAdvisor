@@ -134,38 +134,40 @@
             </div>
             <div id = "reviews">
                 <div id = "review_label"> Recensioni: <%= @dish.number_of_reviews %></div>
-                <% (Review.all).each do |review| %>
-                    <%if @dish.id == review.dish_id %>
-                    <%= link_to review_path(review) do %>
-                        <div id = "review_" class ="review">
-                        <div id = "img_" class="img_review">
-                            <img src="..." alt="Immagine del recensore">
-                        </div>
-                        <div id ="review_info_" class="review_info">
-                            <div id = "username_and_rating_" class="username_and_rating">
-                                <div id = "username_">
-                                    <%=Reviewer.find(review.reviewer_id).username%>
-                                </div>
-                                <div id = "rating_no1" class = "rating_score">
-                                    <div class = "value" id = "rating_value">
-                                        <%= @avg_rate = ((review.rating1 + review.rating2 + review.rating3)/3) %>/5
+                <div id = "reviews_list">
+                    <% (Review.all).each do |review| %>
+                        <%if @dish.id == review.dish_id %>
+                        <%= link_to review_path(review) do %>
+                            <div class ="review">
+                            <div class="img_review">
+                                <img class = "reviewer_img" src="<%= url_for(Reviewer.find(review.reviewer_id).profile_picture)%>" alt="Immagine del recensore">
+                            </div>
+                            <div class="review_info">
+                                <div class="username_and_rating">
+                                    <div >
+                                        <%=Reviewer.find(review.reviewer_id).username%>
                                     </div>
-                                    <div class = "pb" id = "rating_pb">
-                                        <div class = "progress">
-                                            <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: <%= @avg_rate.round(2) * 20%>%" aria-valuenow="<%= @avg_rate.round(2) * 20%>" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class = "rating_score">
+                                        <div class = "value" id = "rating_value">
+                                            <%= @avg_rate = ((review.rating1 + review.rating2 + review.rating3)/3) %>/5
+                                        </div>
+                                        <div class = "pb" id = "rating_pb">
+                                            <div class = "progress">
+                                                <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: <%= @avg_rate.round(2) * 20%>%" aria-valuenow="<%= @avg_rate.round(2) * 20%>" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id = "rev_text_no" class = "rev_text">
-                                <%= review.description %>
+                                <div class = "rev_text">
+                                    <%= review.description %>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <%end%>
-                    <%end%>
-            <% end %>
+                        
+                        <%end%>
+                        <%end%>
+                <% end %>
+                </div>
             </div>
         </div>
     </div>

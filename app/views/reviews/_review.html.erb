@@ -60,22 +60,24 @@
                 <div id = "user_name">Recensione effettuata da <%= link_to username, reviewer_path(review.reviewer_id) %> </div>
             <%end%>
         </div>
-
-
         
-        <div id = "col2">
-            <%#=ELIMINATO TEMPORANEAMENTE CAROSELLO, DA RIAGGIUNGERE%>
-            
+        <div id = "col2">            
             <%if review.images[0] != nil%>
-
-                FOTO:  
                 <% i = 0 %>
-                <% while review.images[i] != nil%>
-                    <img src="<%= url_for(review.images[i])%>" alt="foto_recensione" width="200" height="200">
-                    <%i += 1%>
-                <%end%>
-                <br>
-
+                <div id = "foto_recensione" class="carousel carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">  
+                        <% while review.images[i] != nil%>
+                            <% if (i == 0)%>
+                                <div class = "carosuel-item active">
+                            <% else %>
+                                <div class = "carousel-item">
+                            <% end %>
+                            <img src="<%= url_for(review.images[i])%>" alt="foto_recensione" class = "review_img">
+                            <%i += 1%>
+                            </div>
+                        <%end%>
+                    </div>
+                </div>
             <%end%>
         </div>
     </div>

@@ -91,6 +91,14 @@
     text-decoration: underline;
 }
 
+#foto_recensione{
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 /*ELEMENTI ISOLATI SHOW*/
 #review_btns{
     display: flex;
@@ -116,7 +124,14 @@
         font-size: small;
     }
 
-  }
+    #dish_pic{
+        margin-left: 0;
+        margin-right: 0;
+        width: 200px;
+        height: 200px;
+    }  
+}
+
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
     .link{
@@ -132,6 +147,12 @@
         font-size: medium;
     }
 
+    #dish_pic{
+        margin-left: 0;
+        margin-right: 0;
+        width: 250px;
+        height: 250px;
+    }
   }
 
 /* notebook */
@@ -147,6 +168,13 @@
     #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
     #impiattamento_value, #originalità_value, #user_name{
         font-size: large;
+    }
+
+    #dish_pic{
+        margin-left: 0;
+        margin-right: 0;
+        width: 350px;
+        height: 350px;
     }
 }
 
@@ -166,4 +194,10 @@
         font-size: x-large;
     }
 
+    .review_img{
+        margin-left: 0;
+        margin-right: 0;
+        width: 450px;
+        height: 450px;
+    }
 }
