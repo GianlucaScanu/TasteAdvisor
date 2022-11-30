@@ -21,22 +21,30 @@ class Reviewer < ApplicationRecord
         end
     end
 
-    def auth
-      @auth ||= request.env['omniauth.auth']
+    def self.from_google(email:, uid:)
+      #return nil unless email =~ /@mybusiness.com\z/
+      #create_with(uid: uid, full_name: full_name, avatar_url: avatar_url).find_or_create_by!(email: email)
+      where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+        user.email = email
+        user.password = Devise.friendly_token[0, 20]
+        user.full_name = "lassi_test"
+      end
     end
 
-  #indianetto
-  #  def self.from_google(from_google_params)
-  #      @from_google_params ||= {
-  #        uid: auth.uid,
-  #        email: auth.info.email
-  #      }
-  #  end
-
-  def self.from_google(email:, full_name:, uid:, avatar_url:)
-    return nil unless email =~ /@mybusiness.com\z/
-    create_with(uid: uid, full_name: full_name, avatar_url: avatar_url).find_or_create_by!(email: email)
-  end
+    def self.from_google2(auth)
+      #https://www.youtube.com/watch?v=CnZnwV38cjo
+      #https://github.com/Deanout/omniauth_google/blob/main/app/models/user.rb
+      #return nil unless email =~ /@mybusiness.com\z/
+      #create_with(uid: uid, full_name: full_name, avatar_url: avatar_url).find_or_create_by!(email: email)
+      where(provider: auth.provider, uid: auth.uid).first_or_create do |reviewer|
+      reviewer.email = auth.info.email
+      #username = email
+      reviewer.username = auth.info.email
+      reviewer.password = Devise.friendly_token[0, 20]
+      #reviewer.full_name = auth.info.name # assuming the user model has a name
+      #user.avatar_url = auth.info.image # assuming the user model has an image
+      end
+    end
   
 
     #https://github.com/aki77/activestorage-validator
