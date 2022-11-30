@@ -1,6 +1,7 @@
 class Reviewer::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     def google_oauth2
-      reviewer = Reviewer.from_google_params(google_params)
+      #https://stackoverflow.com/questions/66960490/argumenterror-wrong-number-of-arguments-in-google-oauth-callback
+      reviewer = Reviewer.from_google(**from_google_params)
  
       if reviewer.present?
         sign_out_all_scopes
@@ -11,6 +12,18 @@ class Reviewer::OmniauthCallbacksController < Devise::OmniauthCallbacksControlle
         redirect_to new_reviewer_session_path
       end
     end
- 
+
+  def from_google_params
+    @from_google_params ||= {
+      uid: auth.uid,
+      email: auth.info.email,
+      full_name: auth.info.name,
+      avatar_url: auth.info.image
+    }
+  end
+
+  def auth
+    @auth ||= request.env['omniauth.auth']
+  end
 
  end
