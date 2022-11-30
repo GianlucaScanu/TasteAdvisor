@@ -1,3 +1,7 @@
+p{
+    display: none;
+}
+
 #top {
     display: flex;
     flex-direction: column;
