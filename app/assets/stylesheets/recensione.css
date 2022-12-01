@@ -1,10 +1,18 @@
 
 #middle{
+    
+    display: flex;
+    
+    /* COMMENTATO A CAUSA DI CONFLITTI CON CAROUSEL, RIVEDERE!
+
     display: grid;
     grid-template-areas: 
         "col1 col2";
     grid-template-columns: 50vw 50vw;
     grid-template-rows: 1fr;
+
+    */
+
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 1%;
@@ -33,6 +41,7 @@
 #col2{
     display: flex;
     flex-direction: column;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -115,6 +124,10 @@
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
+    #middle{
+        flex-direction: column;
+    }
+
     .link{
         font-size: small;
     }
@@ -124,7 +137,7 @@
         font-size: small;
     }
 
-    #dish_pic{
+    .review_img{
         margin-left: 0;
         margin-right: 0;
         width: 200px;
@@ -134,6 +147,10 @@
 
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
+    #middle{
+        flex-direction: column;
+    }
+
     .link{
         font-size: medium;
     }
@@ -147,7 +164,7 @@
         font-size: medium;
     }
 
-    #dish_pic{
+    .review_img{
         margin-left: 0;
         margin-right: 0;
         width: 250px;
@@ -157,6 +174,10 @@
 
 /* notebook */
 @media(min-width: 993px){
+    #middle{
+        flex-direction: row;
+    }
+
     .link{
         font-size: large;
     }
@@ -170,7 +191,7 @@
         font-size: large;
     }
 
-    #dish_pic{
+    .review_img{
         margin-left: 0;
         margin-right: 0;
         width: 350px;
@@ -180,6 +201,10 @@
 
 /* desktop */
 @media(min-width: 1440px){
+
+    #middle{
+        flex-direction: row;
+    }
 
     .link{
         font-size: large;
