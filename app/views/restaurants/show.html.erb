@@ -112,8 +112,20 @@
               <div class = "piattino">
               <%= link_to dish_path(dish) do %>
                 <div class = "interno_piattino">
-                  <div class = "foto_piatto">
-                    <!-- <img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" class="img-fluid"> -->
+                  <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <% i = 0 %>
+                        <% while dish.images[i] != nil%>
+                          <% if (i == 0) %>
+                              <div class="carousel-item active">
+                          <% else %>
+                              <div class="carousel-item">
+                          <% end %>
+                          <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" id="dish_pic">
+                          <%i += 1%>
+                        </div>
+                      <%end%>
+                    </div>
                   </div>
                   <div class = "nome_piattino">Nome:<b><%= dish.name%></b></div>
                   <div class = "prezzo_piattino">Prezzo: <%= dish.price%></div>

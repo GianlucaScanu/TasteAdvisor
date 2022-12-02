@@ -1,5 +1,5 @@
+<%= stylesheet_link_tag "recensione.css" %>
 <div id="<%= dom_id review %>">
-
 <div id = "middle">
         <div id = "col1">
             <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
@@ -77,11 +77,10 @@
                             </div>
                         <%end%>
                     </div>
+                    immagini : <%= i%>
               </div>
             <%end%>
         </div>
     </div>
 
 </div>
-
-<%= stylesheet_link_tag "recensione.css" %>
