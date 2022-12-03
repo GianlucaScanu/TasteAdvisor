@@ -12,6 +12,7 @@ class ReviewersController < ApplicationController
 
   # GET /reviewers/new
   def new
+    session['userType']='Reviewer'
     @reviewer = Reviewer.new
   end
 

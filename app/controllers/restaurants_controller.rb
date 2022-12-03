@@ -12,6 +12,7 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/new
   def new
+    session['userType']='Restaurant'
     @restaurant = Restaurant.new
   end
 
@@ -21,6 +22,7 @@ class RestaurantsController < ApplicationController
 
   # POST /restaurants or /restaurants.json
   def create
+    session['userType']='Restaurant'
     @restaurant = Restaurant.new(restaurant_params)
 
     respond_to do |format|
