@@ -57,7 +57,7 @@
             <div id = "description">
               <% if(@restaurant.description == "") %>
                 Descrizione mancante
-                <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuot -->
+                <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuota -->
               <% else %>
                 <%= @restaurant.description%>
               <% end %>
@@ -65,8 +65,9 @@
           </div>
           <div id = "user_desc_2">
             <div id = "position"><%= @restaurant.address %></div>
-            <div id = "website"><%= @restaurant.website %></div>
-            <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+            <div id = "website"><a href = "linkto:<%= @restaurant.website %>"><%= @restaurant.website %></a></div>
+            <div id = "phone_number"><a href = "tel:<%= @restaurant.telephone_number %>"><%= @restaurant.telephone_number %></a></div>
+            <div id = "mail_to"><a href="mailto:<%= @restaurant.email%>">Invia una mail</a></div>
           </div>
         </div>
         <div id = "modify">
