@@ -24,9 +24,9 @@ class RestaurantsController < ApplicationController
   def create
     session['userType']='Restaurant'
     @restaurant = Restaurant.new(restaurant_params)
-
     respond_to do |format|
       if @restaurant.save
+        TasteAdvisorMailer.with(user: @restaurant, type: "Restaurant").welcome_email.deliver!
         format.html { redirect_to restaurant_url(@restaurant), notice: "Restaurant was successfully created." }
         format.json { render :show, status: :created, location: @restaurant }
       else

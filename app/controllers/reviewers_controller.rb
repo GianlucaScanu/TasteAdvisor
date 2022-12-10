@@ -26,6 +26,7 @@ class ReviewersController < ApplicationController
 
     respond_to do |format|
       if @reviewer.save
+        TasteAdvisorMailer.with(user: @reviewer, type: "Reviewer").welcome_email.deliver!
         format.html { redirect_to reviewer_url(@reviewer), notice: "Reviewer was successfully created." }
         format.json { render :show, status: :created, location: @reviewer }
       else

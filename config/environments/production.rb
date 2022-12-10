@@ -97,5 +97,6 @@ Rails.application.configure do
   
   #img
   config.serve_static_assets = true
+  
 
 end
