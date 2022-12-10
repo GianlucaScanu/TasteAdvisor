@@ -24,6 +24,23 @@ module TasteAdvisor
     config.public_file_server.enabled = true
     config.serve_static_assets = true
 
+    # mailer per reset password
+    # credits: https://axiumone.medium.com/forgotten-password-recover-email-with-devise-and-rails-3d32249c6cdb
+    config.action_mailer.delivery_method = :sendmail
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.raise_delivery_errors = true
+    config.action_mailer.default_options = {from: 'example@email.com'}
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'example.com',
+      user_name:            Rails.application.credentials.gmail("example@email.com"),
+      password:             Rails.application.credentials.gmail("12345"),
+      authentication:       'plain',
+      enable_starttls_auto: true  }
+    config.action_mailer.default_url_options = {:host =>'localhost:3000'}
+
     Google::Maps.configure do |config|
       config.authentication_mode = Google::Maps::Configuration::API_KEY
       config.api_key = 'AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI'
