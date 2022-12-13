@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 50%;
+    max-width: 45%;
 }
 
 #col1 > *{
@@ -41,10 +41,11 @@
 #col2{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    width: 80%;
     margin-top: 1%;
     margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .progress{
@@ -100,10 +101,36 @@
 }
 
 #foto_recensione{
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 5%;
+}
+
+#foto_label{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#no_foto_label{
+    text-align: center;
+}
+
+.imgs_row{
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.review_img{
+    border-radius: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transition: transform .2s;
 }
 
 /*ELEMENTI ISOLATI SHOW*/
@@ -131,16 +158,25 @@
     }
 
     #mod_link, #dest_link, #report_link, #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
-    #impiattamento_value, #originalità_value, #user_name, #description{
+    #impiattamento_value, #originalità_value, #user_name, #description, #foto_label, #no_foto_label{
         font-size: small;
     }
 
     .review_img{
+        /*
         margin-left: 0;
         margin-right: 0;
         width: 200px;
         height: 200px;
+        */
+        width: 75px;
+        height: 75px;
     }  
+
+    .review_img:hover{
+        transform: scale(1.4);
+    }
+    
 }
 
 /*tablet*/
@@ -158,15 +194,23 @@
     }
 
     #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
-    #impiattamento_value, #originalità_value, #user_name{
+    #impiattamento_value, #originalità_value, #user_name, #foto_label, #no_foto_label{
         font-size: medium;
     }
 
     .review_img{
+        /*
         margin-left: 0;
         margin-right: 0;
         width: 250px;
         height: 250px;
+        */
+        width: 100px;
+        height: 100px;
+    }
+
+    .review_img:hover{
+        transform: scale(1.4);
     }
   }
 
@@ -185,15 +229,23 @@
     }
 
     #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
-    #impiattamento_value, #originalità_value, #user_name{
+    #impiattamento_value, #originalità_value, #user_name, #foto_label, #no_foto_label{
         font-size: large;
     }
 
     .review_img{
+        /*
         margin-left: 0;
         margin-right: 0;
         width: 350px;
         height: 350px;
+        */
+        width: 100px;
+        height: 100px;
+    }
+
+    .review_img:hover{
+        transform: scale(1.4);
     }
 }
 
@@ -213,14 +265,22 @@
     }
 
     #gusto_lbl, #impiattamento_lbl, #originalità_lbl, #plate_name, #restaurant_name, #gusto_value,
-    #impiattamento_value, #originalità_value, #user_name{
+    #impiattamento_value, #originalità_value, #user_name, #foto_label, #no_foto_label{
         font-size: x-large;
     }
 
     .review_img{
+        /*
         margin-left: 0;
         margin-right: 0;
         width: 450px;
         height: 450px;
+        */
+        width: 175px;
+        height: 175px;
+    }
+
+    .review_img:hover{
+        transform: scale(1.3);
     }
 }

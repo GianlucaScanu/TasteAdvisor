@@ -1,85 +1,102 @@
 <%= stylesheet_link_tag "recensione.css" %>
 <div id="<%= dom_id review %>">
 <div id = "middle">
-        <div id = "col1">
-            <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
-                <div id = "names_div">
-                    <div id = "plate_name">Nome del piatto: <%=Dish.find(review.dish_id).name%>
-                        <br><%= link_to "Vai al piatto", dish_path(review.dish_id), :class => "link" %>
-                    </div>
-                    
-                    <div id = "restaurant_name">Presso il ristorante: <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%>
-                        <br><%= link_to "Vai al ristorante", restaurant_path(Restaurant.find(Dish.find(review.dish_id).restaurant_id).id), :class => "link" %>
-                    </div>
-                 </div>   
-            <%end%>
-            <div id = "ratings">
-                <div class = "rating" id = "gusto">
-                    <div id = "gusto_lbl">Gusto</div>
-                    <div class = "rtg" id = "gusto_rtg">
-                        <div class = "values" id = "gusto_value">
-                            <%= review.rating1%>/5
-                        </div>
-                        <div class = "pb" id = "gusto_pb">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: <%= review.rating1*20%>%" aria-valuenow="<%= review.rating1*20 %>" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
+    <div id = "col1">
+        <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
+            <div id = "names_div">
+                <div id = "plate_name">Nome del piatto: <%=Dish.find(review.dish_id).name%>
+                    <br><%= link_to "Vai al piatto", dish_path(review.dish_id), :class => "link" %>
                 </div>
-                <div class = "rating" id = "impiattamento">
-                    <div id = "impiattamento_lbl">Impiattamento</div>
-                    <div class = "rtg" id = "impiattamento_rtg">
-                        <div class = "values" id = "impiattamento_value">
-                        <%= review.rating2%>/5
-                        </div>
-                        <div class = "pb" id = "impiattamento_pb">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <%= review.rating2*20%>%" aria-valuenow="<%= review.rating2*20 %>" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div id = "restaurant_name">Presso il ristorante: <%=Restaurant.find(Dish.find(review.dish_id).restaurant_id).name%>
+                    <br><%= link_to "Vai al ristorante", restaurant_path(Restaurant.find(Dish.find(review.dish_id).restaurant_id).id), :class => "link" %>
                 </div>
-                <div class = "rating" id = "originalità">
-                    <div id = "originalità_lbl">Originalità</div>
-                    <div  class = "rtg" id = "originalità_rtg">
-                        <div class = "values" id = "originalità_value">
-                        <%= review.rating3%>/5
-                        </div>
-                        <div class = "pb" id = "impiattamento_pb">
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: <%= review.rating3*20%>%" aria-valuenow="<%= review.rating3*20 %>" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                </div>   
+        <%end%>
+        <div id = "ratings">
+            <div class = "rating" id = "gusto">
+                <div id = "gusto_lbl">Gusto</div>
+                <div class = "rtg" id = "gusto_rtg">
+                    <div class = "values" id = "gusto_value">
+                        <%= review.rating1%>/5
+                    </div>
+                    <div class = "pb" id = "gusto_pb">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: <%= review.rating1*20%>%" aria-valuenow="<%= review.rating1*20 %>" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <textarea id = "description" rows="4" cols="50" disabled="true"> <%= review.description%> </textarea>
-            <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
-                <% username = Reviewer.find(review.reviewer_id).username %>
-                <div id = "user_name">Recensione effettuata da <%= link_to username, reviewer_path(review.reviewer_id) %> </div>
-            <%end%>
+            <div class = "rating" id = "impiattamento">
+                <div id = "impiattamento_lbl">Impiattamento</div>
+                <div class = "rtg" id = "impiattamento_rtg">
+                    <div class = "values" id = "impiattamento_value">
+                    <%= review.rating2%>/5
+                    </div>
+                    <div class = "pb" id = "impiattamento_pb">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: <%= review.rating2*20%>%" aria-valuenow="<%= review.rating2*20 %>" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "rating" id = "originalità">
+                <div id = "originalità_lbl">Originalità</div>
+                <div  class = "rtg" id = "originalità_rtg">
+                    <div class = "values" id = "originalità_value">
+                    <%= review.rating3%>/5
+                    </div>
+                    <div class = "pb" id = "impiattamento_pb">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: <%= review.rating3*20%>%" aria-valuenow="<%= review.rating3*20 %>" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div id = "col2">            
+        <textarea id = "description" rows="4" cols="50" disabled="true"> <%= review.description%> </textarea>
+        <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
+            <% username = Reviewer.find(review.reviewer_id).username %>
+            <div id = "user_name">Recensione effettuata da <%= link_to username, reviewer_path(review.reviewer_id) %> </div>
+        <%end%>
+    </div>
+    <div id = "col2">
+        <% i = -1 %>
+        <div id = "foto_recensione">      
+            <div id = "foto_label">Foto della recensione: </div>    
             <%if review.images[0] != nil%>
                 <% i = 0 %>
-                <div id = "foto_recensione" class="carousel carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">  
-                        <% while review.images[i] != nil%>
-                            <% if (i == 0)%>
-                                <div class = "carosuel-item active">
-                            <% else %>
-                                <div class = "carousel-item">
-                            <% end %>
+                <% r = 0 %>
+                    <% while review.images[i] != nil%>
+                        <div class = "imgs_row" id = "imgs_row_<%=r%>">
+                        <% j = 0 %>
+                        <% while review.images[i] != nil && j <  3 %>
                             <img src="<%= url_for(review.images[i])%>" alt="foto_recensione" class = "review_img">
-                            <%i += 1%>
+                            <%j = j + 1%>
+                            <%i = i + 1%>
+                        <% end %>
+                        <% r = r + 1%>
+                        </div>
+                    <% end %>
+                            <!--
+                            <div id = "foto_recensione" class="carousel carousel-fade" data-bs-ride="carousel"> 
+                            <div class="carousel-inner">  
+
+                            <%# if (i == 0)%>
+                                <div class = "carosuel-item active">
+                            <%# else %>
+                                <div class = "carousel-item">
+                            <%# end %>
+                            <img src="<%#= url_for(review.images[i])%>" alt="foto_recensione" class = "review_img">
+                            <%#i += 1%>
                             </div>
-                        <%end%>
-                    </div>
-                    immagini : <%= i%>
+                        <%#end%>
+                        -->
               </div>
             <%end%>
+            <% if (i == -1) %>
+               <div id = "no_foto_label"> nessuna immagine caricata </div>
+            <% end %>
         </div>
     </div>
 

@@ -33,14 +33,14 @@
 
     
     <% (Review.all).each do |review| %>
-      <%if @dish.id == review.dish_id  && review.reviewer_id == current_reviewer.id%>
+      <%#if @dish.id == review.dish_id  && review.reviewer_id == current_reviewer.id%>
         LA TUA RECENSIONE:<br>
-        <%@counter = 1.to_s%>
-        <%= render review %>
-        <%= link_to "Edit this review", edit_review_path(review) %>
-        <%= button_to "Destroy this review", review, method: :delete %>
+        <%#@counter = 1.to_s%>
+        <%#= render review %>
+        <%#= link_to "Edit this review", edit_review_path(review) %>
+        <%#= button_to "Destroy this review", review, method: :delete %>
         <p>--------------</p>
-      <%end%>
+      <%#end%>
     <% end %>
 
     <p>--------------</p>
