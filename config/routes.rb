@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
- 
-  devise_for :reviewers, controllers: { omniauth_callbacks: 'reviewer/omniauth_callbacks' }
+
+  #@request.env["devise.mapping"] = Devise.mappings[:reviewers]
+
+  devise_for :reviewers#, controllers: { omniauth_callbacks: 'reviewer/omniauth_callbacks' }
+  devise_scope :reviewer do
+    #get '/reviewers/auth/google_oauth2', to: 'reviewer/omniauth_callbacks#google_oauth2'
+    #get "auth/google_oauth2" => "reviewer/omniauth_callbacks#google_oauth2"
+    get "/reviewers/auth/google_oauth2/" => "reviewer/omniauth_callbacks#google_oauth2"
+  end
+  #devise scope singolare reviewer!
+  #https://stackoverflow.com/questions/23379927/could-not-find-devise-mapping-for-path-sessions-user-devise-log-in-error
+
   devise_for :restaurants
-  
+
   get 'search/index'
   get 'search/show'
   get 'search/edit'
@@ -33,9 +43,9 @@ Rails.application.routes.draw do
 
   #default, per percorsi inesistenti (es.No route matches [GET])
   #se danno problemi commentare
-  get '*all', to: 'home#index', constraints: lambda { |req|
-    req.path.exclude? 'rails/active_storage'
-  }
+  #get '*all', to: 'home#index', constraints: lambda { |req|
+  #  req.path.exclude? 'rails/active_storage'
+  #}
   
   #le recensioni possono essere viste ed accedute solo attraverso i ristoranti e recensori, ma non tutte le funzionalita'
   #resources :restaurant do

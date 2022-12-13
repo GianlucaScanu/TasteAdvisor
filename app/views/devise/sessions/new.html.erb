@@ -11,10 +11,10 @@
 </head>
 <body>
     <div id = "middle">
+        <%=@var_current_path =  request.path %>
+        <%#= request.env['devise.mapping'] = Devise.mappings[:reviewers]%>
         <div id = "google_div">
-            <%= form_tag(reviewer_google_oauth2_omniauth_authorize_path, method: 'post', data: {turbo: false}) do %>
-                <button id = "google_btn" type='submit' class="btn btn-outline-success">Entra con Google</button>
-            <% end %>
+            <%= link_to('/reviewers/auth/google_oauth2', {:class => "btn btn-primary"}) do %>ENTRA CON G<% end %>
         </div>
         <div id = "facebook_div">
             <button  id = "facebook_btn" type="button" class="btn btn-outline-primary">Entra con Facebook</button>
