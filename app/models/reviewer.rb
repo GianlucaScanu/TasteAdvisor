@@ -2,17 +2,18 @@ class Reviewer < ApplicationRecord
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable, :trackable
     devise :database_authenticatable, :registerable,
-           :recoverable, :rememberable, :validatable,
-           :omniauthable, omniauth_providers: [:google_oauth2]
+           :recoverable, :rememberable, :validatable#,
+           #:omniauthable, omniauth_providers: [:google_oauth2]
 
     validates :username, presence: true
     validates :username, uniqueness: true
     
     has_many :review
+    has_one :omniuser #https://stackoverflow.com/questions/11286560/devise-with-omniauth-for-multiple-models-without-sti
 
     has_one_attached :profile_picture, service: :google
     validates :profile_picture,  blob: { content_type: :image }
-    
+
     def self.from_google(auth)
       where(provider: auth.provider, uid: auth.uid).first_or_create do |reviewer|
         #campi da assegnare al modello reviewer, tramite oauth
@@ -33,6 +34,7 @@ class Reviewer < ApplicationRecord
         reviewer.description = "Ciao mi chiamo " << auth.info.name << " e sono registrato tramite account Google! "
       end
     end
+    
 end
 
 #per eliminare l'utente e ritestarlo (ID = numero dell'id utente, es.8) scriverlo su qualsiasi pagina (es.index.html.erb)

@@ -27,4 +27,10 @@ class Restaurant::OmniauthCallbacksController < Devise::OmniauthCallbacksControl
   # def after_omniauth_failure_path_for(scope)
   #   super(scope)
   # end
+  
+  def auth
+    #risposta auth google, contiene dei campi utili
+    #https://github.com/zquestz/omniauth-google-oauth2
+    @auth ||= request.env['omniauth.auth']
+  end
 end
