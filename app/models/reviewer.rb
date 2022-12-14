@@ -13,12 +13,6 @@ class Reviewer < ApplicationRecord
     has_one_attached :profile_picture, service: :google
     validates :profile_picture,  blob: { content_type: :image }
 
-    def auth
-      #risposta auth google, contiene dei campi utili
-      #https://github.com/zquestz/omniauth-google-oauth2
-      @auth ||= request.env['omniauth.auth']
-    end
-    
     def self.from_google(auth)
       where(provider: auth.provider, uid: auth.uid).first_or_create do |reviewer|
         #campi da assegnare al modello reviewer, tramite oauth

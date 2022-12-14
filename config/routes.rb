@@ -6,8 +6,11 @@ Rails.application.routes.draw do
   devise_scope :reviewer do
     #get '/reviewers/auth/google_oauth2', to: 'reviewer/omniauth_callbacks#google_oauth2'
     #get "auth/google_oauth2" => "reviewer/omniauth_callbacks#google_oauth2"
-    get "/reviewers/auth/google_oauth2/" => "reviewer/omniauth_callbacks#google_oauth2"
+    get "/reviewers/auth/google_oauth2/callback" => "reviewer/omniauth_callbacks#google_oauth2"
   end
+
+  #get '/reviewers/auth/google_oauth2/', as: 'reviewers_auth_google'
+  
   #devise scope singolare reviewer!
   #https://stackoverflow.com/questions/23379927/could-not-find-devise-mapping-for-path-sessions-user-devise-log-in-error
 
