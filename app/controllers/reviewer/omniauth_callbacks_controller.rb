@@ -1,5 +1,7 @@
 class Reviewer::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
+  #OBSOLETO, SI USA OMNI_USER
+  
   def google_oauth2
     reviewer = Reviewer.from_google(auth)
 

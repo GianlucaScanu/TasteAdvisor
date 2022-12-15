@@ -2,8 +2,7 @@ class Reviewer < ApplicationRecord
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable, :trackable
     devise :database_authenticatable, :registerable,
-           :recoverable, :rememberable, :validatable#,
-           #:omniauthable, omniauth_providers: [:google_oauth2]
+           :recoverable, :rememberable, :validatable
 
     validates :username, presence: true
     validates :username, uniqueness: true

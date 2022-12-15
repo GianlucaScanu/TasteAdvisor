@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class Restaurant::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+
+  #OBSOLETO, SI USA OMNI_USER
+  
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 
