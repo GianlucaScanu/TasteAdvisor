@@ -73,6 +73,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_19_232349) do
     t.string "username"
     t.string "website"
     t.string "description"
+    t.string "mail"
+    t.string "password"
     t.string "telephone_number"
     t.string "address"
     t.datetime "created_at", null: false
