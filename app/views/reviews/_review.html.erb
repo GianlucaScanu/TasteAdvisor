@@ -1,6 +1,16 @@
+<meta property="og:url"           content="http://127.0.0.1:3000/reviews/1" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="La mia recensione" />
+<meta property="og:description"   content="Descrizione della recensione" />
+<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
+
+
 <%= stylesheet_link_tag "recensione.css" %>
 <div id="<%= dom_id review %>">
 <div id = "middle">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/it_IT/sdk.js#xfbml=1&version=v15.0&appId=891463521856520&autoLogAppEvents=1" nonce="9dbJ8tPj"></script>
     <div id = "col1">
         <%if (review.reviewer_id != nil) && (review.dish_id != nil)%>
             <div id = "names_div">
@@ -98,6 +108,10 @@
                <div id = "no_foto_label"> nessuna immagine caricata </div>
             <% end %>
         </div>
+        <div class="fb-share-button" data-href="http://127.0.0.1:3000/reviews/1"
+         data-layout="button_count" data-size="large">
+         <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Condividi</a>
+         </div>
     </div>
 
 </div>
