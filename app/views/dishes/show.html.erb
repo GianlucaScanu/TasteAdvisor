@@ -58,7 +58,7 @@
 
 <%= stylesheet_link_tag "piatto.css" %>
 
-    <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/dishes/<%= @dish.id%>" />
+    <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/dishes/1" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="<%= @dish.name%>" />
     <meta property="og:description"   content="<%= @dish.description %>" />
@@ -85,8 +85,6 @@
             </div>
             <div id = "actions">
 
-
-            <div id = "description">DESCRIZIONE APPLICAZIONE </div>
             <div id="fb-root"></div>
             <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
@@ -99,7 +97,7 @@
 
             <!-- Your share button code -->
             <div class="fb-share-button" 
-            data-href="https://tasteadvisor.herokuapp.com/dishes/<%= @dish.id %>" 
+            data-href="https://tasteadvisor.herokuapp.com/dishes/1" 
             data-layout="button_count">
             </div>
 
