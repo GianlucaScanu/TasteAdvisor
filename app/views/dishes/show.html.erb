@@ -58,14 +58,6 @@
 
 <%= stylesheet_link_tag "piatto.css" %>
 
-    <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/dishes/1" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="<%= @dish.name%>" />
-    <meta property="og:description"   content="<%= @dish.description %>" />
-    <meta property="og:image"         content="<%if (@dish.images[0] != nil)%>
-                                                    <%= url_for(@dish.images[0])%>
-                                                <%end%>"/>
-
  <div id = "middle">
         <div id = "col1">
             <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">

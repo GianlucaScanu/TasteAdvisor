@@ -8,6 +8,15 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/dishes/1" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="<%= @dish.name%>" />
+        <meta property="og:description"   content="<%= @dish.description %>" />
+        <meta property="og:image"         content="<%if (@dish.images[0] != nil)%>
+                                                        <%= url_for(@dish.images[0])%>
+                                                    <%end%>"/>
+    
+
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= stylesheet_link_tag "navbar.css" %>
