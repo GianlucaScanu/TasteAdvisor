@@ -10,25 +10,34 @@
 <body>
     <div id = "middle">
         <div id = "col1">
+        <div id = "carousel_homepage" class = "carousel carousel-fade" data-bs-ride="carousel">
+                <div class = "carousel-inner">  
+                    <div class = "carousel-item active">
+                        <%=image_tag("hp_0.jpg", :class => "img_carosello", :alt => "image of homepage")%>
+                    </div>
+                    <div class = "carousel-item">
+                        <%=image_tag("hp_1.jpg", :class => "img_carosello", :alt => "image of homepage")%>
+                    </div>
+                </div>
+            </div>
         <!-- 
         <%#= HO LAVORATO SU DEI FILE e dei permessi (per mostrare le img) , questi si chiamano asset e vanno inseriti in app/asset/image %>
             <div id = "carousel_homepage" class = "carousel slide" data-bs-ride="carousel">
                 <div class = "carousel-inner">
                     
                     <div class = "carousel-item active">
-                        <%=image_tag("pizza-sample1.jpg", :class => "d-block w-auto", :alt => "image of pizza")%>
+                        <%#=image_tag("pizza-sample1.jpg", :class => "d-block w-auto", :alt => "image of pizza")%>
                     </div>
                     <div class = "carousel-item">
-                        <%=image_tag("pizza-sample2.jpg", :class => "d-block w-auto", :alt => "image of pizza")%>
+                        <%#=image_tag("pizza-sample2.jpg", :class => "d-block w-auto", :alt => "image of pizza")%>
                     </div>
                     
                 </div>
             </div>
             -->
-            <div id = "description">DESCRIZIONE APPLICAZIONE </div>
         </div>
         <div id = "col2">
-            <%= render  "search/form" %>
+            <%= render  "search/form" %><div id = "description">DESCRIZIONE APPLICAZIONE </div>
         </div>
     </div>
 </body>

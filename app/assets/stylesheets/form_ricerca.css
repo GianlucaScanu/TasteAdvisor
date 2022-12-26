@@ -59,11 +59,26 @@
     margin-left: 1%;
 }
 
+.text_btn > *{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
 
 
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
+
+    #search_opts{
+        width: 100%;
+    }
+
+    #searchbars{
+        margin-left: 0%;
+        margin-bottom: 2%;
+    }
+
     .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search, #sorts_label, #sort_btn{
         font-size: small;
     }
@@ -71,6 +86,16 @@
 
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
+
+    #search_opts{
+        width: 100%;
+    }
+
+    #searchbars{
+        margin-left: 0%;
+        margin-bottom: 2%;
+    }
+    
     .search_label, #dish_btn, #restaurant_btn, #restaurant_search, #dish_search, #sorts_label, #sort_btn{
         font-size: medium;
     }
