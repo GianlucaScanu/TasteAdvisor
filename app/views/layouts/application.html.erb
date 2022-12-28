@@ -8,8 +8,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%if @dish != nil%>
-        <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/dishes/1" />
+    <% if @review != nil && @review.reviewer_id != nil%>
+        <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/reviews/<%= @review.id%>" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Recensione di <%= Reviewer.find(@review.reviewer_id).username%>" />
+        <meta property="og:description"   content="<%= @review.description %>" />
+        <meta property="og:image"         content="<%if (@review.images) != nil%>
+                                                        <%= url_for(@review.images[0])%>
+                                                    <%end%>"/>
+    <%end%>
+    
+    <% if @dish != nil%>
+        <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/dishes/<%= @dish.id%>" />
         <meta property="og:type"          content="website" />
         <meta property="og:title"         content="<%= @dish.name%>" />
         <meta property="og:description"   content="<%= @dish.description %>" />
