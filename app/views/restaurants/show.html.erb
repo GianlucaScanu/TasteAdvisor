@@ -122,22 +122,29 @@
                           <% else %>
                               <div class="carousel-item">
                           <% end %>
-                          <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" id="dish_pic">
+                          <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
                           <%i += 1%>
                         </div>
-                      <%end%>
+                        <%end%>
+                        <!-- se il piatto non presenta immagini viene restituita immagine di default -->
+                        <% if i == 0 %>
+                        <div> DOVREI CARICARE UNA FOTO </div>
+                        <%= image_tag("missing_dish.png", :class => "dish_pic")%>
+                        <% end %>
                     </div>
                   </div>
-                  <div class = "nome_piattino">Nome:<b><%= dish.name%></b></div>
-                  <div class = "prezzo_piattino">Prezzo: <%= dish.price%></div>
-                  <div class = "rating_piattino">Rating: <%= dish.avg_rating.round(2)%></div>
+                  <div class = "info_piatto">
+                    <div class = "nome_piattino">Nome: <b><%= dish.name%></b></div>
+                    <div class = "prezzo_piattino">Prezzo: <%= dish.price%></div>
+                    <div class = "rating_piattino">Rating: <%= dish.avg_rating.round(2)%></div>
+                  </div>
                   <div id = "mod_btns">
-                    <%if reviewer_signed_in? %>
-                      <%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-responsive" %>
-                    <%elsif restaurant_signed_in? %>
-                      <%= link_to "Modifica", edit_dish_path(dish), :class => "btn btn-success btn-responsive" %>
-                      <%= button_to "Rimuovi", dish, method: :delete, :class => "btn btn-danger btn-responsive" %>
-                    <%end%>
+                    <% if reviewer_signed_in? %>
+                      <%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-responsive-dish" %>
+                    <% elsif restaurant_signed_in? %>
+                      <%= link_to "Modifica", edit_dish_path(dish), :class => "btn btn-success btn-responsive-dish" %>
+                      <%= button_to "Rimuovi", dish, method: :delete, :class => "btn btn-danger btn-responsive-dish" %>
+                    <% end %>
                   </div>
                 </div>
               </div>
@@ -157,7 +164,7 @@
                   <% place = Google::Maps.place(Google::Maps.places(@restaurant.address).first.place_id)%>
                   <iframe
                     width="600"
-                    height="200"
+                    height="210"
                     style="border:0"
                     loading="eager"
                     referrerpolicy="no-referrer-when-downgrade"
@@ -166,11 +173,27 @@
                     &zoom=15
                     &language=it">
                   </iframe>
+                <% else %>
+                  <% place = Google::Maps.place(Google::Maps.places("Italy").first.place_id)%>
+                  <iframe
+                    width="600"
+                    height="245"
+                    style="border:0"
+                    loading="eager"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI
+                    &q= <%=place%>
+                    &zoom=15
+                    &language=it">
+                  </iframe>
+                
               <%end%>
             </div>
-            <div id = "position"><%= @restaurant.address %></div>
-            <div id = "website"><%= @restaurant.website %></div>
-            <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+            <div id = "address_info">
+              <div id = "position"><%= @restaurant.address %></div>
+              <div id = "website"><%= @restaurant.website %></div>
+              <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+            </div>
           </div>
         </div>
       </div>
