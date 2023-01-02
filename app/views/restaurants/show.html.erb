@@ -128,7 +128,6 @@
                         <%end%>
                         <!-- se il piatto non presenta immagini viene restituita immagine di default -->
                         <% if i == 0 %>
-                        <div> DOVREI CARICARE UNA FOTO </div>
                         <%= image_tag("missing_dish.png", :class => "dish_pic")%>
                         <% end %>
                     </div>
@@ -154,9 +153,6 @@
         </div>
       </div>
     </div>
-    <% if restaurant_signed_in? %>
-      </div>
-      <% else %>
         <div id = "col_d2">
           <div id = "map_addresses">
             <div id = "map">
@@ -197,9 +193,7 @@
           </div>
         </div>
       </div>
-    <% end %>
   </div>
-
   </body>
 </html>
 

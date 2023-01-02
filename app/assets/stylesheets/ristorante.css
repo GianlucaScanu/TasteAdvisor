@@ -221,7 +221,7 @@
 
 #dishes_div,
 #map_addresses {
-    height: max-content;
+    height: 100%;
 }
 
 /* ELEMENTI INDIRIZZO E MAPPA */
@@ -371,7 +371,6 @@ iframe {
         font-size: medium;
     }
 
-
     #col_m2,
     #header,
     #username {
@@ -404,6 +403,7 @@ iframe {
 
     #col_d2 {
         width: 100%;
+        margin-left: 2%;
     }
 
     #dishes_div {
@@ -435,7 +435,7 @@ iframe {
 
     .dish_pic {
         width: 190px;
-        height: 0px;
+        height: 190px;
     }
 
 
