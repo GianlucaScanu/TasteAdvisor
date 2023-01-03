@@ -41,7 +41,7 @@ class Review < ApplicationRecord
 
             if(counter != 0)
                 new_avg = accumulator.to_f/counter.to_f
-            elsif 
+            else
                 new_avg = 0
             end
 

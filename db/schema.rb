@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_11_07_165529) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_19_232349) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
     t.string "record_type", null: false
@@ -53,11 +56,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_07_165529) do
     t.index ["restaurant_id"], name: "index_dishes_on_restaurant_id"
   end
 
-  create_table "homepages", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "reports", force: :cascade do |t|
     t.string "description"
     t.datetime "created_at", null: false
@@ -75,6 +73,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_07_165529) do
     t.string "username"
     t.string "website"
     t.string "description"
+    t.string "mail"
+    t.string "password"
     t.string "telephone_number"
     t.string "address"
     t.datetime "created_at", null: false
@@ -92,14 +92,18 @@ ActiveRecord::Schema[7.0].define(version: 2022_11_07_165529) do
     t.string "username"
     t.string "profile_picture"
     t.string "telephone_number"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
+    t.string "full_name"
+    t.string "uid"
+    t.string "avatar_url"
+    t.string "provider"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.string "description"
     t.index ["email"], name: "index_reviewers_on_email", unique: true
     t.index ["reset_password_token"], name: "index_reviewers_on_reset_password_token", unique: true
   end

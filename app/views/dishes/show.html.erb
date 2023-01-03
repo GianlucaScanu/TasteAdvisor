@@ -76,6 +76,23 @@
                 </div>
             </div>
             <div id = "actions">
+
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+            <!-- Your share button code -->
+            <div class="fb-share-button" 
+            data-href="https://tasteadvisor.herokuapp.com/dishes/<%= @dish.id%>" 
+            data-layout="button_count">
+            </div>
+
                 <%if reviewer_signed_in?%>
                     <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-custom" %><br></div>
                 <%elsif restaurant_signed_in?%>
@@ -140,7 +157,9 @@
                         <%= link_to review_path(review) do %>
                             <div class ="review">
                             <div class="img_review">
-                                <img class = "reviewer_img" src="<%= url_for(Reviewer.find(review.reviewer_id).profile_picture)%>" alt="Immagine del recensore">
+                                <%if Reviewer.find(review.reviewer_id).profile_picture.attached?%>
+                                    <img class = "reviewer_img" src="<%= url_for(Reviewer.find(review.reviewer_id).profile_picture)%>" alt="Immagine del recensore">
+                                <%end%>
                             </div>
                             <div class="review_info">
                                 <div class="username_and_rating">
