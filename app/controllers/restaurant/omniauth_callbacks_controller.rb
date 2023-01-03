@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 class Restaurant::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+
+  #OBSOLETO, SI USA OMNI_USER
+  
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 
@@ -27,4 +30,10 @@ class Restaurant::OmniauthCallbacksController < Devise::OmniauthCallbacksControl
   # def after_omniauth_failure_path_for(scope)
   #   super(scope)
   # end
+  
+  def auth
+    #risposta auth google, contiene dei campi utili
+    #https://github.com/zquestz/omniauth-google-oauth2
+    @auth ||= request.env['omniauth.auth']
+  end
 end

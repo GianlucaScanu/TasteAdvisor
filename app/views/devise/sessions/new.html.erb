@@ -13,7 +13,10 @@
     <div id = "middle">
         <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>
         <div id = "google_div">
-            <button id = "google_btn" type="button" class="btn btn-outline-success">Entra con Google</button>
+            <%session[:calling_path] = request.path.to_s%>
+            <%= form_tag(omni_user_google_oauth2_omniauth_authorize_path, method: 'post', data: {turbo: false}) do %>
+                <button id = "google_btn" type='submit' class="btn btn-outline-success">Entra con Google</button>
+            <% end %>
         </div>
         <div id = "facebook_div">
             <button  id = "facebook_btn" type="button" class="btn btn-outline-primary">Entra con Facebook</button>

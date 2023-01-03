@@ -12,6 +12,7 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants/new
   def new
+    session['userType']='Restaurant'
     @restaurant = Restaurant.new
   end
 
@@ -21,11 +22,16 @@ class RestaurantsController < ApplicationController
 
   # POST /restaurants or /restaurants.json
   def create
+    session['userType']='Restaurant'
     @restaurant = Restaurant.new(restaurant_params)
-
     respond_to do |format|
       if @restaurant.save
+<<<<<<< HEAD
         format.html { redirect_to restaurant_url(@restaurant), notice: "Il ristorante è stato creato correttamente" }
+=======
+        TasteAdvisorMailer.with(user: @restaurant, type: "Restaurant").welcome_email.deliver!
+        format.html { redirect_to restaurant_url(@restaurant), notice: "Restaurant was successfully created." }
+>>>>>>> multiple_oauth_test
         format.json { render :show, status: :created, location: @restaurant }
       else
         format.html { render :new, status: :unprocessable_entity }
