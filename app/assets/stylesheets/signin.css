@@ -16,23 +16,14 @@
     width: 100%;
 }
 
+#google_div > *{
+    width: 50%;
+}
+
 #google_btn{
     display: flex;
     justify-content: center;
-    width: 60%;
-}
-
-#facebook_div{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
     width: 100%;
-}
-
-#facebook_btn{
-    display: flex;
-    justify-content: center;
-    width: 60%;
 }
 
 #oppure_lbl{
@@ -85,7 +76,7 @@ a{
 /*Media queries*/
 /*mobile*/ 
 @media (max-width: 768px) {
-    #oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    #oppure_lbl, #google_btn, #email_lbl, #password_lbl, #remember_lbl,
     #submit_btn, #forgot_lbl{
         font-size: small;
     }
@@ -102,7 +93,7 @@ a{
   }
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
-    T#oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    T#oppure_lbl, #google_btn, #email_lbl, #password_lbl, #remember_lbl,
     #submit_btn, #forgot_lbl{
         font-size: medium;
     }
@@ -120,7 +111,7 @@ a{
 
 /* notebook */
 @media(min-width: 993px){
-    #oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    #oppure_lbl, #google_btn, #email_lbl, #password_lbl, #remember_lbl,
     #submit_btn, #forgot_lbl{
         font-size: large;
     }
@@ -137,7 +128,7 @@ a{
 
 /* desktop */
 @media(min-width: 1440px){
-    #oppure_lbl, #google_btn, #facebook_btn, #email_lbl, #password_lbl, #remember_lbl,
+    #oppure_lbl, #google_btn, #email_lbl, #password_lbl, #remember_lbl,
     #submit_btn, #forgot_lbl{
         font-size: large;
     }

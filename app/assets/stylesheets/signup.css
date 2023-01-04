@@ -16,23 +16,14 @@
     width: 100%;
 }
 
+#google_div > *{
+    width: 50%;
+}
+
 #google_btn{
     display: flex;
     justify-content: center;
-    width: 60%;
-}
-
-#facebook_div{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
     width: 100%;
-}
-
-#facebook_btn{
-    display: flex;
-    justify-content: center;
-    width: 60%;
 }
 
 #oppure_lbl{
@@ -70,7 +61,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .form-group, .form-control, #google_btn, #facebook_btn{
+    .form-group, .form-control, #google_btn{
         font-size: small;
     }
 
@@ -79,7 +70,7 @@
     }
 }
 @media screen and (min-width: 769px) {
-    .form-group, .form-control, #google_btn, #facebook_btn{
+    .form-group, .form-control, #google_btn{
         font-size: medium;
     }
 
@@ -89,7 +80,7 @@
 }
 
 @media screen and (min-width: 993px) {
-    .form-group, .form-control, #google_btn, #facebook_btn{
+    .form-group, .form-control, #google_btn{
         font-size: medium;
     }
 
@@ -98,7 +89,7 @@
     }
 }
 @media screen and (min-width: 1440px){
-    .form-group, .form-control, #google_btn, #facebook_btn{
+    .form-group, .form-control, #google_btn{
         font-size: large;
     }
 
