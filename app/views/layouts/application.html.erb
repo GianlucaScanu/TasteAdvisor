@@ -47,7 +47,7 @@
               <div id = "log_buttons">
                 <div>
                 <% if (restaurant_signed_in?) %>
-                    <%= button_to "Profilo", current_restaurant, method: :get, :class => "btn btn-success btn-responsive" %>
+                    <%= button_to "Profilo", current_restaurant, method: :get, :class => "btn btn-success btn-responsive", :id => "profile_restaurant" %>
                 <% elsif (reviewer_signed_in?) %>
                     <%= button_to "Profilo", current_reviewer, method: :get, :class => "btn btn-success btn-responsive" %>
                 <%end %>   
