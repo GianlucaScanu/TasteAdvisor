@@ -77,8 +77,7 @@
             </div>
         </div>
         <div id = "midbottom">
-
-            <%= form.hidden_field :dish_id, value: session[:save_dish] %>
+            <%= form.hidden_field :dish_id, value: params[:dish_id] %>
             <%= form.hidden_field :reviewer_id, value: current_reviewer.id %>
 
             <div id = "confirm">
@@ -88,18 +87,13 @@
             <% if @review.id != nil%>
                 <%= link_to "Annulla modifiche", review_path(@review), :class => "btn btn-danger", :id => "cancel_btn" %>
             <%else%>
-                <%#= link_to "Annulla creazione", dish_path(session[:save_dish]), :class => "btn btn-danger", :id => "cancel_btn"  %>
+                <%= link_to "Annulla creazione", dish_path(params[:dish_id]), :class => "btn btn-danger", :id => "cancel_btn"  %>
             <%end%>
             </div>
         </div>
     </div>
 
 <% end %>
-
-
-
-<%#=session[:save_dish]%>
-
 
 <%= stylesheet_link_tag "nuovaRecensione.css" %>
 
