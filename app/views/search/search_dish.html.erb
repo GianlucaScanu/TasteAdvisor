@@ -67,11 +67,12 @@
                 <div class = "search_infos">Parametri ricercati: <%= params[:form_input].to_s %></div> 
                 
                 <%if params[:form_input].to_s != "" %>
-                
+                    <%#https://stackoverflow.com/questions/2220423/case-insensitive-search-in-rails-model%>
+
                     <%if params[:sort] != nil%>
-                        <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ).order(params[:sort]) %>
+                        <% @get_dish = Dish.where("lower(name) LIKE ?","#{params[:form_input].downcase}%" ).order(params[:sort]) %>
                     <%else%>
-                        <% @get_dish = Dish.where("name LIKE ?","#{params[:form_input]}%" ) %>
+                        <% @get_dish = Dish.where("lower(name) LIKE ?","#{params[:form_input].downcase}%" ) %>
                     <% end %>
                 
                     <% render @get_dish%>

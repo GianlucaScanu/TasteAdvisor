@@ -1,17 +1,15 @@
 class Report < ApplicationRecord
     
-    #da testare per bene... (temporaneamente disabilitate per non lanciare errori a runtime)
-
     #https://stackoverflow.com/questions/7428872/rails-validate-unique-combination-of-3-columns
-    #UN SOLO REPORT PER COPPIA <REPORTERID,TARGETID, TARGETTYPE>, da implementare... (reporterId)
-    #validates_uniqueness_of :reporterId, :scope => [:targetId, :targetType]
-    #after_create :remove_target
+    #UN SOLO REPORT PER COPPIA <REPORTERID,TARGETID, TARGETTYPE>, (reporterId)
+    validates_uniqueness_of :reporterId, :scope => [:targetId, :targetType]
+    after_create :remove_target
 
     private
 
         def remove_target
-            #dopo le 50 segnalazioni il sistema rimuove sistematicamente il target 
-            
+            #dopo le 50 segnalazioni (da utenti diversi) il sistema rimuove automaticamente il target 
+
             limit_to_remove = 50.0 
             counter = 0.0
             

@@ -12,15 +12,12 @@ class Review < ApplicationRecord
     has_many_attached :images, service: :google
     validates :images,  blob: { content_type: :image }
     
-    #ora dovrebbe funziona, aggiornare sempre
     after_create :update_avg_rating_and_number_of_review
     after_update :update_avg_rating_and_number_of_review
     after_destroy :update_avg_rating_and_number_of_review
 
     private
-    
-        #FUNZIONA MA DA SISTEMARE!
-        
+
         def update_avg_rating_and_number_of_review
             
             #credits. https://stackoverflow.com/questions/12329687/how-to-update-value-of-a-models-attribute, https://guides.rubyonrails.org/active_record_basics.html#update

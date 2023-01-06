@@ -8,6 +8,7 @@ class Restaurant < ApplicationRecord
 
     has_one_attached :profile_picture, service: :google
     validates :profile_picture,  blob: { content_type: :image }
+    #has_one :omniuser
 
     def self.from_google(auth)
       where(provider: auth.provider, uid: auth.uid).first_or_create do |restaurant|

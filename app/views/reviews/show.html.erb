@@ -15,22 +15,45 @@
   <%else%>
     <div id = "review_btns">
       <div id = "report_div">
-        <%=form_with url: new_report_path, method: :get do |form| %>
-            <%= form.hidden_field :report_id, value: @review.id%>
-            <%= form.hidden_field :report_type, value:"review"%>
-            <%= submit_tag "Segnala Recensione", :class => "btn btn-danger", :id => "report_link"%>
+
+        <%check_exist = 0.0%>
+        <% (Report.all).each do |report| %>
+            <%if report.reporterId == current_reviewer.id  and report.targetType == "review" and report.targetId == @review.id %>
+                <%check_exist = 1.0%>
+            <%end%>
         <%end%>
+
+        <%if check_exist == 0.0%>
+          <%=form_with url: new_report_path, method: :get do |form| %>
+              <%= form.hidden_field :report_id, value: @review.id%>
+              <%= form.hidden_field :report_type, value:"review"%>
+              <%= form.hidden_field :reporter_id, value: current_reviewer.id %>
+              <%= submit_tag "Segnala Recensione", :class => "btn btn-danger", :id => "report_link"%>
+          <%end%>
+        <%end%>
+
       </div>
     </div>
   <%end%>
 <%elsif restaurant_signed_in?%>
   <div id = "review_btns">
       <div id = "report_div">
+        <%check_exist = 0.0%>
+        <% (Report.all).each do |report| %>
+            <%if report.reporterId == current_reviewer.id  and report.targetType == "review" and report.targetId == @review.id %>
+                <%check_exist = 1.0%>
+            <%end%>
+        <%end%>
+
+        <%if check_exist == 0.0%>
           <%=form_with url: new_report_path, method: :get do |form| %>
-            <%= form.hidden_field :report_id, value: @review.id%>
-            <%= form.hidden_field :report_type, value:"review"%>
-            <%= submit_tag "Segnala Recensione", :class => "btn btn-danger", :id => "report_link"%>
+              <%= form.hidden_field :report_id, value: @review.id%>
+              <%= form.hidden_field :report_type, value:"review"%>
+              <%= form.hidden_field :reporter_id, value: current_reviewer.id %>
+              <%= submit_tag "Segnala Recensione", :class => "btn btn-danger", :id => "report_link"%>
           <%end%>
+        <%end%>
+        
         </div>
   </div>
 <%else%>

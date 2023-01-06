@@ -88,7 +88,7 @@
             <% if @review.id != nil%>
                 <%= link_to "Annulla modifiche", review_path(@review), :class => "btn btn-danger", :id => "cancel_btn" %>
             <%else%>
-                <%= link_to "Annulla creazione", dish_path(session[:save_dish]), :class => "btn btn-danger", :id => "cancel_btn"  %>
+                <%#= link_to "Annulla creazione", dish_path(session[:save_dish]), :class => "btn btn-danger", :id => "cancel_btn"  %>
             <%end%>
             </div>
         </div>

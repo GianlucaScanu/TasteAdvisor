@@ -1,0 +1,31 @@
+current directory: /Users/giorgiopaoloni/Desktop/TasteAdvisor/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+/Users/giorgiopaoloni/.rvm/rubies/ruby-3.1.2/bin/ruby -I /Users/giorgiopaoloni/.rvm/rubies/ruby-3.1.2/lib/ruby/3.1.0 -r ./siteconf20230104-33654-bnrky0.rb extconf.rb
+using OpenSSL pkgconfig (openssl.pc)
+checking for openssl/bio.h... yes
+checking for DTLS_method() in openssl/ssl.h... yes
+checking for TLS_server_method() in openssl/ssl.h... yes
+checking for SSL_CTX_set_min_proto_version(NULL, 0) in openssl/ssl.h... yes
+checking for X509_STORE_up_ref()... yes
+checking for SSL_CTX_set_ecdh_auto(NULL, 0) in openssl/ssl.h... yes
+checking for SSL_CTX_set_dh_auto(NULL, 0) in openssl/ssl.h... yes
+checking for SSL_get1_peer_certificate() in openssl/ssl.h... no
+checking for Random.bytes... yes
+creating Makefile
+
+current directory: /Users/giorgiopaoloni/Desktop/TasteAdvisor/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\= clean
+
+current directory: /Users/giorgiopaoloni/Desktop/TasteAdvisor/vendor/bundle/ruby/3.1.0/gems/puma-5.6.5/ext/puma_http11
+make DESTDIR\=
+compiling http11_parser.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.bundle
+Undefined symbols for architecture x86_64:
+  "_SSL_get1_peer_certificate", referenced from:
+      _engine_peercert in mini_ssl.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [puma_http11.bundle] Error 1
+
+make failed, exit code 2

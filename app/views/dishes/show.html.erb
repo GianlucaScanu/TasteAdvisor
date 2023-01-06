@@ -104,11 +104,25 @@
                 <%end%>
                 <div id = "report">
                     <%if reviewer_signed_in? %>
-                        <%= form_with url: new_report_path, method: :get do |form| %>
-                            <%= form.hidden_field :report_id, value: @dish.id%>
-                            <%= form.hidden_field :report_type, value:"dish"%>
-                            <%= submit_tag "Segnala", :class => "btn btn-danger btn-custom" %>
-                        <% end  %>
+
+                        <%check_exist = 0.0%>
+                        <%#POSSO SEGNALARE UNA SOLA VOLTA UN PIATTO%>
+                        <% (Report.all).each do |report| %>
+                            <%#= render report%>
+                            <%if report.reporterId == current_reviewer.id  and report.targetType == "dish" and report.targetId == @dish.id %>
+                                <%check_exist = 1.0%>
+                            <%end%>
+                        <%end%>
+
+                        <%if check_exist == 0.0%>
+                            <%= form_with url: new_report_path, method: :get do |form| %>
+                                <%= form.hidden_field :report_id, value: @dish.id%>
+                                <%= form.hidden_field :report_type, value:"dish"%>
+                                <%= form.hidden_field :reporter_id, value: current_reviewer.id %>
+                                <%= submit_tag "Segnala", :class => "btn btn-danger btn-custom" %>
+                            <% end %>
+                        <%end%>
+                        
                     <%elsif (restaurant_signed_in?) and (current_restaurant == @dish.restaurant)%>
                         <%= link_to "Segnala", dish_path(@dish.id, flash_alert: "Non puoi segnalare un tuo piatto"), :class => "btn btn-danger btn-custom" %>
                         <% flash.now[:alert] = params[:flash_alert] if params[:flash_alert] %>

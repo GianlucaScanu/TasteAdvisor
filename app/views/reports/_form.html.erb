@@ -18,6 +18,7 @@
       
       <%= form.hidden_field :targetId, value:  params[:report_id].to_s %>
       <%= form.hidden_field :targetType, value:  params[:report_type].to_s %>
+      <%= form.hidden_field :reporterId, value:  params[:reporter_id].to_s %>
 
        
         <div id = "nome">
@@ -79,6 +80,7 @@
   <!-- Necessarie al passaggio di valori tramite form: non cancellare-->
   <%= form.hidden_field :targetId, value: params[:report_id].to_i %>
   <%= form.hidden_field :targetType, value: params[:report_type].to_s %>
+  <%= form.hidden_field :reporterId, value:  params[:reporter_id].to_s %>
 
   <div id = "middle">
         <div id = "nome">

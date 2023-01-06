@@ -5,9 +5,9 @@
         <div class = "search_infos">Parametri ricercati: <%= params[:form_input].to_s %></div>
         <%if params[:form_input].to_s != "" %>
             <%if params[:sort] != nil%>
-                <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ).order(params[:sort]) %>
+                <% @get_restaurant = Restaurant.where("lower(name) LIKE ? OR lower(username) LIKE ?","#{params[:form_input]}%", "#{params[:form_input].downcase}%" ).order(params[:sort]) %>
             <%else%>
-                <% @get_restaurant = Restaurant.where("name LIKE ? OR username LIKE ?","#{params[:form_input]}%", "#{params[:form_input]}%" ) %>
+                <% @get_restaurant = Restaurant.where("lower(name) ? OR lower(username) LIKE ?","#{params[:form_input]}%", "#{params[:form_input].downcase}%" ) %>
             <% end %>
             <% render @get_restaurant%>
             <% @get_restaurant.each do |restaurant|%>
