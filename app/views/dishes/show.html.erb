@@ -92,7 +92,6 @@
             data-href="https://tasteadvisor.herokuapp.com/dishes/<%= @dish.id%>" 
             data-layout="button_count" id = "fbook-btn" data-size="large">
             </div>
-
                 <%if reviewer_signed_in?%>
                     <%#POSSO RECENSIRE UNA SOLA VOLTA UN PIATTO%>
                     <%check_exist = 0.0%>
@@ -102,7 +101,7 @@
                         <%end%>
                     <%end%>
                     <%if check_exist == 0.0%>
-                        <div id = "review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-custom" %><br></div>
+                        <div class = "div_review"><%= link_to "Lascia recensione", new_review_path(dish_id: @dish.id), :class => "btn btn-warning", :id =>"review_btn" %></div>       
                     <%end%>
 
                 <%elsif restaurant_signed_in?%>
