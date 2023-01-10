@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TasteAdvisor</title>
+    <title> TasteAdvisor </title>
     <%= favicon_link_tag 'favicon-32x32-logo_TA.png' %>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -25,7 +25,11 @@
         <meta property="og:image"         content="<%if (@dish.images[0] != nil)%>
                                                         <%= url_for(@dish.images[0])%>
                                                     <%end%>"/>
-    <%end%>    
+    <%end%>
+    
+    <% if @review != nil || @dish != nil%>
+        <meta name="turbo-visit-control" content="reload"> 
+    <% end %>    
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
@@ -34,6 +38,7 @@
   </head>
 
   <body>
+  
     <% if (reviewer_signed_in? || restaurant_signed_in?) %>
          <div id = "top">
           <div id = "row1">

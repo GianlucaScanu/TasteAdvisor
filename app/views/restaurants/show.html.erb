@@ -186,9 +186,10 @@
               <%end%>
             </div>
             <div id = "address_info">
-              <div id = "position"><%= @restaurant.address %></div>
-              <div id = "website"><%= @restaurant.website %></div>
-              <div id = "phone_number"><%= @restaurant.telephone_number %></div>
+            <div id = "position"><%= @restaurant.address %></div>
+            <div id = "website"><a href = "linkto:<%= @restaurant.website %>" target="_blank" rel="noreferrer noopener"><%= @restaurant.website %></a></div>
+            <div id = "phone_number"><a href = "tel:<%= @restaurant.telephone_number %>"><%= @restaurant.telephone_number %></a></div>
+            <div id = "mail_to"><a href="mailto:<%= @restaurant.email%>">Invia una mail</a></div>
             </div>
           </div>
         </div>

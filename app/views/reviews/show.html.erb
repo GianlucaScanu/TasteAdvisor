@@ -38,9 +38,10 @@
 <%elsif restaurant_signed_in?%>
   <div id = "review_btns">
       <div id = "report_div">
+  
         <%check_exist = 0.0%>
         <% (Report.all).each do |report| %>
-            <%if report.reporterId == current_reviewer.id  and report.targetType == "review" and report.targetId == @review.id %>
+            <%if report.reporterId == current_restaurant.id  and report.targetType == "review" and report.targetId == @review.id %>
                 <%check_exist = 1.0%>
             <%end%>
         <%end%>
@@ -49,7 +50,7 @@
           <%=form_with url: new_report_path, method: :get do |form| %>
               <%= form.hidden_field :report_id, value: @review.id%>
               <%= form.hidden_field :report_type, value:"review"%>
-              <%= form.hidden_field :reporter_id, value: current_reviewer.id %>
+              <%= form.hidden_field :reporter_id, value: current_restaurant.id %>
               <%= submit_tag "Segnala Recensione", :class => "btn btn-danger", :id => "report_link"%>
           <%end%>
         <%end%>

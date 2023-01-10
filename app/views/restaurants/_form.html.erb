@@ -43,7 +43,7 @@
             </div>
             <div id = "user_desc_1">
                 <div id = "username"><%= current_restaurant.username%></div>
-                <div><%= form.text_field :description, :id => "description" %></div>
+                <div><%= form.text_area :description, :class => "form-control", :placeholder => "Inserisci descrizione", :rows =>"3" %></div>
             </div>
             <div id = "user_desc_2">
                 <div class = "form_labels">
