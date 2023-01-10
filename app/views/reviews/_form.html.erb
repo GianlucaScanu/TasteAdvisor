@@ -21,7 +21,11 @@
                     <div id = "image">
                        <%= form.file_field :images, multiple: true, direct_upload: false, accept:"image/*" %>
                     </div>
-                    <div id = "image_lbl">Inserisci una foto</div>
+                    <% if @review.id != nil%>
+                        <div id = "image_lbl">Reinserisci le foto e aggiungine altre</div>
+                    <%else%>
+                        <div id = "image_lbl">Inserisci le foto</div>
+                    <%end%>
                 </div>
             </div>
             <div id = "col2">
