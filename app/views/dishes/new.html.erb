@@ -11,11 +11,11 @@
         </div>
         <div class = "field_div">
           <% f.label :name %>Nome
-          <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
+          <%= f.text_field :name, autofocus: true, autocomplete: "name", :id => "name_dish" %>
         </div>
         <div class = "field_div">
           Descrizione
-          <%= f.text_field :description, autofocus: true, autocomplete: "description" %>
+          <%= f.text_field :description, autofocus: true, autocomplete: "description", :id => "description_dish" %>
           <!-- implementare nel lato backend -->
         </div>  
       
@@ -24,15 +24,15 @@
       <div id = "col_m2">
         <div class = "field_div">
           <% f.label :category %>Categoria<br>
-          <%= f.select :category, ["0", "1", "2", "3"], autofocus: true, autocomplete: "category" %>
+          <%= f.select :category, ["0", "1", "2", "3"], autofocus: true, autocomplete: "category", :id => "category_dish" %>
           <%#= f.text_field :category, autofocus: true, autocomplete: "category" %>
         </div>
         <div class = "field_div">
           <% f.label :price %>Prezzo<br>
-          <%= f.text_field :price, autofocus: true, autocomplete: "price" %>
+          <%= f.text_field :price, autofocus: true, autocomplete: "price", :id => "price_dish" %>
         </div>  
         <div class = "field_div">Ingredienti:<br>
-          <%= f.text_field :ingredients, autofocus: true, autocomplete: "ingredients" %>
+          <%= f.text_field :ingredients, autofocus: true, autocomplete: "ingredients", :id => "ingredients_dish" %>
         </div>  
       </div>
     

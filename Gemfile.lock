@@ -228,6 +228,8 @@ GEM
       faraday-multipart
       json (>= 1.8)
       rexml
+    launchy (2.5.2)
+      addressable (~> 2.8)
     loofah (2.19.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -333,6 +335,23 @@ GEM
       railties (>= 5.0)
     retriable (3.1.2)
     rexml (3.2.5)
+    rspec-core (3.12.0)
+      rspec-support (~> 3.12.0)
+    rspec-expectations (3.12.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-mocks (3.12.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-rails (6.0.1)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      railties (>= 6.1)
+      rspec-core (~> 3.11)
+      rspec-expectations (~> 3.11)
+      rspec-mocks (~> 3.11)
+      rspec-support (~> 3.11)
+    rspec-support (3.12.0)
     ruby-hmac (0.4.0)
     ruby-vips (2.1.4)
       ffi (~> 1.12)
@@ -422,12 +441,14 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   koala
+  launchy (~> 2.4, >= 2.4.3)
   omniauth
   omniauth-google-oauth2
   omniauth-rails_csrf_protection
   pg
   puma (~> 5.0)
   rails (~> 7.0.3, >= 7.0.3.1)
+  rspec-rails (~> 6.0.0)
   selenium-webdriver
   sprockets-rails
   stimulus-rails

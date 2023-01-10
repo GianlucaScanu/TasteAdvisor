@@ -16,6 +16,14 @@ module NavigationHelpers
     when /^the TasteAdvisor home page/
       '/'
 
+    when /^the restaurant profile page/
+      '/restaurants/1'
+
+    when /^the reviewer profile page/
+      '/reviewers/1'
+    
+    when /^the Pizza page/
+      '/dishes/1'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

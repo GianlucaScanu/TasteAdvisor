@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   get 'search/edit'
   get 'search/update'
   get 'home/index'
+# This is for being able of testing the application with cucumber. Since we are not using devise defaults login
+  match 'login/:id' => 'restaurant#login', :as => 'login', :via => [:get] if Rails.env.test?
 
   
   resources :reports, :except => :index
