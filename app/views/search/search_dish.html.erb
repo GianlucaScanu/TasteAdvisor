@@ -41,7 +41,9 @@
                                 <div class = "dish_name"><%= dish.name%></div>
                                 <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
                                 <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
-                                <div class = "dish_desc">Descrizione : <%= dish.description%></div>
+                                <%if dish.description.to_s != "" %>
+                                    <div class = "dish_desc">Descrizione : <%= dish.description%></div>
+                                <%end%>
                                 <%if reviewer_signed_in?%>  
                                     <div class = "btns">
                                         <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
@@ -110,7 +112,9 @@
                                 <div class = "dish_name">Nome : <%= dish.name%></div>
                                 <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
                                 <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
-                                <div class = "dish_desc">Descrizione : <%= dish.description%></div>
+                                <%if dish.description.to_s != "" %>
+                                    <div class = "dish_desc">Descrizione : <%= dish.description%></div>
+                                <%end%>
                                 <%if reviewer_signed_in?%>  
                                     <div class = "btns">
                                         <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
