@@ -84,8 +84,15 @@
                     <div id = "plate_name"><%= @dish.name %></div>
                     <div id = "category">
                         <label id = "category_label">Categoria: </label>
-                        
-                        <div id = "result"> <%= @dish.category%></div>
+                        <%if @dish.category == 0%>
+                            <div id = "result"> <%= "Antipasti" %></div>
+                        <%elsif @dish.category == 1 %>
+                            <div id = "result"> <%= "Primi" %></div>
+                        <%elsif @dish.category == 2 %>
+                            <div id = "result"> <%= "Secondi" %></div>
+                        <%elsif @dish.category == 3 %>
+                            <div id = "result"> <%= "Dolci" %></div>
+                        <%end%>
                     </div>
                     <div id = "rating">
                         <label id = "rating_label">Rating: </label>

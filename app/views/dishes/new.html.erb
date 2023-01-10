@@ -24,8 +24,7 @@
       <div id = "col_m2">
         <div class = "field_div">
           <% f.label :category %>Categoria<br>
-          <%= f.select :category, ["0", "1", "2", "3"], autofocus: true, autocomplete: "category" %>
-          <%#= f.text_field :category, autofocus: true, autocomplete: "category" %>
+          <%= f.select :category, [ ["Antipasti", "0"], ["Primi", "1"], ["Secondi", "2"], ["Dolci", "3"] ], autofocus: true, autocomplete: "category" %>
         </div>
         <div class = "field_div">
           <% f.label :price %>Prezzo<br>
