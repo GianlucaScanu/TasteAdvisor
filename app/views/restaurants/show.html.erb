@@ -68,7 +68,11 @@
           <div id = "user_desc_2">
             <div id = "position"><%= @restaurant.address %></div>
             <%if @restaurant.website != nil%>
-              <div id = "website"><%= link_to  URI.parse(@restaurant.website).host, "http://#{URI.parse(@restaurant.website).host}", target: :_blank , rel: 'noopener noreferrer'%></div>
+              <%if URI.parse(@restaurant.website).host.to_s != "" %>
+                <div id = "website"><%= link_to  URI.parse(@restaurant.website).host, "http://#{URI.parse(@restaurant.website).host}", target: :_blank , rel: 'noopener noreferrer'%></div>
+              <%else%>
+                <div id = "website"><%= link_to  @restaurant.website, "http://#{@restaurant.website}", target: :_blank, rel: 'noopener noreferrer' %></div>
+              <%end%>
             <%end%>
             <div id = "phone_number"><a href = "tel:<%= @restaurant.telephone_number %>"><%= @restaurant.telephone_number %></a></div>
             <div id = "mail_to"><a href="mailto:<%= @restaurant.email%>">Invia una mail</a></div>
@@ -192,7 +196,11 @@
             <div id = "address_info">
             <div id = "position"><%= @restaurant.address %></div>
             <%if @restaurant.website != nil%>
-              <div id = "website"><%= link_to  URI.parse(@restaurant.website).host, "http://#{URI.parse(@restaurant.website).host}", target: :_blank , rel: 'noopener noreferrer'%></div>
+              <%if URI.parse(@restaurant.website).host.to_s != "" %>
+                <div id = "website"><%= link_to  URI.parse(@restaurant.website).host, "http://#{URI.parse(@restaurant.website).host}", target: :_blank , rel: 'noopener noreferrer'%></div>
+              <%else%>
+                <div id = "website"><%= link_to  @restaurant.website, "http://#{@restaurant.website}", target: :_blank, rel: 'noopener noreferrer' %></div>
+              <%end%>
             <%end%>
             <div id = "phone_number"><a href = "tel:<%= @restaurant.telephone_number %>"><%= @restaurant.telephone_number %></a></div>
             <div id = "mail_to"><a href="mailto:<%= @restaurant.email%>">Invia una mail</a></div>
