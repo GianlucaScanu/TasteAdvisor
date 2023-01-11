@@ -159,6 +159,10 @@
     align-items: center;
 }
 
+#actions{
+    align-items: center;
+}
+
 /* MOBILE */
 @media screen and (max-width: 768px) {
     #middle{
