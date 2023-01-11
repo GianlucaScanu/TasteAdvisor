@@ -107,7 +107,7 @@
 
     .img_carosello{
         width: 550px;
-        height: 425px;
+        height: 379px;
     }
     
     #description{
@@ -125,8 +125,8 @@
     }
 
     .img_carosello{
-        width: 865px;
-        height: 650px;
+        width: 700px;
+        height: 482px;
     }
     
     #description, .search_label, #restaurant_search, #dish_btn, #restaurant_btn{

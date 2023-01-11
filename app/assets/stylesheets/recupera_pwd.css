@@ -1,0 +1,105 @@
+#middle {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #1e5a1a;
+    align-content: center;
+    justify-content: center;
+}
+
+label {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.frgt_pwd {
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.form_reset_pwd, .form_reset_pwd > *{
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#reviewer_email {
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actions {
+    align-items: center;
+    justify-items: center;
+    margin-left: 7%;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+/*mobile*/ 
+@media (max-width: 768px) {
+    .frgt_pwd{
+        font-size: medium;
+    }
+
+    #reviewer_email,
+    label, .actions > *{
+        font-size: small;
+    }
+
+
+  }
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    .frgt_pwd{
+        font-size: large;
+    }
+
+    #reviewer_email,
+    label, .actions > *{
+        font-size: medium;
+    }
+  }
+
+/* notebook */
+@media(min-width: 993px){
+    .frgt_pwd{
+        font-size: x-large;
+    }
+
+    #reviewer_email,
+    label, .actions > *{
+        font-size: medium;
+    }
+}
+
+/* desktop */
+@media(min-width: 1440px){
+    .frgt_pwd{
+        font-size: xx-large;
+    }
+
+    #reviewer_email,
+    label, .actions > *{
+        font-size: large;
+    }
+
+}
