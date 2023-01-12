@@ -18,11 +18,11 @@ Rails.application.routes.draw do
   get 'home/index'
 
   
-  resources :reports
-  resources :dishes
-  resources :restaurants
-  resources :reviews
-  resources :reviewers
+  resources :reports, :except => :index
+  resources :dishes, :except => :index
+  resources :restaurants, :except => :index
+  resources :reviews, :except => :index
+  resources :reviewers, :except => :index
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
