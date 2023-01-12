@@ -46,7 +46,31 @@ class Review < ApplicationRecord
             dish.number_of_reviews = counter.to_f
 
             dish.save
+
+            update_avg_rating_of_restaurant()
         end
         
+        def update_avg_rating_of_restaurant
+            
+            counter = 0.0
+            accumulator = 0.0
+
+            (Restaurant.all).each do |restaurant| 
+                (Review.all).each do |review|
+                    if(Dish.find(review.dish_id).restaurant_id == restaurant.id)
+                        counter += 1.0
+                        accumulator += (review.rating1.to_f + review.rating2.to_f + review.rating3.to_f)/3.to_f
+                    end
+                end
+                
+                if(counter != 0)
+                    restaurant.ta_rating = accumulator.to_f / counter.to_f
+                else
+                    restaurant.ta_rating = 0.0
+                end
+
+                restaurant.save
+            end
+        end
     
 end

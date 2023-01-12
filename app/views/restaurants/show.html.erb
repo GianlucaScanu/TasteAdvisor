@@ -29,6 +29,34 @@
 
 
 <% render @restaurant %> 
+<%if @restaurant.address != nil%>
+  <%
+        #https://stackoverflow.com/questions/21542530/rails-get-values-of-http-response
+        #https://ruby-doc.org/stdlib-3.1.2/libdoc/net/http/rdoc/Net/HTTP.html
+        #https://developers.google.com/maps/documentation/places/web-service/search-nearby#json
+        require "uri"
+        require "net/http"
+        require 'json'
+        string_query = "https://maps.googleapis.com/maps/api/place/details/json?place_id="
+        string_query += Google::Maps.places(@restaurant.name + "," + @restaurant.address).first.place_id.to_s
+        string_query += "&language=it&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI"
+        
+        #string_query2 = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522%2C151.1957362&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyCXBINbcHzq6sqrq3ku3ABFKFahO7ZpgiI"
+        url = URI(string_query)
+
+        https = Net::HTTP.new(url.host, url.port)
+        https.use_ssl = true
+
+        request = Net::HTTP::Get.new(url)
+        @response = JSON.parse(https.request(request).body)
+        @rating_gmaps = "vuoto"
+        %>
+        
+      <%if @response != nil and @response["result"] != nil and @response["result"]["rating"] != nil
+          @rating_gmaps = @response["result"]["rating"].to_s
+        end
+      %>
+<%end%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,8 +84,10 @@
         <div id = "infos">
           <div id = "user_desc_1">
             <div id = "username"><%= @restaurant.username %></div>
+            <div id = "rating_gm"> Rating TasteAdvisor : <%= @restaurant.ta_rating%></div>
+            <div id = "rating_gm"> Rating GMaps : <%= @rating_gmaps%></div>
             <div id = "description">
-              <% if(@restaurant.description == "") %>
+              <% if(@restaurant.description == nil) %>
                 Descrizione mancante
                 <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuota -->
               <% else %>
@@ -92,8 +122,10 @@
       </div>
       <div id = "col_m2">
         <div id = "username"><%= @restaurant.username %></div>
+        <div id = "rating_gm"> Rating TasteAdvisor : <%= @restaurant.ta_rating.truncate(2)%></div>
+        <div id = "rating_gm"> Rating GMaps : <%= @rating_gmaps%></div>
         <div id = "description_mod">
-          <% if(@restaurant.description == "") %>
+          <% if(@restaurant.description == nil) %>
             Descrizione mancante
             <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuoto -->
           <% else %>

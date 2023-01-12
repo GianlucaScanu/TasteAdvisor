@@ -401,9 +401,13 @@ iframe {
         align-items: center;
     }
 
+    #col_d1{
+        width: 100%;
+    }
+
     #col_d2 {
         width: 100%;
-        margin-left: 2%;
+        margin-left: 5%;
     }
 
     #dishes_div {
