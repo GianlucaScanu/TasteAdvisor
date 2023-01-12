@@ -184,7 +184,16 @@
                   </div>
                   <div id = "mod_btns">
                     <% if reviewer_signed_in? %>
-                      <%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning btn-responsive-dish" %>
+                      <%check_exist = 0.0%>
+                      <% (Review.all).each do |review| %>
+                          <%if review.dish_id == dish.id and review.reviewer_id == current_reviewer.id %>
+                              <%check_exist = 1.0%>
+                          <%end%>
+                      <%end%>
+                      <%if check_exist == 0.0%>
+                          <div class = "div_review"><%= link_to "Lascia recensione", new_review_path(dish_id: dish.id), :class => "btn btn-warning", :id =>"review_btn" %></div>
+                      <%end%>
+                      
                     <% elsif restaurant_signed_in? %>
                       <%= link_to "Modifica", edit_dish_path(dish), :class => "btn btn-success btn-responsive-dish" %>
                       <%= button_to "Rimuovi", dish, method: :delete, :class => "btn btn-danger btn-responsive-dish" %>

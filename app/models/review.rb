@@ -16,6 +16,10 @@ class Review < ApplicationRecord
     after_update :update_avg_rating_and_number_of_review
     after_destroy :update_avg_rating_and_number_of_review
 
+    after_create :update_avg_rating_of_restaurant
+    after_update :update_avg_rating_of_restaurant
+    after_destroy :update_avg_rating_of_restaurant
+    
     private
 
         def update_avg_rating_and_number_of_review
