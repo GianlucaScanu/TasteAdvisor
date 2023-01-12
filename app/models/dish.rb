@@ -7,4 +7,15 @@ class Dish < ApplicationRecord
 
     has_many_attached :images, service: :google
     validates :images,  blob: { content_type: :image }
+
+    before_destroy :destroy_referenced_reviews
+
+    private
+        def destroy_referenced_reviews
+            (Review.all).each do |review|
+                if(review.dish_id == self.id)
+                    review.destroy
+                end
+            end
+        end
 end
