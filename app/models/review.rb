@@ -56,10 +56,12 @@ class Review < ApplicationRecord
         
         def update_avg_rating_of_restaurant
             
-            counter = 0.0
-            accumulator = 0.0
+            #counter = 0.0
+            #accumulator = 0.0
 
             (Restaurant.all).each do |restaurant| 
+                counter = 0.0
+                accumulator = 0.0
                 (Review.all).each do |review|
                     if(Dish.find(review.dish_id).restaurant_id == restaurant.id)
                         counter += 1.0
@@ -74,6 +76,7 @@ class Review < ApplicationRecord
                 end
 
                 restaurant.save
+                
             end
         end
     
