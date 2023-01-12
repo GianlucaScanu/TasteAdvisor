@@ -9,6 +9,7 @@ class Restaurant < ApplicationRecord
     has_one_attached :profile_picture, service: :google
     validates :profile_picture,  blob: { content_type: :image }
     #has_one :omniuser
+    after_initialize :init_values
 
     def self.from_google(auth)
       where(provider: auth.provider, uid: auth.uid).first_or_create do |restaurant|
@@ -30,6 +31,10 @@ class Restaurant < ApplicationRecord
         restaurant.profile_picture.attach(io: URI.parse(auth.info.image).open, filename: "profile_picture.jpg")
         restaurant.description = "Sono il ristorante " << auth.info.name << " e sono registrato tramite account Google! "
       end
+    end
+
+    def init_values
+      self.ta_rating ||= 0.0
     end
     
 end
