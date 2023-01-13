@@ -21,22 +21,14 @@
                         <% render dish%>
                         <div class = "dish_container">
                             <div class = "col_1">
-                                <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <% i = 0 %>
-                                        <% while dish.images[i] != nil%>
-                                            <% if (i == 0) %>
-                                                <div class="carousel-item active">
-                                            <% else %>
-                                                <div class="carousel-item">
-                                            <% end %>
-                                            <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
-                                            <%i += 1%>
-                                            </div>
-                                        <%end%>
-                                    </div>
+                                <div id = "foto_piatto">
+                                    <% i = 0 %>
+                                    <% if (dish.images[0] != nil) %>
+                                        <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
+                                    <%end%>
                                 </div>
                             </div>
+                            
                             <div class = "col_2">
                                 <div class = "dish_name"><%= dish.name%></div>
                                 <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
@@ -92,24 +84,15 @@
                     <% @get_dish.each do |dish|%>
                         <div class = "dish_container">
                             <div class = "col_1">
-                                <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <% i = 0 %>
-                                        <% while dish.images[i] != nil%>
-                                            <% if (i == 0) %>
-                                                <div class="carousel-item active">
-                                            <% else %>
-                                                <div class="carousel-item">
-                                            <% end %>
-                                            <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
-                                            <%i += 1%>
-                                            </div>
-                                        <%end%>
-                                    </div>
+                                <div id = "foto_piatto">
+                                    <% i = 0 %>
+                                    <% if (dish.images[0] != nil) %>
+                                        <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
+                                    <%end%>
                                 </div>
                             </div>
                             <div class = "col_2">
-                                <div class = "dish_name">Nome : <%= dish.name%></div>
+                                <div class = "dish_name">Nome : <b><%= dish.name%></b></div>
                                 <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
                                 <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
                                 <%if dish.description.to_s != "" %>

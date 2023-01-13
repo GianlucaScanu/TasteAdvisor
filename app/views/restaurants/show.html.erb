@@ -158,12 +158,12 @@
               <div class = "piattino">
               <%= link_to dish_path(dish) do %>
                 <div class = "interno_piattino">
-                  <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">
+                  <div id = "foto_piatto" class="carousel" >
                     <div class="carousel-inner">
                         <% i = 0 %>
                         <% while dish.images[i] != nil%>
                           <% if (i == 0) %>
-                              <div class="carousel-item active">
+                              <div class="carousel-item">
                           <% else %>
                               <div class="carousel-item">
                           <% end %>

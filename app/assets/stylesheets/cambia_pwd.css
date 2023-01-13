@@ -1,0 +1,138 @@
+#middle {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    align-content: center;
+    justify-content: center;
+    border: solid;
+    border-color: #1e5a1a;
+}
+
+.form_change_pwd{
+    justify-content: space-around;
+}
+
+label, #length_label {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.change_pwd {
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: auto;
+}
+
+.form_change_pwd, .form_change_pwd > *{
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 0;
+}
+
+#reviewer_email {
+    background-color: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actions {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.btn-responsive{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*mobile*/ 
+@media (max-width: 768px) {
+    .change_pwd{
+        font-size: medium;
+    }
+
+    #length_label{
+        font-size: x-small;
+    }
+
+    #reviewer_email,
+    #restautant_email,
+    label, .actions > *{
+        font-size: small;
+    }
+
+
+  }
+/*tablet*/
+@media (min-width: 769px) and (max-width: 992px) {
+    .change_pwd{
+        font-size: large;
+    }
+
+    #length_label{
+        font-size: small;
+    }
+
+    #reviewer_email,
+    #restautant_email,
+    label, .actions > *{
+        font-size: medium;
+    }
+  }
+
+/* notebook */
+@media(min-width: 993px){
+    .change_pwd{
+        font-size: x-large;
+    }
+
+    #length_label{
+        font-size: medium;
+    }
+
+    #reviewer_email,
+    #restautant_email,
+    label, .actions > *{
+        font-size: medium;
+    }
+}
+
+/* desktop */
+@media(min-width: 1440px){
+    .change_pwd{
+        font-size: xx-large;
+    }
+
+    #length_label{
+        font-size: medium;
+    }
+
+    #reviewer_email,
+    #restautant_email,
+    label, .actions > *{
+        font-size: large;
+    }
+
+}
