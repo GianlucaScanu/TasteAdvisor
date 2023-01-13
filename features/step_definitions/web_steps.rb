@@ -252,15 +252,3 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
-<<<<<<< HEAD
-=======
-
-Given /^I am a logged as restaurant named "([^"]*)"$/ do |restaurant|
-  @restaurant = @that = Factory(:user, :role => role, :name => "#{role} User Name")
-  Given("that user is logged in")
-end
-
-Given /^that user is logged in$/ do
-  Given("I go to that users login page")
-end
->>>>>>> a104c22ae8317f0d4aa17a5078dcf289cdb44edc

@@ -11770,3 +11770,556 @@ Processing by Devise::RegistrationsController#new as HTML
   Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 5241)
 Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 5769)
 >>>>>>> a104c22ae8317f0d4aa17a5078dcf289cdb44edc
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mReviewer Load (1.0ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" ORDER BY "reviewers"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" ORDER BY "reviewers"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" ORDER BY "dishes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" ORDER BY "restaurants"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" ORDER BY "dishes"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = $1 LIMIT $2[0m  [["username", "pizza da mario"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = $1 LIMIT $2[0m  [["username", "pizza da mario"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = $1 LIMIT $2[0m  [["username", "pizza da mario"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = $1 LIMIT $2[0m  [["username", "miotest"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mRestaurant Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "restaurants" WHERE "restaurants"."username" = $1 LIMIT $2[0m  [["username", "miotest"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReviewer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = $1 LIMIT $2[0m  [["email", "testtti@test.tti"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = $1 LIMIT $2[0m  [["email", "testtti@test.tti"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = $1 LIMIT $2[0m  [["username", "usernameTTI"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = $1 LIMIT $2[0m  [["username", "usernameTTI"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = $1 LIMIT $2[0m  [["email", "testtti@test.tti"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = $1 LIMIT $2[0m  [["username", "usernameTTI"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = $1 LIMIT $2[0m  [["email", "testtti@test.tti"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = $1 LIMIT $2[0m  [["username", "usernameTTI"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."email" = $1 LIMIT $2[0m  [["email", "testtti@test.tti"], ["LIMIT", 1]]
+  [1m[36mReviewer Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "reviewers" WHERE "reviewers"."username" = $1 LIMIT $2[0m  [["username", "usernameTTI"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:18:24 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 19.7ms | Allocations: 2189)
+  Rendered home/index.html.erb within layouts/application (Duration: 17938.8ms | Allocations: 244346)
+  Rendered layout layouts/application.html.erb (Duration: 17985.4ms | Allocations: 262449)
+Completed 200 OK in 18032ms (Views: 18004.4ms | ActiveRecord: 0.0ms | Allocations: 267111)
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2023-01-13 12:18:43 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mTRANSACTION (34.3ms)[0m  [1m[35mBEGIN[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.7ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 39.9ms | Allocations: 5245)
+  Rendered layout layouts/application.html.erb (Duration: 46.7ms | Allocations: 9428)
+Completed 200 OK in 229ms (Views: 74.3ms | ActiveRecord: 75.7ms | Allocations: 21593)
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2023-01-13 12:18:43 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"restaurant"=>{"email"=>"testcarlopizza@pizza.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (7.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["email", "testcarlopizza@pizza.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 389ms (ActiveRecord: 7.9ms | Allocations: 3378)
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:18:43 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 1.5ms | Allocations: 995)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1818)
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 6634)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 1.0ms | Allocations: 6913)
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-01-13 12:18:43 +0100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (4.8ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Restaurant"], ["name", "profile_picture"], ["LIMIT", 1]]
+  Rendered restaurants/_restaurant.html.erb (Duration: 34.7ms | Allocations: 4241)
+  [1m[36mDish Load (4.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  Rendered dishes/_dish.html.erb (Duration: 14.2ms | Allocations: 1849)
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.2ms | Allocations: 27)
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 769.2ms | Allocations: 23453)
+  Rendered layout layouts/application.html.erb (Duration: 777.3ms | Allocations: 27662)
+Completed 200 OK in 785ms (Views: 763.4ms | ActiveRecord: 18.0ms | Allocations: 28976)
+Started GET "/dishes/new" for 127.0.0.1 at 2023-01-13 12:18:44 +0100
+Processing by DishesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dishes/new.html.erb within layouts/application (Duration: 11.2ms | Allocations: 4013)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 8438)
+Completed 200 OK in 25ms (Views: 18.6ms | ActiveRecord: 3.2ms | Allocations: 9303)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:18:44 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 1.3ms | Allocations: 995)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1820)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 6019)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 6303)
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2023-01-13 12:18:44 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 242)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.4ms | Allocations: 1734)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 5761)
+Completed 200 OK in 99ms (Views: 38.6ms | ActiveRecord: 6.9ms | Allocations: 11949)
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2023-01-13 12:18:44 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"reviewer"=>{"email"=>"testrec1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["email", "testrec1@test.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 346ms (ActiveRecord: 0.5ms | Allocations: 1402)
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 2.6ms | Allocations: 975)
+  Rendered home/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1721)
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 6293)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.4ms | Allocations: 6516)
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 5.3ms | Allocations: 975)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1721)
+  [1m[36mReviewer Load (1.0ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 6231)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 1.0ms | Allocations: 6454)
+Started GET "/search_dish?form_input=Pizza&sort=&commit=Cerca+Piatto" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by SearchController#search_dish as HTML
+  Parameters: {"form_input"=>"Pizza", "sort"=>"", "commit"=>"Cerca Piatto"}
+  Rendering layout layouts/application.html.erb
+  Rendering search/search_dish.html.erb within layouts/application
+  [1m[36mDish Load (9.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE (lower(name) LIKE 'pizza%')[0m
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  Rendered collection of dishes/_dish.html.erb [1 times] (Duration: 5.4ms | Allocations: 1189)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered search/_form.html.erb (Duration: 3.4ms | Allocations: 1681)
+  Rendered search/search_dish.html.erb within layouts/application (Duration: 44.4ms | Allocations: 7199)
+  Rendered layout layouts/application.html.erb (Duration: 51.3ms | Allocations: 11370)
+Completed 200 OK in 55ms (Views: 43.3ms | ActiveRecord: 10.2ms | Allocations: 12119)
+Started GET "/dishes/2" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (35.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mReport Load (6.9ms)[0m  [1m[34mSELECT "reports".* FROM "reports"[0m
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Review Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  Rendered dishes/show.html.erb within layouts/application (Duration: 148.5ms | Allocations: 7081)
+  Rendered layout layouts/application.html.erb (Duration: 155.4ms | Allocations: 11271)
+Completed 200 OK in 160ms (Views: 113.3ms | ActiveRecord: 43.6ms | Allocations: 11935)
+Started GET "/reviews/new?dish_id=2" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by ReviewsController#new as HTML
+  Parameters: {"dish_id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_form.html.erb (Duration: 45.5ms | Allocations: 3565)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 50.2ms | Allocations: 3819)
+  Rendered layout layouts/application.html.erb (Duration: 76.0ms | Allocations: 8013)
+Completed 200 OK in 107ms (Views: 77.5ms | ActiveRecord: 7.9ms | Allocations: 13203)
+Started POST "/reviews" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by ReviewsController#create as HTML
+  Parameters: {"review"=>{"images"=>[""], "rating1"=>"2", "rating2"=>"3", "rating3"=>"4", "description"=>"Pizza molto gustosa, buono il servizio", "dish_id"=>"2", "reviewer_id"=>"1"}, "commit"=>"Conferma"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDish Load (0.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReview Create (28.1ms)[0m  [1m[32mINSERT INTO "reviews" ("rating1", "rating2", "rating3", "description", "created_at", "updated_at", "dish_id", "reviewer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["rating1", 2], ["rating2", 3], ["rating3", 4], ["description", "Pizza molto gustosa, buono il servizio"], ["created_at", "2023-01-13 11:18:45.699620"], ["updated_at", "2023-01-13 11:18:45.699620"], ["dish_id", 2], ["reviewer_id", 1]]
+  [1m[36mDish Load (1.7ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReview Load (1.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"], ["LIMIT", 1]]
+  [1m[36mCACHE ActiveStorage::Attachment Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"], ["LIMIT", 1]]
+  [1m[36mDish Update (0.8ms)[0m  [1m[33mUPDATE "dishes" SET "number_of_reviews" = $1, "avg_rating" = $2, "updated_at" = $3 WHERE "dishes"."id" = $4[0m  [["number_of_reviews", 1], ["avg_rating", 3.0], ["updated_at", "2023-01-13 11:18:45.748510"], ["id", 2]]
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 12], ["record_type", "Review"], ["name", "images"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/reviews/12
+Completed 302 Found in 113ms (ActiveRecord: 36.5ms | Allocations: 6338)
+Started GET "/reviews/12" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/show.html.erb within layouts/application
+  [1m[36mDish Load (1.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (1.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Restaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReviewer Load (2.0ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 12], ["record_type", "Review"], ["name", "images"]]
+  Rendered reviews/_review.html.erb (Duration: 47.3ms | Allocations: 2788)
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/show.html.erb within layouts/application (Duration: 65.5ms | Allocations: 4494)
+  [1m[36mCACHE Reviewer Load (0.0ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 78.9ms | Allocations: 9757)
+Completed 200 OK in 83ms (Views: 73.8ms | ActiveRecord: 6.2ms | Allocations: 10390)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 4.1ms | Allocations: 995)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1820)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6019)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 6303)
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2023-01-13 12:18:45 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.2ms | Allocations: 254)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 45.7ms | Allocations: 2576)
+  Rendered layout layouts/application.html.erb (Duration: 70.9ms | Allocations: 6716)
+Completed 200 OK in 79ms (Views: 73.2ms | ActiveRecord: 0.0ms | Allocations: 7900)
+Started GET "/reviewers/sign_up?reviewer[username]=test2&reviewer[email]=test2%40test.com&reviewer[password]=[FILTERED]&reviewer[password_confirmation]=[FILTERED]&commit=Conferma" for 127.0.0.1 at 2023-01-13 12:18:46 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"reviewer"=>{"username"=>"test2", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1312)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 5339)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 5967)
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:20:07 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 31.2ms | Allocations: 2189)
+  Rendered home/index.html.erb within layouts/application (Duration: 15560.2ms | Allocations: 392175)
+  Rendered layout layouts/application.html.erb (Duration: 15619.0ms | Allocations: 410278)
+Completed 200 OK in 15656ms (Views: 15635.1ms | ActiveRecord: 0.0ms | Allocations: 414941)
+Started GET "/restaurants/sign_in" for 127.0.0.1 at 2023-01-13 12:20:22 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mBEGIN[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 9.2ms | Allocations: 776)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 95.1ms | Allocations: 5245)
+  Rendered layout layouts/application.html.erb (Duration: 101.0ms | Allocations: 9428)
+Completed 200 OK in 161ms (Views: 113.8ms | ActiveRecord: 13.6ms | Allocations: 21593)
+Started POST "/restaurants/sign_in" for 127.0.0.1 at 2023-01-13 12:20:23 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"restaurant"=>{"email"=>"testcarlopizza@pizza.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."email" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["email", "testcarlopizza@pizza.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 404ms (ActiveRecord: 1.0ms | Allocations: 3354)
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:20:23 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 1.6ms | Allocations: 995)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1818)
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 6658)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.3ms | Allocations: 6937)
+Started GET "/restaurants/1" for 127.0.0.1 at 2023-01-13 12:20:23 +0100
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering restaurants/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Restaurant"], ["name", "profile_picture"], ["LIMIT", 1]]
+  Rendered restaurants/_restaurant.html.erb (Duration: 20.2ms | Allocations: 4241)
+  [1m[36mDish Load (0.6ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  Rendered dishes/_dish.html.erb (Duration: 45.2ms | Allocations: 1849)
+  Rendered restaurants/_restaurant.html.erb (Duration: 0.1ms | Allocations: 27)
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes"[0m
+  [1m[36mCACHE ActiveStorage::Attachment Load (0.0ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  Rendered restaurants/show.html.erb within layouts/application (Duration: 547.1ms | Allocations: 23449)
+  Rendered layout layouts/application.html.erb (Duration: 551.2ms | Allocations: 27658)
+Completed 200 OK in 565ms (Views: 543.6ms | ActiveRecord: 10.2ms | Allocations: 28972)
+Started GET "/dishes/new" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by DishesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/new.html.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered dishes/new.html.erb within layouts/application (Duration: 30.6ms | Allocations: 4011)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 8436)
+Completed 200 OK in 45ms (Views: 39.8ms | ActiveRecord: 3.3ms | Allocations: 9301)
+Started POST "/dishes" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by DishesController#create as HTML
+  Parameters: {"dish"=>{"images"=>[""], "name"=>"Carbonara", "description"=>"Pasta tipica romana", "category"=>"1", "price"=>"5.00", "ingredients"=>"Spaghetti, Guanciale, Uova e Pecorino Romano", "avg_rating"=>"0", "number_of_reviews"=>"0", "restaurant_id"=>"1"}, "commit"=>"Conferma"}
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mDish Create (3.0ms)[0m  [1m[32mINSERT INTO "dishes" ("name", "number_of_reviews", "price", "category", "avg_rating", "created_at", "updated_at", "restaurant_id", "ingredients", "description") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"[0m  [["name", "Carbonara"], ["number_of_reviews", 0], ["price", 5.0], ["category", 1], ["avg_rating", 0.0], ["created_at", "2023-01-13 11:20:24.261311"], ["updated_at", "2023-01-13 11:20:24.261311"], ["restaurant_id", 1], ["ingredients", "Spaghetti, Guanciale, Uova e Pecorino Romano"], ["description", "Pasta tipica romana"]]
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 55], ["record_type", "Dish"], ["name", "images"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/dishes/55
+Completed 302 Found in 27ms (ActiveRecord: 5.2ms | Allocations: 4038)
+Started GET "/dishes/55" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"55"}
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 55], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 55], ["record_type", "Dish"], ["name", "images"]]
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 ORDER BY "restaurants"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.7ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  Rendered dishes/show.html.erb within layouts/application (Duration: 20.3ms | Allocations: 6141)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 10309)
+Completed 200 OK in 29ms (Views: 24.7ms | ActiveRecord: 2.2ms | Allocations: 11013)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 1.4ms | Allocations: 995)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1820)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6020)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6304)
+Started GET "/reviewers/sign_in" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 242)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1734)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5761)
+Completed 200 OK in 27ms (Views: 7.5ms | ActiveRecord: 4.9ms | Allocations: 11949)
+Started POST "/reviewers/sign_in" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"reviewer"=>{"email"=>"testrec1@test.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mReviewer Load (0.4ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."email" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["email", "testrec1@test.com"], ["LIMIT", 1]]
+Redirected to http://www.example.com/
+Completed 302 Found in 331ms (ActiveRecord: 0.4ms | Allocations: 1408)
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 1.0ms | Allocations: 975)
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1721)
+  [1m[36mReviewer Load (0.3ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6281)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 6504)
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 1.2ms | Allocations: 975)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1721)
+  [1m[36mReviewer Load (0.3ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 6228)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 6451)
+Started GET "/search_dish?form_input=Pizza&sort=&commit=Cerca+Piatto" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by SearchController#search_dish as HTML
+  Parameters: {"form_input"=>"Pizza", "sort"=>"", "commit"=>"Cerca Piatto"}
+  Rendering layout layouts/application.html.erb
+  Rendering search/search_dish.html.erb within layouts/application
+  [1m[36mDish Load (8.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE (lower(name) LIKE 'pizza%')[0m
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  Rendered collection of dishes/_dish.html.erb [1 times] (Duration: 7.6ms | Allocations: 1190)
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered search/_form.html.erb (Duration: 3.4ms | Allocations: 1630)
+  Rendered search/search_dish.html.erb within layouts/application (Duration: 31.7ms | Allocations: 6373)
+  Rendered layout layouts/application.html.erb (Duration: 40.1ms | Allocations: 10544)
+Completed 200 OK in 42ms (Views: 32.2ms | ActiveRecord: 9.4ms | Allocations: 11290)
+Started GET "/dishes/2" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by DishesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDish Load (0.5ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering dishes/show.html.erb within layouts/application
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"]]
+  [1m[36mReviewer Load (0.5ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (1.5ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mReport Load (0.7ms)[0m  [1m[34mSELECT "reports".* FROM "reports"[0m
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Review Load (0.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  Rendered dishes/show.html.erb within layouts/application (Duration: 23.5ms | Allocations: 3111)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 7300)
+Completed 200 OK in 35ms (Views: 28.4ms | ActiveRecord: 4.3ms | Allocations: 7695)
+Started GET "/reviews/new?dish_id=2" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by ReviewsController#new as HTML
+  Parameters: {"dish_id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/new.html.erb within layouts/application
+  [1m[36mReviewer Load (0.3ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/_form.html.erb (Duration: 8.0ms | Allocations: 3532)
+  Rendered reviews/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 3786)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 7980)
+Completed 200 OK in 26ms (Views: 14.5ms | ActiveRecord: 3.5ms | Allocations: 13151)
+Started POST "/reviews" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by ReviewsController#create as HTML
+  Parameters: {"review"=>{"images"=>[""], "rating1"=>"2", "rating2"=>"3", "rating3"=>"4", "description"=>"Pizza molto gustosa, buono il servizio", "dish_id"=>"2", "reviewer_id"=>"1"}, "commit"=>"Conferma"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mDish Load (0.2ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReview Create (4.8ms)[0m  [1m[32mINSERT INTO "reviews" ("rating1", "rating2", "rating3", "description", "created_at", "updated_at", "dish_id", "reviewer_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["rating1", 2], ["rating2", 3], ["rating3", 4], ["description", "Pizza molto gustosa, buono il servizio"], ["created_at", "2023-01-13 11:20:24.923624"], ["updated_at", "2023-01-13 11:20:24.923624"], ["dish_id", 2], ["reviewer_id", 1]]
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"], ["LIMIT", 1]]
+  [1m[36mCACHE ActiveStorage::Attachment Exists? (0.0ms)[0m  [1m[34mSELECT 1 AS one FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 2], ["record_type", "Dish"], ["name", "images"], ["LIMIT", 1]]
+  [1m[36mDish Update (0.4ms)[0m  [1m[33mUPDATE "dishes" SET "number_of_reviews" = $1, "avg_rating" = $2, "updated_at" = $3 WHERE "dishes"."id" = $4[0m  [["number_of_reviews", 1], ["avg_rating", 3.0], ["updated_at", "2023-01-13 11:20:24.940024"], ["id", 2]]
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 13], ["record_type", "Review"], ["name", "images"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/reviews/13
+Completed 302 Found in 27ms (ActiveRecord: 7.5ms | Allocations: 4876)
+Started GET "/reviews/13" for 127.0.0.1 at 2023-01-13 12:20:24 +0100
+Processing by ReviewsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering reviews/show.html.erb within layouts/application
+  [1m[36mDish Load (0.3ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mRestaurant Load (0.1ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Dish Load (0.0ms)[0m  [1m[34mSELECT "dishes".* FROM "dishes" WHERE "dishes"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCACHE Restaurant Load (0.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (0.2ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3[0m  [["record_id", 13], ["record_type", "Review"], ["name", "images"]]
+  Rendered reviews/_review.html.erb (Duration: 14.7ms | Allocations: 2722)
+  [1m[36mReviewer Load (0.2ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 ORDER BY "reviewers"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reviews/show.html.erb within layouts/application (Duration: 28.2ms | Allocations: 4387)
+  [1m[36mCACHE Reviewer Load (0.0ms)[0m  [1m[34mSELECT "reviewers".* FROM "reviewers" WHERE "reviewers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layout layouts/application.html.erb (Duration: 35.3ms | Allocations: 9608)
+Completed 200 OK in 38ms (Views: 34.7ms | ActiveRecord: 1.4ms | Allocations: 10220)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+Started GET "/" for 127.0.0.1 at 2023-01-13 12:20:25 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered search/_form.html.erb (Duration: 1.5ms | Allocations: 995)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1815)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 6014)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 6298)
+Started GET "/reviewers/sign_up" for 127.0.0.1 at 2023-01-13 12:20:25 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 254)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 2575)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6715)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 7899)
+Started GET "/reviewers/sign_up?reviewer[username]=test2&reviewer[email]=test2%40test.com&reviewer[password]=[FILTERED]&reviewer[password_confirmation]=[FILTERED]&commit=Conferma" for 127.0.0.1 at 2023-01-13 12:20:25 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"reviewer"=>{"username"=>"test2", "email"=>"test2@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Conferma"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1312)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5339)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5970)
