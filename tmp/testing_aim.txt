@@ -1,0 +1,22 @@
+28) Ricerca per categoria
+Come un utente visitatore, recensore o esercente
+In modo da cercare il piatto di mio interesse 
+Voglio cercare il piatto da me desiderato in base alla sua categoria
++
+17) Fare una recensione
+Come utente recensore
+In modo da recensire un piatto
+Voglio aggiungere una recensione alla lista delle sue recensioni
+
+32) Aggiungere/Modificare piatto 
+Come utente esercente
+In modo da aggiungere un piatto al menu
+Voglio aggiungere/modificare un piatto al/del mio menù
+
+
+When I press "Profilo"                                 # features/step_definitions/web_steps.rb:52
+      unknown error: getaddrinfo: Temporary failure in name resolution (maps.googleapis.com:443) (ActionView::Template::Error)
+      ./app/views/restaurants/show.html.erb:173:in `_app_views_restaurants_show_html_erb__2599062921478318795_87380'
+      <internal:kernel>:90:in `tap'
+      ./features/step_definitions/web_steps.rb:53:in `/^(?:|I )press "([^"]*)"$/'
+      features/us/AddDish.feature:18:in `I press "Profilo"'

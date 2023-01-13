@@ -23,8 +23,12 @@ module NavigationHelpers
       '/reviewers/1'
     
     when /^the Pizza page/
+<<<<<<< HEAD
       '/dishes/2'
 
+=======
+      '/dishes/1'
+>>>>>>> a104c22ae8317f0d4aa17a5078dcf289cdb44edc
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
