@@ -28,8 +28,11 @@
 -->
 
 
-<% render @restaurant %> 
-<%if @restaurant.address != nil%>
+<%# render @restaurant %> 
+
+<%@rating_gmaps = nil%>
+
+<%if @restaurant.address != nil and @restaurant.address.length > 0 %>
   <%
     #https://stackoverflow.com/questions/21542530/rails-get-values-of-http-response
     #https://ruby-doc.org/stdlib-3.1.2/libdoc/net/http/rdoc/Net/HTTP.html
@@ -49,7 +52,7 @@
 
     request = Net::HTTP::Get.new(url)
     @response = JSON.parse(https.request(request).body)
-    @rating_gmaps = "vuoto"
+    @rating_gmaps = ""
   %>
         
       <%if @response != nil and @response["result"] != nil and @response["result"]["rating"] != nil
