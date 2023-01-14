@@ -13,122 +13,122 @@
         <% @temp1 = "Dolci" %>
     <%end%>
 
-        <div id = "searches">
-            <%if params[:category] != nil%>
-                <div class = "search_infos"> Risultati ricerca "<%= @temp1 %>" : </div>
-                <% (Dish.all).each do |dish| %>
-                    <%if dish.category == params[:category].to_i %>
-                        <% render dish%>
-                        <div class = "dish_container">
-                            <div class = "col_1">
-                                <div id = "foto_piatto">
-                                    <% if (dish.images[0] != nil) %>
-                                        <img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" class="dish_pic">
-                                    <% else %>
-                                      <%= image_tag("missing_dish.png", :class => "dish_pic")%>
-                                    <% end %>
-                                </div>
-                            </div>
-                            
-                            <div class = "col_2">
-                                <div class = "dish_name"><%= dish.name%></div>
-                                <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
-                                <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
-                                <%if dish.description.to_s != "" %>
-                                    <div class = "dish_desc">Descrizione : <%= dish.description%></div>
-                                <%end%>
-                                <%if reviewer_signed_in?%>  
-                                    <div class = "btns">
-                                        <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
-                                        <%#POSSO RECENSIRE UNA SOLA VOLTA UN PIATTO%>
-                                        <%check_exist = 0.0%>
-                                        <% (Review.all).each do |review| %>
-                                            <%if review.dish_id == dish.id and review.reviewer_id == current_reviewer.id %>
-                                                <%check_exist = 1.0%>
-                                            <%end%>
-                                        <%end%>
-                                        <%if check_exist == 0.0%>
-                                            <div class = "div_review"><%= link_to "Lascia recensione", new_review_path(dish_id: dish.id), :class => "btn btn-warning", :id =>"review_btn" %></div>
-                                        <%end%>
-
-                                    </div>
-                                <%elsif restaurant_signed_in?%>
-                                    <div class = "btns_rev">
-                                        <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
-                                    </div>
-                                <%else%>
-                                    <div class = "btns">
-                                        <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
-                                        <div class = "div_review"><%= link_to "Lascia recensione", new_reviewer_session_path(flash_alert: "Devi prima accedere come recensore") , :class => "btn btn-warning", :id =>"review_btn" %></div>
-                                    </div>
-                                <%end%>
-                            </div>
-                        </div> 
-                    <%end%>
-
+    <div id = "searches">
+        <%if params[:category] != nil%>
+            <div class = "search_infos"> Risultati ricerca "<%= @temp1 %>" : </div>
+                <%if params[:sort] != nil%>
+                    <% @get_dish = Dish.where(category: params[:category] ).order(params[:sort]) %>
+                <%else%>
+                    <% @get_dish = Dish.where(category: params[:category] ) %>
                 <% end %>
-
-            <%else%>
-                <div class = "search_infos">Parametri ricercati: <%= params[:form_input].to_s %></div> 
-                
-                <%if params[:form_input].to_s != "" %>
-                    <%#https://stackoverflow.com/questions/2220423/case-insensitive-search-in-rails-model%>
-
-                    <%if params[:sort] != nil%>
-                        <% @get_dish = Dish.where("lower(name) LIKE ?","#{params[:form_input].downcase}%" ).order(params[:sort]) %>
-                    <%else%>
-                        <% @get_dish = Dish.where("lower(name) LIKE ?","#{params[:form_input].downcase}%" ) %>
-                    <% end %>
-                
-                    <% render @get_dish%>
-                
-                    <% @get_dish.each do |dish|%>
-                        <div class = "dish_container">
-                            <div class = "col_1">
-                                <div id = "foto_piatto">
-                                    <% i = 0 %>
-                                    <% if (dish.images[0] != nil) %>
-                                        <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
-                                    <% else %>
-                                      <%= image_tag("missing_dish.png", :class => "dish_pic")%>
-                                    <% end %>
-                                </div>
-                            </div>
-                            <div class = "col_2">
-                                <div class = "dish_name">Nome : <b><%= dish.name%></b></div>
-                                <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
-                                <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
-                                <%if dish.description.to_s != "" %>
-                                    <div class = "dish_desc">Descrizione : <%= dish.description%></div>
-                                <%end%>
-                                <%if reviewer_signed_in?%>  
-                                    <div class = "btns">
-                                        <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
-                                        <div class = "div_review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning", :id =>"review_btn" %></div>
-                                    </div>
-                                <%elsif restaurant_signed_in?%>
-                                    <div class = "btns_rev">
-                                        <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
-                                    </div>
-                                <%else%>
-                                    <div class = "btns">
-                                        <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
-                                        <div class = "div_review"><%= link_to "Lascia recensione", new_reviewer_session_path(flash_alert: "Devi prima accedere come recensore") , :class => "btn btn-warning", :id =>"review_btn" %></div>
-                                    </div>
-                                <%end%>
+                <% @get_dish.each do |dish| %>
+                    <div class = "dish_container">
+                        <div class = "col_1">
+                            <div id = "foto_piatto">
+                                <% if (dish.images[0] != nil) %>
+                                    <img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" class="dish_pic">
+                                <% else %>
+                                    <%= image_tag("missing_dish.png", :class => "dish_pic")%>
+                                <% end %>
                             </div>
                         </div>
-                    <% end %>
-                
-                <%end%>
+                        <div class = "col_2">
+                            <div class = "dish_name"><%= dish.name%></div>
+                            <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
+                            <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
+                            <%if dish.description.to_s != "" %>
+                                <div class = "dish_desc">Descrizione : <%= dish.description%></div>
+                            <%end%>
+                            <%if reviewer_signed_in?%>  
+                                <div class = "btns">
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
+                                    <%#POSSO RECENSIRE UNA SOLA VOLTA UN PIATTO%>
+                                    <%check_exist = 0.0%>
+                                    <% (Review.all).each do |review| %>
+                                        <%if review.dish_id == dish.id and review.reviewer_id == current_reviewer.id %>
+                                            <%check_exist = 1.0%>
+                                        <%end%>
+                                    <%end%>
+                                    <%if check_exist == 0.0%>
+                                        <div class = "div_review"><%= link_to "Lascia recensione", new_review_path(dish_id: dish.id), :class => "btn btn-warning", :id =>"review_btn" %></div>
+                                    <%end%>
 
-                <%#= link_to "Refresh", url_for(""), method: :get %>
-                <%#= button_to search_search_dish_path, method: :get %>
-                
+                                </div>
+                            <%elsif restaurant_signed_in?%>
+                                <div class = "btns_rev">
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
+                                </div>
+                            <%else%>
+                                <div class = "btns">
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
+                                    <div class = "div_review"><%= link_to "Lascia recensione", new_reviewer_session_path(flash_alert: "Devi prima accedere come recensore") , :class => "btn btn-warning", :id =>"review_btn" %></div>
+                                </div>
+                            <%end%>
+                        </div>
+                    </div> 
+                <% end %>
+
+        <%else%>
+            <div class = "search_infos">Parametri ricercati: <%= params[:form_input].to_s %></div> 
+            
+            <%if params[:form_input].to_s != "" %>
+                <%#https://stackoverflow.com/questions/2220423/case-insensitive-search-in-rails-model%>
+
+                <%if params[:sort] != nil%>
+                    <% @get_dish = Dish.where("lower(name) LIKE ?","#{params[:form_input].downcase}%" ).order(params[:sort]) %>
+                <%else%>
+                    <% @get_dish = Dish.where("lower(name) LIKE ?","#{params[:form_input].downcase}%" ) %>
+                <% end %>
+            
+                <% render @get_dish%>
+            
+                <% @get_dish.each do |dish|%>
+                    <div class = "dish_container">
+                        <div class = "col_1">
+                            <div id = "foto_piatto">
+                                <% i = 0 %>
+                                <% if (dish.images[0] != nil) %>
+                                    <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
+                                <% else %>
+                                    <%= image_tag("missing_dish.png", :class => "dish_pic")%>
+                                <% end %>
+                            </div>
+                        </div>
+                        <div class = "col_2">
+                            <div class = "dish_name">Nome : <b><%= dish.name%></b></div>
+                            <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
+                            <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
+                            <%if dish.description.to_s != "" %>
+                                <div class = "dish_desc">Descrizione : <%= dish.description%></div>
+                            <%end%>
+                            <%if reviewer_signed_in?%>  
+                                <div class = "btns">
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
+                                    <div class = "div_review"><%= link_to "Lascia recensione", new_review_path, :class => "btn btn-warning", :id =>"review_btn" %></div>
+                                </div>
+                            <%elsif restaurant_signed_in?%>
+                                <div class = "btns_rev">
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
+                                </div>
+                            <%else%>
+                                <div class = "btns">
+                                    <div class = "div_show"><%= link_to "Mostra piatto", dish, :class => "btn btn-success", :id => "show_btn" %></div>                                  
+                                    <div class = "div_review"><%= link_to "Lascia recensione", new_reviewer_session_path(flash_alert: "Devi prima accedere come recensore") , :class => "btn btn-warning", :id =>"review_btn" %></div>
+                                </div>
+                            <%end%>
+                        </div>
+                    </div>
+                <% end %>
+            
             <%end%>
-        </div>
 
-        <div id = "search_opts">
-            <%= render  "search/form" %>
-        </div>
+            <%#= link_to "Refresh", url_for(""), method: :get %>
+            <%#= button_to search_search_dish_path, method: :get %>
+            
+        <%end%>
+    </div>
+
+    <div id = "search_opts">
+        <%= render  "search/form" %>
+    </div>
 </div>

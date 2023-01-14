@@ -28,33 +28,48 @@
 </div>
 
 <%if @var_current_path.to_s != "/" and params[:form_input].to_s != ""%>
-  
-    <%if @var_current_path.to_s == "/search_restaurant" and @get_restaurant.first != nil%>
-      <div id = "sorts">
-          <div id = "sorts_label">Tipo di ordinamento</div>
-          <%= form_with url: @var_current_path, method: :get do |form| %>
-            <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
-            <%= form.hidden_field :sort, value: "name" %>
-            <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
-          <% end %>
-      </div>
-      
-    <%end%>
-
-    <%if @var_current_path.to_s == "/search_dish" and @get_dish.first != nil%>
-      <div id = "sorts">
+  <%if @var_current_path.to_s == "/search_restaurant" and @get_restaurant.first != nil%>
+    <div id = "sorts">
         <div id = "sorts_label">Tipo di ordinamento</div>
         <%= form_with url: @var_current_path, method: :get do |form| %>
           <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
           <%= form.hidden_field :sort, value: "name" %>
           <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
         <% end %>
+    </div>
+  <%end%>
+  
+  <%if @var_current_path.to_s == "/search_dish" and @get_dish.first != nil%>
+    <div id = "sorts">
+      <div id = "sorts_label">Tipo di ordinamento</div>
+      <%= form_with url: @var_current_path, method: :get do |form| %>
+        <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
+        <%= form.hidden_field :sort, value: "name" %>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
+      <% end %>
 
-        <%= form_with url: @var_current_path, method: :get do |form| %>
-          <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
-          <%= form.hidden_field :sort, value: "avg_rating" %>
-          <%= form.submit "ORDINA PER RATING", :class => "btn btn-success", :id => "sort_btn" %><br>
-        <% end %>
-      <%end%>
-      </div>
+      <%= form_with url: @var_current_path, method: :get do |form| %>
+        <%= form.hidden_field :form_input, value: params[:form_input].to_s%>
+        <%= form.hidden_field :sort, value: "avg_rating" %>
+        <%= form.submit "ORDINA PER RATING", :class => "btn btn-success", :id => "sort_btn" %><br>
+      <% end %>
+    </div>
+  <%end%>
+<%elsif @var_current_path.to_s == "/search_dish" and params[:category].to_s != ""%>
+    <%#query bottoni "antipasti, primi, secondi, dolci"%>
+    <div id = "sorts">
+      <div id = "sorts_label">Tipo di ordinamento</div>
+      <%= form_with url: @var_current_path, method: :get do |form| %>
+        <%= form.hidden_field :category, value: params[:category].to_s%>
+        <%= form.hidden_field :sort, value: "name" %>
+        <%= form.submit "ORDINA PER NOME", :class => "btn btn-success", :id => "sort_btn" %><br>
+      <% end %>
+
+      <%= form_with url: @var_current_path, method: :get do |form| %>
+        <%= form.hidden_field :category, value: params[:category].to_s%>
+        <%= form.hidden_field :sort, value: "avg_rating" %>
+        <%= form.submit "ORDINA PER RATING", :class => "btn btn-success", :id => "sort_btn" %><br>
+      <% end %>
+
+    </div>
 <%end%>
