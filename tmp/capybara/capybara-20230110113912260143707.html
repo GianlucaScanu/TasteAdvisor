@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TasteAdvisor</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32-logo_TA-4995c81e4f2ccfa88fa2358b8331c9c14c32fa0231abacf40827c3a49a246fb6.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    
+
+    
+        <meta property="og:url"           content="https://tasteadvisor.herokuapp.com/dishes/1" />
+        <meta property="og:type"          content="website" />
+        <meta property="og:title"         content="Pizza" />
+        <meta property="og:description"   content="Pizza margherita molto buona" />
+        <meta property="og:image"         content=""/>
+
+    <link rel="stylesheet" href="/assets/application-1c058d7537ff7e83a1a5f468c1c521f696231d986cc79ad0b4ffbbc398076df9.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-0bf6d03ab14e2d1f2d33661650d0bc9a9f6e0ba7f3397b631dc9c285adca0860.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-96cbf52c71021ba210235aaeec4720012d2c1df7d2dab3770cfa49eea3bb09da.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
+    "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js",
+    "controllers/application": "/assets/controllers/application-2a9ec243e96a7f8d9b4d22fd46193dc831c4344dbfc157940fab7eccfdb9150f.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js",
+    "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-0bf6d03ab14e2d1f2d33661650d0bc9a9f6e0ba7f3397b631dc9c285adca0860.js">
+<link rel="modulepreload" href="/assets/turbo.min-96cbf52c71021ba210235aaeec4720012d2c1df7d2dab3770cfa49eea3bb09da.js">
+<link rel="modulepreload" href="/assets/stimulus.min-b8a9738499c7a8362910cd545375417370d72a9776fb4e766df7671484e2beb7.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js">
+<script src="/assets/es-module-shims.min-d89e73202ec09dede55fb74115af9c5f9f2bb965433de1c2446e1faa6dac2470.js" async="async" data-turbo-track="reload"></script>
+<script type="module">import "application"</script>
+    <link rel="stylesheet" href="/assets/navbar-b4220102045fee22c5bad374db82d7d452d22530e56fdaab4a763f3d40c68bf8.css" />
+    <link rel="stylesheet" href="/assets/general_tags-acda71cd8c65a16aa1dd080fbf5bdd98cb1471612feb5fc36e9dd7a09ebc305e.css" />  
+  </head>
+
+  <body>
+        <div id = "top">
+          <div id = "row1">
+              <div id = "logo">
+                  <a href="/" class = "link_homepage"><img alt="logo TA" src="/assets/logo_TA-1abe5f02dd88eec3174f53d102da19d28356709e8615acd3e9055343cdbffd36.png" width="40" height="40" /> </a>
+              </div>
+              <div id = "label">
+                  <a href="/" class = "link_homepage">TASTEADVISOR</a>
+              </div>
+
+              <div id = "log_buttons">
+                <div class="dropdown" id = "signin_btn">
+                    <button class="btn btn-success dropdown-toggle btn-responsive" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sign in
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" id="reviewer_signin" href="/reviewers/sign_in">Recensore</a></li>
+                        <li><a class="dropdown-item" id="restaurat_signin" href="/restaurants/sign_in">Ristoratore</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown" id = "signup_btn">
+                    <button class="btn btn-success dropdown-toggle btn-responsive" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sign up
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" id="reviewer_signup" href="/reviewers/sign_up">Recensore</a></li>
+                        <li><a class="dropdown-item" id="restaurat_signup" href="/restaurants/sign_up">Ristoratore</a></li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+          <div id = "row2">
+              <div id = "navbar">
+                  <nav class = "navbar navbar-dark">
+                      <div class = "nav nav-pills options-ul">
+
+                            <form action="/search_dish" accept-charset="UTF-8" method="get">
+                                <input value="0" autocomplete="off" type="hidden" name="category" id="category" />
+                                <input type="submit" name="commit" value="Antipasti" class="btn btn-link nav_links" data-disable-with="Antipasti" /><br>
+</form>                            
+                            <form action="/search_dish" accept-charset="UTF-8" method="get">
+                                <input value="1" autocomplete="off" type="hidden" name="category" id="category" />
+                                <input type="submit" name="commit" value="Primi" class="btn btn-link nav_links" data-disable-with="Primi" /><br>
+</form>
+                            <form action="/search_dish" accept-charset="UTF-8" method="get">
+                                <input value="2" autocomplete="off" type="hidden" name="category" id="category" />
+                                <input type="submit" name="commit" value="Secondi" class="btn btn-link nav_links" data-disable-with="Secondi" /><br>
+</form>
+                            <form action="/search_dish" accept-charset="UTF-8" method="get">
+                                <input value="3" autocomplete="off" type="hidden" name="category" id="category" />
+                                <input type="submit" name="commit" value="Dolci" class="btn btn-link nav_links" data-disable-with="Dolci" /><br>
+</form>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+    </div>
+        
+        <!--Condizionali così i div non compaiono se non richiesti-->
+        <!--
+<p style="color: green"></p>
+
+<div id="dish_1">
+
+  ID: 1<br>
+  NAME: Pizza<br>
+  CATEGORY: 1<br>
+  AVG_RATING: 0.0<br>
+    RESTAURANT: Pizzeria da Carlo<br>
+  RESTAURANT ID: 1<br>
+  PRICE: 5.0<br>
+  DESCRIPTION: Pizza margherita molto buona<br>
+  INGREDIENTS: Acqua, Farina, Lievito, Pomodoro, Mozzarella<br>
+</div>
+
+
+<a href="/dishes">Back to dishes</a>
+
+
+<br><p>--------------</p> 
+
+-->
+
+<link rel="stylesheet" href="/assets/piatto-093ff5870fcf825894f8d3133448e628e62d81c19b5a280000fe180846daddbc.css" />
+
+ <div id = "middle">
+        <div id = "col1">
+            <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                </div>
+            </div>
+            <div id = "actions">
+
+            <div id="fb-root"></div>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));
+            </script>
+
+            <!-- Your share button code -->
+            <div class="fb-share-button" 
+            data-href="https://tasteadvisor.herokuapp.com/dishes/1" 
+            data-layout="button_count">
+            </div>
+
+                    <div id = "review"><a class="btn btn-warning btn-custom" href="/reviewers/sign_in?flash_alert=Devi+prima+accedere+come+recensore">Lascia recensione</a><br></div>
+                <div id = "report">
+                        <a class="btn btn-danger btn-custom" href="/reviewers/sign_in?flash_alert=Devi+prima+accedere">Segnala</a>
+                </div>
+            </div>
+        </div>
+        <div id = "col2">
+            <div id = "plate_desc">
+                <div id = "det_col1">
+                    <div id = "plate_name">Pizza</div>
+                    <div id = "category">
+                        <label id = "category_label">Categoria: </label>
+                        <div id = "result"> 1</div>
+                    </div>
+                    <div id = "rating">
+                        <label id = "rating_label">Rating: </label>
+                        <div id = "rating_score" class = "rating_score">
+                            <div class = "value" id = "rating_value"> 0.0/5</div>
+                            <div class = "pb" id = "rating_pb">
+                                <div class = "progress">
+                                    <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: 0.0%" aria-valuenow="0.0" aria-valuemin="0" aria-valuemax="20"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id = "det_col2">
+                    <div id = "restaurant">Ristorante : <a href="/restaurants/1">carloPizza</a></div>
+                    <div id = "price"> Prezzo : 5.0 €</div>
+                </div>
+            </div>
+            <div id = "reviews">
+                <div id = "review_label"> Recensioni: 0</div>
+                <div id = "reviews_list">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id = "bottom">
+        <div id = "contacts">
+            <div id = "contatto1">CONTATTO1</div>
+            <div id = "contatto2">CONTATTO2</div>
+            <div id = "contatto3">CONTATTO3</div>
+        </div>
+    </div>
+
+  </body>
+</html>

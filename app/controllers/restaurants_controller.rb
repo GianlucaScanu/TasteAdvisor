@@ -20,6 +20,15 @@ class RestaurantsController < ApplicationController
   def edit
   end
 
+  # This action is supposed to only be accessed in the test environment.
+  # This is for being able of running the cucumber tests.
+  def login
+    @restaurant = Restaurant.find(params[:id])
+    sign_in(@restaurant)
+    current_restaurant = @restaurant
+    render :text => "restaurant logged in"
+  end
+
   # POST /restaurants or /restaurants.json
   def create
     session['userType']='Restaurant'
