@@ -9,6 +9,10 @@
     width: auto;
 }
 
+.col_2{
+    width: 100%;
+}
+
 .search_infos{
     color: black;
     font-size: large;
@@ -65,7 +69,7 @@
     border-radius: 5%;
 }
 
-.dish_name, .dish_rest, .dish_price, .dish_desc{
+.dish_name, .dish_rest, .dish_price, .dish_desc, .dish_rating{
     margin-left: 3%;
     margin-right: 3%;
     width: auto;
@@ -89,6 +93,7 @@
 .btns_rev{
     display: flex;
     justify-content: center;
+    margin-top: 3%;
 }
 
 /*Media queries*/
@@ -113,7 +118,7 @@
         align-items: center;
     }
 
-    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+    .dish_rest, .dish_price, .dish_desc, .dish_rating, #review_btn, #show_btn{
         font-size: small;
     }
     .search_infos, .dish_name{
@@ -147,7 +152,7 @@
         align-items: center;
     }
 
-    .search_infos, .dish_name, .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+    .search_infos, .dish_name, .dish_rest, .dish_price, .dish_desc, .dish_rating, #review_btn, #show_btn{
         font-size: medium;
     }
     
@@ -159,7 +164,7 @@
   
 /* notebook */
 @media(min-width: 993px){
-    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+    .dish_rest, .dish_price, .dish_desc, .dish_rating, #review_btn, #show_btn{
         font-size: medium;
     }
 
@@ -191,7 +196,7 @@
         flex-direction: row;
     }
 
-    .dish_rest, .dish_price, .dish_desc, #review_btn, #show_btn{
+    .dish_rest, .dish_price, .dish_desc, .dish_rating, #review_btn, #show_btn{
         font-size: large;
     }
     .search_infos, .dish_name{
