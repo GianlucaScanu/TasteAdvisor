@@ -75,12 +75,35 @@
     width: auto;
 }
 
-#rating, #num_reviews, #category{
+#num_reviews, #category{
     display: flex;
     flex-direction: row;
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 2%;
+}
+
+.rating{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+
+.rating_score, .pb{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+}
+
+.pb{
+    align-self: center;
+}
+
+.rating_score > *{
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .progress{
@@ -157,6 +180,10 @@
     margin-right: 2%;
     justify-content: center;
     align-items: center;
+}
+
+.rev_text{
+    margin-left: 1%;
 }
 
 #actions{

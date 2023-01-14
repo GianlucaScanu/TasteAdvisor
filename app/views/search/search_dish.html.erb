@@ -22,10 +22,11 @@
                         <div class = "dish_container">
                             <div class = "col_1">
                                 <div id = "foto_piatto">
-                                    <% i = 0 %>
                                     <% if (dish.images[0] != nil) %>
-                                        <img src="<%= url_for(dish.images[i])%>" alt="foto_piatto" class="dish_pic">
-                                    <%end%>
+                                        <img src="<%= url_for(dish.images[0])%>" alt="foto_piatto" class="dish_pic">
+                                    <% else %>
+                                      <%= image_tag("missing_dish.png", :class => "dish_pic")%>
+                                    <% end %>
                                 </div>
                             </div>
                             

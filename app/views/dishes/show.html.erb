@@ -15,6 +15,9 @@
                         <%i += 1%>
                         </div>
                     <%end%>
+                    <%if i == 0%>
+                        <%= image_tag("missing_dish.png", :class => "dish_pic")%>
+                    <%end%>
                 </div>
             </div>
             <div id = "actions">
@@ -82,7 +85,7 @@
         <div id = "col2">
             <div id = "plate_desc">
                 <div id = "det_col1">
-                    <div id = "plate_name"><%= @dish.name %></div>
+                    <div id = "plate_name"><b><%= @dish.name %></b></div>
                     <div id = "category">
                         <label id = "category_label">Categoria: </label>
                         <%if @dish.category == 0%>
@@ -95,14 +98,14 @@
                             <div id = "result"> <%= "Dolci" %></div>
                         <%end%>
                     </div>
-                    <div id = "rating">
-                        <label id = "rating_label">Rating: </label>
-                        <div id = "rating_score" class = "rating_score">
-                            <div class = "value" id = "rating_value"> <%= @dish.avg_rating.round(2) %>/5</div>
-                            <div class = "pb" id = "rating_pb">
-                                <div class = "progress">
-                                    <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: <%= @dish.avg_rating*20%>%" aria-valuenow="<%= @dish.avg_rating*20 %>" aria-valuemin="0" aria-valuemax="20"></div>
-                                </div>
+                    <div class = "rating">
+                        <div class = "rating_score">
+                            <label id = "rating_label">Rating: </label>
+                            <div class = "value" id = "rating_value"> <i><%= @dish.avg_rating.truncate(2) %> /5</i> </div>
+                        </div>
+                        <div class = "pb" id = "rating_pb">
+                            <div class = "progress">
+                                <div class = "progress-bar progress-bar-striped bg-info" role = "progressbar" style="width: <%= @dish.avg_rating*20%>%" aria-valuenow="<%= @dish.avg_rating*20 %>" aria-valuemin="0" aria-valuemax="20"></div>
                             </div>
                         </div>
                     </div>
@@ -125,6 +128,8 @@
                             <div class="img_review">
                                 <%if Reviewer.find(review.reviewer_id).profile_picture.attached?%>
                                     <img class = "reviewer_img" src="<%= url_for(Reviewer.find(review.reviewer_id).profile_picture)%>" alt="Immagine del recensore">
+                                <% else %>
+                                      <%= image_tag("missing_user.png", :class => "reviewer_img")%>
                                 <%end%>
                             </div>
                             <div class="review_info">
@@ -132,9 +137,12 @@
                                     <div >
                                         <%=Reviewer.find(review.reviewer_id).username%>
                                     </div>
-                                    <div class = "rating_score">
-                                        <div class = "value" id = "rating_value">
-                                            <%= @avg_rate = ((review.rating1 + review.rating2 + review.rating3)/3) %>/5
+                                    <div class = "rating">
+                                        <div class = "rating_score">
+                                            <label id = "rating_label">Rating: </label>
+                                            <div class = "value" id = "rating_value">
+                                                <i> <%= @avg_rate = ((review.rating1 + review.rating2 + review.rating3).fdiv(3)).truncate(2) %> /5 </i>
+                                            </div>
                                         </div>
                                         <div class = "pb" id = "rating_pb">
                                             <div class = "progress">
