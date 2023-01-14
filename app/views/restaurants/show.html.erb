@@ -75,7 +75,7 @@
 </head>
 <body>
     <div id = "middle">
-      <%if restaurant_signed_in? && current_restaurant == @restaurant.id%>
+      <%if restaurant_signed_in? && current_restaurant.id == @restaurant.id%>
         <div id = "foto">
           <% if @restaurant.profile_picture.attached? %>
             <div><img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="100" height="100"></div>
@@ -149,7 +149,7 @@
         <div id = "dishes_div_restaurant">
           <div id = "header_and_insertions">
             <div id = "header">I miei piatti: </div>
-            <% if restaurant_signed_in? &&   current_restaurant == @restaurant.id %>
+            <% if restaurant_signed_in? && current_restaurant.id == @restaurant.id %>
               <%= link_to "Nuovo piatto", new_dish_path, :id => "insert_dishes", :class => "btn btn-success btn-responsive" %>
             <% end %>
           </div>
@@ -187,7 +187,7 @@
                           <div class = "div_review"><%= link_to "Lascia recensione", new_review_path(dish_id: dish.id), :class => "btn btn-warning", :id =>"review_btn" %></div>
                       <%end%>
                       
-                    <% elsif restaurant_signed_in? && current_restaurant == @restaurant.id %>
+                    <% elsif restaurant_signed_in? && current_restaurant.id == @restaurant.id %>
                       <%= link_to "Modifica", edit_dish_path(dish), :class => "btn btn-success btn-responsive-dish" %>
                       <%= button_to "Rimuovi", dish, method: :delete, :class => "btn btn-danger btn-responsive-dish" %>
                     <% end %>
