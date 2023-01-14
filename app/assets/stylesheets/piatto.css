@@ -51,6 +51,14 @@
     margin-bottom: 1%;
 }
 
+#plate_name{
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #plate_desc{
     display: flex;
     flex-direction: row;
@@ -75,7 +83,7 @@
     width: auto;
 }
 
-#num_reviews, #category{
+#num_reviews, #category, #description_plate, #plate_ingredients{
     display: flex;
     flex-direction: row;
     margin-left: 1%;
@@ -222,6 +230,10 @@
         height: 200px;
     }
 
+    #plate_name{
+        font-size: medium;
+    }
+
 }
 
 /* TABLET */
@@ -251,6 +263,11 @@
         width: 250px;
         height: 250px;
     }
+
+    #plate_name{
+        font-size: medium;
+    }
+
 }
 
 /* NOTEBOOK */
@@ -278,6 +295,11 @@
         width: 350px;
         height: 350px;
     }
+
+    #plate_name{
+        font-size: large;
+    }
+
 }
 
 /* DESKTOP */
@@ -305,6 +327,11 @@
         width: 500px;
         height: 500px;
     }
+
+    #plate_name{
+        font-size: x-large;
+    }
+
 }
 
 

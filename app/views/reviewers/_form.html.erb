@@ -31,11 +31,19 @@
       <div id = "labels">
           <div id = "username" class = "form-group">
             <%= form.label :username, style: "display: block", :id => "username_lbl" %>
-            <%= form.text_field :username, :class => "form-control" %>
+            <% if reviewer_signed_in? %>
+              <%= form.text_field :username, :class => "form-control", :disabled => "true" %>
+            <% else %>
+              <%= form.text_field :username, :class => "form-control" %>
+            <% end %>
           </div>
           <div id = "email" class = "form-group">
             <%= form.label :email, style: "display: block",  :id => "email_lbl" %>
-            <%= form.text_field :email, :class => "form-control" %>
+            <% if reviewer_signed_in? %>
+              <%= form.text_field :email, :class => "form-control", :disabled => "true" %>
+            <% else %>
+              <%= form.text_field :email, :class => "form-control" %>
+            <% end %>
           </div>
           <div id = "tel_div" class = "form-group">
             <%= form.label :telephone_number, "Telefono", style: "display: block",  :id => "tel_lbl" %>

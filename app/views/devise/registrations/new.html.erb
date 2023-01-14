@@ -20,6 +20,17 @@
 <body>
     
     <div id = "middle">
+        <div id = "signin_type">
+            <%@var_current_path =  request.path %>
+
+            <% if @var_current_path.to_s == "/reviewers/sign_up" %>
+                Registrati come Recensore
+            <% elsif @var_current_path.to_s == "/restaurants/sign_up"%> 
+                Registrati come Ristoratore
+            <% end %>
+            
+        </div>
+
         <div id = "google_div">
             <%session[:calling_path] = request.path.to_s%>
             <%= form_tag(omni_user_google_oauth2_omniauth_authorize_path, method: 'post', data: {turbo: false}) do %>

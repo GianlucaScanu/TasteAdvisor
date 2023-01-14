@@ -9,6 +9,13 @@
 }
 
 /*ELEMENTI AREA MIDDLE*/
+#signin_type{
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
 #google_div{
     display: flex;
     justify-content: center;
@@ -77,8 +84,12 @@
 /*mobile*/ 
 @media (max-width: 768px) {
     #oppure_lbl, #google_btn, #email_lbl, #password_lbl, #remember_lbl,
-    #submit_btn, #forgot_lbl{
+    #submit_btn, #forgot_lbl, #signin_type{
         font-size: small;
+    }
+
+    #signin_type{
+        font-size: medium;
     }
 
     #reviewer_remember_me, #restaurant_remember_me{
@@ -94,12 +105,21 @@
 /*tablet*/
 @media (min-width: 769px) and (max-width: 992px) {
     T#oppure_lbl, #google_btn, #email_lbl, #password_lbl, #remember_lbl,
-    #submit_btn, #forgot_lbl{
+    #submit_btn, #forgot_lbl, #signin_type{
         font-size: medium;
+    }
+
+    #signin_type{
+        font-size: large;
     }
 
     #reviewer_remember_me, #restaurant_remember_me{
         transform: scale(1.1);
+    }
+
+
+    #signin_type{
+        font-size: large;
     }
 
     #pdim{
@@ -116,6 +136,10 @@
         font-size: large;
     }
 
+    #signin_type{
+        font-size: x-large;
+    }
+
     #reviewer_remember_me, #restaurant_remember_me{
         transform: scale(1.2);
     }
@@ -129,8 +153,12 @@
 /* desktop */
 @media(min-width: 1440px){
     #oppure_lbl, #google_btn, #email_lbl, #password_lbl, #remember_lbl,
-    #submit_btn, #forgot_lbl{
+    #submit_btn, #forgot_lbl, #signin_type{
         font-size: large;
+    }
+
+    #signin_type{
+        font-size: xx-large;
     }
 
     #reviewer_remember_me, #restaurant_remember_me{

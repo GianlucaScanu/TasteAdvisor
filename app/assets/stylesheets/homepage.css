@@ -29,6 +29,7 @@
 #description{
     display: flex;
     justify-content: center;
+    margin-left: 1%;
     margin-top: 1%;
     border-style: solid;
     border-color: #1e5a1a;

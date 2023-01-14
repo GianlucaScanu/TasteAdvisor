@@ -2,6 +2,7 @@
 
  <div id = "middle">
         <div id = "col1">
+            <div id = "plate_name"><%= @dish.name %></div>
             <div id = "foto_piatto" class="carousel carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <% i = 0 %>
@@ -85,7 +86,20 @@
         <div id = "col2">
             <div id = "plate_desc">
                 <div id = "det_col1">
-                    <div id = "plate_name"><b><%= @dish.name %></b></div>
+                    <div id = "description_plate">
+                    <% if @dish.description == nil || @dish.description.length == 0 %> 
+                        Nessuna descrizione disponibile per questo piatto
+                    <% else %>
+                        Descrizione: <%= @dish.description %>
+                    <% end %>
+                    </div>
+                    <div id = "plate_ingredients">
+                        <% if @dish.ingredients == nil || @dish.ingredients.length == 0 %> 
+                            Nessun ingrediente disponibile per questo piatto
+                        <% else %>
+                            Ingredienti: <%= @dish.ingredients %>
+                        <% end %>
+                    </div>
                     <div id = "category">
                         <label id = "category_label">Categoria: </label>
                         <%if @dish.category == 0%>
