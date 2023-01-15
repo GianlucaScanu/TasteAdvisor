@@ -14,9 +14,12 @@
                 <div class = "rest_container">
                     <div class = "col_1">
                         <%if restaurant.profile_picture.present? %>
-                            <div class = "rest_pic"><img src="<%= url_for(restaurant.profile_picture)%>" alt="foto_ristorante" width="250" height="250" id = "profile_pic"></div>                    </div>
+                            <div class = "rest_pic"><img src="<%= url_for(restaurant.profile_picture)%>" alt="foto_ristorante" width="250" height="250" class = "profile_pic"></div>                    </div>
                         <%else%>
-                            <div class = "rest_pic"><img src="" alt="foto_ristorante" width="250" height="250" id = "profile_pic"></div>                    </div>
+                            <div class = "rest_pic">
+                                <%= image_tag("missing_user.png", :class => "profile_pic")%>
+                            </div>
+                        </div>
                         <%end%>
                         <div class = "col_2">
                         <div class = "rest_name"><%= restaurant.name%></div>

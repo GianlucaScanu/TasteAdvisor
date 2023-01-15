@@ -33,7 +33,7 @@
                             </div>
                         </div>
                         <div class = "col_2">
-                            <div class = "dish_name"><%= dish.name%></div>
+                            <div class = "dish_name"><b><%= dish.name%></b></div>
                             <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
                             <div class = "dish_rating">Rating : <%= dish.avg_rating.truncate(2)%> /5</div>
                             <div class = "dish_price">Prezzo : <%= dish.price%>€</div>
@@ -96,7 +96,7 @@
                             </div>
                         </div>
                         <div class = "col_2">
-                            <div class = "dish_name">Nome : <b><%= dish.name%></b></div>
+                            <div class = "dish_name"><b><%= dish.name%></b></div>
                             <div class = "dish_rest">Ristorante : <%= dish.restaurant.name%></div>
                             <div class = "dish_rating">Rating : <%= dish.avg_rating.truncate(2)%> /5</div>
                             <div class = "dish_price">Prezzo : <%= dish.price%>€</div>

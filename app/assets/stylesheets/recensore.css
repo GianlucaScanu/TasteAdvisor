@@ -39,6 +39,13 @@
     margin-bottom: 3%;
 }
 
+#foto > *{
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #username{
     display: flex;
     flex-direction: row;
@@ -162,7 +169,7 @@
     /*Fine*/
 
 
-    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl{
+    #image_lbl, #name_lbl, #profile_btn, #midbottom_lbl, {
         font-size: small;
     }
 
@@ -171,7 +178,7 @@
         max-height: 100px;
     }
 
-    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn, #phone_div{
         font-size: small;
     }
 
@@ -190,7 +197,7 @@
         max-height: 150px;
     }
 
-    #user_lbl, #description_lbl, #description{
+    #user_lbl, #description_lbl, #description,#phone_div{
         font-size: small;
     }
 
@@ -210,7 +217,7 @@
         max-height: 200px;
     }
 
-    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn, #phone_div{
         font-size: medium;
     }
 
@@ -225,7 +232,7 @@
         font-size: x-large;
     }
 
-    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn{
+    #user_lbl, #description_lbl, #description, #show_btn, #del_btn, #report_btn, #phone_div{
         font-size: large;
     }
 

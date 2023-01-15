@@ -119,10 +119,12 @@
       <%else%>
       <div id = "col_m1">
         <div id = "foto">
-        <% if @restaurant.profile_picture.attached? %>
-          <div><img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="250" height="250" id = "profile_pic"></div>
-        <% end %>
-        <div id = "pic_lbl">Foto profilo</div>
+          <% if @restaurant.profile_picture.attached? %>
+            <div><img src="<%= url_for(@restaurant.profile_picture)%>" alt="PP" width="100" height="100"></div>
+          <%else%>
+            <%= image_tag("missing_user.png", :width => "100", :height => "100")%>
+          <% end %>
+          <div id = "pic_lbl">Foto profilo</div>
         </div>
       </div>
       <div id = "col_m2">

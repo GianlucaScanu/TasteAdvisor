@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.col_2{
+    width: 100%;
+}
+
 .search_infos{
     color: black;
     margin-top: 1%;
@@ -44,6 +48,7 @@
     border-style: solid;
     border-width: thin;
     border-color: #1e5a1a;
+    align-items: center;
 }
 
 .rest_container > * {
@@ -64,7 +69,6 @@
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    width: auto;
 }
 
 .btns > *{
@@ -74,6 +78,9 @@
     margin-right: 3%;
 }
 
+.profile_pic{
+    border-radius: 5%;
+}
 
 /*Media queries*/
 /*mobile*/ 
@@ -98,7 +105,7 @@
     .rest_phone, .rest_address, .rest_name, .rest_mail, #show_btn{
         font-size: small;
     }
-    #profile_pic{
+    .profile_pic{
         max-width: 99px;
         max-width: 99px;
     }
@@ -123,7 +130,7 @@
     .rest_phone, .rest_address, .rest_name, .rest_mail, #show_btn{
         font-size: medium;
     }
-    #profile_pic{
+    .profile_pic{
         max-width: 150px;
         max-width: 150px;
     } 
@@ -146,7 +153,7 @@
         width: 100%;
     }
 
-    #profile_pic{
+    .profile_pic{
         max-width: 200px;
         max-width: 200px;
     }
@@ -169,7 +176,7 @@
         width: 100%;
     }
     
-    #profile_pic{
+    .profile_pic{
         max-width: 300px;
         max-width: 300px;
     }
