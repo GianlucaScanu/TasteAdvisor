@@ -92,7 +92,7 @@
               <div id = "rating_gm"> Rating GMaps : <%= @rating_gmaps%></div>
             <%end%>
             <div id = "description">
-              <% if(@restaurant.description == nil) %>
+              <% if(@restaurant.description == nil || @restaurant.description.length == 0) %>
                 Questo ristorante non ha una descrizione
                 <!-- restituisce questa stringa al posto della descrizione nel caso in cui sia vuota -->
               <% else %>

@@ -78,6 +78,10 @@ p{
     margin-right: 3%;
 }
 
+.link_homepage{
+    color:dimgray;
+}
+
 @media screen and (max-width: 768px) {
 
     #row1 > *, #contacts, .dropdown-menu, .alert_div, .notice_div, #label{
