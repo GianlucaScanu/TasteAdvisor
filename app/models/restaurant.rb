@@ -6,8 +6,8 @@ class Restaurant < ApplicationRecord
 
     validates :name, :username, presence: true
     validates :username,  uniqueness: true
-    validates :password, presence: true
-    validates :password_confirmation, presence: true
+    validates :password, presence: true, on: :create
+    validates :password_confirmation, presence: true, on: :create
 
     has_one_attached :profile_picture, service: :google
     validates :profile_picture,  blob: { content_type: :image }

@@ -9,7 +9,8 @@ RSpec.describe Restaurant, type: :model do
                 name: nil,
                 username: 'pizza da mario',
                 email: 'test@test.com',
-                password: 'password'
+                password: 'password',
+                password_confirmation: 'password'
             )
 
             expect(restaurant).to_not be_valid
@@ -22,7 +23,8 @@ RSpec.describe Restaurant, type: :model do
                 name: 'ristorante',
                 username: nil,
                 email: 'test@test.com',
-                password: 'password'
+                password: 'password',
+                password_confirmation: 'password'
             )
 
             expect(restaurant).to_not be_valid
@@ -35,7 +37,8 @@ RSpec.describe Restaurant, type: :model do
                 name: 'ristorante',
                 username: 'test',
                 email: nil,
-                password: 'password'
+                password: 'password',
+                password_confirmation: 'password'
             )
 
             expect(restaurant).to_not be_valid
@@ -48,7 +51,8 @@ RSpec.describe Restaurant, type: :model do
                 name: 'ristorante',
                 username: 'miotest',
                 email: 'test@test.com',
-                password: nil
+                password: nil,
+                password_confirmation: 'password'
             )
 
             expect(restaurant).to_not be_valid

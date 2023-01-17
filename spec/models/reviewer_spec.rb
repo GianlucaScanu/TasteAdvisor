@@ -13,6 +13,7 @@ RSpec.describe Reviewer, type: :model do
                 description: 'una descrizione TTI',
                 email: 'testTTI@test.tti',
                 password: 'password',
+                password_confirmation: 'password',
                 full_name: 'testerTTI'
             )
         
@@ -27,6 +28,7 @@ RSpec.describe Reviewer, type: :model do
                 description: 'una descrizione TTI',
                 email: nil,
                 password: 'password',
+                password_confirmation: 'password',
                 full_name: 'testerTTI'
             )
         
@@ -41,6 +43,7 @@ RSpec.describe Reviewer, type: :model do
                 description: 'una descrizione TTI',
                 email: 'testTTI@test.tti',
                 password: nil,
+                password_confirmation: 'password',
                 full_name: 'testerTTI'
             )
         

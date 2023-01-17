@@ -1,5 +1,5 @@
 module NavigationHelpers
-
+  
   def path_to(page_name)
     case page_name
 
@@ -7,7 +7,7 @@ module NavigationHelpers
       '/'
 
     when /^the restaurant profile page/
-      '/restaurants/1'
+      '/restaurants/6'
 
     when /^the reviewer profile page/
       '/reviewers/1'
