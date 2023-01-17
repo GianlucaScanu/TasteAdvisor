@@ -6,6 +6,8 @@ class Reviewer < ApplicationRecord
 
     validates :username, presence: true
     validates :username, uniqueness: true
+    validates :password, presence: true
+    validates :password_confirmation, presence: true
     
     has_many :review
     has_one :omniuser #https://stackoverflow.com/questions/11286560/devise-with-omniauth-for-multiple-models-without-sti

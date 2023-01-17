@@ -98,6 +98,11 @@
     .search_label, #restaurant_search, #dish_btn, #restaurant_btn{
         font-size: medium;
     }
+
+    .img_carosello{
+        width: 100%;
+    }
+    
   }
   
 /* notebook */
